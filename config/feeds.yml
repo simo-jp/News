@@ -1,0 +1,78 @@
+# ニュースソース設定
+# 各カテゴリごとに信頼できるRSSフィードを登録
+
+categories:
+  ai_ml:
+    name: "AI・機械学習"
+    feeds:
+      - name: "Hacker News (AI)"
+        url: "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT&points=50"
+      - name: "MIT Technology Review - AI"
+        url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+      - name: "Google AI Blog"
+        url: "https://blog.google/technology/ai/rss/"
+      - name: "OpenAI Blog"
+        url: "https://openai.com/blog/rss.xml"
+      - name: "Anthropic News"
+        url: "https://www.anthropic.com/news/rss.xml"
+
+  web_dev:
+    name: "Web開発・フロントエンド"
+    feeds:
+      - name: "Smashing Magazine"
+        url: "https://www.smashingmagazine.com/feed/"
+      - name: "CSS-Tricks"
+        url: "https://css-tricks.com/feed/"
+      - name: "Zenn - Frontend"
+        url: "https://zenn.dev/topics/frontend/feed"
+      - name: "Qiita - JavaScript"
+        url: "https://qiita.com/tags/javascript/feed"
+
+  dotnet:
+    name: ".NET・C#"
+    feeds:
+      - name: ".NET Blog"
+        url: "https://devblogs.microsoft.com/dotnet/feed/"
+      - name: "ASP.NET Blog"
+        url: "https://devblogs.microsoft.com/aspnet/feed/"
+      - name: "Visual Studio Blog"
+        url: "https://devblogs.microsoft.com/visualstudio/feed/"
+      - name: "Zenn - .NET"
+        url: "https://zenn.dev/topics/dotnet/feed"
+      - name: "Qiita - C#"
+        url: "https://qiita.com/tags/c%23/feed"
+
+  security:
+    name: "セキュリティ"
+    feeds:
+      - name: "The Hacker News"
+        url: "https://feeds.feedburner.com/TheHackersNews"
+      - name: "Krebs on Security"
+        url: "https://krebsonsecurity.com/feed/"
+      - name: "JPCERT"
+        url: "https://www.jpcert.or.jp/rss/jpcert.rdf"
+      - name: "IPA 重要なセキュリティ情報"
+        url: "https://www.ipa.go.jp/security/alert-rss.rdf"
+
+  gadget_tech:
+    name: "ガジェット・一般テック"
+    feeds:
+      - name: "The Verge"
+        url: "https://www.theverge.com/rss/index.xml"
+      - name: "TechCrunch"
+        url: "https://techcrunch.com/feed/"
+      - name: "ITmedia NEWS"
+        url: "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml"
+      - name: "Engadget 日本版"
+        url: "https://japanese.engadget.com/rss.xml"
+
+# 収集設定
+settings:
+  # 過去何時間以内の記事を対象とするか
+  hours_lookback: 24
+  # 各カテゴリごとの最大記事数
+  max_articles_per_category: 8
+  # 全体での最大記事数
+  max_articles_total: 40
+  # AIによる要約を有効にするか
+  enable_ai_summary: true
