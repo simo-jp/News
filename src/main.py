@@ -190,12 +190,20 @@ class HTMLRenderer:
         for cat_name, articles in grouped.items():
             items = "\n".join(self._render_article(a) for a in articles)
             sections.append(f"""
-        <section class="category">
+        <section class="category" data-category="{cat_name}">
           <h2>{cat_name} <span class="count">{len(articles)}</span></h2>
           <div class="articles">{items}</div>
         </section>""")
 
         sections_html = "\n".join(sections)
+
+        # フィルターボタン（カテゴリ一覧）
+        filter_buttons = '<button class="filter-btn active" data-filter="all">すべて</button>'
+        for cat_name, articles in grouped.items():
+            filter_buttons += (
+                f'<button class="filter-btn" data-filter="{cat_name}">'
+                f'{cat_name} <span class="count">{len(articles)}</span></button>'
+            )
 
         return f"""<!DOCTYPE html>
 <html lang="ja">
@@ -243,6 +251,38 @@ class HTMLRenderer:
       margin-right: 0.4rem;
     }}
     footer {{ text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }}
+    .filter-bar {{
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }}
+    .filter-search {{
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }}
+    .filter-search:focus {{ outline: none; border-color: #667eea; }}
+    .filter-buttons {{ display: flex; flex-wrap: wrap; gap: 0.5rem; }}
+    .filter-btn {{
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }}
+    .filter-btn:hover {{ border-color: #667eea; color: #667eea; }}
+    .filter-btn.active {{
+      background: #667eea; border-color: #667eea; color: white;
+    }}
+    .filter-btn.active .count {{ background: rgba(255,255,255,0.3); }}
+    .filter-btn .count {{
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }}
+    .no-results {{
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }}
+    .category.hidden, .article.hidden {{ display: none; }}
   </style>
 </head>
 <body>
@@ -251,9 +291,58 @@ class HTMLRenderer:
       <h1>📰 Tech News Daily</h1>
       <div class="meta">{date_str} / 全{total}件</div>
     </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons">{filter_buttons}</div>
+    </div>
     {sections_html}
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
     <footer>Powered by GitHub Actions + Claude API</footer>
   </div>
+  <script>
+    (function() {{
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {{
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {{
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {{
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          }});
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        }});
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }}
+
+      buttons.forEach(btn => {{
+        btn.addEventListener('click', () => {{
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        }});
+      }});
+
+      searchInput.addEventListener('input', applyFilter);
+    }})();
+  </script>
 </body>
 </html>"""
 
