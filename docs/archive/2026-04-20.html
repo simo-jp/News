@@ -43,7 +43,48 @@
       font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
       margin-right: 0.4rem;
     }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
     footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
   </style>
 </head>
 <body>
@@ -52,195 +93,272 @@
       <h1>📰 Tech News Daily</h1>
       <div class="meta">2026年04月20日 / 全28件</div>
     </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">7</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">4</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button></div>
+    </div>
     
-        <section class="category">
-          <h2>.NET・C# <span class="count">6</span></h2>
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">7</span></h2>
           <div class="articles">
       <article class="article">
-        <h3><a href="https://zenn.dev/komurodesu/articles/2717aaee6d0dd7" target="_blank" rel="noopener">Officeソフト/PDF/テキストをまとめて横断検索できるアプリを作った</a></h3>
-        <div class="source">Zenn - .NET · 04/20 13:34</div>
-        <p class="summary">動機 世の中にはGrepツールが色々ありますが、テキストファイルのみを対象にしていたり、Excelを対象にした場合は図形オブジェクトを対象にしていなかったりして、使い勝手がいまひとつのものが多いです。また、大体はxdoc2txtに依存しています。xdoc2txtは良いソフトですが、なくてもgrepはできますし、実装も可能です（AIが）。そこで、図形も検索できるGrepツールを作り、ついでにMicrosoft Storeで公開することにしました。 Office や PDF もまとめて検索したい 開発の設計書は大体がExcelやWordで書かれています。影響度調査はソースコードだけで...</p>
+        <h3><a href="https://css-tricks.com/markdown-astro/" target="_blank" rel="noopener">Markdown + Astro = ❤️</a></h3>
+        
+        <div class="source">CSS-Tricks · 04/20 13:55</div>
+        <p class="summary">Although Astro has built-in support for Markdown via .md files, I'd argue that your Markdown experience can be enhanced with MDX. Markdown + Astro = &#x2764;&#xfe0f; originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
       </article>
 
       <article class="article">
-        <h3><a href="https://zenn.dev/yy7613/articles/57ceb544ff7486" target="_blank" rel="noopener">Microsoft Agent FrameworkをローカルLLMで試してみる その10(AIContextProvider)</a></h3>
-        <div class="source">Zenn - .NET · 04/20 12:50</div>
-        <p class="summary">はじめに Microsoft Agent FrameworkをローカルLLMで試してみる その9では、最小構成の AIContextProvider を使って、メソッドの呼び出し順序を確認しました。 その10では一歩進めて、AIContextProviderでコンテキストをどのように変更できるのか、そして変更したコンテキストが最終的なリクエストにどう反映されるのかを確認します。 今回は次の点を確認します。 ProvideAIContextAsyncで追加したコンテキストが最終的なリクエストにどう反映されるか InvokingCoreAsyncでコンテキストを直接編集した場合、最終的...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://qiita.com/rafluctua/items/bcef364d1462607c1a67" target="_blank" rel="noopener">C#でWordの表データを抽出</a></h3>
-        <div class="source">Qiita - C# · 04/20 08:30</div>
-        <p class="summary">日常のオフィス業務やシステム開発において、Word文書内の表データを抽出し、データ取り込み・統計分析・レポート作成といった業務に活用するケースは非常に多く見られます。しかし手動でコピー＆ペーストを行う方法は作業効率が低く、Office COMコンポーネントを利用した場合、バ...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://qiita.com/iccb1013/items/0342423986520fbd8e3b" target="_blank" rel="noopener">RAG か Lucene か：プライベートデプロイ型カスタマーサポートシステムにおける AI 知識ベースのアーキテクチャ選定</a></h3>
-        <div class="source">Qiita - C# · 04/20 06:21</div>
-        <p class="summary">はじめに 皆さん、こんにちは。ShenDesk の開発者です。 私は数年にわたり、安全・安定・信頼、そして軽量かつプライベートデプロイ（オンプレミス）が可能なカスタマーサポートシステムの開発に注力してきました。その甲斐あって、これまでに多くのユーザーにご利用いただいていま...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://qiita.com/vivinko/items/e2cd93a980fa08b4b20b" target="_blank" rel="noopener">WinFormsで「別のプロセスが使用中です」の原因になりやすい所｜Stream・ファイル出力・ログ・別処理【掟R11】</a></h3>
-        <div class="source">Qiita - C# · 04/20 00:07</div>
-        <p class="summary">連載Index（読む順・公開済リンクが最新）: S00_門前の誓い_総合Index 保存したあとに上書きできない。削除できない。リネームできない。 WinForms では、別のプロセスが使用中です が保存や削除の行で出ていても、原因はその行より前にあることがあります...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://qiita.com/morishift/items/4a6b5177e2cf6d968a30" target="_blank" rel="noopener">【Unity】3Dユニティちゃんで演出スキップ可能なデモを作ってみた ― ChainRacePattern</a></h3>
-        <div class="source">Qiita - C# · 04/19 21:33</div>
-        <p class="summary">はじめに ChainRacePattern を使って、3Dユニティちゃんを含むスキップ可能な演出デモを作ってみました。 2DのUI演出のスキップ例は比較的見かけますが、3Dキャラクターのモーション・ボイス・字幕・入力分岐まで含めて、一つの流れとして扱う実装例はあまり見かけ...</p>
-      </article></div>
-        </section>
-
-        <section class="category">
-          <h2>ガジェット・一般テック <span class="count">8</span></h2>
-          <div class="articles">
-      <article class="article">
-        <h3><a href="https://www.theverge.com/entertainment/914818/elden-ring-movie-date-cast" target="_blank" rel="noopener">The Elden Ring movie hits theaters in March 2028</a></h3>
-        <div class="source">The Verge · 04/20 13:25</div>
-        <p class="summary">It's going to be a little while before The Lands Between is realized in movie form. Bandai Namco just confirmed that the live-action Elden Ring movie, which was announced last year, is expected to hit theaters on March 3rd, 2028, with production kicking off this spring. Based on FromSoftware's open-...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.theverge.com/games/913410/vampire-survivors-new-spinoff-switches-genres-but-keeps-the-good-vibes" target="_blank" rel="noopener">Vampire Survivors’ new spinoff switches genres but keeps the good vibes</a></h3>
-        <div class="source">The Verge · 04/20 13:00</div>
-        <p class="summary">When Vampire Survivors first exploded onto the scene, it was pretty much all I could think about. The formula of jumping into runs, taking on thousands of enemies, and becoming absurdly overpowered kept me picking up the game again and again - Steam says I've played it for more than 60 hours. Over t...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.theverge.com/tech/913874/prego-connection-keeper-bundle-voice-recorder-storycorps" target="_blank" rel="noopener">This pasta sauce wants to record your family</a></h3>
-        <div class="source">The Verge · 04/20 13:00</div>
-        <p class="summary">As if there weren't already enough devices listening in on everything being said in your home, Prego, the pasta and pizza sauce brand, is releasing a device designed to record everything said around the dinner table for posterity. The Connection Keeper, which looks like an oversized pasta jar lid, w...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.theverge.com/tech/914807/huawei-pura-x-max-launch-price-specs-availability" target="_blank" rel="noopener">Huawei beats Samsung and Apple to market with the first wide foldable</a></h3>
-        <div class="source">The Verge · 04/20 12:19</div>
-        <p class="summary">Huawei has launched its passport-style foldable in China, ahead of similar devices said to be coming from Apple and Samsung. That makes the Pura X Max the first wide foldable phone that's actually available to buy, with today's launch now giving us the full specifications and price after its design ...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.theverge.com/reviews/913706/dji-mini-power-station-review-comparison" target="_blank" rel="noopener">DJI’s latest power station is proof that good things come in mini packages</a></h3>
-        <div class="source">The Verge · 04/20 12:00</div>
-        <p class="summary">As an avid vanlifer, I have to carefully curate everything I carry in order to eke out every square inch of storage I can to support life off the grid for weeks at a time. That's why I jumped at the chance to review DJI's latest power station. The DJI Power 1000 Mini is almost [&#8230;]</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/20/news114.html" target="_blank" rel="noopener">ヤマトと佐川、津波警報に伴い荷物遅延の可能性　一部地域で集荷停止も</a></h3>
-        <div class="source">ITmedia NEWS · 04/20 10:15</div>
-        <p class="summary">20日の午後4時53分ごろに三陸沖で発生した震度5強の地震と津波警報により、宅配便に配送遅延が生じる可能性が高まっている。</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/20/news111.html" target="_blank" rel="noopener">三陸沖の地震で通信各社が「災害用伝言サービス」を運用開始　気象庁は避難継続を呼び掛け</a></h3>
-        <div class="source">ITmedia NEWS · 04/20 09:13</div>
-        <p class="summary">20日の午後4時52分ごろに三陸沖で発生した震度5強の地震により、通信各社が災害用伝言サービスの運用を始めた。</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://www.theverge.com/gadgets/914764/gopros-mission-camera-prices" target="_blank" rel="noopener">GoPro’s new Mission cameras are priced beyond most weekend athletes</a></h3>
-        <div class="source">The Verge · 04/20 09:04</div>
-        <p class="summary">GoPro is pricing its new Mission 1 and Mission 1 Pro cameras at $599.99 and $699.99, respectively, each discounted by $100 if you subscribe to its ecosystem - fine for professional filmmakers, but a tough sell for weekend warriors. The Mission 1 and Mission 1 Pro can both be reserved now, and you'll...</p>
-      </article></div>
-        </section>
-
-        <section class="category">
-          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
-          <div class="articles">
-      <article class="article">
-        <h3><a href="https://zenn.dev/wakame_atsushi/articles/7c88e246c4494b" target="_blank" rel="noopener">Reactの優先度（Lanes）と中断・再開をソースコードから理解する</a></h3>
-        <div class="source">Zenn - Frontend · 04/20 12:47</div>
-        <p class="summary">本記事は、React の内部実装を理解するための学習ログです。 useState シリーズの dispatchSetState 編で登場した「lane（優先度）」の正体を、ソースコードから追っていきます。 はじめに 前回の記事で、dispatchSetState の処理を3つのフェーズに分けて解説しました。 ❶ 予約フェーズ：dispatchSetState ❷ スケジューリングフェーズ：Scheduler ❸ 実行フェーズ：renderWithHooks → updateState その中で「❷ スケジューリングフェーズ」では、lane（優先度）に基づいてタスクを管理すると説明しま...</p>
+        <h3><a href="https://qiita.com/hiyoni0111/items/708fa6d3513a3da7114a" target="_blank" rel="noopener">【JavaScript】テキスト操作の必須知識！主要な文字列関数（String Methods）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/20 13:47</div>
+        <p class="summary">今日は、テキストデータを自由自在に扱うために欠かせない 「文字列（Strings）」 の主要なプロパティとメソッドについてまとめます。 JavaScriptでテキストを加工・操作する様々な方法。 1. 文字列を作る3つの方法 JavaScriptでは、以下の3つの記号を使...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://qiita.com/wakame_atsushi/items/9ebf19558f352c0a755f" target="_blank" rel="noopener">Reactの優先度（Lanes）と中断・再開をソースコードから理解する</a></h3>
+        
         <div class="source">Qiita - JavaScript · 04/20 12:38</div>
         <p class="summary">本記事は、React の内部実装を理解するための学習ログです。 useState シリーズの dispatchSetState 編で登場した「lane（優先度）」の正体を、ソースコードから追っていきます。 はじめに 前回の記事で、dispatchSetState の処理を...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://qiita.com/ausssxi0/items/70009a18e77c603e5203" target="_blank" rel="noopener">バイク版2048パズルをReactで1日で作った話</a></h3>
+        
         <div class="source">Qiita - JavaScript · 04/20 12:24</div>
         <p class="summary">バイク版2048パズルをReactで1日で作った話 はじめに 個人開発のバイクポータルサイト「MotoHub」を運営しています。 ユーザーの滞在時間とリピート率を上げるため、ゲームコンテンツを充実させています。第1弾の「バイクわらしべ長者」、第2弾の「バイク4択クイズ」...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://qiita.com/travzhang/items/26a2d87f63b99d7f60cc" target="_blank" rel="noopener">フロントエンドプロジェクトにおけるE2Eテストのコードカバレッジ収集</a></h3>
+        
         <div class="source">Qiita - JavaScript · 04/20 10:55</div>
         <p class="summary">背景：Playwrightのカバレッジ機能の限界 Playwright は現在もっとも広く使われているE2Eテストフレームワークのひとつです。しかし、公式が推奨するコードカバレッジの収集方法には根本的な制約があります。それは、テスト対象のアプリケーションがバンドルされてい...</p>
       </article>
 
       <article class="article">
-        <h3><a href="https://zenn.dev/pulse_digital/articles/ec-site-structural-seo-issues" target="_blank" rel="noopener">ECサイトの構造的なSEOエラー5選 ── 検出から修正コードまで</a></h3>
-        <div class="source">Zenn - Frontend · 04/20 10:30</div>
-        <p class="summary">はじめに ECサイトの売上改善というと、デザインの刷新や広告予算の話になりがちだ。 だが実際は、HTMLの構造的な問題がSEO評価を下げ、SNSシェアを殺し、モバイルユーザーを離脱させているケースが驚くほど多い。厄介なのは、ブラウザが多少のエラーを補完してしまうので見た目では気づけないこと。 この記事では、ECサイトのフロントエンド構造を分析してきた中で特に検出頻度が高かった5つの問題と、それぞれのコピペで使える修正コードを書く。 対象読者: ECサイトのフロントエンドを触るエンジニア、テンプレートをカスタマイズする運営者。 1. Product構造化データの欠落・不備 影響度...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://qiita.com/AI-Japan-Index/items/015740a9a56eb6d656d6" target="_blank" rel="noopener">『『AI補助金・助成金ファインダー』』政府AI補助金データ（7制度・採択率推移）をWordPressで可視化してみた</a></h3>
-        <div class="source">Qiita - JavaScript · 04/20 07:38</div>
-        <p class="summary">この記事でできること D3.js v7を使って補助金の補助額比較・採択率推移・政府予算推移を描画する手順を理解できる WordPressにD3.jsを組み込む際の3つの必須対応（CDNタグ禁止・&amp;&amp;禁止・wp:htmlラッパー）が分かる 異なる出典のデータを単一チャー...</p>
-      </article>
-
-      <article class="article">
-        <h3><a href="https://zenn.dev/heftykoo/articles/6d4f628b56e514" target="_blank" rel="noopener">Vibe Coding はもう古い。2026年は「MCP」で開発の境界線が変わる</a></h3>
-        <div class="source">Zenn - Frontend · 04/20 02:35</div>
-        <p class="summary">「バイブコーディング」で作ったコード、今どうなってますか？ 去年はそれがトレンドでした。言葉で描述すればコードが生成される。イメージを言えばプロトタイプができる。夢のような時代が始まった、そう感じた人は多いはずです。 でも2026年、プロトタイピングの熱狂が落ち着いてきた今、到了一个让人不安的时刻。大量のAI生成コードを抱えているプロジェクトで、メンテンナンスに苦しんでいる開発者が急増している。問題は「AIが賢くない」んじゃない。「AIがどこに触れていいかわからない」「 어떤 도구를 써야 하는지 몰라」という、境界とコンテキストの不在です。 チャット開発の限界在哪里 チャットインタ...</p>
-      </article>
-
-      <article class="article">
         <h3><a href="https://zenn.dev/shimakawa/articles/bf38ec1cba6614" target="_blank" rel="noopener">Resend Launch Week 6 発表内容まとめ</a></h3>
+        
         <div class="source">Zenn - Frontend · 04/20 02:15</div>
-        <p class="summary">Resend Launch Week 6 が 2026年4月13日〜17日 に開催され、5日連続で新機能を発表しました。 https://resend.com/launch-weeks/6 加えて、4月18日に初のカンファレンス開催も発表しています。発表の全体像としては、“メール送信API” から “メールの作成・自動化・運用まで含む統合プロダクト” に広げた内容だったと言えそうです。 以下に各日の発表内容をまとめます。 4月13日：Automations メール送信のワークフローを構築・自動化するための機能が導入されました。 ユーザーの行動や特定のアクションをトリガーとして、メール...</p>
+        <p class="summary">Resend Launch Week 6 が2026年4月13日〜17日に開催され、5日連続で新機能を発表しました。 https://resend.com/launch-weeks/6 加えて 4月18日に初のカンファレンス開催も発表しています。発表の全体像としては、“メール送信API” から “メールの作成・自動化・運用まで含む統合プロダクト” に広げた週だったと言えそうです。 以下に各日の発表内容をまとめます。 4月13日：Automations メール送信のワークフローを構築・自動化するための機能が導入されました。 ユーザーの行動や特定のアクションをトリガーとして、メール送信の...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/jinjer_techblog/articles/135644892e77c5" target="_blank" rel="noopener">デザインシステムに「顧客」はいたか？ 陥りがちな神話と、リードエンジニアが挑む真のUI/UX再構築</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/19 23:30</div>
+        <p class="summary">「一貫性」という理想の裏に、迷い込んでいませんか？ 「プロダクトが多角化する中で、どうすれば一貫した体験を維持できるか」 「開発スピードを落とさず、ブランドの信頼を守り抜くには？」 現在、多くのプロダクト開発現場で、デザインシステムはこれらの問いに対する「銀の弾丸」として期待されています。SmartHRが5年以上の歳月をかけて「品質を担保する仕組み」へと進化させ、サイバーエージェントの『Spindle』がアクセシビリティの極致を示しているように、デザインシステムは今や単なるパーツ集ではなく、組織の重要な資産です。 ジンジャーでも2024年、基幹プロダクトのリニューアルにおいて、大規模...</p>
       </article></div>
         </section>
 
-        <section class="category">
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/20/rivians-factory-hit-by-tornado-ahead-of-r2-launch/" target="_blank" rel="noopener">Rivian’s factory hit by tornado ahead of R2 launch</a></h3>
+        
+        <div class="source">TechCrunch · 04/20 13:47</div>
+        <p class="summary">Nobody was hurt after an EF-1 tornado hit the part of the factory where the R2 SUV is supposed to be built.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/914818/elden-ring-movie-date-cast" target="_blank" rel="noopener">The Elden Ring movie hits theaters in March 2028</a></h3>
+        
+        <div class="source">The Verge · 04/20 13:25</div>
+        <p class="summary">It's going to be a little while before The Lands Between is realized in movie form. Bandai Namco just confirmed that the live-action Elden Ring movie, which was announced last year, is expected to hit theaters on March 3rd, 2028, with production kicking off this spring. Based on FromSoftware's open-...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/913410/vampire-survivors-new-spinoff-switches-genres-but-keeps-the-good-vibes" target="_blank" rel="noopener">Vampire Survivors’ new spinoff switches genres but keeps the good vibes</a></h3>
+        
+        <div class="source">The Verge · 04/20 13:00</div>
+        <p class="summary">When Vampire Survivors first exploded onto the scene, it was pretty much all I could think about. The formula of jumping into runs, taking on thousands of enemies, and becoming absurdly overpowered kept me picking up the game again and again - Steam says I've played it for more than 60 hours. Over t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/913874/prego-connection-keeper-bundle-voice-recorder-storycorps" target="_blank" rel="noopener">This pasta sauce wants to record your family</a></h3>
+        
+        <div class="source">The Verge · 04/20 13:00</div>
+        <p class="summary">As if there weren't already enough devices listening in on everything being said in your home, Prego, the pasta and pizza sauce brand, is releasing a device designed to record everything said around the dinner table for posterity. The Connection Keeper, which looks like an oversized pasta jar lid, w...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/914807/huawei-pura-x-max-launch-price-specs-availability" target="_blank" rel="noopener">Huawei beats Samsung and Apple to market with the first wide foldable</a></h3>
+        
+        <div class="source">The Verge · 04/20 12:19</div>
+        <p class="summary">Huawei has launched its passport-style foldable in China, ahead of similar devices said to be coming from Apple and Samsung. That makes the Pura X Max the first wide foldable phone that's actually available to buy, with today's launch now giving us the full specifications and price after its design ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/reviews/913706/dji-mini-power-station-review-comparison" target="_blank" rel="noopener">DJI’s latest power station is proof that good things come in mini packages</a></h3>
+        
+        <div class="source">The Verge · 04/20 12:00</div>
+        <p class="summary">As an avid vanlifer, I have to carefully curate everything I carry in order to eke out every square inch of storage I can to support life off the grid for weeks at a time. That's why I jumped at the chance to review DJI's latest power station. The DJI Power 1000 Mini is almost [&#8230;]</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/20/news114.html" target="_blank" rel="noopener">ヤマトと佐川、津波警報に伴い荷物遅延の可能性　一部地域で集荷停止も</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/20 10:15</div>
+        <p class="summary">20日の午後4時53分ごろに三陸沖で発生した震度5強の地震と津波警報により、宅配便に配送遅延が生じる可能性が高まっている。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/20/news111.html" target="_blank" rel="noopener">三陸沖の地震で通信各社が「災害用伝言サービス」を運用開始　気象庁は避難継続を呼び掛け</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/20 09:13</div>
+        <p class="summary">20日の午後4時52分ごろに三陸沖で発生した震度5強の地震により、通信各社が災害用伝言サービスの運用を始めた。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
           <h2>セキュリティ <span class="count">4</span></h2>
           <div class="articles">
       <article class="article">
         <h3><a href="https://thehackernews.com/2026/04/why-most-ai-deployments-stall-after-demo.html" target="_blank" rel="noopener">Why Most AI Deployments Stall After the Demo</a></h3>
+        
         <div class="source">The Hacker News · 04/20 11:30</div>
         <p class="summary">The fastest way to fall in love with an AI tool is to watch the demo. Everything moves quickly. Prompts land cleanly. The system produces impressive outputs in seconds. It feels like the beginning of a new era for your team. But most AI initiatives don't fail because of bad technology. They stall be...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html" target="_blank" rel="noopener">Anthropic MCP Design Vulnerability Enables RCE, Threatening AI Supply Chain</a></h3>
+        
         <div class="source">The Hacker News · 04/20 10:42</div>
         <p class="summary">Cybersecurity researchers have discovered a critical "by design" weakness in the Model Context Protocol's (MCP) architecture that could pave the way for remote code execution and have a cascading effect on the artificial intelligence (AI) supply chain. "This flaw enables Arbitrary Command Execution ...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html" target="_blank" rel="noopener">Researchers Detect ZionSiphon Malware Targeting Israeli Water, Desalination OT Systems</a></h3>
+        
         <div class="source">The Hacker News · 04/20 07:34</div>
         <p class="summary">Cybersecurity researchers have flagged a new malware called ZionSiphon that appears to be specifically designed to target Israeli water treatment and desalination systems. The malware has been codenamed ZionSiphon by Darktrace, highlighting its ability to set up persistence, tamper with local config...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://thehackernews.com/2026/04/vercel-breach-tied-to-context-ai-hack.html" target="_blank" rel="noopener">Vercel Breach Tied to Context AI Hack Exposes Limited Customer Credentials</a></h3>
+        
         <div class="source">The Hacker News · 04/20 03:35</div>
         <p class="summary">Web infrastructure provider Vercel has disclosed a security breach that allows bad actors to gain unauthorized access to "certain" internal Vercel systems. The incident stemmed from the compromise of Context.ai, a third-party artificial intelligence (AI) tool, that was used by an employee at the com...</p>
       </article></div>
         </section>
 
-        <section class="category">
-          <h2>AI・機械学習 <span class="count">2</span></h2>
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
           <div class="articles">
       <article class="article">
         <h3><a href="https://www.technologyreview.com/2026/04/20/1136149/chinese-tech-workers-ai-colleagues/" target="_blank" rel="noopener">Chinese tech workers are starting to train their AI doubles–and pushing back</a></h3>
+        
         <div class="source">MIT Technology Review - AI · 04/20 09:00</div>
         <p class="summary">Tech workers in China are being instructed by their bosses to train AI agents to replace them—and it’s prompting a wave of soul-searching among otherwise enthusiastic early adopters.&#160; Earlier this month a GitHub project called Colleague Skill, which claimed workers could use it to “distill” the...</p>
       </article>
 
       <article class="article">
         <h3><a href="https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise" target="_blank" rel="noopener">OpenAI helps Hyatt advance AI among colleagues</a></h3>
+        
         <div class="source">OpenAI Blog · 04/20 00:00</div>
         <p class="summary">Hyatt deploys ChatGPT Enterprise across its global workforce, using GPT-5.4 and Codex to improve productivity, operations, and guest experiences.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.swiss-ai.org" target="_blank" rel="noopener">Swiss AI Initiative (2023)</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/19 22:58</div>
+        <p class="summary">Article URL: https://www.swiss-ai.org Comments URL: https://news.ycombinator.com/item?id=47828444 Points: 85 # Comments: 26</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/" target="_blank" rel="noopener">CEOs admit AI had no impact on employment or productivity</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/19 21:56</div>
+        <p class="summary">Article URL: https://fortune.com/article/why-do-thousands-of-ceos-believe-ai-not-having-impact-productivity-employment-study/ Comments URL: https://news.ycombinator.com/item?id=47827985 Points: 85 # Comments: 75</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html" target="_blank" rel="noopener">Uber’s Anthropic AI push hits a wall</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/19 18:13</div>
+        <p class="summary">Article URL: https://finance.yahoo.com/sectors/technology/articles/ubers-anthropic-ai-push-hits-223109852.html Comments URL: https://news.ycombinator.com/item?id=47826328 Points: 93 # Comments: 94</p>
       </article></div>
         </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/rafluctua/items/bcef364d1462607c1a67" target="_blank" rel="noopener">C#でWordの表データを抽出</a></h3>
+        
+        <div class="source">Qiita - C# · 04/20 08:30</div>
+        <p class="summary">日常のオフィス業務やシステム開発において、Word文書内の表データを抽出し、データ取り込み・統計分析・レポート作成といった業務に活用するケースは非常に多く見られます。しかし手動でコピー＆ペーストを行う方法は作業効率が低く、Office COMコンポーネントを利用した場合、バ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/iccb1013/items/0342423986520fbd8e3b" target="_blank" rel="noopener">RAG か Lucene か：プライベートデプロイ型カスタマーサポートシステムにおける AI 知識ベースのアーキテクチャ選定</a></h3>
+        
+        <div class="source">Qiita - C# · 04/20 06:21</div>
+        <p class="summary">はじめに 皆さん、こんにちは。ShenDesk の開発者です。 私は数年にわたり、安全・安定・信頼、そして軽量かつプライベートデプロイ（オンプレミス）が可能なカスタマーサポートシステムの開発に注力してきました。その甲斐あって、これまでに多くのユーザーにご利用いただいていま...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/vivinko/items/e2cd93a980fa08b4b20b" target="_blank" rel="noopener">WinFormsで「別のプロセスが使用中です」の原因になりやすい所｜Stream・ファイル出力・ログ・別処理【掟R11】</a></h3>
+        
+        <div class="source">Qiita - C# · 04/20 00:07</div>
+        <p class="summary">連載Index（読む順・公開済リンクが最新）: S00_門前の誓い_総合Index 保存したあとに上書きできない。削除できない。リネームできない。 WinForms では、別のプロセスが使用中です が保存や削除の行で出ていても、原因はその行より前にあることがあります...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/morishift/items/4a6b5177e2cf6d968a30" target="_blank" rel="noopener">【Unity】3Dユニティちゃんで演出スキップ可能なデモを作ってみた ― ChainRacePattern</a></h3>
+        
+        <div class="source">Qiita - C# · 04/19 21:33</div>
+        <p class="summary">はじめに ChainRacePattern を使って、3Dユニティちゃんを含むスキップ可能な演出デモを作ってみました。 2DのUI演出のスキップ例は比較的見かけますが、3Dキャラクターのモーション・ボイス・字幕・入力分岐まで含めて、一つの流れとして扱う実装例はあまり見かけ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
     <footer>Powered by GitHub Actions + Claude API</footer>
   </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
 </body>
 </html>
