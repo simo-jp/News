@@ -8,7 +8,9 @@
 """
 
 import os
+import re
 import sys
+import json
 import yaml
 import feedparser
 import logging
@@ -37,11 +39,22 @@ class Article:
     category: str
     category_name: str
     ai_summary: Optional[str] = None
+    title_ja: Optional[str] = None
 
     @property
     def hash_id(self) -> str:
         """記事のユニークID（URL基準）"""
         return hashlib.md5(self.link.encode()).hexdigest()[:12]
+
+    @property
+    def is_english(self) -> bool:
+        """タイトルに日本語（ひらがな・カタカナ・CJK漢字）が含まれないなら英語扱い"""
+        return not re.search(r"[\u3040-\u30ff\u3400-\u9fff]", self.title)
+
+    @property
+    def display_title(self) -> str:
+        """表示用タイトル（翻訳があれば翻訳版、なければ原題）"""
+        return self.title_ja or self.title
 
 
 class NewsCollector:
@@ -140,32 +153,60 @@ class AISummarizer:
                 self.enabled = False
 
     def summarize_batch(self, articles: list[Article]) -> None:
-        """記事を一括で日本語要約（インプレース更新）"""
+        """記事を一括で日本語要約（インプレース更新）。英語記事はタイトルも翻訳"""
         if not self.enabled:
             logger.info("AI要約は無効（APIキー未設定）")
             return
 
-        logger.info(f"AI要約開始: {len(articles)}件")
+        en_count = sum(1 for a in articles if a.is_english)
+        logger.info(f"AI要約開始: {len(articles)}件（うち英語{en_count}件は翻訳）")
         for article in articles:
             try:
-                article.ai_summary = self._summarize_one(article)
+                result = self._summarize_one(article)
+                article.ai_summary = result.get("summary_ja")
+                if article.is_english:
+                    article.title_ja = result.get("title_ja")
             except Exception as e:
                 logger.warning(f"要約失敗 [{article.title[:30]}]: {e}")
 
-    def _summarize_one(self, article: Article) -> str:
-        """1記事を日本語で2-3文に要約"""
-        prompt = f"""以下のニュース記事を、エンジニア向けに日本語で2-3文にまとめてください。
-技術的な要点を優先し、結論から書いてください。装飾や前置きは不要です。
+    def _summarize_one(self, article: Article) -> dict:
+        """1記事を日本語で2-3文に要約。英語記事はタイトルも翻訳してJSONで返す"""
+        if article.is_english:
+            prompt = f"""以下の英語ニュース記事について、エンジニア向けに日本語で処理してください。
+1. title_ja: タイトルを自然な日本語に翻訳（固有名詞・製品名・技術用語は原語のまま可）
+2. summary_ja: 内容を2-3文で要約（技術的な要点を優先、結論から）
+
+以下のJSON形式のみで返答してください（マークダウン装飾やコードブロック、前置きは不要）:
+{{"title_ja": "...", "summary_ja": "..."}}
+
+タイトル: {article.title}
+内容: {article.summary}
+"""
+        else:
+            prompt = f"""以下のニュース記事を、エンジニア向けに日本語で2-3文にまとめてください。
+技術的な要点を優先し、結論から書いてください。
+
+以下のJSON形式のみで返答してください（マークダウン装飾やコードブロック、前置きは不要）:
+{{"summary_ja": "..."}}
 
 タイトル: {article.title}
 内容: {article.summary}
 """
         response = self.client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=300,
+            max_tokens=500,
             messages=[{"role": "user", "content": prompt}],
         )
-        return response.content[0].text.strip()
+        return self._parse_json_response(response.content[0].text)
+
+    @staticmethod
+    def _parse_json_response(text: str) -> dict:
+        """Claudeの応答からJSONを取り出す（```json フェンスを除去）"""
+        text = text.strip()
+        if text.startswith("```"):
+            text = re.sub(r"^```(?:json)?\s*", "", text)
+            text = re.sub(r"\s*```$", "", text)
+        return json.loads(text.strip())
 
 
 class HTMLRenderer:
@@ -249,6 +290,15 @@ class HTMLRenderer:
       display: inline-block; background: #e6fffa; color: #234e52;
       font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
       margin-right: 0.4rem;
+    }}
+    .translated-badge {{
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }}
+    .original-title {{
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
     }}
     footer {{ text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }}
     .filter-bar {{
@@ -354,10 +404,19 @@ class HTMLRenderer:
         elif a.summary:
             summary_html = f'<p class="summary">{a.summary}</p>'
 
+        # 翻訳がある場合は日本語タイトルをメインに、原題を副題として表示
+        original_title_html = ""
+        if a.title_ja:
+            original_title_html = (
+                f'<div class="original-title"><span class="translated-badge">翻訳</span>'
+                f'原題: {a.title}</div>'
+            )
+
         time_str = a.published.astimezone().strftime("%m/%d %H:%M")
         return f"""
       <article class="article">
-        <h3><a href="{a.link}" target="_blank" rel="noopener">{a.title}</a></h3>
+        <h3><a href="{a.link}" target="_blank" rel="noopener">{a.display_title}</a></h3>
+        {original_title_html}
         <div class="source">{a.source} · {time_str}</div>
         {summary_html}
       </article>"""
