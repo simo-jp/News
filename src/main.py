@@ -160,14 +160,23 @@ class AISummarizer:
 
         en_count = sum(1 for a in articles if a.is_english)
         logger.info(f"AI要約開始: {len(articles)}件（うち英語{en_count}件は翻訳）")
+        ok, fail = 0, 0
         for article in articles:
             try:
                 result = self._summarize_one(article)
-                article.ai_summary = result.get("summary_ja")
+                summary = (result.get("summary_ja") or "").strip()
+                if not summary:
+                    raise ValueError("summary_ja が空")
+                article.ai_summary = summary
                 if article.is_english:
-                    article.title_ja = result.get("title_ja")
+                    title_ja = (result.get("title_ja") or "").strip()
+                    if title_ja:
+                        article.title_ja = title_ja
+                ok += 1
             except Exception as e:
+                fail += 1
                 logger.warning(f"要約失敗 [{article.title[:30]}]: {e}")
+        logger.info(f"AI要約結果: 成功{ok}件 / 失敗{fail}件")
 
     def _summarize_one(self, article: Article) -> dict:
         """1記事を日本語で2-3文に要約。英語記事はタイトルも翻訳してJSONで返す"""
@@ -194,19 +203,31 @@ class AISummarizer:
 """
         response = self.client.messages.create(
             model="claude-haiku-4-5-20251001",
-            max_tokens=500,
+            max_tokens=600,
             messages=[{"role": "user", "content": prompt}],
         )
-        return self._parse_json_response(response.content[0].text)
+        raw = response.content[0].text
+        return self._parse_json_response(raw)
 
     @staticmethod
     def _parse_json_response(text: str) -> dict:
-        """Claudeの応答からJSONを取り出す（```json フェンスを除去）"""
-        text = text.strip()
-        if text.startswith("```"):
-            text = re.sub(r"^```(?:json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-        return json.loads(text.strip())
+        """Claudeの応答からJSONを抽出。失敗時はテキスト全体を要約として返すフォールバック付き"""
+        text = (text or "").strip()
+        # コードフェンスを除去
+        text = re.sub(r"^```(?:json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+        # 前後に説明文があっても最初の '{' から最後の '}' を取り出す
+        match = re.search(r"\{.*\}", text, re.DOTALL)
+        if match:
+            try:
+                data = json.loads(match.group(0))
+                if isinstance(data, dict) and data.get("summary_ja"):
+                    return data
+            except json.JSONDecodeError as e:
+                logger.debug(f"JSON parse failed, falling back to plain text: {e}")
+        # フォールバック: JSON抽出に失敗してもテキスト全体を要約として活用
+        # （英語記事の場合、タイトル翻訳は失われるが要約は救済される）
+        return {"summary_ja": text}
 
 
 class HTMLRenderer:
