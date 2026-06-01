@@ -1,70 +1,82 @@
 # ニュースソース設定
-# 各カテゴリごとに信頼できるRSSフィードを登録
+# 信頼性方針: 公式（ベンダー一次情報）・公的機関・編集体制のある専門メディアを優先。
+# コミュニティ投稿型（Hacker News / Qiita / Zenn）や、PR寄り・速報重視のサイトは除外。
 
 categories:
   ai_ml:
     name: "AI・機械学習"
     feeds:
-      - name: "Hacker News (AI)"
-        url: "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT&points=50"
-      - name: "MIT Technology Review - AI"
-        url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+      # 一次情報（研究機関・主要ベンダー公式）
       - name: "Google AI Blog"
         url: "https://blog.google/technology/ai/rss/"
       - name: "OpenAI Blog"
         url: "https://openai.com/blog/rss.xml"
       - name: "Anthropic News"
         url: "https://www.anthropic.com/news/rss.xml"
+      - name: "Microsoft Research Blog"
+        url: "https://www.microsoft.com/en-us/research/feed/"
+      # 編集体制のある専門メディア
+      - name: "MIT Technology Review - AI"
+        url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
 
   web_dev:
     name: "Web開発・フロントエンド"
     feeds:
+      # 公式（標準・ブラウザベンダー）
+      - name: "web.dev (Google)"
+        url: "https://web.dev/feed.xml"
+      - name: "Chrome for Developers"
+        url: "https://developer.chrome.com/blog/feed.xml"
+      - name: "TypeScript Blog"
+        url: "https://devblogs.microsoft.com/typescript/feed/"
+      # 編集体制のある専門メディア
       - name: "Smashing Magazine"
         url: "https://www.smashingmagazine.com/feed/"
       - name: "CSS-Tricks"
         url: "https://css-tricks.com/feed/"
-      - name: "Zenn - Frontend"
-        url: "https://zenn.dev/topics/frontend/feed"
-      - name: "Qiita - JavaScript"
-        url: "https://qiita.com/tags/javascript/feed"
 
   dotnet:
     name: ".NET・C#"
     feeds:
+      # Microsoft公式のみ（一次情報）
       - name: ".NET Blog"
         url: "https://devblogs.microsoft.com/dotnet/feed/"
       - name: "ASP.NET Blog"
         url: "https://devblogs.microsoft.com/aspnet/feed/"
       - name: "Visual Studio Blog"
         url: "https://devblogs.microsoft.com/visualstudio/feed/"
-      - name: "Zenn - .NET"
-        url: "https://zenn.dev/topics/dotnet/feed"
-      - name: "Qiita - C#"
-        url: "https://qiita.com/tags/c%23/feed"
+      - name: "Microsoft DevBlogs (全体)"
+        url: "https://devblogs.microsoft.com/feed/"
 
   security:
     name: "セキュリティ"
     feeds:
-      - name: "The Hacker News"
-        url: "https://feeds.feedburner.com/TheHackersNews"
-      - name: "Krebs on Security"
-        url: "https://krebsonsecurity.com/feed/"
-      - name: "JPCERT"
+      # 公的機関（日本）
+      - name: "JPCERT/CC"
         url: "https://www.jpcert.or.jp/rss/jpcert.rdf"
       - name: "IPA 重要なセキュリティ情報"
         url: "https://www.ipa.go.jp/security/alert-rss.rdf"
+      # 専門家・編集体制のあるメディア
+      - name: "Krebs on Security"
+        url: "https://krebsonsecurity.com/feed/"
+      - name: "Schneier on Security"
+        url: "https://www.schneier.com/feed/atom/"
+      - name: "SANS Internet Storm Center"
+        url: "https://isc.sans.edu/rssfeed.xml"
 
   gadget_tech:
     name: "ガジェット・一般テック"
     feeds:
+      # 編集体制が確立した国際メディア
+      - name: "Ars Technica"
+        url: "https://feeds.arstechnica.com/arstechnica/index"
       - name: "The Verge"
         url: "https://www.theverge.com/rss/index.xml"
-      - name: "TechCrunch"
-        url: "https://techcrunch.com/feed/"
+      - name: "BBC Technology"
+        url: "https://feeds.bbci.co.uk/news/technology/rss.xml"
+      # 日本語のメインストリーム
       - name: "ITmedia NEWS"
         url: "https://rss.itmedia.co.jp/rss/2.0/news_bursts.xml"
-      - name: "Engadget 日本版"
-        url: "https://japanese.engadget.com/rss.xml"
 
 # 収集設定
 settings:
