@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月30日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月30日 / 全40件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ettomio0518/items/8904060b6e7e3fe98387" target="_blank" rel="noopener">何故この年で「舞いカレンダー」を作ったのか</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/30 22:37</div>
+        <p class="summary">初めまして。山口県在住の 中本富雄（ettomio） と申します。 私は50代の頃、数年間にわたり心の病で苦しい時期を過ごしました。しかし、長年の独学で身につけてきた ACCESS・VB・ExcelVBA の知識を土台に、一昨年の秋、AIとの出会いをきっかけとして HTML...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/watanabe_trtr/items/62f407f28fecc641fe12" target="_blank" rel="noopener">「children」って何？コンポーネントを挟む仕組みをサクッと理解する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/30 20:00</div>
+        <p class="summary">Reactを触っているとよく見かける、コンポーネントで別の要素を「挟む」書き方。これはchildrenという仕組みを使っています。 childrenを一言でいうと？ 「共通の外枠」の中に「自由な中身」を流し込むための穴のことです。 基本の書き方 コンポーネントをタグで挟...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/_mo/items/4edcdeb7263655d72480" target="_blank" rel="noopener">ツクール新作の映像を見たのでツクールMZで3Dをやる</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/30 18:45</div>
+        <p class="summary">ツクール新作の2.5Dのティザー映像を見て、今のツクールでどこまでの表現ができるか、という話をやっていきます。 これは暁夜KyouNightさんの制作中ゲーム、Project Varinsite の映像です。 これをツクールMZで制作中とのことです。すごいね。 ツク...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/the-importance-of-native-randomness-in-css/" target="_blank" rel="noopener">The Importance of Native Randomness in CSS</a></h3>
+        
+        <div class="source">CSS-Tricks · 04/30 15:26</div>
+        <p class="summary">We're getting new functions for generating random numbers in CSS! But the road to get here has been a long and winding one. The Importance of Native Randomness in CSS originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/56ff0b95ec81338294f0" target="_blank" rel="noopener">漱石・賢治・太宰から日本語ダミーテキストを生成するツールを作った</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/30 14:45</div>
+        <p class="summary">作ったもの Lorem JP — https://sen.ltd/portfolio/lorem-jp/ 5 作品: 吾輩は猫である / 銀河鉄道の夜 / 走れメロス / 羅生門 / 堕落論 段落(1-10) / 文(1-50) / 文字数(10-5000) 指定 フ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/04/desktop-wallpaper-calendars-may-2026/" target="_blank" rel="noopener">A Fresh View In May (2026 Wallpapers Edition)</a></h3>
+        
+        <div class="source">Smashing Magazine · 04/30 11:00</div>
+        <p class="summary">Let’s welcome May with a new collection of desktop wallpapers! Following our monthly tradition, the wallpapers were created by the community for the community and can be downloaded for free. Enjoy!</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/9d3c3560f4ede8" target="_blank" rel="noopener">Mantine v8 → v9 移行で対応した21ページ分の変更まとめ</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/30 09:08</div>
+        <p class="summary">自分が運営している UI Memo（UIコンポーネントのデモ・ライブラリ比較サイト）で、Mantine を v8 から v9 にアップデートした。 影響を受けたページは21ページ。対応しながら「これは知らないとハマる」という変更点がいくつかあったので、コード例とともにまとめておく。 Mantine とは Mantine は React 向けの UI コンポーネントライブラリだ。ボタン・モーダル・フォーム・通知など、よく使うコンポーネントが一通り揃っている。 同じ UI ライブラリとして Chakra UI や Ant Design と比較されることが多い。 Chakra UI：...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/1df50c3fd7bd5d" target="_blank" rel="noopener">Plotly.js v2 → v3 で変わったこと、ハマりポイントをまとめた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/30 09:04</div>
+        <p class="summary">自分が運営している UI Memo（UIコンポーネントのデモ・ライブラリ比較サイト）で、Plotly.js を v2 から v3 にアップデートした。 思ったより変更点が多く、対応中に「これ知らなかったら絶対ハマる」という箇所がいくつかあった。日本語の移行情報が少ないので、まとめておく。 Plotly.js とは Plotly.js は、インタラクティブなグラフを描画できる JavaScript ライブラリだ。棒グラフ・折れ線・円グラフ・散布図・ヒートマップなど、データ可視化系のグラフをコード一つで描ける。 同じデータ可視化ライブラリとして Recharts や ECharts と...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/" target="_blank" rel="noopener">Apple was surprised by AI-driven demand for Macs</a></h3>
+        
+        <div class="source">TechCrunch · 04/30 22:12</div>
+        <p class="summary">Apple said it will be supply-constrained on Mac mini, Studio, and Neo in the next quarter, too.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/921694/roblox-q1-2026-132-million-dau" target="_blank" rel="noopener">Roblox’s daily users continue to drop as age-checks slow growth</a></h3>
+        
+        <div class="source">The Verge · 04/30 21:25</div>
+        <p class="summary">Roblox's daily active users continued to slip last quarter due in part to its rollout of age checks on its platform. According to its latest earnings report, Roblox currently has 132 million daily active users globally, down from 144 million at the end of last year, which was a drop from 152 million...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/921652/congress-fisa-section-702-45-day-extension" target="_blank" rel="noopener">Congress keeps kicking surveillance reform down the road</a></h3>
+        
+        <div class="source">The Verge · 04/30 20:59</div>
+        <p class="summary">Congress has reauthorized Section 702 of the Foreign Intelligence Surveillance Act - but only for another 45 days. The extension is meant to give legislators more time to negotiate reforms to the controversial wiretapping bill. If the past few weeks are any indication of how future debates will go, ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/921527/apple-iphone-revenue-q2-2026-earnings" target="_blank" rel="noopener">Apple&#8217;s iPhone revenue jumps to $57 billion despite chip shortages</a></h3>
+        
+        <div class="source">The Verge · 04/30 20:58</div>
+        <p class="summary">Apple's iPhone revenue jumped 22 percent to $57 billion over the past few months, despite supply chain issues impacting the device's processor. In an interview with Reuters, Apple CEO Tim Cook said iPhone "demand was off the charts," but there's "a little less flexibility at the moment for getting m...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/" target="_blank" rel="noopener">Legal AI startup Legora hits $5.6B valuation and its battle with Harvey just got hotter</a></h3>
+        
+        <div class="source">TechCrunch · 04/30 20:14</div>
+        <p class="summary">The two wildly fast-growing rivals have raised massive sums, pushed into each other's home turf, and now have dueling ad campaigns.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/921295/rivian-q1-2026-earnings-revenue-profit-r2" target="_blank" rel="noopener">Rivian’s revenue is up as R2 production kicks into gear</a></h3>
+        
+        <div class="source">The Verge · 04/30 20:05</div>
+        <p class="summary">Rivian reported its first quarter earnings of 2026, providing us a closer look at the company's financial health as it kicks off production for the crucial R2 electric vehicle. We've already got Rivian's production and delivery statement from the first three months of the year. The company sold 10,3...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/921585/rivian-georgia-factory-capacity-doe-loan" target="_blank" rel="noopener">Rivian downsizes new EV factory after Trump’s DOE slashes loan agreement</a></h3>
+        
+        <div class="source">The Verge · 04/30 20:05</div>
+        <p class="summary">Rivian announced some changes today with regard to the factory its building in the state of Georgia. The company was planning to build the facility in two phases, each resulting in 200,000 vehicles of annual production capacity, for a total of 400,000 units. Rivian held a ground breaking ceremony la...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/30/rivian-downsizes-doe-loan-to-4-5b-while-boosting-capacity-of-georgia-factory/" target="_blank" rel="noopener">Rivian downsizes DOE loan to $4.5B, while boosting capacity of Georgia factory</a></h3>
+        
+        <div class="source">TechCrunch · 04/30 20:02</div>
+        <p class="summary">Rivian has reworked its loan deal with the Department of Energy and now expects to borrow $4.5 billion to build its new factory in Georgia, down from the original amount of $6.6 billion.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/typescript-7-beta-now-enabled-by-default-in-visual-studio-2026-18-6-insiders-3/" target="_blank" rel="noopener">TypeScript 7 Beta Now Enabled by Default in Visual Studio 2026 18.6 Insiders 3</a></h3>
+        
+        <div class="source">Visual Studio Blog · 04/30 17:08</div>
+        <p class="summary">TypeScript 7 Beta Now Enabled by Default in Visual Studio 2026 18.6 Insiders 3 In Visual Studio 2026 18.6 Insiders 3 we have updated the built-in TypeScript SDK to TypeScript 7 Beta (native preview). The TypeScript SDK provides the compiler and language service used for TypeScript and JavaScript sup...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/building-ai-conference-app-dotnet-composable-stack/" target="_blank" rel="noopener">Building an AI-Powered Conference App with .NET’s Composable AI Stack</a></h3>
+        
+        <div class="source">.NET Blog · 04/30 17:05</div>
+        <p class="summary">Learn how we built ConferencePulse, an AI-powered conference assistant, using .NET's composable AI stack including Microsoft.Extensions.AI, DataIngestion, VectorData, Model Context Protocol, and Microsoft Agent Framework. The post Building an AI-Powered Conference App with .NET&#8217;s Composable AI...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/building-ai-conference-app-dotnet-composable-stack/" target="_blank" rel="noopener">Building an AI-Powered Conference App with .NET’s Composable AI Stack</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/30 17:05</div>
+        <p class="summary">Learn how we built ConferencePulse, an AI-powered conference assistant, using .NET's composable AI stack including Microsoft.Extensions.AI, DataIngestion, VectorData, Model Context Protocol, and Microsoft Agent Framework. The post Building an AI-Powered Conference App with .NET&#8217;s Composable AI...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/yaju/items/38a283f4b1fba434f620" target="_blank" rel="noopener">圏論を SQL と LINQ で説明してみる</a></h3>
+        
+        <div class="source">Qiita - C# · 04/30 14:02</div>
+        <p class="summary">はじめに Youtube をのぞいていたら、下記の動画が表示されたので観てみました。 圏とは？プログラマに人気と噂の圏について話します。 プログラマ向け圏論入門 1 - Youtube 数学的な説明だとよく分からなくなるので、知っているプログラムに変換してもらってから、数...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kix/items/ec743899c8c89f9c96e4" target="_blank" rel="noopener">日本語コメントを書くなら日本語変数名でいいのでは — C# 命名規則の非対称を整理する tags:</a></h3>
+        
+        <div class="source">Qiita - C# · 04/30 13:41</div>
+        <p class="summary">TL;DR C# は Unicode 識別子をサポートしており、漢字・ひらがな・カタカナの変数名・メソッド名は言語仕様として合法 「日本語コメント + 英語変数名」は「英語だけでは読めないコードを、英語の命名で誤魔化している」状態とも言える 日本語変数名を使うとコメント...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ZiYuCai1984/items/6e833b93660fc1a27ae2" target="_blank" rel="noopener">現代 LMS アーキテクチャ実践（4）：固定ロールと監査ログで作るバックオフィス・ガバナンス</a></h3>
+        
+        <div class="source">Qiita - C# · 04/30 08:26</div>
+        <p class="summary">本記事は筆者の考えをベースに、ChatGPT 5.5 を用いて構成・推敲したものです。 内容の主張と判断は筆者によるものであり、文章表現の整理に ChatGPT 5.4 を活用しています。 本記事で扱うプロジェクトのリポジトリはこちらです。 Repository: ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/spc_ksudoh/items/03ea948a8850b1bdb03f" target="_blank" rel="noopener">spec-kitが合わなかったので、チケット駆動向けにちょうどいい感じのプロセスを作った</a></h3>
+        
+        <div class="source">Qiita - C# · 04/30 08:25</div>
+        <p class="summary">概要 spec-kit は仕様駆動開発で高い評価をされていると思いますが、自分の用途だと想定している開発の進め方が少し違いました。そこで、チケット粒度の課題に合わせて、プラン作成からレビュー、実装後の検証までを git に残しながら回せる Agents 群を作ってみたら、...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/yy7613/articles/27d7ed3c97ff1a" target="_blank" rel="noopener">Microsoft Agent FrameworkをローカルLLMで試してみる その12(Structured Output)</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/29 23:45</div>
+        <p class="summary">はじめに Microsoft Agent FrameworkをローカルLLMで試してみるその11では、AIContextProviderを使った最小構成のRAGを確認しました。 その12ではStructured Output(構造化出力)でモデルの出力を指定する方法について確認します。 今回は次の点を見ていきます。 ChatOptions.ResponseFormatにJSON Schemaを渡す流れ モデル応答からJSON Schema部分を抽出する方法 System.Text.Jsonで型定義へデシリアライズするパターン なお、Microsoft Learnのドキュメント...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html" target="_blank" rel="noopener">PyTorch Lightning and Intercom-client Hit in Supply Chain Attacks to Steal Credentials</a></h3>
+        
+        <div class="source">The Hacker News · 04/30 16:31</div>
+        <p class="summary">In yet another software supply chain attack, threat actors have managed to compromise the popular Python package Lightning to push two malicious versions to conduct credential theft. According to Aikido Security, OX Security, Socket, and StepSecurity, the two malicious versions are versions 2.6.2 an...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/" target="_blank" rel="noopener">Anti-DDoS Firm Heaped Attacks on Brazilian ISPs</a></h3>
+        
+        <div class="source">Krebs on Security · 04/30 14:04</div>
+        <p class="summary">A Brazilian tech firm that specializes in protecting networks from distributed denial-of-service (DDoS) attacks has been enabling a botnet responsible for an extended campaign of massive DDoS attacks against other network operators in Brazil, KrebsOnSecurity has learned. The firm's chief executive s...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/threatsday-bulletin-sms-blaster-busts.html" target="_blank" rel="noopener">ThreatsDay Bulletin: SMS Blaster Busts, OpenEMR Flaws, 600K Roblox Hacks and 25 More Stories</a></h3>
+        
+        <div class="source">The Hacker News · 04/30 13:55</div>
+        <p class="summary">The internet is noisy this week. We are seeing some wild new tactics, like people using fake cell towers to send scam texts, while some developers are accidentally downloading tools that peek into their private files during a simple install. It is definitely a busy time to be online. Security is alw...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html" target="_blank" rel="noopener">New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials</a></h3>
+        
+        <div class="source">The Hacker News · 04/30 12:36</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a stealthy Python-based backdoor framework called DEEP#DOOR that comes with capabilities to establish persistent access and harvest a wide range of sensitive information from compromised hosts. "The intrusion chain begins with execution of a batch ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/etherrat-distribution-spoofing.html" target="_blank" rel="noopener">EtherRAT Distribution Spoofing Administrative Tools via GitHub Facades</a></h3>
+        
+        <div class="source">The Hacker News · 04/30 11:30</div>
+        <p class="summary">Intro A sophisticated, high-resilience malicious campaign was identified by Atos Threat Research Center (TRC) in March 2026. This operation specifically targets the high-privilege professional accounts of enterprise administrators, DevOps engineers, and security analysts by impersonating administrat...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html" target="_blank" rel="noopener">New Linux 'Copy Fail' Vulnerability Enables Root Access on Major Distributions</a></h3>
+        
+        <div class="source">The Hacker News · 04/30 09:24</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a Linux local privilege escalation (LPE) flaw that could allow an unprivileged local user to obtain root. The high-severity vulnerability tracked as CVE-2026-31431 (CVSS score: 7.8) has been codenamed Copy Fail by Xint.io and Theori. "An unprivileg...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html" target="_blank" rel="noopener">Google Fixes CVSS 10 Gemini CLI CI RCE and Cursor Flaws Enable Code Execution</a></h3>
+        
+        <div class="source">The Hacker News · 04/30 07:07</div>
+        <p class="summary">Google has addressed a maximum severity security flaw in Gemini CLI -- the "@google/gemini-cli" npm package and the "google-github-actions/run-gemini-cli" GitHub Actions workflow -- that could have allowed attackers to execute arbitrary commands on host systems. "The vulnerability allowed an unprivi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr260430.html#1" target="_blank" rel="noopener">Weekly Report: PackageKitにTime-of-check Time-of-use (TOCTOU) 競合状態の脆弱性</a></h3>
+        
+        <div class="source">JPCERT · 04/30 00:09</div>
+        <p class="summary">PackageKitにTime-of-check Time-of-use (TOCTOU) 競合状態の脆弱性</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/" target="_blank" rel="noopener">Shai-Hulud Themed Malware Found in the PyTorch Lightning AI Training Library</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/30 16:09</div>
+        <p class="summary">Article URL: https://semgrep.dev/blog/2026/malicious-dependency-in-pytorch-lightning-used-for-ai-training/ Comments URL: https://news.ycombinator.com/item?id=47964617 Points: 289 # Comments: 91</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms/" target="_blank" rel="noopener">This startup’s new mechanistic interpretability tool lets you debug LLMs</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/30 15:59</div>
+        <p class="summary">The San Francisco–based startup Goodfire just released a new tool, called Silico, that lets researchers and engineers peer inside an AI model and adjust its parameters—the settings that determine a model’s behavior—during training. This could give model makers more fine-grained control over how this...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/920401/gen-z-ai" target="_blank" rel="noopener">The More Young People Use AI, the More They Hate It</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/30 14:34</div>
+        <p class="summary">Article URL: https://www.theverge.com/ai-artificial-intelligence/920401/gen-z-ai Comments URL: https://news.ycombinator.com/item?id=47963163 Points: 112 # Comments: 125</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://datacenter.fm/" target="_blank" rel="noopener">DataCenter.FM – background noise app featuring the sound of the AI bubble</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/30 07:52</div>
+        <p class="summary">Article URL: https://datacenter.fm/ Comments URL: https://news.ycombinator.com/item?id=47959513 Points: 126 # Comments: 24</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://simonwillison.net/2026/Apr/30/zig-anti-ai/" target="_blank" rel="noopener">The Zig project's rationale for their anti-AI contribution policy</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/30 02:15</div>
+        <p class="summary">Article URL: https://simonwillison.net/2026/Apr/30/zig-anti-ai/ Comments URL: https://news.ycombinator.com/item?id=47957294 Points: 632 # Comments: 417</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://status.claude.com/incidents/2gf1jpyty350" target="_blank" rel="noopener">Claude.ai and API unavailable [fixed]</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/30 01:21</div>
+        <p class="summary">https://status.claude.com/ Comments URL: https://news.ycombinator.com/item?id=47956895 Points: 118 # Comments: 119</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://mikeoss.com/" target="_blank" rel="noopener">Mike: open-source legal AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/30 00:56</div>
+        <p class="summary">Article URL: https://mikeoss.com/ Comments URL: https://news.ycombinator.com/item?id=47956739 Points: 186 # Comments: 91</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/advanced-account-security" target="_blank" rel="noopener">Introducing Advanced Account Security</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/30 00:00</div>
+        <p class="summary">Introducing Advanced Account Security: phishing-resistant login, stronger recovery, and enhanced protections to safeguard sensitive data and prevent account takeover.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

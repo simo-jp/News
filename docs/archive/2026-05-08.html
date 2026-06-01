@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月08日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月08日 / 全36件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">7</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/08/san-franciscos-housing-market-has-lost-its-mind/" target="_blank" rel="noopener">San Francisco’s housing market has lost its mind</a></h3>
+        
+        <div class="source">TechCrunch · 05/08 22:32</div>
+        <p class="summary">The invisible force behind all of this is no mystery to anyone paying attention to the city's tech economy. San Francisco is home to some of the most valuable private companies in the world, and their employees have been quietly accumulating — and, increasingly, cashing out — fortunes.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/09/news027.html" target="_blank" rel="noopener">ソニーセミコンとTSMC、次世代イメージセンサーで提携　フィジカルAI分野に照準</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/08 22:02</div>
+        <p class="summary">ソニーはTSMCと次世代イメージセンサーの開発・製造に関する合弁会社設立に向け基本合意した。熊本県に拠点を置き、車載やロボティクスなどのフィジカルAI分野を強化する。一方で、ホームAV事業をTCLとの合弁会社へ承継し、テレビの自社製造から事実上撤退しており、成長分野へ経営資源を集中させる構造改革を加速させる。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/08/prime-video-follows-netflix-and-disney-by-adding-a-tiktok-like-clips-feed-in-its-app/" target="_blank" rel="noopener">Prime Video follows Netflix and Disney by adding a TikTok-like ‘Clips’ feed in its app</a></h3>
+        
+        <div class="source">TechCrunch · 05/08 20:50</div>
+        <p class="summary">The Clips feed aims to enable discovery by offering users a scrollable feed with short snippets of shows and movies.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/927333/asus-rog-strix-xg129c-secondary-display" target="_blank" rel="noopener">Asus chases Elgato with its own secondary touchscreen display</a></h3>
+        
+        <div class="source">The Verge · 05/08 20:34</div>
+        <p class="summary">Asus's latest gaming monitor is a little smaller than usual. The ROG Strix XG129C, announced on Friday, is a 12.3-inch touchscreen IPS display that's intended to be a sidekick for a larger main monitor, similar to the 14.1-inch secondary display in the 2020 Asus ROG Zephyrus Duo 15. It's a slightly ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/streaming/927327/amazon-prime-video-vertical-video-feed" target="_blank" rel="noopener">Amazon is adding a vertical video feed to Prime Video</a></h3>
+        
+        <div class="source">The Verge · 05/08 20:19</div>
+        <p class="summary">Amazon Prime Video is joining Netflix and Disney Plus in adding a vertical feed of videos to its streaming app. The new "Clips" feed will offer a stream of short-form videos from shows and movies, with options to jump into the full title, rent, or buy it. Prime Video previously offered a TikTok-styl...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/08/intels-comeback-story-is-even-wilder-than-it-seems/" target="_blank" rel="noopener">Intel’s comeback story is even wilder than it seems</a></h3>
+        
+        <div class="source">TechCrunch · 05/08 20:02</div>
+        <p class="summary">Intel's stock has risen a stunning 490% over the past year, a bet by Wall Street that may be running well ahead of the company's actual turnaround.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/926989/yarbo-robot-lawn-mower-hack-company-update-security-promise" target="_blank" rel="noopener">Here is Yarbo’s promise to fix the robot mower that ran me over</a></h3>
+        
+        <div class="source">The Verge · 05/08 19:14</div>
+        <p class="summary">Yesterday, I told you how a hacker ran me over with a robot lawn mower. We explained how thousands of these bladed Chinese robots, made by Yarbo, could be hijacked with ease - exposing people's GPS coordinates, Wi-Fi passwords, email addresses, and more to any casual hacker who comes along. Today, Y...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy" target="_blank" rel="noopener">All the latest updates on AI data centers</a></h3>
+        
+        <div class="source">The Verge · 05/08 18:45</div>
+        <p class="summary">Massive new data centers are the physical foundation for tech companies’ hopes and dreams for AI. But the rush to expand warehouses full of energy-hungry servers has also kicked up fights across the world over their impact on power grids, utility bills, nearby communities, and the environment.&#160;...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/masaki130/items/c5cbdc5dd4382d6d8d80" target="_blank" rel="noopener">【C#】今日から始めるC#②  「MonoGame」 導入方法</a></h3>
+        
+        <div class="source">Qiita - C# · 05/08 20:10</div>
+        <p class="summary">やりたいこと Vscodeで動かせるRPGゲームを作りたい そのために描画ライブラリMonoGameを導入する C#を動かすための環境構築はこちらを参照 導入 ubuntu24.04 $ mkdir MyGame $ cd MyGame $ dotnet new ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/masaki130/items/57f6f2cf110fa1a2320b" target="_blank" rel="noopener">【C#】今日から始めるC# ①　～環境構築～</a></h3>
+        
+        <div class="source">Qiita - C# · 05/08 19:00</div>
+        <p class="summary">やりたいこと C#を動かすための環境構築を行う 導入 Ubuntu24.04 $ sudo apt update $ sudo apt install -y wget gpg apt-transport-https $ wget https://packages....</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kix/items/166104e2710a7febaacf" target="_blank" rel="noopener">C# WPFのデータバインディングで日本語プロパティ名は使えるか——動作検証と実用上の課題</a></h3>
+        
+        <div class="source">Qiita - C# · 05/08 14:13</div>
+        <p class="summary">TL;DR C#はECMA-334仕様でUnicode識別子を正式サポート。日本語プロパティ名はビルドエラーにならない {Binding 名前} 形式のXAMLバインディングは正常に動作する（WPFはリフレクションでプロパティ名を解決） nameof(名前) もコン...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/dev-rabbit-mkt/items/6b92cd7ea0286b0da780" target="_blank" rel="noopener">【AIと一緒に】C# + ASP.NET Core の環境構築でハマりまくった Day6 Part2 〜.NETのバージョン沼にハマりながらもAPIサーバーを起動した話〜</a></h3>
+        
+        <div class="source">Qiita - C# · 05/08 13:34</div>
+        <p class="summary">今日やったこと psqlコマンドをPATHに通す PostgreSQLにデータベース作成 NuGetパッケージのインストール EF Core マイグレーション実行 dotnet build でビルド成功 !!🐶 psqlがPATHに通っていない エラー psql...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/hitoshiro/articles/2c93113788a5fa" target="_blank" rel="noopener">F# 開発リポジトリをリンター＆フォーマッターでコードを美しく保つ</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/08 12:40</div>
+        <p class="summary">なぜ お試し以上の実用的な開発をしたかったから。 フォーマット コーディング規約の強制 今回はローカルのpre-commitでチェックを走らせる（自動整形はしない）ところまでやる。 local tool manifestって何 https://learn.microsoft.com/ja-jp/dotnet/core/tools/local-tools-how-to-use .NET開発では、開発用CLIツールはlocal tool manifestに固定し、アプリケーションの依存関係とは概念レベルで分離するらしい。カッコイイ。Node.js + npm系の、package....</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/hitoshiro/articles/092414cf1b97f4" target="_blank" rel="noopener">F#とStackExchange.RedisでRedis接続</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/08 09:25</div>
+        <p class="summary">なぜ https://zenn.dev/hitoshiro/articles/06ae76d18f57e0 Webサーバーは立ったけれど、実践的なアプリを構築できるか試すためにはDB接続が必要だから。 会員登録機能を作りたいので、キャッシュサーバーとしてRedisを建てる。 https://zenn.dev/hitoshiro/articles/6ec68e2905cea5 PostgreSQL編はこちら。 なぜStackExchange.Redis https://github.com/StackExchange/StackExchange.Redis https://redi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/hitoshiro/articles/6ec68e2905cea5" target="_blank" rel="noopener">F# とNpgsqlでPostgreSQL接続</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/08 07:37</div>
+        <p class="summary">なぜ https://zenn.dev/hitoshiro/articles/06ae76d18f57e0 Webサーバーは立ったけれど、実践的なアプリを構築できるか試すためにはDB接続が必要だから。 なぜNpgsql https://github.com/npgsql/npgsql .NET向けPostgreSQLライブラリで最もメジャー。 F#向けのラッパーであるNpgsql.FSharpは更新が2024年で止まっており、C#ライクになってもNpgsqlを直接利用したほうが良いと考えた。F#の強みはドメインの表現力にあると考えているので、インフラはC#系でも気にならない。 ....</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/tclbanker-banking-trojan-targets.html" target="_blank" rel="noopener">TCLBANKER Banking Trojan Targets Financial Platforms via WhatsApp and Outlook Worms</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 18:12</div>
+        <p class="summary">Threat hunters have flagged a previously undocumented Brazilian banking trojan dubbed TCLBANKER that's capable of targeting 59 banking, fintech, and cryptocurrency platforms. The activity is being tracked by Elastic Security Labs under the moniker REF3076. The malware family is assessed to be a majo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/fake-call-history-apps-stole-payments.html" target="_blank" rel="noopener">Fake Call History Apps Stole Payments From Users After 7.3 Million Play Store Downloads</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 15:08</div>
+        <p class="summary">Cybersecurity researchers have discovered fraudulent apps on the official Google Play Store for Android that falsely claimed to offer access to call histories for any phone number, only to trick users into joining a subscription that provided fake data and incurred financial loss. The 28 apps have c...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html" target="_blank" rel="noopener">One Click, Total Shutdown: The "Patient Zero" Webinar on Killing Stealth Breaches</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 14:01</div>
+        <p class="summary">The hardest part of cybersecurity isn't the technology, it’s the people. Every major breach you’ve read about lately usually starts the same way: one employee, one clever email, and one "Patient Zero" infection. In 2026, hackers are using AI to make these "first clicks" nearly impossible to spot. If...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html" target="_blank" rel="noopener">Quasar Linux RAT Steals Developer Credentials for Software Supply Chain Compromise</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 11:00</div>
+        <p class="summary">A previously undocumented Linux implant codenamed Quasar Linux RAT (QLNX) is targeting developers' systems to establish a silent foothold as well as facilitate a broad range of post-compromise functionality, such as credential harvesting, keylogging, file manipulation, clipboard monitoring, and netw...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/one-missed-threat-per-week-what-25m.html" target="_blank" rel="noopener">One Missed Threat Per Week: What 25M Alerts Reveal About Low-Severity Risk</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 10:30</div>
+        <p class="summary">The dark secret of enterprise security operations is that defenders have quietly institutionalized the practice of not looking. This is not just anecdotal, but rather backed by a recent report investigating more than 25 million security alerts, including informational and low-severity, across live e...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-linux-pamdoora-backdoor-uses-pam.html" target="_blank" rel="noopener">New Linux PamDOORa Backdoor Uses PAM Modules to Steal SSH Credentials</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 08:41</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a new Linux backdoor named PamDOORa that's being advertised on the Rehub Russian cybercrime forum for $1,600 by a threat actor called "darkworm." The backdoor is designed as a Pluggable Authentication Module (PAM)-based post-exploitation toolkit th...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html" target="_blank" rel="noopener">Linux Kernel Dirty Frag LPE Exploit Enables Root Access Across Major Distributions</a></h3>
+        
+        <div class="source">The Hacker News · 05/08 05:12</div>
+        <p class="summary">Details have emerged about a new, unpatched local privilege escalation (LPE) vulnerability impacting the Linux kernel. Dubbed Dirty Frag, it has been described as a successor to Copy Fail (CVE-2026-31431, CVSS score: 7.8), a recently disclosed LPE flaw impacting the Linux kernel that has since come ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/" target="_blank" rel="noopener">Canvas Breach Disrupts Schools & Colleges Nationwide</a></h3>
+        
+        <div class="source">Krebs on Security · 05/08 02:58</div>
+        <p class="summary">An ongoing data extortion attack targeting the widely-used education technology platform Canvas disrupted classes and coursework at school districts and universities across the United States today, after a cybercrime group defaced the service's login page with a ransom demand that threatened to leak...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures" target="_blank" rel="noopener">AI is breaking two vulnerability cultures</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/08 17:55</div>
+        <p class="summary">Article URL: https://www.jefftk.com/p/ai-is-breaking-two-vulnerability-cultures Comments URL: https://news.ycombinator.com/item?id=48066524 Points: 170 # Comments: 74</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/company-news/inside-google/company-announcements/the-small-brief/" target="_blank" rel="noopener">See what happens when creative legends use AI to make ads for small businesses.</a></h3>
+        
+        <div class="source">Google AI Blog · 05/08 15:00</div>
+        <p class="summary">black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/regent-vcs/re_gent" target="_blank" rel="noopener">Show HN: Git for AI Agents</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/08 14:15</div>
+        <p class="summary">hi guys. been working on something i think is fundamentally missing in today's workflow with ai agents.vcs.i find myself struggling with questions that agents can't answer like "why did you do it?", "when did u delete this folder? why?", etc. or trying to /rewind (after a /compact...) or basically `...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/running-codex-safely" target="_blank" rel="noopener">Running Codex safely at OpenAI</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/08 12:30</div>
+        <p class="summary">How OpenAI runs Codex securely with sandboxing, approvals, network policies, and agent-native telemetry to support safe and compliant coding agent adoption.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openrouter.ai/announcements/gpt55-cost-analysis" target="_blank" rel="noopener">GPT-5.5 Price Increase: What It Costs</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/08 01:02</div>
+        <p class="summary">Article URL: https://openrouter.ai/announcements/gpt55-cost-analysis Comments URL: https://news.ycombinator.com/item?id=48057209 Points: 192 # Comments: 60</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/D_Siaka/items/de3b1e5ce3eae1a01d20" target="_blank" rel="noopener">【初心者向け】Elasticsearch x Node.js x Express で本格検索アプリをゼロから作る完全ガイド</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/08 16:59</div>
+        <p class="summary">はじめに ゼロから動く商品検索アプリを作る初心者の記録 — ECE試験対策のポイントも随所に紹介します。 このプロジェクトは、Node.jsもElasticsearchも全くの初心者の私が2日間のセッションで作り上げたものです。目標は「Elastic認定エンジニア（E...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/using-css-corner-shape-for-folded-corners/" target="_blank" rel="noopener">Using CSS corner-shape For Folded Corners</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/08 13:54</div>
+        <p class="summary">I came across Kitty Giraudel’s folded corners technique. I’ve been on a bit of a corner-shape kick lately, so I figured that corner-shape could be used to create folded corners as well. Using CSS corner-shape For Folded Corners originally handwritten and published with love on CSS-Tricks. You should...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/3dcc49945fc2841d9598" target="_blank" rel="noopener">【個人開発】CanvasとVanilla JSで作る！直感操作の「イノシシの迷路ゲーム」と自動生成アルゴリズム</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/08 11:54</div>
+        <p class="summary">はじめに ブラウザ上でサクッと遊べるパズルアクションゲーム「イノシシの迷路ゲーム」を開発しました！ 画面をタップして「りんご🍎」を置き、直進しかできないイノシシ🐗をゴール（🏁）まで導くゲームです。PCはもちろん、スマートフォンでもネイティブアプリのように快適に操作できるよ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/9afed454b9eae4e0b9da" target="_blank" rel="noopener">【個人開発】ブラウザで動く！魔球も飛んでくる球種見極めゲーム「PitchSense」を作ってみた（※ネタアプリ）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/08 11:50</div>
+        <p class="summary">はじめに ブラウザ上でピッチャーが投げたボールの軌道を見て、瞬時に球種を当てるミニゲーム「PitchSense」を開発しました！ ストレートやスライダーといった現代野球の球種だけでなく、なぜか「消える魔球」や「分身魔球」まで飛んでくる完全なるネタアプリです。専用アプリのイ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/ac042874bb0e67909f2d" target="_blank" rel="noopener">【個人開発】ブラウザ上で動く！依存ゼロのインメモリSQLデータベース「LuminaDB」を作ってみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/08 11:40</div>
+        <p class="summary">はじめに ブラウザのローカル環境だけで動作し、バックエンドを一切必要としないインメモリSQLデータベース兼プレイグラウンド「LuminaDB」を開発しました！ ReactやVueなどのフレームワーク、さらにはSQLite等の外部ライブラリも一切使用せず、HTMLとVani...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nijima/articles/9c5c1d5fe9df3c" target="_blank" rel="noopener">Antigravitに「カフェのサイト作って」と頼んだら、人間が承認する前にHusky設定まで終わってた話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/08 05:50</div>
+        <p class="summary">エンジニアの皆さん、最近話題の Antigravity を触ってみました。 （AntigravityはGoogleが提供するAIコーディング支援プラットフォーム：https://antigravity.google/） 結論から言うと、「凄まじく有能だが、あまりに空気が読めない同僚」とペアプロしているような、奇妙でエキサイティングな体験でした。 ここがいい：勝手に環境を「完遂」する力 Antigravityはチャットボットではありません。Shellとファイル操作権限を持った「自律型エージェント」です。 指示を出した瞬間、勝手に Vite を立ち上げ、Tailwind CSS v4 を...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/fairydevices/articles/4bb8885b5b7d95" target="_blank" rel="noopener">`Transition` と `let:` bind で Leptos の非同期処理が絡む UI をスッキリ書く</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/08 03:12</div>
+        <p class="summary">はじめに Fairy Devices でソフトウェアエンジニアをやっている nope です。 実務で API からデータを取得して表示する画面を実装しているとき、LocalResource + Suspense (or Transition) の組み合わせを使うと決まってネストが深くなることを気になっていました。 Coding Agent が書いてくれる場面も増えましたが、コードレビューをするときに「Ok のときに何を表示するか」というメインの処理よりもエラーやローディングの分岐が先に目に入るのが気になっていました。 もっとスッキリ書けないかと調べているうちに let: という構文に...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/j_kashiwagi/articles/d5bba2f7af59ed" target="_blank" rel="noopener">shadcn から学ぶ Tailwind v4 のモダンセレクタ8パターン</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/08 02:25</div>
+        <p class="summary">はじめに shadcn/ui を導入して Button.tsx を初めて開いた時、こんなクラス名の羅列に圧倒されませんでしたか? group/button inline-flex shrink-0 items-center justify-center rounded-lg border border-transparent bg-clip-padding text-sm font-medium whitespace-nowrap transition-all outline-none select-none focus-visible:border-ring focus-visib...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

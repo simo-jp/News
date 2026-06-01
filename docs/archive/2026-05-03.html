@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月03日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月03日 / 全23件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">5</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/maki_s/items/527469f0ff9fa94cefb2" target="_blank" rel="noopener">WPF UI に憧れたけれど、最終的に .NET MAUI Blazor Hybrid に戻ってきた話</a></h3>
+        
+        <div class="source">Qiita - C# · 05/03 21:40</div>
+        <p class="summary">序章 WPF UI のデザインに憧れて 公式ドキュメントを読みながら 公式デモ のようなカッコいい画面を作れるようになりたくて 3か月ほどコツコツ学習を続けてきました。 ただ、実際に触っていくと画面制御がなかなか難しく、並行して勉強していた .NET MAUI Blazo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Tomomitsu_Keruma/items/c4186f9dbd0f7f568cbb" target="_blank" rel="noopener">【保険商品管理システムの開発】シュミレーション画面の入力項目をプルダウンに修正</a></h3>
+        
+        <div class="source">Qiita - C# · 05/03 20:33</div>
+        <p class="summary">修正内容 Services/AutoPremiumCalculator.cs decimal baseRate = policy.AutoModel switch { "軽自動車" =&gt; 0...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/whitestonex39-debug/items/3bc8e0986096c89ce46c" target="_blank" rel="noopener">Enumコンソールアプリ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/03 08:06</div>
+        <p class="summary">enum型とは enum（列挙型）は「意味を持つ整数ラベル」 デフォルトでは整数値の型はint つまり0, 1, 2, 3のような数値それぞれに何かしらの名前を付けたもの 例： ex.cs enum OrderStatus { Pending, P...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Torisima/items/9a2edd8e3d33d41759da" target="_blank" rel="noopener">アニメーションカーソルの構造とc#での作成</a></h3>
+        
+        <div class="source">Qiita - C# · 05/03 04:23</div>
+        <p class="summary">まえがき c#でアニメーションカーソル(.ani)ファイルを作ってみようと思ったので書いてみようと思います ANIファイルの構造からc#での実装までをしていきます 別にc#ではなくてもよかったのですが一応c#で書いてみます ファイル形式 RIFFファイルらしいです 名前...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/03/this-is-fine-creator-says-ai-startup-stole-his-art/" target="_blank" rel="noopener">‘This is fine’ creator says AI startup stole his art</a></h3>
+        
+        <div class="source">TechCrunch · 05/03 20:16</div>
+        <p class="summary">The ad comes from Artisan, the AI startup behind billboards urging businesses to "stop hiring humans."</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/03/in-harvard-study-ai-offered-more-accurate-diagnoses-than-emergency-room-doctors/" target="_blank" rel="noopener">In Harvard study, AI offered more accurate emergency room diagnoses than two human doctors</a></h3>
+        
+        <div class="source">TechCrunch · 05/03 18:00</div>
+        <p class="summary">A new study examines how large language models perform in a variety of medical contexts, including real emergency room cases — where at least one model seemed to be more accurate than human doctors.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/03/techcrunch-mobility-how-do-you-issue-a-ticket-to-a-robotaxi/" target="_blank" rel="noopener">TechCrunch Mobility: How do you issue a ticket to a robotaxi?</a></h3>
+        
+        <div class="source">TechCrunch · 05/03 16:05</div>
+        <p class="summary">Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/922840/reggie-fils-aime-amazon-nintendo-illegal" target="_blank" rel="noopener">Reggie Fils-Aimé says Amazon once asked Nintendo to break the law</a></h3>
+        
+        <div class="source">The Verge · 05/03 15:24</div>
+        <p class="summary">Way back in the DS days, Nintendo decided to stop selling to Amazon. During a recent lecture at NYU, former Nintendo of America President Reggie Fils-Aim&#233; said it was because Amazon was seeking preferential treatment that would have hurt its relationship with other retailers, and potentially br...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/922616/shokz-openrun-pro-2-bone-conduction-headphones-mothers-day-deal-sale" target="_blank" rel="noopener">Shokz’s bassy OpenRun Pro 2 are $40 off thanks to a new Mother’s Day promo</a></h3>
+        
+        <div class="source">The Verge · 05/03 15:00</div>
+        <p class="summary">If you’re looking to pick up a pair of open-ear headphones for yourself — or your mom — Shokz is running a Mother’s Day sale. Now through May 10th, the company’s best pair of bone conduction headphones, the OpenRun Pro 2, are available from Amazon, Best Buy, and Shokz for around $139.95 ($40 off), t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/917067/vidabay-snap-nfc-e-ink-paper-fridge-magnet-photo-hands-on" target="_blank" rel="noopener">These reusable digital Polaroids are a clever way to cover a fridge in memories</a></h3>
+        
+        <div class="source">The Verge · 05/03 13:00</div>
+        <p class="summary">I love when my friends have their fridges covered in Polaroids. It’s often a visual crash course of what’s been going on in their lives chronicling recent adventures, get-togethers, and other fun moments. But I don’t love the idea of schlepping around a clunky instant camera or paying a premium for ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/921690/dualshot-recorder-iphone-camera-app-derrick-downey-jr" target="_blank" rel="noopener">How the internet’s favorite squirrel dad made the hottest camera app of 2026</a></h3>
+        
+        <div class="source">The Verge · 05/03 13:00</div>
+        <p class="summary">It's not hyperbole to call DualShot Recorder an overnight sensation. It took only 12 hours from the time it was released to hit number one on the App Store's list of top paid apps. It was a surprise success - but what's even more surprising is the app's origin story: it all started with a [&#8230;]</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/03/xteink-x3-review-tiny-magnetic-ereader/" target="_blank" rel="noopener">This tiny, magnetic e-reader could stop you from doomscrolling</a></h3>
+        
+        <div class="source">TechCrunch · 05/03 13:00</div>
+        <p class="summary">The Xteink X3 is a delightfully tiny, MagSafe-compatible e-ink reader that attaches to the back of your phone like a Pop Socket.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://gizmodo.com/the-oscars-just-banned-ai-from-winning-acting-and-writing-awards-2000753740" target="_blank" rel="noopener">The Oscars just banned AI from winning acting and writing awards</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/03 17:34</div>
+        <p class="summary">Article URL: https://gizmodo.com/the-oscars-just-banned-ai-from-winning-acting-and-writing-awards-2000753740 Comments URL: https://news.ycombinator.com/item?id=47999346 Points: 66 # Comments: 47</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://acai.sh/blog/specsmaxxing" target="_blank" rel="noopener">Specsmaxxing – On overcoming AI psychosis, and why I write specs in YAML</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/03 06:33</div>
+        <p class="summary">Article URL: https://acai.sh/blog/specsmaxxing Comments URL: https://news.ycombinator.com/item?id=47994012 Points: 257 # Comments: 266</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/" target="_blank" rel="noopener">Kimi K2.6 just beat Claude, GPT-5.5, and Gemini in a coding challenge</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/03 04:05</div>
+        <p class="summary">Article URL: https://thinkpol.ca/2026/04/30/an-open-weights-chinese-model-just-beat-claude-gpt-5-5-and-gemini-in-a-programming-challenge/ Comments URL: https://news.ycombinator.com/item?id=47993235 Points: 349 # Comments: 210</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://fshot.org/techzone/the-algorithm-knows.php" target="_blank" rel="noopener">AI, Intimacy, and the Data You Never Meant to Share</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/03 02:42</div>
+        <p class="summary">Article URL: https://fshot.org/techzone/the-algorithm-knows.php Comments URL: https://news.ycombinator.com/item?id=47992802 Points: 69 # Comments: 5</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.dailygrail.com/2026/05/the-claude-delusion-richard-dawkins-believes-his-female-ai-chatbot-is-conscious/" target="_blank" rel="noopener">The Claude Delusion: Richard Dawkins believes his AI chatbot is conscious</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/02 22:44</div>
+        <p class="summary">Article URL: https://www.dailygrail.com/2026/05/the-claude-delusion-richard-dawkins-believes-his-female-ai-chatbot-is-conscious/ Comments URL: https://news.ycombinator.com/item?id=47991340 Points: 75 # Comments: 118</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/daikou223/items/9423d52b52aca1c716a6" target="_blank" rel="noopener">【React】頻発するエラーまとめ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/03 14:34</div>
+        <p class="summary">導入 Reactで開発をする上で頻発するエラーをエラー文、エラーの意味、解決法をまとめました。 まだまだ少ないとは思いますが、気が向いたら追記いたします。 目次 フックの定義位置でのエラー 置いたはずの要素がいない Propsで渡したはずの変数がundefinedにな...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Mount/items/3034d37c8313129cc2fa" target="_blank" rel="noopener">第21回 JavaScript モーダルサイドバーのサブメニュー追加</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/03 12:30</div>
+        <p class="summary">はじめに 前回が２０２４年９月１日に記事を書いたので、かなり久しぶりですが、モーダルサイドバーの第４回目です。 前回までで、モーダルサイドバーを作り、そこにメニューを追加して、メニューをクリックすると、リンク先を開くものを作りました。 今回実施する内容 サイドバーのメニ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/05m/items/48cb1473aca31ad66820" target="_blank" rel="noopener">【学習記録】useEffectで作るタイマー処理</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/03 08:38</div>
+        <p class="summary">Reactでタイマーを実装する際、useEffectとsetIntervalを組み合わせるパターンはよく使われます。 しかし、クリーンアップ処理を怠るとメモリリークが発生したり、意図しない動作になることがあります。 本記事では、以下のコードをもとにuseEffectを使った...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/01685b9ea72329" target="_blank" rel="noopener">「どのグラフを使えばいい？」用途別チャート選びガイド【20種類】</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/03 05:11</div>
+        <p class="summary">データを可視化しようとするとき、こんな迷いが生まれることがある。 「棒グラフでいいかな…でも円グラフのほうがよさそうだし、そもそも何が違うんだっけ」 グラフの種類は多いのに、どれを選ぶかの判断軸がないと毎回迷う。 この記事では 「何を伝えたいか」 を起点に、最適なチャートを選べるよう20種類を6カテゴリに整理した。各チャートには動くデモへのリンクも載せているので、実装イメージも一緒に確認してほしい。 1. 比較したい 📊 棒グラフ（Bar Chart） 使い場面： 月別売上・商品別数量・地域ごとのユーザー数など、カテゴリ間の大小を比べたいとき。 グラフの基本中の基本だ。シン...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/whitestonex39-debug/items/77837182375ab7bb2441" target="_blank" rel="noopener">メインコンテンツ＋@の設計</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/03 04:37</div>
+        <p class="summary">メインコンテンツとは ページの主役となる情報を表示する領域 テキスト量・要素数が最も変動する レイアウト全体の調整役になりやすい 辞書⓪の用語を前提に使う：レイアウト調整役 / 固定枠 / 限界を持つ箱 / 構造として固定したい箱 メインの骨組み（レイアウト設...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" target="_blank" rel="noopener">CISA Adds Actively Exploited Linux Root Access Bug CVE-2026-31431 to KEV</a></h3>
+        
+        <div class="source">The Hacker News · 05/03 06:26</div>
+        <p class="summary">The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a recently disclosed security flaw impacting various Linux distributions to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation in the wild. The vulnerability, tracked as CVE-2026-3...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

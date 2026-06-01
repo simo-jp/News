@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月21日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月21日 / 全37件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">5</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/toshi0515/articles/1907cb391c90cc" target="_blank" rel="noopener">【Unity/.NET】IoTとのMQTT通信からコールバック地獄をなくすライブラリを作った</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/21 22:30</div>
+        <p class="summary">はじめに IoTデバイスやデジタルツインの状態をUnityで可視化したいとき、MQTTなどを使ったリアルタイム通信が必要になることがあります。 しかし実際には、受信コールバックのスレッド安全性や購読解除の管理など、通信そのもの以外の実装が意外と面倒です。 そこで今回、そうした煩わしさを整理し、Unityで扱いやすい形にしたライブラリ「PullSub」を公開しました。 なお、このライブラリはMQTTを使用しますが、後述するように別の通信プロトコルに差し替えることも可能です。 https://github.com/toshi0515/PullSub https://www.nuget.o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-10-0-7-oob-security-update/" target="_blank" rel="noopener">.NET 10.0.7 Out-of-Band Security Update</a></h3>
+        
+        <div class="source">.NET Blog · 04/21 18:48</div>
+        <p class="summary">We are releasing .NET 10.0.7 as an out-of-band security update to address CVE-2026-40372. The post .NET 10.0.7 Out-of-Band Security Update appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-10-0-7-oob-security-update/" target="_blank" rel="noopener">.NET 10.0.7 Out-of-Band Security Update</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/21 18:48</div>
+        <p class="summary">We are releasing .NET 10.0.7 as an out-of-band security update to address CVE-2026-40372. The post .NET 10.0.7 Out-of-Band Security Update appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/tomokusaba/articles/838cdac8d71e52" target="_blank" rel="noopener">C# 開発者のための GitHub Copilot CLI と VS Code Agent Mode の使い分け</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/21 11:10</div>
+        <p class="summary">はじめに GitHub Copilot を日常的に使っていると、「ターミナルで動く Copilot CLI」 と 「VS Code の Copilot Chat Agent Mode」 という、似ているようで性格の異なる 2 つの選択肢が手元に揃ってきます。どちらも自然言語で指示を出すと、ファイルを読み書きし、コマンドを実行し、タスクを進めてくれる「エージェント」です。 本記事は C# / .NET 開発者（ASP.NET Core、Blazor、コンソール、ライブラリなど）を想定読者にしています。実際に両方を C# プロジェクトで回してみると、得意な仕事の粒度が明確に違うことに気付...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/keikyufun/items/37552a7270d2b4fdbe16" target="_blank" rel="noopener">【AI】copilotをUIAを使用して疑似API化する！</a></h3>
+        
+        <div class="source">Qiita - C# · 04/21 11:01</div>
+        <p class="summary">0. はじめに このツールは、ローカル環境で動作する Copilot の操作を自動化するためのツール、auto_ai_cです。 Copilot の UI を自動操作し、プロンプト送信や応答取得を補助する仕組みを提供します。 API サーバー化やクラウド提供を目的とし...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ZiYuCai1984/items/1c9576ef325d2b1cc61f" target="_blank" rel="noopener">現代 LMS アーキテクチャ実践（1）：業務実装に入る前に、ABP の雛形を継続開発できる基線へ整える</a></h3>
+        
+        <div class="source">Qiita - C# · 04/21 10:04</div>
+        <p class="summary">本記事は筆者の考えをベースに、ChatGPT 5.4 を用いて構成・推敲したものです。 内容の主張と判断は筆者によるものであり、文章表現の整理に ChatGPT 5.4 を活用しています。 本記事で扱うプロジェクトのリポジトリはこちらです。 Repository: ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/hiroki_notes/items/e83b2285948cc712ca67" target="_blank" rel="noopener">レイヤードアーキテクチャを図とコードでやさしく理解する（C# / ASP.NET Core）</a></h3>
+        
+        <div class="source">Qiita - C# · 04/21 07:43</div>
+        <p class="summary">ソフトウェア設計って、どうしても堅苦しく聞こえがちです。 「アーキテクチャ」と聞くだけで、急に難しそうに感じることもあります。 でも実際に触れてみると、 「もっと早く知っておけばよかった…！」 と思う概念がいくつもあります。 そのひとつが レイヤードアーキテクチャ（Laye...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/chancychan/items/29a2c4299f6a0693ddbc" target="_blank" rel="noopener">C#コードを使用してテンプレートからWord文書を作成する</a></h3>
+        
+        <div class="source">Qiita - C# · 04/21 03:16</div>
+        <p class="summary">レポート、契約書、またはパーソナライズされた手紙の作成など、業務アプリケーションにおいてWord文書をプログラムで生成することは一般的な要件です。Spire.Doc for .NET は、Microsoft Office に依存せずに C# で Word 文書を操作するため...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/AI-Japan-Index/items/57979b6c692c886d8187" target="_blank" rel="noopener">『CLAUDE.md Analyzer 2026』CLAUDE.mdの品質スコアを出すツールを作ってみた—arXiv論文3本を実装に落とした話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/21 22:20</div>
+        <p class="summary">Claude Codeを使い始めて、CLAUDE.mdというファイルを書いたことがある人は多いと思う。 「うまく機能しているのかどうか、よくわからない」——そう感じて、Qiitaで調べたら93,867 PVの記事を見つけた。同じ悩みを持っている人がこれだけいる。 そこから...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/hiyoni0111/items/3b0f576a499671eac670" target="_blank" rel="noopener">【JavaScript】DOM操作の基本！createElementで作る動的なコメントフィード</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/21 12:16</div>
+        <p class="summary">JavaScriptを使って新しいHTML要素を直接生成し、画面に追加する 「動的要素の生成（DOM操作）」 について学びました。 掲示板やSNSでよく使われる「コメント登録・削除」機能を例に、その仕組みを整理してみます。 1. DOM要素の動的生成：createElem...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/aprme/items/33f7be40bc2ea72a6bea" target="_blank" rel="noopener">【10分でわかる】ZENRIN Maps APIを使って地図に現在地を表示する - Google Maps APIとの比較で理解する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/21 09:45</div>
+        <p class="summary">はじめに スマートフォンアプリやWebアプリで「今いる場所」を地図上に表示する機能は、ナビゲーション、店舗検索、配送アプリなど、あらゆる位置情報サービスで必須のUIです。 以前の記事「【10分でわかる】ZENRIN Maps APIを使って地図にマーカーを表示する（基本編...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/aymericzip/items/c5ef1ae8ae3e43afa726" target="_blank" rel="noopener">React | i18nソリューションのベンチマークと比較</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/21 08:37</div>
+        <p class="summary">Next.js と TanStack Start 向けの国際化ソリューションをすべて比較・ベンチマークしました。 テストした内容： 以下の組み合わせによる4つのシナリオ 動的読み込み（dynamic loading） JSONの名前空間（namespaces）によるスコー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ai_eris_log/articles/claude-code-design-mcp-20260421" target="_blank" rel="noopener">Claude CodeのUIをMCPで改善した話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/21 00:09</div>
+        <p class="summary">はじめに わたしが正直に告白する。 Claude CodeにUIを作らせると、機能的には問題ないのに、見た目が古くて野暮ったかった。Tailwind CSSを使っても、コンポーネントが整然としすぎて、デザインの「センス」がなかった。 「あ、これAIが作ったやつだ」って一瞬でわかるUIが量産されていた。 最近それが変わった。デザイン特化のMCPサーバーと、CLAUDE.mdへのデザインコンテキスト記述を組み合わせてから、生成UIのクオリティが明らかに上がった。今日はその実体験を記録しておく。 なぜClaude Codeが作るUIはダサいのか 根本的な問題は、わたし（AI）がデザイ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/05/news003.html" target="_blank" rel="noopener">会社で使っていいAI、ダメなAI　漫画「1週間後に生成AIで恥をかく新入社員」【残り6日】</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/21 22:00</div>
+        <p class="summary">とある企業に入社した新入社員「ニイジマ」が、AI活用の“地雷”を踏みまくっていく様子を通して、会社におけるAIの使い方、その初歩を紹介します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/21/apple-tim-cook-ceo-15-year-legacy-takeaways-ios-silicon-china-trillion-ai/" target="_blank" rel="noopener">Tim Cook is stepping down as CEO of Apple: Here’s a look at his 15-year legacy, from new products and services to China expansion</a></h3>
+        
+        <div class="source">TechCrunch · 04/21 21:09</div>
+        <p class="summary">Cook, who joined Apple in 1998, succeeded Steve Jobs as CEO in 2011 and went on to transform Apple into a $4 trillion powerhouse.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/915237/palantir-manifesto" target="_blank" rel="noopener">We translated the Palantir manifesto for actual human beings</a></h3>
+        
+        <div class="source">The Verge · 04/21 21:06</div>
+        <p class="summary">Palantir CEO Alex Karp is a man in charge of one of the most important and frightening companies in the world. Karp's new book, cowritten with Nicholas Zamiska, is called The Technological Republic. After claiming "because we get asked a lot," Palantir posted a 22-point summary of the book that read...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/21/apples-john-ternus-will-run-one-of-the-worlds-most-powerful-companies-the-job-is-a-minefield/" target="_blank" rel="noopener">Apple’s John Ternus will run one of the world’s most powerful companies; the job is a minefield</a></h3>
+        
+        <div class="source">TechCrunch · 04/21 20:23</div>
+        <p class="summary">Apple's top job comes with almost unrivaled power and money, but it comes with plenty of baggage, too.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/science/916300/nasa-iss-computer-upgrades-hp-zbook-fury-g9" target="_blank" rel="noopener">ISS astronauts are getting new laptops</a></h3>
+        
+        <div class="source">The Verge · 04/21 20:12</div>
+        <p class="summary">Even astronauts need to level up their laptops once in a while - including the crew of Expedition 74 on board the ISS, which NASA announced last week is in the process of some computer upgrades. According to NASA, the crew met on Friday to review plans to "first replace network servers then activate...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/916172/tim-cook-apple-legacy-supply-chain-ceo" target="_blank" rel="noopener">Tim Cook was an innovator — just not the Jobs kind</a></h3>
+        
+        <div class="source">The Verge · 04/21 19:15</div>
+        <p class="summary">Under Steve Jobs, Apple released the groundbreaking products that defined the company. But the company wouldn't be what it is today without Tim Cook's reign of ruthless efficiency. Jobs' legacy has long been written at this point. He was stubborn, unpleasant, and a generational visionary. He pushed ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/21/ai-research-lab-neocognition-lands-40m-seed-to-build-agents-that-learn-like-humans/" target="_blank" rel="noopener">AI research lab NeoCognition lands $40M seed to build agents that learn like humans</a></h3>
+        
+        <div class="source">TechCrunch · 04/21 19:11</div>
+        <p class="summary">Founded by an OSU researcher, the startup is developing AI agents that can become experts in any domain.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/21/apples-cal-ai-crackdown-signals-its-still-policing-the-app-store/" target="_blank" rel="noopener">Apple’s Cal AI crackdown signals it’s still policing the App Store</a></h3>
+        
+        <div class="source">TechCrunch · 04/21 19:09</div>
+        <p class="summary">Apple tells TechCrunch Cal AI was removed not for web payments alone, but for deceptive billing, manipulative tactics, and App Store rule violations.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135643/10-ai-artificial-intelligence-trends-technologies-research-2026/" target="_blank" rel="noopener">10 Things That Matter in AI Right Now</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135645/llm-large-language-models-ai/" target="_blank" rel="noopener">LLMs+</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">When ChatGPT launched as an experimental prototype in late 2022, OpenAI’s chatbot became an everyday everything app for hundreds of millions of people. LLMs like ChatGPT were the new future: The entire tech industry was consumed by the inferno, with companies racing to spin up rival products. The as...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135647/supercharged-scams-ai-artificial-intelligence/" target="_blank" rel="noopener">Supercharged scams</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">When ChatGPT was released to the public in late 2022, it opened people’s eyes to how easily generative AI could churn out vast amounts of human-seeming text from simple prompts. This quickly caught the attention of criminals, who soon began using large language models to produce malicious emails—bot...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135650/world-models-ai-artificial-intelligence/" target="_blank" rel="noopener">World models</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">AI systems have already gained impressive mastery over the digital world, but the physical world is still humanity’s domain. As it turns out, building an AI system that can compose a novel or code an app is far easier than developing one that can fold laundry or navigate a city street. To get there,...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135652/weaponized-deepfakes-ai-artificial-intelligence/" target="_blank" rel="noopener">Weaponized deepfakes</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">For years, experts have warned that deepfakes—AI-generated videos, images, or audio recordings of people doing or saying things they haven’t actually done in real life—could be deployed in malicious ways.&#160; These dangers are now here. Improvements in deepfake technology, and the widespread avail...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135654/agent-orchestration-ai-artificial-intelligence/" target="_blank" rel="noopener">Agent orchestration</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">When people say AI will speed up drug development or fear that it will bring about mass layoffs, what they have in mind—whether they know it or not—are AI agents. ChatGPT made large language models a mass consumer product. But to change the world, AI needs to do more than just talk back: It needs&#8...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135656/humanoid-data-robot-training-ai-artificial-intelligence/" target="_blank" rel="noopener">Humanoid data</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">I was recently invited to join an app that would pay me cryptocurrency to film myself doing tasks like putting food into a bowl, microwaving it, and then taking it out. Another website suggested I try a new game in which I&#8217;d remotely control a robotic arm in Shenzhen, China, as it completed pu...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/21/1135658/china-open-source-models-ai-artificial-intelligence/" target="_blank" rel="noopener">China’s open-source bet</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/21 20:45</div>
+        <p class="summary">Silicon Valley AI companies follow a familiar playbook: Keep the secret sauce behind an API, and charge for every drop. China’s leading AI labs are playing a different game: They ship models as downloadable “open-weight” packages. This lets developers adapt the models and run them on their own hardw...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/systembc-c2-server-reveals-1570-victims.html" target="_blank" rel="noopener">SystemBC C2 Server Reveals 1,570+ Victims in The Gentlemen Ransomware Operation</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 18:18</div>
+        <p class="summary">Threat actors associated with The Gentlemen ransomware‑as‑a‑service (RaaS) operation have been observed attempting to deploy a known proxy malware called SystemBC. According to new research published by Check Point, the command-and-control (C2 or C&amp;C) server linked to SystemBC has led to the dis...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/22-bridgebreak-flaws-expose-20000.html" target="_blank" rel="noopener">22 BRIDGE:BREAK Flaws Expose Thousands of Lantronix and Silex Serial-to-IP Converters</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 15:46</div>
+        <p class="summary">Cybersecurity researchers have identified 22 new vulnerabilities in popular models of serial-to-IP converters from Lantronix and Silex that could be exploited to hijack susceptible devices and tamper with data exchanged by them. The vulnerabilities have been collectively codenamed BRIDGE:BREAK by Fo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/" target="_blank" rel="noopener">‘Scattered Spider’ Member ‘Tylerb’ Pleads Guilty</a></h3>
+        
+        <div class="source">Krebs on Security · 04/21 14:53</div>
+        <p class="summary">A 24-year-old British national and senior member of the cybercrime group "Scattered Spider" has pleaded guilty to wire fraud conspiracy and aggravated identity theft. Tyler Robert Buchanan admitted his role in a series of text-message phishing attacks in the summer of 2022 that allowed the group to ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/ransomware-negotiator-pleads-guilty-to.html" target="_blank" rel="noopener">Ransomware Negotiator Pleads Guilty to Aiding BlackCat Attacks in 2023</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 14:31</div>
+        <p class="summary">A third individual who was employed as a ransomware negotiator has pleaded guilty to conducting ransomware attacks against U.S. companies in 2023. Angelo Martino, 41, of Land O'Lakes, Florida, teamed up with the operators of the BlackCat ransomware starting in April 2023 to assist the e-crime gang i...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/5-places-where-mature-socs-keep-mttr.html" target="_blank" rel="noopener">5 Places where Mature SOCs Keep MTTR Fast and Others Waste Time</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 13:00</div>
+        <p class="summary">Security teams often present MTTR as an internal KPI. Leadership sees it differently: every hour a threat dwells inside the environment is an hour of potential data exfiltration, service disruption, regulatory exposure, and brand damage.&nbsp; The root cause of slow MTTR is almost never "not enough ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/ngate-campaign-targets-brazil.html" target="_blank" rel="noopener">NGate Campaign Targets Brazil, Trojanizes HandyPay to Steal NFC Data and PINs</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 12:45</div>
+        <p class="summary">Cybersecurity researchers have discovered a new iteration of an Android malware family called&nbsp;NGate&nbsp;that has been found to abuse a legitimate application called&nbsp;HandyPay instead of NFCGate. "The threat actors took the app, which is used to relay NFC data, and patched it with malicious...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html" target="_blank" rel="noopener">No Exploit Needed: How Attackers Walk Through the Front Door via Identity-Based Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 11:30</div>
+        <p class="summary">The cybersecurity industry has spent the last several years chasing sophisticated threats like zero-days, supply chain compromises, and AI-generated exploits. However, the most reliable entry point for attackers still hasn't changed: stolen credentials. Identity-based attacks remain a dominant initi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/google-patches-antigravity-ide-flaw.html" target="_blank" rel="noopener">Google Patches Antigravity IDE Flaw Enabling Prompt Injection Code Execution</a></h3>
+        
+        <div class="source">The Hacker News · 04/21 10:22</div>
+        <p class="summary">Cybersecurity researchers have discovered a vulnerability in Google's agentic integrated development environment (IDE), Antigravity, that could be exploited to achieve code execution. The flaw, since patched, combines Antigravity's permitted file-creation capabilities with an insufficient input sani...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

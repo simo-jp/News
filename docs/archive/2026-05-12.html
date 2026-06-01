@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月12日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月12日 / 全40件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ranuki/items/a84310032ae674ddb285" target="_blank" rel="noopener">CrystalReports 生きとったんかワレ (4)</a></h3>
+        
+        <div class="source">Qiita - C# · 05/12 22:46</div>
+        <p class="summary">CrystalReportsの記事が読まれてるのでなんか他にネタは無いかなと起動すると… CrystalReportsがぶっ壊れている。 どうやらVisualStudioが更新される度に壊れるようだ。 なのでCrystalReportsの記事を書く度にCrystalRepo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-11-preview-4/" target="_blank" rel="noopener">.NET 11 Preview 4 is now available!</a></h3>
+        
+        <div class="source">.NET Blog · 05/12 22:25</div>
+        <p class="summary">Find out about the new features in .NET 11 Preview 4 across the .NET runtime, SDK, libraries, ASP.NET Core, .NET MAUI, C#, Entity Framework Core, and more! The post .NET 11 Preview 4 is now available! appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-11-preview-4/" target="_blank" rel="noopener">.NET 11 Preview 4 is now available!</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/12 22:25</div>
+        <p class="summary">Find out about the new features in .NET 11 Preview 4 across the .NET runtime, SDK, libraries, ASP.NET Core, .NET MAUI, C#, Entity Framework Core, and more! The post .NET 11 Preview 4 is now available! appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-and-dotnet-framework-may-2026-servicing-updates/" target="_blank" rel="noopener">.NET and .NET Framework May 2026 servicing releases updates</a></h3>
+        
+        <div class="source">.NET Blog · 05/12 18:36</div>
+        <p class="summary">A recap of the latest servicing updates for .NET and .NET Framework for May 2026. The post .NET and .NET Framework May 2026 servicing releases updates appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-and-dotnet-framework-may-2026-servicing-updates/" target="_blank" rel="noopener">.NET and .NET Framework May 2026 servicing releases updates</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/12 18:36</div>
+        <p class="summary">A recap of the latest servicing updates for .NET and .NET Framework for May 2026. The post .NET and .NET Framework May 2026 servicing releases updates appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/microsoft/articles/aspire-favorite-points" target="_blank" rel="noopener">AI と一緒に開発するときにも便利な Aspire の好きなところ</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/12 13:47</div>
+        <p class="summary">はじめに 最近のアプリ開発では、ローカルでデバッグをしようとするだけでも複数のアプリケーションやミドルウェアを立ち上げる必要があることがあります。フロントエンドを起動して、バックエンドの Web API を起動して、さらにクラウドのリソースの代わりになるエミュレーターや Redis のコンテナーなどを起動して、ようやくデバッグが出来るといった感じです。 そういうときに Aspire を使うと、AppHost を起動するだけで必要なものが一通り立ち上がるのでとても便利です。この記事では、個人的に Aspire のどういうところが好きなのかを書いていこうと思います。 Aspire は以前...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/polnareff/items/8d304f9db23a0b123281" target="_blank" rel="noopener">【C#】CancellationTokenの使い方とキャンセル設計パターンまとめ【実務向け】</a></h3>
+        
+        <div class="source">Qiita - C# · 05/12 11:00</div>
+        <p class="summary">はじめに 非同期処理や長時間実行タスクを扱うとき、キャンセル設計は必須です。 CancellationToken を正しく使わないと、リソースリークや応答性低下、ユーザー体験の悪化を招きます。 この記事では、実務で役立つパターンと落とし穴、具体的なコード例を交えて解説しま...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/fcb695e819b6dd470825" target="_blank" rel="noopener">AIに頼り切ってタスク管理アプリを作成する。：実装編②</a></h3>
+        
+        <div class="source">Qiita - C# · 05/12 09:59</div>
+        <p class="summary">前回までの概要 前回、タスク管理アプリの設計→コード生成をAIに丸投げしました。 今回は実際の実装、動作確認を行っていきます。 実装 実際に実装しました。 手作業としてはプロジェクトの作成、フォルダ、該当ファイルの作成です。 コードは前回の出力結果を流し込みました。 ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/BlackOpal/items/5e18dd70ef80c704e7db" target="_blank" rel="noopener">サーバー</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/12 22:30</div>
+        <p class="summary">// server.js const http = require("http"); const { URL } = require("url"); const routes = { "GET /": homeHandler, "GET /users": user...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/doc_lab/items/2f2b763471a13a7651d2" target="_blank" rel="noopener">実務でjQueryしか使ってこなかった私が、Vue.jsの「データ駆動」に感動した話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/12 19:36</div>
+        <p class="summary">はじめに これまで実務では「jQueryこそがフロントエンドの正義」として開発してきました。 しかし、個人開発で Vue.js を導入してみたところ、これまで積み上げてきた「当たり前」が音を立てて崩れ去りました。 本記事では、jQueryエンジニアがVue.jsに触れて驚...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/watanabe_trtr/items/003a8d4ecb18113dca6a" target="_blank" rel="noopener">URLSearchParamsの基本的な使い方</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/12 17:15</div>
+        <p class="summary">基本的な作成方法 // 1. 空で作成 const params = new URLSearchParams(); // 2. 現在のURLから取得 const params1 = new URLSearchParams(location.search); // 3....</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/watanabe_trtr/items/b3a84d6df2960ed887ce" target="_blank" rel="noopener">なぜ並び替え条件（order）はリクエストボディではなくクエリパラメータに載せるべきなのか</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/12 17:02</div>
+        <p class="summary">はじめに APIを設計する際、ソート順を指定する order や sort といったパラメータをどこに配置するか迷うことがあります。 「POSTメソッドでボディに入れれば、複雑な条件も送りやすいのでは？」と考える方もいるかもしれませんが、Web APIの標準的な設計（特に...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/soon-we-can-finally-banish-javascript-to-the-shadowrealm/" target="_blank" rel="noopener">Soon We Can Finally Banish JavaScript to the ShadowRealm</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/12 13:59</div>
+        <p class="summary">The proposed ShadowRealm API introduces a new kind of realm specifically designed for isolation, and only that. Soon We Can Finally Banish JavaScript to the ShadowRealm originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/gatechnologies/articles/c170e942e071f2" target="_blank" rel="noopener">フロントエンドエンジニアの RubyKaigi 2026 参加レポ — スポンサーブースが想像以上に楽しくて、Herbの発表に痺れた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/12 10:56</div>
+        <p class="summary">GA technologies でフロントエンドエンジニアをしている pxfnc(ぴくすふぁんく) です。 私たち GA technologies は、今年の RubyKaigi 2026 で Platinum スポンサーとして初めてブース出展を行いました。 他のメンバーはブース出展を担う形で参加していたところ、私はいち来場者としてRubyKaigiに参加[1]しました。 今回初めてRubyKaigiに参加して、イベントグッズが充実していたりだとか[2]、市電の吊り下げ広告に感動したりとか[3]、おやつタイムなるものがあったりとか[4]など、印象に残ったことはたくさんあったのですが、この...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/gemcook/articles/whats-web-haptics" target="_blank" rel="noopener">Web Haptics とは？モバイルWebに「触覚フィードバック」を取り入れてみる</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/12 05:01</div>
+        <p class="summary">みなさん、WebサイトやWebアプリを作るときに、「触覚」 まで意識したことはありますか？ 普段のWeb制作では、ボタンを押したときのアニメーション、色の変化、ローディング表示、通知音など、視覚や音によるフィードバックを中心に考えることが多いと思います。 ただ、モバイル端末ではそれに加えて、触覚フィードバック を使った表現も取り入れることができます。 今回このテーマを書こうと思ったきっかけは、web-haptics の作者である Lochie Axon さんのX投稿でした。投稿では、Webにハプティクスを持ち込もうというメッセージとともに、強さや長さを調整した触覚パターンをWebのインタ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nijima/articles/cda0ae52e0250d" target="_blank" rel="noopener">npmエコシステムを脅かす「AI生成パッケージ汚染」と新時代のサプライチェーン攻撃</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/12 03:04</div>
+        <p class="summary">フロントエンド開発において欠かせないnpmエコシステムですが、近年新たなセキュリティリスクが急浮上しています。それが「AI生成パッケージによる汚染」です。 本記事では、この新しい形のサプライチェーン攻撃の手口と、開発現場で取り組むべき対策について解説します。 巧妙化するタイポスクワッティング 従来から、有名なパッケージ名に似せた悪意あるパッケージを公開する「タイポスクワッティング（Typosquatting）」という手法は存在しました。（例: react に対する reacr など） しかし、最近の傾向は生成AIを悪用してパッケージの「信頼性」を高度に偽装している点にあります。 ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/" target="_blank" rel="noopener">Patch Tuesday, May 2026 Edition</a></h3>
+        
+        <div class="source">Krebs on Security · 05/12 21:46</div>
+        <p class="summary">Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers -- in...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html" target="_blank" rel="noopener">New Exim BDAT Vulnerability Exposes GnuTLS Builds to Potential Code Execution</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 16:44</div>
+        <p class="summary">Exim has released security updates to address a severe security issue affecting certain configurations that could enable memory corruption and potential code execution. Exim is an open-source Mail Transfer Agent (MTA) designed for Unix-like systems to receive, route, and deliver email. The vulnerabi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/rubygems-suspends-new-signups-after.html" target="_blank" rel="noopener">RubyGems Suspends New Signups After Hundreds of Malicious Packages Are Uploaded</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 14:47</div>
+        <p class="summary">RubyGems, the standard package manager for the Ruby programming language, has temporarily paused account sign ups following what has been described as a "major malicious attack." "We're dealing with a major malicious attack on Ruby Gems right now," Maciej Mensfeld, senior product manager for softwar...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-trickmo-variant-uses-ton-c2-and.html" target="_blank" rel="noopener">New TrickMo Variant Uses TON C2 and SOCKS5 to Create Android Network Pivots</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 12:50</div>
+        <p class="summary">Cybersecurity researchers have flagged a new version of the TrickMo Android banking trojan that uses The Open Network (TON) for command-and-control (C2). The new variant, observed by ThreatFabric between January and February 2026, has been observed actively targeting banking and cryptocurrency walle...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/webinar-what-riskiest-soc-alerts-go.html" target="_blank" rel="noopener">Webinar: What the Riskiest SOC Alerts Go Unanswered - and How Radiant Security Can Help</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 11:58</div>
+        <p class="summary">Why do the Riskiest SOC Alerts Go Unanswered? Security operations teams are drowning in alerts. But the real problem isn't always alert volume; it's the blind spots. The most dangerous alerts are the ones no one is investigating. A recent report from The Hacker News examined why certain high-risk al...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html" target="_blank" rel="noopener">Mini Shai-Hulud Worm Compromises TanStack, Mistral AI, Guardrails AI & More Packages</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 11:46</div>
+        <p class="summary">TeamPCP, the threat actor behind the recentsupply chain attack spree, has been linked to the compromise of the npm and PyPI packages from TanStack, UiPath, Mistral AI, OpenSearch, and Guardrails AI as part of a fresh Mini Shai-Hulud campaign. The affected npm packages have been modified to include a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/why-agentic-ai-is-securitys-next-blind.html" target="_blank" rel="noopener">Why Agentic AI Is Security's Next Blind Spot</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 10:30</div>
+        <p class="summary">Agentic AI is already running in production environments across many organizations today. It is executing tasks, consuming data, and taking actions — most likely without meaningful involvement from the security team. The industry conversation has largely framed this as a question of policy: allow it...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/instructure-reaches-ransom-agreement.html" target="_blank" rel="noopener">Instructure Reaches Ransom Agreement with ShinyHunters to Stop 3.65TB Canvas Leak</a></h3>
+        
+        <div class="source">The Hacker News · 05/12 07:37</div>
+        <p class="summary">American educational technology company Instructure, the parent company of Canvas, said it reached an "agreement" with a decentralized cybercrime extortion group after it breached its network and threatened to leak stolen information from thousands of schools and universities. In an update shared on...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/929152/apple-ios-27-camera-app-customization" target="_blank" rel="noopener">iOS 27 might add a lot more customization to the Camera app</a></h3>
+        
+        <div class="source">The Verge · 05/12 21:36</div>
+        <p class="summary">Apple's next iOS update could include something phone photographers have been waiting for: a lot more control over the Camera app. According to Bloomberg's Mark Gurman, the Camera app will be "fully customizable" in iOS 27 and users will be able to "pick their own set of controls - called widgets - ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/929091/meta-ai-threads-account-block" target="_blank" rel="noopener">Meta won’t let you block its AI account on Threads</a></h3>
+        
+        <div class="source">The Verge · 05/12 20:35</div>
+        <p class="summary">Meta announced on Tuesday that it's testing a Threads feature that lets users tag a Meta AI account to get answers to questions or context about a conversation on the platform. If you've spent any time looking at replies on X as of late, this new feature sounds a lot like Meta's take on people [&#82...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/929009/meta-teen-accounts-algorithm-parental-controls" target="_blank" rel="noopener">Meta will tell parents when their teens add new interests to their Instagram algorithm</a></h3>
+        
+        <div class="source">The Verge · 05/12 19:56</div>
+        <p class="summary">Starting Tuesday, parents can get more details about what their teens are up to on Instagram. Meta is adding a feature to its Teen Accounts that shows parents the "general topics their teens engage with," like "basketball" or "fashion." Meta also says it will soon start notifying parents when their ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/12/kevin-hartzs-a-just-closed-its-third-fund-with-450-million/" target="_blank" rel="noopener">Kevin Hartz’s A* just closed its third fund with $450 million</a></h3>
+        
+        <div class="source">TechCrunch · 05/12 18:45</div>
+        <p class="summary">Early-stage venture firm A* Capital just took the wraps off its $450 million Fund III.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/12/former-tesla-exec-and-heron-power-ceo-drew-baglino-has-founded-a-heat-pump-startup/" target="_blank" rel="noopener">Former Tesla exec and Heron Power CEO Drew Baglino has founded a heat pump startup</a></h3>
+        
+        <div class="source">TechCrunch · 05/12 18:14</div>
+        <p class="summary">Sadi Thermal Machines is Drew Baglino's second startup since leaving Tesla in 2024.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/12/musk-mulled-handing-openai-to-his-children-altman-testifies/" target="_blank" rel="noopener">Musk mulled handing OpenAI to his children, Altman testifies</a></h3>
+        
+        <div class="source">TechCrunch · 05/12 18:05</div>
+        <p class="summary">Altman said that Musk's focus on controlling the initial for-profit gave him pause because OpenAI was dedicated to keeping advanced AI out of the hands of a single person, and Altman, with his experience running the prominent startup accelerator Y Combinator, knew "founders who had control usually d...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/12/anthropic-warns-investors-against-secondary-platforms-offering-access-to-its-shares/" target="_blank" rel="noopener">Anthropic warns investors against secondary platforms offering access to its shares</a></h3>
+        
+        <div class="source">TechCrunch · 05/12 17:36</div>
+        <p class="summary">"Any sale or transfer of Anthropic stock, or any interest in Anthropic stock, offered by these firms is void and will not be recognized on our books and records," the company's support page reads.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/928861/openai-sam-altman-elon-musk-damage" target="_blank" rel="noopener">Sam Altman says Elon Musk’s mind games were damaging OpenAI</a></h3>
+        
+        <div class="source">The Verge · 05/12 17:34</div>
+        <p class="summary">OpenAI CEO Sam Altman says Elon Musk did "huge damage" to the culture of the AI startup. During testimony as part of Musk's lawsuit against OpenAI, Altman said Musk required OpenAI president Greg Brockman and former chief scientist Ilya Sutskever to rank researchers by their accomplishments and "tak...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://deepmind.google/blog/ai-pointer/" target="_blank" rel="noopener">Reimagining the mouse pointer for the AI era</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/12 17:40</div>
+        <p class="summary">Article URL: https://deepmind.google/blog/ai-pointer/ Comments URL: https://news.ycombinator.com/item?id=48111581 Points: 98 # Comments: 86</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/" target="_blank" rel="noopener">Amazon employees are "tokenmaxxing" due to pressure to use AI tools</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/12 16:29</div>
+        <p class="summary">Article URL: https://arstechnica.com/ai/2026/05/amazon-employees-are-tokenmaxxing-due-to-pressure-to-use-ai-tools/ Comments URL: https://news.ycombinator.com/item?id=48110529 Points: 203 # Comments: 212</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/academy/codex-for-work/how-finance-teams-use-codex" target="_blank" rel="noopener">How finance teams use Codex</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/12 15:00</div>
+        <p class="summary">See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/statewright/statewright" target="_blank" rel="noopener">Show HN: Statewright – Visual state machines that make AI agents reliable</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/12 14:24</div>
+        <p class="summary">Agentic problem solving in its current state is very brittle. I fell in love with it, but it creates as many problems as it solves.I'm Ben Cochran, I spent 20+ years in the trenches with full-stack Engineering, DevOps, high performance computing & ML with stints at NVIDIA, AMD and various other orga...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/nvidia" target="_blank" rel="noopener">How NVIDIA engineers and researchers build with Codex</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/12 00:00</div>
+        <p class="summary">Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/what-parameter-golf-taught-us" target="_blank" rel="noopener">What Parameter Golf taught us about AI-assisted research</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/12 00:00</div>
+        <p class="summary">Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantization, and novel model design under strict constraints.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/autoscout24" target="_blank" rel="noopener">AutoScout24 scales engineering with AI-powered workflows</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/12 00:00</div>
+        <p class="summary">Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/" target="_blank" rel="noopener">GM just laid off IT workers to hire those with stronger AI skills</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/11 23:33</div>
+        <p class="summary">Article URL: https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/ Comments URL: https://news.ycombinator.com/item?id=48102198 Points: 65 # Comments: 87</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

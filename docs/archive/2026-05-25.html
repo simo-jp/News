@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月25日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月25日 / 全32件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/5906dadfcc24e5efe280" target="_blank" rel="noopener">Tetris をブラウザで実装 — SRS 回転と wall kick、7-bag ランダマイザ、純粋ロジック分離</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/25 22:55</div>
+        <p class="summary">Tetris は「落ち物パズル」と聞くと素朴に見えるが、ちゃんと作ろうとすると SRS (Super Rotation System) の wall kick テーブル と 7-bag randomizer という公式準拠のルールが立ちはだかる。600 行 vanilla...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/jyunidoru/items/105d1384beecbf2a2db2" target="_blank" rel="noopener">Kohyoh</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/25 21:00</div>
+        <p class="summary">package com.example.library.service; import com.example.library.model.BookItem; import com.example.library.model.BorrowRecord; import ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/VinceHeart/items/616366e39c46ef6509d9" target="_blank" rel="noopener">.midのドラムのマッピング変換スクリプト</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/25 16:13</div>
+        <p class="summary">.mid内のドラムのマッピングを変更するスクリプトを作成。 TuxGuitar等で作成した.midのドラムのマッピングをAddictive Drumsのmetal等に対応した番号へ変更するスクリプトを作成。 プロジェクトのフォルダにて下記のようなコマンドを実行。 権限変更...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kojiman/items/cc690376f06d17fa3b8a" target="_blank" rel="noopener">任意の2サイトをAI比較できるChrome拡張をゼロから作ってストア公開するまで</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/25 14:44</div>
+        <p class="summary">2つのWebサイトを並べて Gemini AI に比較させる Chrome 拡張機能「DualyzeAI」を作り、Chrome ウェブストアに公開しました。 作ってみて想定外に詰まったポイントが複数あったので、実装の記録として残しておきます。 Chrome Web Stor...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/cross-document-view-transitions-part-2/" target="_blank" rel="noopener">Cross-Document View Transitions: Scaling Across Hundreds of Elements</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/25 13:46</div>
+        <p class="summary">Every view-transition-name on a page must be unique. The problem is that every pseudo-element selector in your CSS targets a specific name, so your animation styles explode into an unmanageable wall of selectors. Cross-Document View Transitions: Scaling Across Hundreds of Elements originally handwri...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/34f16926738c44" target="_blank" rel="noopener">React × Tailwind CSS 入門 #07｜フォームとバリデーション｜React Hook Formを使う</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/25 13:18</div>
+        <p class="summary">はじめに 前回はReact Routerを学び、アプリにページ遷移を実装しました。 今回は、WebアプリやホームページのWebアプリの「顔」とも言えるお問い合わせ・予約機能、React Hook Formを使ったフォーム実装とバリデーション（入力チェック）を学びます。 Reactの基本であるuseStateだけでフォームを作ろうとすると、入力のたびに画面全体が再描画（レンダリング）されてしまい、動作が重くなったりコードが複雑になりがちです。しかし、この「React Hook Form」というライブラリを使えば、再描画を最小限に抑えつつ、シンプルで爆速なフォームが作れます。 AIにフォ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/dewins/articles/mordern-web-guidance" target="_blank" rel="noopener">Googleの最新AIコーディング支援「Modern Web Guidance」をAntigravity（agy）と連携してみた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/25 12:36</div>
+        <p class="summary">はじめに 今回は、Google（Chrome DevToolsチーム）が初期プレビューとして公開した、AIエージェント向けの 知見集 「Modern Web Guidance (以後MWG)」 を取り上げます 。 このツールは、AIエージェントにWeb標準の最新APIを正しく学習させ、JavaScript（以後JS）を極限まで削ったクリーンなフロントエンドコードを生成させるための強力な盾です 。 今回は、Fedora/Macなどの環境において、sudo（管理者権限）を一切使わず、一般ユーザー権限のローカル環境だけでソースコードからビルドし、さらに高性能AIエージェントCLIの「Ant...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/minewo/articles/open-design-design-quality" target="_blank" rel="noopener">Open Designでデザイン品質を上げる：Penpot契約運用とDESIGN.mdの続編</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/25 06:30</div>
+        <p class="summary">! この記事は、既出の「PenpotとReactを同じ契約で運用するデザインシステムの作り方」と「DESIGN.md 導入ガイド」の続編です。前2記事が「契約をどう持つか」「入口ドキュメントをどう整えるか」だったのに対し、本記事は Open Design を導入すると、なぜデザイン品質が上がるのか に絞ります。 想定読者は、デザインツールを Open Design（オープンソース・オープンフォーマットのデザイン基盤、ここでは Penpot）へ寄せるか検討していて、その判断材料を「品質」の言葉で欲しいフロントエンドエンジニア・テックリードです。 前作では、Penpot と React を...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/litharge/articles/668e15f498345a" target="_blank" rel="noopener">.NETでのサプライチェーン攻撃対策</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/25 22:30</div>
+        <p class="summary">はじめに 近年、開発者環境を狙い撃ちしたサプライチェーン攻撃が盛んになってきています。信頼できるリポジトリであってもきちんと設定を入れないといけないのが難しいところです。 https://zenn.dev/gunta/articles/0152eadf05d173 https://gigazine.net/news/20260521-github-unauthorized-access/ npmやpipについてはよく取り扱われているので、ここではdotnetでどのような仕組みで攻撃が可能なのか、代表的にどういう防衛策があるのかについて調べていきます。 なお、私は専門家でも何でもないの...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/inf102/items/4288a7a6756600f5df17" target="_blank" rel="noopener">RPA用 DPIスケール問題対策</a></h3>
+        
+        <div class="source">Qiita - C# · 05/25 11:36</div>
+        <p class="summary">表示倍率（125%、150%等）にした際、座標設定が実際の画面とズレる問題の対策 この処置により物理解像度と同等に処理が可能になる。 // WinForms namespace AutoChg { static class Program { ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/3c476ba92c4f8fe70cec" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：OCR実装③</a></h3>
+        
+        <div class="source">Qiita - C# · 05/25 09:10</div>
+        <p class="summary">はじめに 前前回、家計簿アプリの設計を行いました(AIがやりました) 前回はOCRの実装を試みましたがうまく動作しません。 今回もOCRの実装をしていきます。 プロンプト 商品の名称、金額は読み込めているが日付、合計金額の読み込みが出来ていない、商品一覧に不要な情報が多...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/720364dbbcec80c2feb6" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：OCR実装②</a></h3>
+        
+        <div class="source">Qiita - C# · 05/25 09:09</div>
+        <p class="summary">はじめに 前前回、家計簿アプリの設計を行いました(AIがやりました) 前回はOCRの実装を試みましたがうまく動作しません。 今回もOCRの実装をしていきます。 プロンプト 必要な内容を取得せず、機能していない 改善策は？ 取得文字列は以下 "は ち ( 日 )①⑤:③0...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/9ba691be5adfb476c187" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：OCR実装①</a></h3>
+        
+        <div class="source">Qiita - C# · 05/25 09:09</div>
+        <p class="summary">はじめに 前回、家計簿アプリの設計,画面の作成を行いました。(AIがやりました) 今回からはOCRの実装を行います。 プロンプト OCR機能を実装したい コードを生成してください 回答 OCR機能の最低限実装例です。 以下構成で「画像選択 → OCR実行 → テキスト...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/936127/sennheiser-momentum-5-wireless-headphones-anc-lossless-bluetooth" target="_blank" rel="noopener">Sennheiser’s new Momentum 5 headphones have upgraded ANC and a replaceable battery</a></h3>
+        
+        <div class="source">The Verge · 05/25 22:00</div>
+        <p class="summary">Nearly four years after the last version of Sennheiser's Momentum headphones debuted with a redesign that traded a retro aesthetic for a more contemporary and comfortable design, the company has announced its Momentum 5 Wireless headphones. They look very similar to their predecessors, the Momentum ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/937066/ferrari-luce-ev-jony-ive-marc-newson-lovefrom" target="_blank" rel="noopener">Ferrari reveals its first EV, with design help from Jony Ive</a></h3>
+        
+        <div class="source">The Verge · 05/25 21:33</div>
+        <p class="summary">After months of teasers, Ferrari is offering the first full view of its Luce electric vehicle. The Luce is notable not just for being Ferrari's first EV, but for being designed in collaboration with Jony Ive and Mark Newson at their collective LoveFrom. It's also going to be Ferrari's second four-do...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/26/news059.html" target="_blank" rel="noopener">教皇レオ14世、AIの軍事利用や労働への影響に回勅で警鐘　Anthropicの共同創業者が同席してコメント</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/25 21:17</div>
+        <p class="summary">教皇レオ14世は、AI時代における人間の尊厳の守り方について、新たな“回勅”を発表した。この回勅、AIを用いた自動化システムによる戦争の危険性や労働への影響に強い警鐘を鳴らし、巨大企業への権力集中を批判。発表の場にはAnthropicの共同創業者も同席し、技術への倫理的指針の提示を歓迎するコメントを述べた。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/937027/cox-media-marketing-ai-powered-phone-spying-ads-ftc-fine" target="_blank" rel="noopener">Cox Media fined after bragging it spied on users through their phones</a></h3>
+        
+        <div class="source">The Verge · 05/25 18:28</div>
+        <p class="summary">An exceptionally weird controversy has come back to haunt Cox Media and a pair of marketing firms, which claimed they were secretly listening to users via phones and smart devices - despite little evidence they actually could. On Thursday the Federal Trade Commission announced that Cox, MindSift, an...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/" target="_blank" rel="noopener">What ClickUp’s mass layoff tells us about the future of work</a></h3>
+        
+        <div class="source">TechCrunch · 05/25 16:00</div>
+        <p class="summary">The nine-year-old startup is replacing hundreds of employees with thousands of AI agents.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/936196/best-memorial-day-sales-tech-deals-2026" target="_blank" rel="noopener">The best Memorial Day sales you can shop this weekend</a></h3>
+        
+        <div class="source">The Verge · 05/25 15:33</div>
+        <p class="summary">Memorial Day is here, meaning the seasonal sales are in full swing. If your plans over the long weekend involve pool parties or barbecues, now is a great time to pick up a portable speaker or set of solar lights, as many of our favorite models are currently on sale. You can also find deals [&#8230;]</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/25/the-popes-ai-encyclical-isnt-really-about-ai/" target="_blank" rel="noopener">The pope’s AI encyclical isn’t really about AI</a></h3>
+        
+        <div class="source">TechCrunch · 05/25 15:09</div>
+        <p class="summary">Pope Leo XIV's first encyclical uses AI as a lens to diagnose older problems: concentrated power, eroding democracy, and a tech elite that shapes the world to its own advantage.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/936945/pope-leo-letter-encyclical-ai-anthropic-labor-warfare" target="_blank" rel="noopener">Pope Leo calls for being ‘profoundly human’ in the age of AI</a></h3>
+        
+        <div class="source">The Verge · 05/25 15:05</div>
+        <p class="summary">Pope Leo XIV warned of the risks of AI and unconstrained technological power in his first major papal document released on Monday. Magnifica Humanitas is the pope's manifesto on "safeguarding the human person in the time of artificial intelligence," in which he discusses the dangers of AI-powered wa...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910" target="_blank" rel="noopener">Norway's 2 petabytes of Huawei flash storage and LLM training</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/25 19:37</div>
+        <p class="summary">Article URL: https://www.blocksandfiles.com/flash/2026/05/22/norways-2-petabytes-of-huawei-flash-storage-and-llm-training/5244910 Comments URL: https://news.ycombinator.com/item?id=48270770 Points: 108 # Comments: 54</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://religionnews.com/2026/05/25/in-his-first-encyclical-pope-leo-xiv-says-ai-must-serve-humanity-not-the-powerful-few/" target="_blank" rel="noopener">Pope Leo XIV says AI must serve humanity, not the powerful few</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/25 13:17</div>
+        <p class="summary">Article URL: https://religionnews.com/2026/05/25/in-his-first-encyclical-pope-leo-xiv-says-ai-must-serve-humanity-not-the-powerful-few/ Comments URL: https://news.ycombinator.com/item?id=48266485 Points: 332 # Comments: 66</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/" target="_blank" rel="noopener">Pope Leo: opaque AI run by few firms risks "New Forms of Dehumanization"</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/25 13:12</div>
+        <p class="summary">Article URL: https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/ Comments URL: https://news.ycombinator.com/item?id=48266435 Points: 163 # Comments: 2</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/exmergo/research-chatgpt-guesses-between-1-and-100" target="_blank" rel="noopener">GPT Guesses Between 1 and 100</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/25 11:46</div>
+        <p class="summary">Article URL: https://github.com/exmergo/research-chatgpt-guesses-between-1-and-100 Comments URL: https://news.ycombinator.com/item?id=48265745 Points: 82 # Comments: 66</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/grupo-folha-grupo-uol-partnership" target="_blank" rel="noopener">OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/25 00:00</div>
+        <p class="summary">OpenAI partners with Grupo Folha and Grupo UOL to bring trusted Brazilian journalism to ChatGPT, expanding access to news with attribution and transparency.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/weekly-recap-linux-flaws-defender-0.html" target="_blank" rel="noopener">⚡ Weekly Recap: Linux Flaws, Defender 0-Days, Router Botnets, and Supply Chain Chaos</a></h3>
+        
+        <div class="source">The Hacker News · 05/25 14:13</div>
+        <p class="summary">Monday recap. Same mess, new week. A sketchy dev tool got people pwned, old bugs came back from the dead, and security products somehow needed protecting from themselves. A bunch of companies spent the week checking old boxes and forgotten servers they should've patched years ago. Good times. Phishi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/" target="_blank" rel="noopener">Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks</a></h3>
+        
+        <div class="source">Krebs on Security · 05/25 13:21</div>
+        <p class="summary">Authorities in the Netherlands have arrested the co-owners of two related Internet hosting companies for operating IT infrastructure used by Russia to carry out cyberattacks, influence operations and disinformation campaigns inside the European Union. The two men were the focus of a 2025 KrebsOnSecu...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ghost-cms-cve-2026-26980-exploited-to.html" target="_blank" rel="noopener">Ghost CMS CVE-2026-26980 Exploited to Hijack 700+ Sites for ClickFix Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/25 12:02</div>
+        <p class="summary">Threat actors are exploiting a recently disclosed critical security flaw in Ghost CMS to inject malicious JavaScript code with an aim to fuel ClickFix attacks. According to QiAnXin XLab, the activity involves the exploitation of CVE-2026-26980 (CVSS score: 9.4), an SQL injection vulnerability in Gho...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/the-alert-firehose-finally-meets-its.html" target="_blank" rel="noopener">The Alert Firehose Finally Meets Its Match</a></h3>
+        
+        <div class="source">The Hacker News · 05/25 11:30</div>
+        <p class="summary">Ask a cybersecurity pro about Network Detection and Response (NDR) and you might still hear "Noisy," "Too much data." But ask the teams running NDR that includes agentic AI capabilities and you'll hear they're actually using it to catch threats earlier, triage faster, and chase fewer false positives...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/lazarus-deploys-remotepe-memory-only.html" target="_blank" rel="noopener">Lazarus Deploys RemotePE Memory-Only RAT Against Financial and Crypto Firms</a></h3>
+        
+        <div class="source">The Hacker News · 05/25 09:32</div>
+        <p class="summary">Cybersecurity researchers have shed light on a cross-platform malware called RemotePE that has been put to use by the North Korea-linked Lazarus Group in attacks targeting financial and cryptocurrency organizations. RemotePE, per NCC Group subsidiary Fox-IT, is part of a multi-stage attack chain tha...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html" target="_blank" rel="noopener">TrapDoor Supply Chain Attack Spreads Credential-Stealing Malware via npm, PyPI, and CratesIO</a></h3>
+        
+        <div class="source">The Hacker News · 05/25 05:59</div>
+        <p class="summary">A new coordinated cross-ecosystem software supply chain attack campaign has targeted npm, PyPI, and Crates.io to distribute credential-stealing malware. The campaign, codenamed TrapDoor, spans more than 34 malicious packages across over 384 versions. The earliest activity was recorded on May 22, 202...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

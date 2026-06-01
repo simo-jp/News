@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月29日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月29日 / 全36件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">5</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">7</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/29/google-cloud-surpasses-20b-but-says-growth-was-capacity-constrained/" target="_blank" rel="noopener">Google Cloud surpasses $20B but says growth was capacity-constrained</a></h3>
+        
+        <div class="source">TechCrunch · 04/29 22:20</div>
+        <p class="summary">Google Cloud topped $20B in quarterly revenue for the first time, fueled by surging demand for AI. But capacity constraints mean it could have grown even faster.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/column/920845/grindr-whcd-party-2026" target="_blank" rel="noopener">Grindr — yes, Grindr — won the WHCD party circuit</a></h3>
+        
+        <div class="source">The Verge · 04/29 22:00</div>
+        <p class="summary">Hello and welcome to Regulator, a newsletter for Verge subscribers about technology, politics, and technology learning how to politick. If you're not a subscriber but would like to support our work, please subscribe here. I promise that your money will not go toward paying for a drone-proof ballroom...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/11/news002.html" target="_blank" rel="noopener">【最終話】漫画「1週間後に生成AIで恥をかく新入社員」</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/29 22:00</div>
+        <p class="summary">とある企業に入社した新入社員「ニイジマ」が、AI活用の“地雷”を踏みまくっていく様子を通して、会社におけるAIの使い方、その初歩を紹介します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/30/news063.html" target="_blank" rel="noopener">Google、「Gemini」とのチャットから直接PDFやExcelファイルを生成可能に</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/29 21:56</div>
+        <p class="summary">Googleは、「Gemini」とのチャットでPDFやExcelなどのファイルを直接生成できる機能を発表した。WorkspaceやMicrosoft Office形式、PDF、LaTexなど多様なフォーマットに対応する。プロンプトで指示するだけで、回答のコピー＆ペースト作業を省き、Googleドライブへの保存やダウンロードが可能だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/920848/splatoon-raiders-physical-edition-preorder-switch-2-walmart-deal-sale" target="_blank" rel="noopener">Splatoon Raiders preorders for the Switch 2 are nearly 20 percent off</a></h3>
+        
+        <div class="source">The Verge · 04/29 21:19</div>
+        <p class="summary">Nintendo recently announced a new pricing policy, which knocks $10 off the cost of digital versions of future first-party titles exclusive to the Nintendo Switch 2. Splatoon Raiders, for instance, is available for preorder ahead of its July 23rd release for $49.99 digitally or $59.99 for the physica...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/29/google-gains-25m-subscriptions-in-q1-driven-by-youtube-and-google-one/" target="_blank" rel="noopener">Google gains 25M subscriptions in Q1, driven by YouTube and Google One</a></h3>
+        
+        <div class="source">TechCrunch · 04/29 20:59</div>
+        <p class="summary">Google added 25M paid subscriptions in Q1, reaching 350M total, as YouTube and Google One grow.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/29/fusion-power-startup-zap-energy-pulls-a-partial-pivot-adding-nuclear-fission-to-the-mix/" target="_blank" rel="noopener">Fusion power startup Zap Energy pulls a partial pivot, adding nuclear fission to the mix</a></h3>
+        
+        <div class="source">TechCrunch · 04/29 20:53</div>
+        <p class="summary">Surprise! Fusion startup Zap Energy says it will be developing fission reactors alongside its fusion devices.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/920785/microsoft-xbox-revenue-q3-2026-earnings" target="_blank" rel="noopener">Microsoft reports sinking Xbox revenue as its cloud business climbs</a></h3>
+        
+        <div class="source">The Verge · 04/29 20:43</div>
+        <p class="summary">Microsoft's Xbox hardware revenue continues to tumble, with the company revealing a 33 percent decline as part of its earnings report released on Wednesday. Even though the rest of Microsoft's consumer-focused division took a dip, the company's cloud and productivity businesses continue to soar, dri...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://migrainebrain.bearblog.dev/people-who-dont-use-ai-will-be-left-behind/" target="_blank" rel="noopener">"People who don't use AI will be left behind"</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 19:15</div>
+        <p class="summary">Article URL: https://migrainebrain.bearblog.dev/people-who-dont-use-ai-will-be-left-behind/ Comments URL: https://news.ycombinator.com/item?id=47953011 Points: 141 # Comments: 176</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials" target="_blank" rel="noopener">Ramp's Sheets AI Exfiltrates Financials</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 17:44</div>
+        <p class="summary">Article URL: https://www.promptarmor.com/resources/ramps-sheets-ai-exfiltrates-financials Comments URL: https://news.ycombinator.com/item?id=47951786 Points: 84 # Comments: 27</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://deepmind.google/research/publications/231971/" target="_blank" rel="noopener">The Abstraction Fallacy: Why AI can simulate but not instantiate consciousness</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 17:30</div>
+        <p class="summary">Article URL: https://deepmind.google/research/publications/231971/ Comments URL: https://news.ycombinator.com/item?id=47951582 Points: 64 # Comments: 110</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.com/future/article/20260428-ai-companies-want-you-to-be-afraid-of-them" target="_blank" rel="noopener">Why AI companies want you to be afraid of them</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 15:26</div>
+        <p class="summary">Article URL: https://www.bbc.com/future/article/20260428-ai-companies-want-you-to-be-afraid-of-them Comments URL: https://news.ycombinator.com/item?id=47949750 Points: 262 # Comments: 204</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theguardian.com/technology/2026/apr/29/making-ai-chatbots-more-friendly-mistakes-support-false-beliefs-conspiracy-theories-study" target="_blank" rel="noopener">Making AI chatbots friendly leads to mistakes and support of conspiracy theories</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 15:11</div>
+        <p class="summary">Article URL: https://www.theguardian.com/technology/2026/apr/29/making-ai-chatbots-more-friendly-mistakes-support-false-beliefs-conspiracy-theories-study Comments URL: https://news.ycombinator.com/item?id=47949538 Points: 68 # Comments: 61</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.jeffschomay.com/letting-ai-play-my-game" target="_blank" rel="noopener">Letting AI play my game – building an agentic test harness to help play-testing</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 12:43</div>
+        <p class="summary">Article URL: https://blog.jeffschomay.com/letting-ai-play-my-game Comments URL: https://news.ycombinator.com/item?id=47947525 Points: 117 # Comments: 23</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/" target="_blank" rel="noopener">He asked AI to count carbs 27000 times. It couldn't give the same answer twice</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/29 12:38</div>
+        <p class="summary">Article URL: https://www.diabettech.com/i-asked-ai-to-count-my-carbs-27000-times-it-couldnt-give-me-the-same-answer-twice/ Comments URL: https://news.ycombinator.com/item?id=47947490 Points: 231 # Comments: 295</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/cybersecurity-in-the-intelligence-age" target="_blank" rel="noopener">Cybersecurity in the Intelligence Age</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/29 04:00</div>
+        <p class="summary">OpenAI outlines a five-part action plan for strengthening cybersecurity in the Intelligence Age, focused on democratizing AI-powered cyber defense and protecting critical systems.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ke-tan/items/fe9e4a0395599e9a52e9" target="_blank" rel="noopener">JS(Reactへの基礎)</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/29 17:52</div>
+        <p class="summary">前提 React（正確にはNext.js）を使用してのWebアプリ開発を目標に学習を取り組むことにした。Webサイト制作の学習経験があり多少のJSの知識はあるがReactを学習するにあたって必要なJSの知識を学びなおした。 学習方法 主にChatGPTとの対話形式で学習し...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/6eec476d1afee243d40c" target="_blank" rel="noopener">k-means クラスタリングで画像からカラーパレットを抽出するツールを作った</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/29 15:25</div>
+        <p class="summary">作ったもの Color From Image — https://sen.ltd/portfolio/color-from-image/ ドラッグ &amp; ドロップ / ファイル選択 k-means クラスタリング (k=3〜8) k-means++ 初期化 hex / ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/b19062adcc0b66d6d422" target="_blank" rel="noopener">入眠時間を考慮する睡眠サイクル計算機を作った</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/29 15:20</div>
+        <p class="summary">作ったもの Sleep Alarm — https://sen.ltd/portfolio/sleep-alarm/ 2 モード: 「起きたい時刻」→ 就寝時刻提案 / 「寝る時刻」→ 起床時刻提案 3〜6 サイクルのオプションを品質ラベル付きで表示 入眠時間（0〜3...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/8e2844c19f2b20aef242" target="_blank" rel="noopener">LCS アルゴリズムで JSON のキー順序を無視する diff ツールを作った</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/29 15:15</div>
+        <p class="summary">作ったもの Diff Viewer — https://sen.ltd/portfolio/diff-viewer/ 3 表示モード: 統合 / 横並び / インライン（単語レベル） JSON 対応: キー順序を正規化してから比較 統計: 追加・削除・変更行数 統合 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/shutingstar/articles/aa4134f9a048b4" target="_blank" rel="noopener">面接で聞かれたHTTPステータスコードを整理する ― 200 / 400 / 404 / 500 は何を表しているのか</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/29 04:00</div>
+        <p class="summary">はじめに こんにちは、YSです。 今回は HTTPステータスコード について整理します。 きっかけは、面接でこんな感じの質問をされたことです。 200番台、400番台、500番台はそれぞれ何を表していますか？ 404 は何を意味しますか？ 普段 Next.js や API を触っていると、404 や 500 という数字はよく見ます。 ただ、いざ面接で聞かれると、 200 は成功 404 はページがない 500 はサーバーエラー くらいは出てきても、400番台と500番台の違いをきれいに説明するのは意外と難しいです。 この記事では、HTTPステータスコードを 「サーバーから返っ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/governing-mcp-tool-calls-in-dotnet-with-the-agent-governance-toolkit/" target="_blank" rel="noopener">Governing MCP tool calls in .NET with the Agent Governance Toolkit</a></h3>
+        
+        <div class="source">.NET Blog · 04/29 17:05</div>
+        <p class="summary">Learn how to govern MCP tool calls in .NET with the Agent Governance Toolkit—policy-based access control, security scanning, and response sanitization to reduce risk in AI agent systems. The post Governing MCP tool calls in .NET with the Agent Governance Toolkit appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/vs-test-is-removing-its-newtonsoft-json-dependency/" target="_blank" rel="noopener">VSTest is Removing its Newtonsoft.Json Dependency</a></h3>
+        
+        <div class="source">.NET Blog · 04/29 17:05</div>
+        <p class="summary">VSTest is removing its Newtonsoft.Json dependency in .NET 11 and Visual Studio 18.8. Here's who is affected and how to fix it. The post VSTest is Removing its Newtonsoft.Json Dependency appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/governing-mcp-tool-calls-in-dotnet-with-the-agent-governance-toolkit/" target="_blank" rel="noopener">Governing MCP tool calls in .NET with the Agent Governance Toolkit</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/29 17:05</div>
+        <p class="summary">Learn how to govern MCP tool calls in .NET with the Agent Governance Toolkit—policy-based access control, security scanning, and response sanitization to reduce risk in AI agent systems. The post Governing MCP tool calls in .NET with the Agent Governance Toolkit appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/vs-test-is-removing-its-newtonsoft-json-dependency/" target="_blank" rel="noopener">VSTest is Removing its Newtonsoft.Json Dependency</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/29 17:05</div>
+        <p class="summary">VSTest is removing its Newtonsoft.Json dependency in .NET 11 and Visual Studio 18.8. Here's who is affected and how to fix it. The post VSTest is Removing its Newtonsoft.Json Dependency appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/sdk-style-support-for-extension-projects/" target="_blank" rel="noopener">SDK-Style Support for Extension Projects</a></h3>
+        
+        <div class="source">Visual Studio Blog · 04/29 14:00</div>
+        <p class="summary">Starting in Visual Studio 18.5, you can create and build Visual Studio extensions (VSIX) using an officially supported SDK-style project. This brings VSIX projects into the modern build and deployment pipeline, improving incremental build performance and making the build → deploy → debug workflow mo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/chunchunist/items/3241417bf48090def65f" target="_blank" rel="noopener">Excelファイルのgrepツールを作った</a></h3>
+        
+        <div class="source">Qiita - C# · 04/29 12:26</div>
+        <p class="summary">動機 キーワードを指定して複数のExcelファイルを検索したいことが多いので作りました。Excelインストールなしで使えます。 同じようなことで困ってるなあという方はよかったら使ってみてください。 準備 ここから「.NET デスクトップ ランタイム」をダウンロードし...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kageki128/items/0c8da79f240b51e5aaa8" target="_blank" rel="noopener">【Unity】R3を用いてInputSystemのeventをObservableに変換する方法</a></h3>
+        
+        <div class="source">Qiita - C# · 04/29 11:08</div>
+        <p class="summary">動機 例えばInputSystemをGenerate C# Classで利用する場合、基本的には各Actionのイベントハンドラとしてメソッドを登録することになると思います。しかしC# eventは登録したハンドラを自分で解除する必要があり面倒です。 using Syst...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tugamecreate/items/a9a9a970f57ef26622e8" target="_blank" rel="noopener">[C#基礎]①if/else</a></h3>
+        
+        <div class="source">Qiita - C# · 04/29 08:40</div>
+        <p class="summary">はじめに 今回はC#でプログラミングを行う上で、特定の条件に合わせて実行する処理を変えるための知識について解説していきます。 if文について if文 は、与えた 条件式 が真 (true) だった場合に{}内の処理を行います。 if (条件式) { // 条件式がtr...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html" target="_blank" rel="noopener">SAP-Related npm Packages Compromised in Credential-Stealing Supply Chain Attack</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 16:26</div>
+        <p class="summary">Cybersecurity researchers are sounding the alarm about a new supply chain attack campaign targeting SAP-related npm Packages with credential-stealing malware. According to reports from Aikido Security, SafeDep, Socket, StepSecurity, and Google-owned Wiz, the campaign – calling itself the mini Shai-H...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html" target="_blank" rel="noopener">New Wave of DPRK Attacks Uses AI-Inserted npm Malware, Fake Firms, and RATs</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 14:43</div>
+        <p class="summary">Cybersecurity researchers have discovered malicious code in an npm package after a malicious package as a dependency to the project by Anthropic's Claude Opus large language model (LLM). The package in question is "@validate-sdk/v2," which is listed on npm as a utility software development kit (SDK)...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/webinar-how-to-automate-exposure.html" target="_blank" rel="noopener">Webinar: How to Automate Exposure Validation to Match the Speed of AI Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 12:02</div>
+        <p class="summary">In February 2026, researchers uncovered a shift that completely changed the game: threat actors are now using custom AI setups to automate attacks directly into the kill chain. We aren't just talking about AI writing better phishing emails anymore. We’re talking about autonomous agents mapping Activ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/what-to-look-for-in-exposure-management.html" target="_blank" rel="noopener">What to Look for in an Exposure Management Platform (And What Most of Them Get Wrong)</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 11:30</div>
+        <p class="summary">Every security team has a version of the same story. The quarter ends with hundreds of vulnerabilities closed. The dashboards are bursting with green. Then someone in a leadership meeting asks: "So, are we actually safer now?" Crickets. The room goes quiet because an honest answer requires context –...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/critical-cpanel-authentication.html" target="_blank" rel="noopener">Critical cPanel Authentication Vulnerability Identified — Update Your Server Immediately</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 09:37</div>
+        <p class="summary">cPanel has released security updates to address a security issue impacting various authentication paths that could allow an attacker to obtain access to the control panel software. The problem affects all currently supported versions, according to an alert released by cPanel on Tuesday. The issue ha...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/cisa-adds-actively-exploited.html" target="_blank" rel="noopener">CISA Adds Actively Exploited ConnectWise and Windows Flaws to KEV</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 08:46</div>
+        <p class="summary">The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added two security flaws impacting ConnectWise ScreenConnect and Microsoft Windows to its Known Exploited Vulnerabilities (KEV) catalog, based on evidence of active exploitation. The vulnerabilities are listed below - CVE-20...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html" target="_blank" rel="noopener">LiteLLM CVE-2026-42208 SQL Injection Exploited within 36 Hours of Disclosure</a></h3>
+        
+        <div class="source">The Hacker News · 04/29 05:34</div>
+        <p class="summary">In yet another instance of threat actors quickly jumping on the exploitation bandwagon, a newly disclosed critical security flaw in BerriAI's LiteLLM Python package has come under active exploitation in the wild within 36 hours of the bug becoming public knowledge. The vulnerability, tracked as CVE-...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月24日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月24日 / 全24件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">6</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/" target="_blank" rel="noopener">Everyone is navigating AI security in real time — even Google</a></h3>
+        
+        <div class="source">TechCrunch · 05/24 21:39</div>
+        <p class="summary">We're in the transition period -- all of us.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/24/xreal-googles-smartglasses-partner-thinks-it-has-finally-mastered-this-notoriously-tricky-industry/" target="_blank" rel="noopener">Xreal, Google’s smartglasses partner, thinks it has finally mastered this notoriously tricky industry</a></h3>
+        
+        <div class="source">TechCrunch · 05/24 19:00</div>
+        <p class="summary">Chi Xu, the founder and CEO of XREAL, thinks the smart glasses business has finally reached a turning point.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/24/6-kitchen-gadgets-that-make-adulting-feel-easier/" target="_blank" rel="noopener">6 kitchen gadgets that make adulting feel easier</a></h3>
+        
+        <div class="source">TechCrunch · 05/24 17:00</div>
+        <p class="summary">From a robot stirring your soup to a bread machine that kneads your dough, here are 6 gadgets that may make you feel like you’ve won adulthood.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/24/techcrunch-mobility-robotaxi-reality-check/" target="_blank" rel="noopener">TechCrunch Mobility: Robotaxi reality check</a></h3>
+        
+        <div class="source">TechCrunch · 05/24 16:05</div>
+        <p class="summary">Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/936196/best-memorial-day-sales-tech-deals-2026" target="_blank" rel="noopener">The best Memorial Day sales you can shop this weekend</a></h3>
+        
+        <div class="source">The Verge · 05/24 15:28</div>
+        <p class="summary">Memorial Day is nearly here, meaning the seasonal sales are in full swing. If your weekend plans involve pool parties or barbecues, now is a great time to pick up a portable speaker or set of solar lights, as many of our favorite models are currently on sale. You can also find deals on everything [&...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/936860/robert-moor-on-trails-book-review" target="_blank" rel="noopener">On Trails is a wandering tale that blends hiking, science, and history</a></h3>
+        
+        <div class="source">The Verge · 05/24 15:15</div>
+        <p class="summary">Hiking is one of life's great joys. Turning off the screens and stepping out into nature for an extended period of time, perhaps even several days, is rejuvenating. Unfortunately, as someone with two young kids and a bad back, I'm not really able to go backpacking anymore. So I often find myself try...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/936610/apple-macbook-air-m5-memorial-day-2026-deal-sale" target="_blank" rel="noopener">Apple’s latest MacBook Air is $200 off in both sizes for Memorial Day</a></h3>
+        
+        <div class="source">The Verge · 05/24 15:00</div>
+        <p class="summary">If you’re looking for a laptop that’ll still perform well several years from now, Apple’s latest MacBook Air is hard to beat. Now, in particular, is a good time to pick one up, as you can currently buy the 13-inch MacBook Air at Amazon in the run-up to Memorial Day with an M5 chip, 16GB [&#8230;]</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/" target="_blank" rel="noopener">I tried Amazon’s Bee wearable and am both intrigued and slightly creeped out</a></h3>
+        
+        <div class="source">TechCrunch · 05/24 15:00</div>
+        <p class="summary">Like other AI wearables, Amazon's Bee offers an odd combination of convenience and privacy anxiety.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/maki_s/items/149d407408133ae332fb" target="_blank" rel="noopener">プリザンターの一覧画面で、フィルタ条件に応じた数値項目の合計を表示する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/24 18:07</div>
+        <p class="summary">はじめに プリザンターの記録テーブルを使って、数値項目の計算結果を表示し、フィルタ後の合計値を集計する方法を説明します。 例として、以下のようなデータを扱います。 記録テーブル 分類A 数値A 分類B 数値B A 1000 AA 123 B 2000 C...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/whitestonex39-debug/items/4f48b110217041393444" target="_blank" rel="noopener">検索機能・ページネーション(JavaScript VS Angular)</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/24 16:18</div>
+        <p class="summary">検索機能(基本・シンプルバージョン) JavaScript フロー コード e.htm e.js const input = document.querySelector(...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mori-dev@github/items/652d7abfdcd66179eedb" target="_blank" rel="noopener">`URL.hostname` は `example.com.` をそのまま返す</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/24 13:09</div>
+        <p class="summary">URL.hostname は、ホスト名の末尾に付いたドットを消しません。 new URL('https://example.com/').hostname // 'example.com' new URL('https://example.com./').hostnam...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kkaattoo/items/639d7e2da88d0e7c31aa" target="_blank" rel="noopener">Node.jsのメモリ構造を理解する（スタック・ヒープ・V8の世代別GC）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/24 12:44</div>
+        <p class="summary">はじめに 以下のエラーに遭遇したことをきっかけに、ヒープについて調べました。 FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory これは、 Node.js が...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/c8911d5267e87a" target="_blank" rel="noopener">React × Tailwind CSS 入門 #06｜React Routerでページ遷移を実装する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/24 08:11</div>
+        <p class="summary">はじめに 前回はカスタムHookを学び、ロジックを再利用可能にしました。 今回は、Reactアプリに「ページ遷移」を追加するためのライブラリであるReact Routerを学びます。 通常のWebサイトは、URLが変わるたびにページ全体が白くなって再読み込みされますが、Reactで作ったアプリはページを再読み込みせず、中身のコンポーネントだけを入れ替える**「SPA（シングルページアプリケーション）」**として動作します。これにより、スマホアプリのようなサクサクとした爆速の画面遷移が実現できます。 インストール まずはターミナルでReact Routerをインストールします。 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/kuboon/articles/e5d955f2cba108" target="_blank" rel="noopener">DPoP + IndexedDB でフロントエンドセッションをがっちり守る</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/24 07:46</div>
+        <p class="summary">フロントエンドセッションは悩みのタネです。 Cookie に保存したら危険、LocalStorage に保存するのも危険……。 「じゃあどうすればいいんだ！！！」 というわけで、現時点でのベストプラクティスを研究してみました。 IndexedDB に秘密鍵を保存して DPoP これ最強。 既存の手法はどのように「危険」なのか 一般的に使われてきた手法には、それぞれ以下のようなセキュリティリスクが伴います。 Cookie (HttpOnly なし): XSS（クロスサイトスクリプティング）によってトークンが盗まれるリスクがあります。 LocalStorage: 同じく XSS...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://epoch.ai/data-insights/ai-chip-component-cost-shares" target="_blank" rel="noopener">Memory has grown to nearly two-thirds of AI chip component costs</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/24 16:31</div>
+        <p class="summary">Article URL: https://epoch.ai/data-insights/ai-chip-component-cost-shares Comments URL: https://news.ycombinator.com/item?id=48258684 Points: 245 # Comments: 265</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand" target="_blank" rel="noopener">'AI washing': firms are scrambling to rebrand themselves as tech-focused</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/24 15:21</div>
+        <p class="summary">Article URL: https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand Comments URL: https://news.ycombinator.com/item?id=48257980 Points: 141 # Comments: 133</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model" target="_blank" rel="noopener">DeepSeek to Make Permanent 75% Discount on Flagship AI Model</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/24 14:09</div>
+        <p class="summary">Article URL: https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model Comments URL: https://news.ycombinator.com/item?id=48257410 Points: 190 # Comments: 2</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arxiv.org/abs/2605.06445" target="_blank" rel="noopener">Constraint Decay: The Fragility of LLM Agents in Back End Code Generation</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/24 12:55</div>
+        <p class="summary">Article URL: https://arxiv.org/abs/2605.06445 Comments URL: https://news.ycombinator.com/item?id=48256912 Points: 151 # Comments: 71</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/dev-rabbit-mkt/items/813f5e361de054c8bf35" target="_blank" rel="noopener">【AIと一緒に】債務管理アプリを作る Day 8 〜バックエンド接続でハマったエラーを一つずつ・・・〜</a></h3>
+        
+        <div class="source">Qiita - C# · 05/24 13:57</div>
+        <p class="summary">久しぶりになりました(´・ω・`) 別アプリ作ってみたり、追加機能とかどんどん考えてドツボにはまったりしていた・・・ 前回までにReactフロントエンドとC# ASP.NET CoreのWeb APIをそれぞれ作ってきました。 今回はやっとフロントとバックエンドを繋ぐ作業...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/poipoionigiri/articles/eafa9efa99be11" target="_blank" rel="noopener">いまさら聞けない CancellationToken</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/24 11:00</div>
+        <p class="summary">登壇してお話しました .NETラボ 勉強会 2026年5月で 「いまさら聞けない CancellationToken」 というタイトルでお話ししてきました． 実務の話や CancellationToken の設計意図，内部実装などを話しました． アーカイブもあります． 資料はこちら． https://speakerdeck.com/htkym/jin-sarawen-kenaicancellationtoken 内容 何もしないのが一番早い 不要なことはしないのが一番速いと思います． たとえば ユーザーが画面遷移したので，元の HTTP リクエスト結果がもう要らない タイム...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KM_20005/items/cd12d681301f22c85eaf" target="_blank" rel="noopener">【C#】例外とログを深く考える：第3回 実践編（3層アーキテクチャとException.Dataの活用）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/24 05:39</div>
+        <p class="summary">はじめに 本記事は「例外とログを深く考える」シリーズの第3回です。 前回までは、Exception.Data を活用してコンテキスト情報を伝播させる設計思想を解説しました。今回はその実践編として、Blazor（UI層） / ビジネス層 / インフラ層 の3層ア...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/yy7613/articles/e329f7ebbb3c00" target="_blank" rel="noopener">Microsoft Agent Framework をローカルLLMで試してみる その14(MCPクライアント)</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/24 03:57</div>
+        <p class="summary">シリーズ一覧 一覧 Microsoft Agent Framework をローカルLLMで試してみる その1 Microsoft Agent Framework をローカルLLMで試してみる その2 Microsoft Agent Framework をローカルLLMで試してみる その3(LoggingFactory) Microsoft Agent Framework をローカルLLMで試してみる その4(Tool) Microsoft Agent Framework をローカルLLMで試してみる その5(AIFunction) Microsoft Agent Framework ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/_ohuton/items/e274087ac37e0db15411" target="_blank" rel="noopener">UnityとC#でクイズゲームのcsvデータを読み込む方法について勉強したメモ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/24 03:54</div>
+        <p class="summary">記事の紹介 初めまして、私は、独学でAI開発を学んでいる者です。今回記事にするのはC#とUnityを使いクイズゲームを作っていく内容になります。 参考程度に記事を読んでいただければと思っています。 前提 Unity、C#歴6年目のUnity初心者 私が好きなことについ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/unyorita/items/38e83d0a53f535b97910" target="_blank" rel="noopener">Stryker.NETをMSTestで使うとき、並列実行が有効になっていると失敗するときの備忘録</a></h3>
+        
+        <div class="source">Qiita - C# · 05/24 02:18</div>
+        <p class="summary">最近のMSTestのテンプレートでプロジェクトをつくると「MSTestSettings.cs」 というファイルがはいっていて、そこで既定で並列化の設定を有効にしている。 MSTestSettings.cs [assembly: Parallelize(Scope = Ex...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

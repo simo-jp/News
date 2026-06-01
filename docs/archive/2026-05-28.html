@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月28日 / 全34件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/28/how-to-apply-to-startup-battlefield-2026-what-you-need-ahead-of-the-june-8-deadline/" target="_blank" rel="noopener">How to apply to Startup Battlefield 2026, what you need ahead of the June 8 deadline</a></h3>
+        
+        <div class="source">TechCrunch · 05/28 23:01</div>
+        <p class="summary">Startup Battlefield applications are due tomorrow, so now's the time to put the finishing touches on your submission!</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/29/news080.html" target="_blank" rel="noopener">Anthropic、650億ドル調達──評価額は3カ月で2.5倍の9650億ドルとなりOpenAIを上回る</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/28 22:14</div>
+        <p class="summary">Anthropicは、シリーズHラウンドで650億ドルを調達したと発表した。資金調達後の評価額は9650億ドルに達し、未上場としてOpenAIを抜き、世界最高の評価額を持つAI企業となった。同日には最新モデル「Claude Opus 4.8」の提供も開始した。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/" target="_blank" rel="noopener">The internet is being rebuilt for machines</a></h3>
+        
+        <div class="source">TechCrunch · 05/28 21:24</div>
+        <p class="summary">As AI agents move from experiments to production, AWS, Cloudflare, and others are redesigning cloud infrastructure for a future dominated by machine-generated internet traffic instead of human users.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/28/slate-auto-will-announce-pricing-and-take-preorders-for-its-ev-on-june-24/" target="_blank" rel="noopener">Slate Auto will announce pricing and take preorders for its EV on June 24</a></h3>
+        
+        <div class="source">TechCrunch · 05/28 20:29</div>
+        <p class="summary">The Bezos-backed EV startup has yet to announce final pricing for its vehicle, which is supposed to start shipping by the end of this year.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/939283/pictonico-nintendo-mobile-game" target="_blank" rel="noopener">Nintendo&#8217;s newest WarioWare is a weirdo smartphone app</a></h3>
+        
+        <div class="source">The Verge · 05/28 20:16</div>
+        <p class="summary">A decade ago, Nintendo made a big splash into the world of mobile gaming with a new Super Mario platformer directed by none other than Shigeru Miyamoto. But even though the game proved popular, it wasn't the success the company had hoped for. Over the ensuing years Nintendo has slowly retreated from...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign" target="_blank" rel="noopener">Microsoft 365 Copilot gets a speed boost and cleaner design</a></h3>
+        
+        <div class="source">The Verge · 05/28 20:14</div>
+        <p class="summary">Microsoft is launching a revamped version of Microsoft 365 Copilot, offering a cleaner design that the company claims loads twice as fast. As part of this update, Copilot will provide more reliable and structured responses that are easier to scan, according to Microsoft. The redesign, which is rolli...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/939259/amazon-kindle-paperwhite-2021-woot-dad-tech-sale" target="_blank" rel="noopener">Amazon’s last-gen Paperwhite is on sale for less than the entry-level Kindle</a></h3>
+        
+        <div class="source">The Verge · 05/28 20:10</div>
+        <p class="summary">If you like to read by the pool or at the beach, the 2021 Kindle Paperwhite remains one of the best e-readers available despite its age. That’s because, unlike Amazon’s latest entry-level Kindle, the last-gen Paperwhite is waterproof. And now through June 14th (or while supplies last), it’s on sale ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/" target="_blank" rel="noopener">Asana acquires no-code agent-builder StackAI</a></h3>
+        
+        <div class="source">TechCrunch · 05/28 20:06</div>
+        <p class="summary">Asana will incorporate StackAI into its growing suite of AI workflow tools.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/" target="_blank" rel="noopener">Sam Altman and Dario Amodei are both walking back AI jobs apocalypse predictions</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/28 19:43</div>
+        <p class="summary">Article URL: https://fortune.com/2026/05/26/sam-altman-dario-amodei-walking-back-ai-jobs-apocalypse-prophecies-ipo/ Comments URL: https://news.ycombinator.com/item?id=48314363 Points: 136 # Comments: 115</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://shvbsle.in/various-llm-smells/" target="_blank" rel="noopener">Various LLM Smells</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/28 19:02</div>
+        <p class="summary">Article URL: https://shvbsle.in/various-llm-smells/ Comments URL: https://news.ycombinator.com/item?id=48313810 Points: 134 # Comments: 98</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/io-2026-keynote-moment-videos/" target="_blank" rel="noopener">Catch up on 12 major I/O 2026 moments</a></h3>
+        
+        <div class="source">Google AI Blog · 05/28 15:00</div>
+        <p class="summary">The colorful I/O logo against a black background, surrounded by stills from the I/O keynote</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://llmgame.scalex.dev" target="_blank" rel="noopener">Show HN: Continue? Y/N: A 60-second game about AI agent permission fatigue</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/28 13:02</div>
+        <p class="summary">Article URL: https://llmgame.scalex.dev Comments URL: https://news.ycombinator.com/item?id=48308376 Points: 213 # Comments: 99</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs" target="_blank" rel="noopener">AI sticker shock hits corporate America</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/28 10:39</div>
+        <p class="summary">Article URL: https://www.axios.com/2026/05/28/ai-spending-roi-enterprise-costs Comments URL: https://news.ycombinator.com/item?id=48307098 Points: 154 # Comments: 132</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/28/1138053/the-ai-hype-index-ai-gets-booed-in-graduation-season/" target="_blank" rel="noopener">The AI Hype Index: AI gets booed in graduation season</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/28 09:51</div>
+        <p class="summary">It is one thing to say AI will change the world. It is another to expect the class of 2026 to applaud it. In fact, when former Google CEO Eric Schmidt told University of Arizona graduates that their task is to help shape AI, he was met with a resounding chorus of boos. “I can&#8230;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://iisc.ac.in/a-eureka-machine-that-thinks-like-nature-and-explores-what-ai-cannot/" target="_blank" rel="noopener">A Eureka machine that thinks like nature and explores what AI cannot</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/28 06:40</div>
+        <p class="summary">Article URL: https://iisc.ac.in/a-eureka-machine-that-thinks-like-nature-and-explores-what-ai-cannot/ Comments URL: https://news.ycombinator.com/item?id=48305446 Points: 143 # Comments: 42</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.youtube.com/watch?v=iqddnwKF8HQ" target="_blank" rel="noopener">Zig 2026: No-AI Policy, $670K Foundation, Left GitHub and Why Zig Isn't 1.0 [video]</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/28 01:40</div>
+        <p class="summary">Article URL: https://www.youtube.com/watch?v=iqddnwKF8HQ Comments URL: https://news.ycombinator.com/item?id=48303273 Points: 81 # Comments: 8</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html" target="_blank" rel="noopener">Critical Gogs RCE Vulnerability Lets Any Authenticated User Execute Arbitrary Code</a></h3>
+        
+        <div class="source">The Hacker News · 05/28 17:24</div>
+        <p class="summary">A critical security vulnerability has been disclosed in Gogs, a popular open-source self-hosted Git service, that allows an authenticated user to execute arbitrary code under certain conditions. The security flaw, per Rapid7, is rated 9.4 on the CVSS scoring system. It does not have a CVE identifier...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/threat-actors-exploit-critical.html" target="_blank" rel="noopener">Threat Actors Exploit Critical FortiClient EMS Flaw to Deploy Credential Stealer</a></h3>
+        
+        <div class="source">The Hacker News · 05/28 15:26</div>
+        <p class="summary">Threat actors are continuing to exploit a critical, now-patched security flaw impacting FortiClient Endpoint Management Server (EMS) deployments to deliver credential-stealing malware. "The campaign abused trusted endpoint management infrastructure to deliver malware across managed endpoints," Arcti...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-slams-public-zero-day.html" target="_blank" rel="noopener">Microsoft Slams Public Zero-Day Disclosures Amid GitHub Researcher Account Removal</a></h3>
+        
+        <div class="source">The Hacker News · 05/28 13:53</div>
+        <p class="summary">Microsoft has come out strongly in favor of Coordinated Vulnerability Disclosure (CVD), urging the research community to share their findings and give affected vendors an opportunity to better understand the impact and address them before they are publicly disclosed. The development comes after a re...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/threatsday-bulletin-claude-security.html" target="_blank" rel="noopener">ThreatsDay Bulletin: Claude Security Plugin, Azure Priv-Esc, Kali365 MFA Bypass, FIFA Scams +15 More</a></h3>
+        
+        <div class="source">The Hacker News · 05/28 13:33</div>
+        <p class="summary">Every time you think the industry has finally stopped doing some reckless, low-effort crap, somebody spins up a fresh box full of sketchy loaders, fake installers, recycled social-engineering bait, and enough exposed infrastructure to make you wonder if prod is just a public beta now - meanwhile som...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-ai-usage-report-enterprise-ai-risk.html" target="_blank" rel="noopener">New AI Usage Report: Enterprise AI Risk Is Heavily Concentrated Among a Small Group of AI "Power users"</a></h3>
+        
+        <div class="source">The Hacker News · 05/28 11:30</div>
+        <p class="summary">State of AI Usage Report 2026 (full report here) by LayerX Security reveals the extent of the enterprise AI visibility gap and why most organizations still don't understand where their AI exposure is actually coming from. The research shows that enterprise AI risk is not distributed evenly across us...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/jinx-0164-targets-cryptocurrency-firms.html" target="_blank" rel="noopener">JINX-0164 Targets Cryptocurrency Firms with Fake Recruiter Lures and macOS Malware</a></h3>
+        
+        <div class="source">The Hacker News · 05/28 07:54</div>
+        <p class="summary">A new campaign orchestrated by a previously undocumented threat actor has targeted cryptocurrency organizations with an aim to facilitate digital asset theft using recruitment-themed social engineering and bespoke macOS malware. "These campaigns leveraged sophisticated social engineering techniques,...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/Ryo-0131/items/65b3cfb6dc5edb2513cc" target="_blank" rel="noopener">【TypeScript】型まわりを整理する：実務でよく使うパターン11選</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/28 14:48</div>
+        <p class="summary">概要 TypeScriptには「型」に関するキーワードが多く、混乱しがち...。 この記事では、実務で実際に登場したパターンをサンプルコードとともに整理します。 目次 型アノテーション 型アサーション 型ガード Discriminated Union（判別可能なUni...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/building-self-correcting-color-systems-contrast-color/" target="_blank" rel="noopener">Algorithmic Theming Engines: Building Self-Correcting Color Systems With `contrast-color()`</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/28 13:00</div>
+        <p class="summary">Seventy percent of websites still fail basic WCAG contrast checks in 2025. After years of design system tooling, accessibility linters, and JavaScript libraries, nothing moved the needle. We didn’t need better libraries. We needed better CSS. `contrast-color()` is that better CSS.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/iretetameru/books/c707493c02699a" target="_blank" rel="noopener">完全版：HTML属性だけで固めるフロントエンド要塞化マニュアル</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/28 12:13</div>
+        <p class="summary">サーバー側の設定（HTTPヘッダー）やJavaScriptのコードを一切使わず、純粋にHTMLタグと属性だけで完結する最大限のセキュリティ設定マニュアルです。 レンタルサーバー環境や、フロントエンドの静的HTMLしか触れない制限のある環境において、今日から実践できる防壁のすべてを網羅しています。このマニュアルは現状完成ではありません。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/30f0f45d547da0" target="_blank" rel="noopener">React × Tailwind CSS 入門 #09｜useReducer｜複雑な状態管理をシンプルにする</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/28 10:46</div>
+        <p class="summary">はじめに 前回はuseContextを使い、propsのバケツリレーをせずにコンポーネント間でデータを共有する方法を学びました。 今回は、Reactの状態管理におけるもう一つの強力な武器、useReducer（ユーズリデューサー）を学びます。 もちろんuseStateでも状態管理は可能です。しかし、管理する状態の種類（入力値・エラー・ローディング状態など）が増えたり、「これを更新したら、あっちも更新する」といったロジックが複雑になると、コンポーネントの中がすぐに散らかってしまいます。 useReducerを使うと、「状態をどのように更新するか」というロジックを一箇所に切り出して整理で...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ArakiPhp/items/6ec91ffe96b5caec813f" target="_blank" rel="noopener">実務1年目駆け出しエンジニアがLaravel&ReactでWebアプリケーション開発に挑戦してみた！（テスト・デバッグ編⑤）~Featureテスト2[コントローラー②/大学/学部/研究室]~</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/28 10:16</div>
+        <p class="summary">実務1年目駆け出しエンジニアがLaravel&amp;ReactでWebアプリケーション開発に挑戦してみた！（その47） 0. 初めに Webアプリケーション開発についてゼロから解説しているシリーズで、今回でテスト編の第5回目です！ 引き続きコントローラーのFeatureテスト...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/taku_dev/items/4d2e5d0dc622c5f8fd43" target="_blank" rel="noopener">【Web Audio API】ブラウザの自動再生ポリシーによる「AudioContext: state is suspended」の解決方法</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/28 09:13</div>
+        <p class="summary">Web Audio APIを使って、ブラウザ上でリアルタイムの音声波形を表示したり、マイク入力を取得する処理を実装する際、以下のような警告やエラーに遭遇することがあります。 The AudioContext was not allowed to start. It mus...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/lmn741/items/9d80541d517044923084" target="_blank" rel="noopener">LINEチャットで毎回コピペ翻訳するのが面倒だったので、リアルタイム翻訳を作った話（Electron実践）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/28 04:21</div>
+        <p class="summary">LINEチャットで毎回コピペ翻訳するのが面倒だったので、リアルタイム翻訳を作った話（Electron実践） 海外ユーザーや日本の顧客とLINEでやり取りするとき、ずっと同じ問題がありました。 メッセージをコピー 翻訳サイトを開く 翻訳 戻って貼り付ける また返信を待つ 短い...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ttaniguchi/articles/remotion-rendering-react-learning" target="_blank" rel="noopener">RemotionのレンダリングをReact視点で理解する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/28 03:08</div>
+        <p class="summary">はじめに 皆さんは Remotion をご存知でしょうか？Remotion は、TypeScript / React で動画を生成・編集できるオープンソースのフレームワークです。 この記事では、Remotion が何をするツールなのか、なぜ最近注目されているのか、そして内部でどう描画されているのかを、React 学習者の視点で整理します。 Remotion とは？ Remotion は 「React コンポーネントを動画に変換する」 ためのフレームワークです。 開発時には Remotion Studio（タイムラインビューア）が起動し、コードで配置した動画・画像・音声・テキスト...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/3taku_drink/items/e60900210c25f2a2bbaf" target="_blank" rel="noopener">タッチパッドの2本指タップを便利にしてみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/28 06:58</div>
+        <p class="summary">概要 タッチパッドの2本指タップを検知し、その指の位置に対応するキーを入力する、デスクトップアプリケーションを作りました。 AutoHotKeyと併用することで、タッチパッドからAutoHotKeyの処理を呼び分けられます。 この記事では、前半で当アプリの機能を軽く...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/chancychan/items/59fa46797cb2499766d9" target="_blank" rel="noopener">C# コードを使用して PowerPoint のコメントを変更または抽出する方法</a></h3>
+        
+        <div class="source">Qiita - C# · 05/28 02:10</div>
+        <p class="summary">PowerPoint のコメント機能は、スライドにメモやフィードバックを追加する際に非常に便利です。コメントの追加や削除だけでなく、誤った内容や古い情報を修正するために既存のコメントを編集したい場合もあります。また、共同編集のシーンでは、メンバーからの意見をまとめるためにコ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/af-dev-hub/items/440303a7c4916bfcaf8e" target="_blank" rel="noopener">【Blazor + Syncfusion】Chat UIでチャット画面を作ってみたら、思ったよりそれっぽかった</a></h3>
+        
+        <div class="source">Qiita - C# · 05/28 00:11</div>
+        <p class="summary">はじめに 担当: 松井（入社4年目🐱） 今回は、Syncfusionの Chat UIコンポーネント を触ってみました。 前回までは SfGrid のような、業務アプリでよく使う一覧画面系のコンポーネントを見ていました。 一覧画面は実務でかなり大事です。 ただ、画面だけ見...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/j_sakamoto/articles/0dc4f4abdd8380" target="_blank" rel="noopener">ASP.NET Core アプリを Docker でマルチステージビルドするのはなぜか?</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/27 23:55</div>
+        <p class="summary">どうしてホストで dotnet publish しないの? ASP.NET Core アプリケーションを Docker コンテナ化する際、公式のドキュメントや Visual Studio が生成する Dockerfile を見ると、ほぼ例外なく「マルチステージビルド」という手法が使われています。 中身を覗くと、わざわざ重い SDK イメージを拾ってきて、コンテナの中で dotnet publish を実行しています。これを見て、こう思ったことはありませんか? 「ホスト側で dotnet publish してから、その成果物を COPY するだけで良くない?」 実際、.NET アプリの...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

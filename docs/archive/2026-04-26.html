@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月26日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月26日 / 全25件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/26/the-stanford-freshmen-who-want-to-rule-the-world-will-probably-read-this-book-and-try-even-harder/" target="_blank" rel="noopener">The Stanford freshmen who want to rule the world . . . will probably read this book and try even harder</a></h3>
+        
+        <div class="source">TechCrunch · 04/26 22:00</div>
+        <p class="summary">Can a book like this actually change anything? Or does the spotlight, as it always seems to, send more students racing to the place?</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/08/news014.html" target="_blank" rel="noopener">”映え”より気にすべきもの　漫画「1週間後に生成AIで恥をかく新入社員」【残り3日】</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/26 22:00</div>
+        <p class="summary">とある企業に入社した新入社員「ニイジマ」が、AI活用の“地雷”を踏みまくっていく様子を通して、会社におけるAIの使い方、その初歩を紹介します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/26/amazons-new-podcast-strategy-monetize-everything/" target="_blank" rel="noopener">Amazon’s new podcast strategy: Monetize everything</a></h3>
+        
+        <div class="source">TechCrunch · 04/26 21:38</div>
+        <p class="summary">Amazon's podcasting business seems to have transformed over the past six months.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/26/what-tim-cook-built/" target="_blank" rel="noopener">What Tim Cook built</a></h3>
+        
+        <div class="source">TechCrunch · 04/26 20:22</div>
+        <p class="summary">On the latest episode of Equity, we discuss how Apple has changed since Cook became CEO in 2011, and what challenges incoming CEO John Ternus will be facing.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/918852/googles-new-gradient-icon-design-is-coming-to-more-apps" target="_blank" rel="noopener">Google’s new gradient icon design is coming to more apps</a></h3>
+        
+        <div class="source">The Verge · 04/26 18:34</div>
+        <p class="summary">In late 2025, Google started rolling out new icons with a gradient design. Now it seems the new look is coming to the rest of Google's apps. 9to5Google got its hands on images of the new icons that ditch the uniform circle design that tries to cram in every color of the Google logo. In [&#8230;]</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/918843/trump-whcd-attack-white-house-ballroom" target="_blank" rel="noopener">Trump turns the WHCD shooting into a pitch for the White House ballroom</a></h3>
+        
+        <div class="source">The Verge · 04/26 16:18</div>
+        <p class="summary">Within hours of an armed gunman's attempt to enter the White House Correspondents Dinner, attended by top administration officials and hundreds of journalists, President Donald Trump did what he does best: use the assassination attempt to defend his ballroom project. During a White House press confe...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/26/techcrunch-mobility-elons-admission/" target="_blank" rel="noopener">TechCrunch Mobility: Elon’s admission</a></h3>
+        
+        <div class="source">TechCrunch · 04/26 16:03</div>
+        <p class="summary">Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/918826/tomora-come-closer-review-90s-dance-music" target="_blank" rel="noopener">Tomora’s Come Closer is an ecstatic love letter to 90s dance music</a></h3>
+        
+        <div class="source">The Verge · 04/26 16:00</div>
+        <p class="summary">Before Coachella, Tomora wasn't on my radar at all. It's actually only by chance that I stumbled upon them - I opened the wrong stream because my TV was lagging like a MFer. I paused for a few moments, entranced by the two ethereal Nordic women banging on giant drums to a techno beat. I [&#8230;]</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/Tomomitsu_Keruma/items/a10d34c104649a6e4060" target="_blank" rel="noopener">【保険商品管理システムの開発】decimal を double に暗黙的に変換できないエラー</a></h3>
+        
+        <div class="source">Qiita - C# · 04/26 20:16</div>
+        <p class="summary">エラー内容 /Users/kerumatomomitsu/InsuranceProductManager2/Services/AutoPremiumCalculator.cs(82,33): error CS0266: 型 'decimal' を 'double' に暗黙...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/tomokusaba/articles/14f2373c51e1f2" target="_blank" rel="noopener">.NET コード生成テンプレートで試す複数エージェント開発ループ</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/26 13:19</div>
+        <p class="summary">はじめに 前回の記事では、GitHub Copilot CLI で複数エージェントを使うときの設計として、読み取り専用レビュー + 統合役による一括反映という考え方を整理しました。 https://zenn.dev/tomokusaba/articles/a599cb645ca2c5 前回はテキスト成果物を題材に、スナップショット固定、共通スキーマ、競合解決、収束条件を見ていきました。今回はその考え方を、.NET コード生成テンプレートに適用する実践編です。 つまり本記事は、前回整理した複数エージェント設計を、.NET コード生成テンプレートに持ち込む応用編です。 題材にするのは、私...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/h_uchiy/books/linq-beyond-basics" target="_blank" rel="noopener">LINQを『書ける』から『理解して書く』へ ― 実行モデルと探索アルゴリズムで読み解くLINQ</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/26 06:35</div>
+        <p class="summary">LINQを日常的に使うC#開発者向けに、LINQの実行モデル（遅延実行、IEnumerable/IQueryable）と、LINQ to Objectsが実は探索アルゴリズムの選択であることを、.NETランタイム内部の動作をもとに解説します。 「なぜそのコードは遅いのか」「なぜそう書き直すのか」を一貫して説明し、LINQを糖衣構文ではなく集合演算のための構文として使いこなせるようになることを目指します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kariyan/items/60d53a0048a362316298" target="_blank" rel="noopener">[C#] 動画ランダム再生アプリ作ってみた　（開発記録 #3 シャッフル機能実装編）</a></h3>
+        
+        <div class="source">Qiita - C# · 04/26 05:22</div>
+        <p class="summary">はじめに 動画をランダムに再生するにはやはり配列やリストの要素の順番をシャッフルにするという機能が必要になってくる。ということで今回はC#のIEnumerable型のコレクションの要素をシャッフルする処理について書いていきます。 前提知識 まずIEnumerable...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kariyan/items/21b88a41d10f25a8a648" target="_blank" rel="noopener">【C#】 動画ランダム再生アプリ作ってみた （開発記録 #2 UI編）</a></h3>
+        
+        <div class="source">Qiita - C# · 04/26 04:01</div>
+        <p class="summary">はじめに 前回は音楽動画をランダム再生するアプリの概要について紹介した。 今回はこのアプリのUIについて紹介します。 画面構成や操作方法、操作によってできることについて書いていく。 アプリのUI これが無操作時のアプリのUIです。 上部にメニューバー、左側に音楽動画の...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/" target="_blank" rel="noopener">AI should elevate your thinking, not replace it</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/26 20:03</div>
+        <p class="summary">Article URL: https://www.koshyjohn.com/blog/ai-should-elevate-your-thinking-not-replace-it/ Comments URL: https://news.ycombinator.com/item?id=47913650 Points: 170 # Comments: 147</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://news.ycombinator.com/item?id=47913561" target="_blank" rel="noopener">Have you tried Clean Architecture as foundation for your AI project?</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/26 19:55</div>
+        <p class="summary">Comments URL: https://news.ycombinator.com/item?id=47913561 Points: 92 # Comments: 1</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://twitter.com/lifeof_jer/status/2048103471019434248" target="_blank" rel="noopener">An AI agent deleted our production database. The agent's confession is below</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/26 16:27</div>
+        <p class="summary">Article URL: https://twitter.com/lifeof_jer/status/2048103471019434248 Comments URL: https://news.ycombinator.com/item?id=47911524 Points: 339 # Comments: 443</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.edenai.co" target="_blank" rel="noopener">Eden AI – European Alternative to OpenRouter</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/26 08:18</div>
+        <p class="summary">Article URL: https://www.edenai.co Comments URL: https://news.ycombinator.com/item?id=47908433 Points: 124 # Comments: 66</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/4o1sobblue/items/2388ff5208244399f1b5" target="_blank" rel="noopener">【JavaScript】CommonJSとES Modulesって何が違うの？</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/26 16:22</div>
+        <p class="summary">はじめに 現在「プロを目指す人のためのTypeScript入門」の学習を進めています。第1章の環境構築の段階で、生成されたpackage.jsonに"type": "module"を追加するように、という記述がありました。（実際にはデフォルトでcommonjsが指定されて...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/TETSURO1999/items/33f102ce1f7f8517ca87" target="_blank" rel="noopener">PowerPointの目次を自動生成するWSH+JavaScriptをささっと作る</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/26 15:06</div>
+        <p class="summary">はじめに PowerPoint で 50 頁くらいの資料を作ったところ，目次が欲しいと言われました。資料を印刷することも考慮して下記のようにページ番号 SH. と内容の一覧表があり，さらに内容のほうのセルをクリックするとそのページにジャンプするようにして欲しいというもので...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/youtoy/items/3098aa2c88975539476f" target="_blank" rel="noopener">GPT-5.5 の API を Node.js で軽く試す（OpenAI Agents SDK TypeScript の Hello world の例を利用）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/26 14:19</div>
+        <p class="summary">はじめに 最近リリースされた GPT-5.5 の API を、Node.js で試してみたという話の記事です。その際、OpenAI Agents SDK TypeScript の Hello world の例を利用しています。 GPT-5.5 の API の提供開始 G...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/natade/items/cb0a52b31cb3f61145a8" target="_blank" rel="noopener">TextInputGuardでWeb入力の全角半角・IME・桁数を制御する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/26 13:29</div>
+        <p class="summary">はじめに Web サイトの入力フォームとして input や textarea タグで文字列を受け付けることは多いと思います。 サーバー側でのバリデーションは当然として、クライアント側でも UX 向上のために入力制御を行いたい場面はよくあります。 ただ、標準の入力要素だけ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/addwine/articles/7d916899d57a6b" target="_blank" rel="noopener">AIと一緒に学ぶVue.js入門：基礎課題の備忘録</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/26 12:00</div>
+        <p class="summary">はじめに 最近、フロントエンドのスキルアップのためにVue.jsの学習を始めました。 これまではHTMLやJavaScriptを少し触ったことがある程度で、モダンなJSフレームワークはほぼ初めての経験です。 今回は「AIに課題を出してもらい、それを解きながらレビューをもらう」というスタイルで学習を進めてみました。 最初はそもそもVueの知識がまったくない状態だったので、「課題を出されても、何を調べれば良いのか分からない」という感じで、書き始める際のハードルが高かったです。しかし、AIに質問しながらヒントをもらうことで「なるほど、こういうことか」と少しずつ理解していくことができました。...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sktt_panda/articles/css-backdrop-filter-fixed-position-trap" target="_blank" rel="noopener">backdrop-filterがposition:fixedを壊す罠——モバイルメニューが64pxに潰れた原因と解決策</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/26 09:38</div>
+        <p class="summary">何が起きたか ぱんだツールズのモバイルナビをサイドドロワーからボトムシート風にリデザインしたら、スマホで開いた瞬間に全画面オーバーレイがヘッダーの高さ（64px）にしか表示されない、という現象にぶつかった。 期待していた挙動はシンプルだ。 position: fixed; inset: 0 で画面全体を黒いバックドロップが覆う 下から 90dvh の白いボトムシートがせり上がってくる 背景タップか閉じるボタンで閉じる ところが実機の Safari でハンバーガーアイコンをタップすると、画面の一番上、ヘッダーの中にだけ、ミニチュアサイズのバックドロップとボトムシートが出現する。タ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/marycache/articles/03011f881e36f7" target="_blank" rel="noopener">DESIGN.mdは「どんなサイトもスキャンして再構築できる」のか — advanced-design-mdによる既存3手段の検証と再設計</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/26 05:42</div>
+        <p class="summary">第0章 本記事が紹介する対象 0.0 本記事を読むための前提知識 本記事は複数の読者層を想定している。 読み進めるうえで知っておくと理解が早まる用語を、最初に一覧化する。 「これは何だろう」と感じた用語があれば、対応する章に飛んで確認できるように設計した。 すべて理解してから読み進める必要はない。 必要に応じて参照する読み方を想定している。 用語 何を指すか(極めて簡潔に) 詳細を解説する場所 DESIGN.md AIに渡すデザイン仕様書 第1章(成立経緯と仕様全体) フロントエンド / UI / プロトタイプ Webサイトやアプリの「見た目」に関する領域 第1...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nijima/articles/651ed3c1f2ded5" target="_blank" rel="noopener">【2026年版】フロントエンド技術選定：React・Vue・Angularの現在地と「AI時代の生存戦略」</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/25 23:40</div>
+        <p class="summary">はじめに 「どのフレームワークを選ぶべきか？」 これは初学者だけでなく、新規事業の技術選定を任された中級者にとっても常に悩ましいテーマです。 いまフロントエンドの世界は、大きな転換期を迎えています。長年使われてきたReact、Vue、Angularの三大フレームワークが、これまでの古い常識を捨てて新しい次元へとアップデートしているからです。さらに忘れてはいけないのが、私たちのすぐ隣には「Claude Code」や「Cursor」のような、最強のAIアシスタントが当たり前のように存在しているということです。 この記事では、初学者が最初のステップを踏み出すための視点から、中級者がモダンな...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

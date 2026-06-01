@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月20日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月20日 / 全33件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/the-spacex-ipo-filing-ai-bets-starship-dreams-elon-musk/" target="_blank" rel="noopener">The SpaceX IPO filing is filled with AI bets, Starship dreams, and Elon Musk at the center</a></h3>
+        
+        <div class="source">TechCrunch · 05/20 23:03</div>
+        <p class="summary">SpaceX has finally made the contents of its IPO filing public, weeks ahead of what is expected to be the largest IPO ever and one that will make Musk the CEO, CTO, and Chairman of the board.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/21/news061.html" target="_blank" rel="noopener">SpaceXがIPO申請　イーロン・マスクCEOが議決権の85.1％掌握へ</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/20 22:35</div>
+        <p class="summary">SpaceXは、新規株式公開（IPO）の申請書類を証券取引委員会に提出した。6月中に上場の予定。2025年の売上高は186億ドル超の一方で純損失を計上した。主力のStarlinkに加え、統合したxAIなどAI事業を強化している。上場後もイーロン・マスク氏が85％超の議決権を握る。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/clouted-wants-to-take-the-guesswork-out-of-making-short-videos-go-viral/" target="_blank" rel="noopener">Clouted wants to take the guesswork out of making short videos go viral</a></h3>
+        
+        <div class="source">TechCrunch · 05/20 22:30</div>
+        <p class="summary">The video clipping startup raised a $7 million seed round led by Slow Ventures.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/xai-burned-6-4b-last-year-spacexs-ipo-filing-shows-why-the-spending-is-far-from-over/" target="_blank" rel="noopener">xAI burned $6.4B last year. SpaceX’s IPO filing shows why the spending is far from over</a></h3>
+        
+        <div class="source">TechCrunch · 05/20 22:26</div>
+        <p class="summary">SpaceX's IPO filing reveals xAI lost $6.4 billion in 2025 while planning a massive Grok expansion — offering the first public look at Elon Musk's AI financials and more details about his ambitions.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/nvidia-posts-another-record-quarter-reveals-43-billion-of-holdings-in-startups/" target="_blank" rel="noopener">Nvidia posts another record quarter, reveals $43B of holdings in startups</a></h3>
+        
+        <div class="source">TechCrunch · 05/20 22:03</div>
+        <p class="summary">Nvidia announced another record revenue figure after market close on Wednesday, but forecasted that revenue growth would slow in the following quarter.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/musks-xai-is-being-sued-over-its-data-center-generators-now-its-buying-2-8b-more/" target="_blank" rel="noopener">Musk’s xAI is being sued over its data center generators — now it’s buying $2.8B more</a></h3>
+        
+        <div class="source">TechCrunch · 05/20 21:55</div>
+        <p class="summary">Elon Musk's xAI said it will buy $2.8 billion worth of natural gas turbines over the next three years, according to SpaceX's IPO filing.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/" target="_blank" rel="noopener">Anthropic will pay xAI $1.25B per month for compute</a></h3>
+        
+        <div class="source">TechCrunch · 05/20 21:29</div>
+        <p class="summary">Elon Musk's xAI surprised the AI world when it made a deal to sell compute to Anthropic. Now we know how much it's worth.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/business/902219/spacex-ipo-details" target="_blank" rel="noopener">SpaceX just filed for what could be the biggest IPO ever</a></h3>
+        
+        <div class="source">The Verge · 05/20 21:29</div>
+        <p class="summary">Elon Musk's final frontier is officially open for business now that SpaceX has formally filed its S-1 prospectus with the SEC. That kicks off what could be the largest initial public offering ever when it lists on the Nasdaq stock exchange with the ticker SPCX. SpaceX generated $18.67 billion in rev...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/d46def00fcca5a3daf94" target="_blank" rel="noopener">ブラウザで動く数式パーサを 250 行で書く — 再帰下降、右結合 `^`、`-2^2 = -4`、エラー位置レポート</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/20 22:54</div>
+        <p class="summary">「電卓に式を貼ったら トークン列と AST も一緒に見えたら勉強になるな」と思って書いた。Shunting-yard ではなく 再帰下降 で実装。^ を右結合、-2^2 = -4 (WolframAlpha / Python / Excel と一致)、関数呼び出し、変数、...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/DevMasatoman/items/70bf9f81188194010841" target="_blank" rel="noopener">Claude Code で YouTube Shorts Chrome 拡張を 1 セッションで作り切った — DOM 探索 10 回失敗と突破パターン</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/20 17:08</div>
+        <p class="summary">結論 YouTube Shorts の説明文を 2 タップから 1 クリックに変える Chrome 拡張を、Claude Code との対話 1 セッション（約 2.5 時間）で完成させた。 DOM セレクタが 10 回以上 null を返し続けたが、5 つの落とし穴を特...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/stack-overflow-when-we-stop-asking/" target="_blank" rel="noopener">Stack Overflow: When We Stop Asking</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/20 13:51</div>
+        <p class="summary">It still hits like a ton of bricks to see the steep decline in Stack Overflow questions. What does that mean about learning in our industry? Stack Overflow: When We Stop Asking originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/dd8072acb2b000" target="_blank" rel="noopener">React × Tailwind CSS 入門 #02｜コンポーネント分割とよく使うTailwindクラス10選</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/20 13:30</div>
+        <p class="summary">はじめに 前回は、React × Tailwind CSS v4の環境構築を行いました。 今回は実際に手を動かしながら、Reactの要である「コンポーネント」という考え方と、Tailwindで実務的によく使うクラスを10個まとめて身につけます。 AIにコードを書かせるとき、この「コンポーネント」の概念を理解していないと、指示がぼんやりしてしまいます。ここを押さえておくと、AIへのプロンプト（指示）の精度が格段に上がります。 コンポーネントとは？ Reactでは、UI（画面の見た目）を「部品（コンポーネント）」に分けて管理します。 例えばこんなイメージです： App（画面全体） ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Aveya_/items/cc7fb130c6b178d21e1c" target="_blank" rel="noopener">「服選び」という認知コストを削減する。エンジニアのためのストリートファッション設計入門</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/20 12:50</div>
+        <p class="summary">はじめに 皆さん、こんにちは。普段は都内でWebエンジニアをしています。 突然ですが、毎朝の服選び、面倒に感じませんか？ 自分はまさにそうで、平日は思考停止で同じパーカー、休日もせいぜいヨレてないTシャツを選ぶのが関の山。クローゼットの再利用性は低く、毎日同じようなコーデ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mori-dev@github/items/04f9bb20b1561b51d31b" target="_blank" rel="noopener">BroadcastChannel API で複数タブの状態をそろえる</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/20 10:23</div>
+        <p class="summary">Web アプリを使っていると、同じサービスを複数タブで開くことがあります。 たとえば、タブ A で設定を変更して、タブ B では古い表示のままになっている。 タブ A でログアウトしたのに、タブ B ではまだログイン中に見える。 タブ A で通知を既読にしたのに、タブ B ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/socialplus/articles/613776932acc95" target="_blank" rel="noopener">Vitestの設定を調整してテスト速度を改善してみる</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/20 09:00</div>
+        <p class="summary">どうもこんにちは、たくびーです。 業務のかたわらフロントエンドのテスト速度改善に取り組んでいます。 先日はボトルネックとなるバレルファイルを特定し解消することで高速化を行いました。 https://zenn.dev/socialplus/articles/bfb19c5f98ae32 今回はちょっと違うアプローチでテスト速度の改善に挑戦してみました。 ! 執筆時点でのVitestのバージョンはv4.1.5です。 コードベースが大きくなるほどVitestが遅く感じる？ Vitestは高速なテストランナーとして知られています。実際、Jestと比べてかなり速いです。 それでも、コードベー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/loglass/articles/4aa44ba264f4a4" target="_blank" rel="noopener">Reactにおける UI = f(state) をCSSのみで翻訳してみる</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/20 03:42</div>
+        <p class="summary">! この記事は毎週必ず記事がでるテックブログ Loglass Tech Blog Sprint の144週目の記事です！ 3年間連続達成まで残り15週となりました！ 0. はじめに 「React の useState も Context も、最近の CSS だけで再現できるんじゃないか」と思いついて、ちょっとした自由研究としてやってみた記録です。 下のマルチステップウィザード、JavaScript を 1 行も書かずに 動いています。 「次へ」を押すとステップが進み、Progress bar の幅が連続的に伸び、現在のステップに応じて表示パネルとボタンが入れ替わる。すべて CSS ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/missouri-programs/" target="_blank" rel="noopener">We’re announcing new community investments in Missouri.</a></h3>
+        
+        <div class="source">Google AI Blog · 05/20 20:40</div>
+        <p class="summary">We’re helping build the state’s next-generation workforce and investing in energy programs.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/" target="_blank" rel="noopener">100 things we announced at I/O 2026</a></h3>
+        
+        <div class="source">Google AI Blog · 05/20 19:30</div>
+        <p class="summary">Image with the words "Ready, Set, I/O" and a colorful Gemini logo</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/models-and-research/google-research/google-beam-group-meetings/" target="_blank" rel="noopener">A new experiment brings better group meetings to Google Beam</a></h3>
+        
+        <div class="source">Google AI Blog · 05/20 16:45</div>
+        <p class="summary">A small group meeting featuring two in-room participants and three participants on-screen.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/" target="_blank" rel="noopener">Formal Verification Gates for AI Coding Loops</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/20 15:25</div>
+        <p class="summary">Article URL: https://reubenbrooks.dev/blog/structural-backpressure-beats-smarter-agents/ Comments URL: https://news.ycombinator.com/item?id=48209323 Points: 93 # Comments: 22</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/shenli/distributed-system-testing" target="_blank" rel="noopener">Testing distributed systems with AI agents</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/20 14:40</div>
+        <p class="summary">Article URL: https://github.com/shenli/distributed-system-testing Comments URL: https://news.ycombinator.com/item?id=48208685 Points: 73 # Comments: 10</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/college-students-drown-out-ai-praising-commencement-speeches-with-boos-deal-with-it-one-speaker-fires-back-as-students-heckle-positive-pitches-for-ais-role" target="_blank" rel="noopener">College students drown out AI-praising commencement speeches with boos</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/20 11:51</div>
+        <p class="summary">Article URL: https://www.tomshardware.com/tech-industry/artificial-intelligence/college-students-drown-out-ai-praising-commencement-speeches-with-boos-deal-with-it-one-speaker-fires-back-as-students-heckle-positive-pitches-for-ais-role Comments URL: https://news.ycombinator.com/item?id=48206241 Poin...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results" target="_blank" rel="noopener">Google's AI is being manipulated. The search giant is quietly fighting back</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/20 10:57</div>
+        <p class="summary">Article URL: https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results Comments URL: https://news.ycombinator.com/item?id=48205782 Points: 241 # Comments: 169</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html" target="_blank" rel="noopener">Learnings from 100K lines of Rust with AI (2025)</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/20 10:04</div>
+        <p class="summary">Article URL: https://zfhuang99.github.io/rust/claude%20code/codex/contracts/spec-driven%20development/2025/12/01/rust-with-ai.html Comments URL: https://news.ycombinator.com/item?id=48205415 Points: 125 # Comments: 130</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-open-sources-rampart-and.html" target="_blank" rel="noopener">Microsoft Open-Sources RAMPART and Clarity to Secure AI Agents During Development</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 17:06</div>
+        <p class="summary">Microsoft has unveiled two new open-source tools called RAMPART and Clarity to assist developers in better testing the security of artificial intelligence (AI) agents. RAMPART, short for Risk Assessment and Measurement Platform for Agentic Red Teaming, functions as a Pytest-native safety and securit...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-takes-down-malware-signing.html" target="_blank" rel="noopener">Microsoft Takes Down Malware-Signing Service Behind Ransomware Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 14:36</div>
+        <p class="summary">Microsoft on Tuesday said it disrupted a malware-signing-as-a-service (MSaaS) operation that weaponized the company's Artifact Signing system to deliver malicious code and conduct ransomware and other attacks, compromising thousands of machines and networks across the world. The tech giant attribute...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/webworm-deploys-echocreep-and-graphworm.html" target="_blank" rel="noopener">Webworm Deploys EchoCreep and GraphWorm Backdoors Using Discord and MS Graph API</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 12:51</div>
+        <p class="summary">Cybersecurity researchers have flagged fresh activity from a China-aligned threat actor known as Webworm in 2025, deploying custom backdoors that employ Discord and Microsoft Graph API for command-and-control (C2 or C&amp;C) communications. Webworm, first publicly documented by Broadcom-owned Symant...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/agent-ai-is-coming-are-you-ready.html" target="_blank" rel="noopener">Agent AI is Coming. Are You Ready?</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 11:58</div>
+        <p class="summary">New Industry Data Just Released Suggests Not. On May 19th, 2026, Orchid Security released the results of our Identity Gap: Snapshot 2026. Among the findings, "identity dark matter" (the unseen, unmanaged elements of identity) now overshadows the visible elements 57% vs. 43%. And it couldn't have occ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/github-investigating-teampcp-claimed.html" target="_blank" rel="noopener">GitHub Breached — Employee Device Hack Led to Exfiltration of 3,800+ Internal Repos</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 11:38</div>
+        <p class="summary">GitHub on Tuesday said it's investigating unauthorized access to its internal repositories after the notorious threat actor known as TeamPCP listed the platform's source code and internal organizations for sale on a cybercrime forum. "While we currently have no evidence of impact to customer informa...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/typosquatting-is-no-longer-user-problem.html" target="_blank" rel="noopener">Typosquatting Is No Longer a User Problem. It's a Supply Chain Problem</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 10:30</div>
+        <p class="summary">AI-generated lookalike domains are now embedded inside the third-party scripts running on your web properties. Here's why your current stack can't see them, and what detection actually requires. Download the CISO Expert Guide to Typosquatting in the AI Era → TL;DR&nbsp; Typosquatting is no longer a ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-releases-mitigation-for.html" target="_blank" rel="noopener">Microsoft Releases Mitigation for YellowKey BitLocker Bypass CVE-2026-45585 Exploit</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 08:28</div>
+        <p class="summary">Microsoft on Tuesday released a mitigation for a BitLocker bypass vulnerability named YellowKey following its public disclosure last week. The zero-day flaw, now tracked as CVE-2026-45585, carries a CVSS score of 6.8. It has been described as a BitLocker security feature bypass. "Microsoft is aware ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/grafana-github-breach-exposes-source.html" target="_blank" rel="noopener">Grafana GitHub Breach Exposes Source Code via TanStack npm Attack</a></h3>
+        
+        <div class="source">The Hacker News · 05/20 05:12</div>
+        <p class="summary">Grafana Labs, on May 19, 2026, said an investigation into its recent breach found no evidence of customer production systems or operations being compromised. It said the scope of the incident is limited to the Grafana Labs GitHub environment, which includes public and private source code along with ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/rafluctua/items/5a479efe22aa03a6c83a" target="_blank" rel="noopener">C#を使用したバーコード画像のスキャン</a></h3>
+        
+        <div class="source">Qiita - C# · 05/20 09:56</div>
+        <p class="summary">実際の業務システムでは、バーコードやQRコードの認識ニーズがあらゆる場面で見られます。倉庫・物流での荷物追跡、小売業での商品スキャン、券売システムでの電子チケット検証、医療業界での検体のトレーサビリティなど、いずれもバーコード画像の自動解析が欠かせません。 本稿では、.NE...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

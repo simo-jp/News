@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月24日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月24日 / 全28件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">5</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">7</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/haimn/items/1e0cb7e33bb4d9847d18" target="_blank" rel="noopener">Cloudflare Workersで、シンプルを極めたラジオアプリ「Kiku」を作った話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/24 22:06</div>
+        <p class="summary">Cloudflare Workersで、シンプルを極めたラジオアプリ「Kiku」を作った話 はじめに イスラエルでソフトウェアエンジニアをしている者です。 既存のラジオアプリは広告が多く、UIが複雑すぎると感じていました。そこで、爆速で動作し、ミニマルなデザインに徹したラジ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/zivuch/items/3749424a1b8aba07411d" target="_blank" rel="noopener">Five subtle ways your LLM audit log can still contain PII</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/24 12:35</div>
+        <p class="summary">You've stripped PII from prompts before they reach the model. You have audit logs proving it. And yet - the logs might still contain PII,...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/actbe_tech/articles/8db65932259919" target="_blank" rel="noopener">サニタイズについて</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/24 09:00</div>
+        <p class="summary">はじめに 実務でサニタイズというワードが出てきて、聞いたことはあるものの、セキュリティ上必要なものくらいの認知で、具体的に何をしているのか理解していませんでした。セキュリティに欠けた実装は、悪意を持ったユーザーに攻撃されるリスクが高まるため、開発に関わる以上身につけておくべき内容だと考え、今回調べてみました。 サニタイズとは サニタイズ（Sanitize）は、日本語で「消毒する」「無害化する」という意味を持つ言葉です。ユーザーから入力されたデータの中に、システムにとって有害なコードや文字列が含まれていた場合、それを検知して「無害な状態」に変換・除去することです。 例えば、掲示板の...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/gJYC976Tg6VXqQm/items/fa87c97fc325be2d85f9" target="_blank" rel="noopener">Youtubeの英語字幕から難しい単語だけハイライトする拡張機能を作った</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/24 08:04</div>
+        <p class="summary">動機 これまで使っていたYouTubeの二重字幕拡張機能が使えなくなり、エラーの原因を調べているうちに「拡張機能ってどうやって作るんだろう」と興味を持ち、勉強も兼ねて自作してみることにしました。 作ったもの YouTubeの英語字幕の中から「難しい英単語」だけをハイラ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sakutto-panda/items/96ffc62457ef3a892275" target="_blank" rel="noopener">テキスト差分比較をブラウザだけで実装する方法 — diff ライブラリで作るオンライン Diff ツール</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/24 06:22</div>
+        <p class="summary">設定ファイルの新旧を見比べたい。翻訳テキストの修正箇所を確認したい。仕様書を改訂したあとに、どこが変わったのか一覧で見たい。 テキストの差分比較は開発者に限らず、誰でも頻繁に発生する作業だ。WinMerge や VSCode の diff 機能を使えば解決はするが、インスト...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/24/palantir-is-reportedly-helping-the-irs-investigate-financial-crimes/" target="_blank" rel="noopener">Palantir is reportedly helping the IRS investigate financial crimes</a></h3>
+        
+        <div class="source">TechCrunch · 04/24 21:53</div>
+        <p class="summary">The IRS has used Palantir's software since at least 2018, The Intercept reports.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/25/news024.html" target="_blank" rel="noopener">MetaとAWSが提携　エージェント型AI強化に最新のArmベースチップ「Graviton5」を大量採用</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/24 21:41</div>
+        <p class="summary">Metaは、エージェント型AI強化のためAWSと提携し、数千万個の「AWS Graviton」コアを導入する。最新の「Graviton5」を採用し、推論やコード生成、自律タスクの調整などCPU負荷の高い処理を効率化。AIインフラの多様化とエネルギー効率向上を図り、次世代AI開発の基盤を強化する方針だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/24/cohere-acquires-merges-with-german-based-startup-to-create-a-transatlantic-ai-powerhouse/" target="_blank" rel="noopener">Cohere acquires, merges with Germany-based startup to create a ‘transatlantic AI powerhouse’</a></h3>
+        
+        <div class="source">TechCrunch · 04/24 21:35</div>
+        <p class="summary">Cohere, the Canada-based AI company that makes AI tools for businesses in regulated industries, announced Friday it would merge with Aleph Alpha, a German company that also builds AI systems for businesses and governments.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/24/two-college-kids-raise-a-5-1-million-pre-seed-to-build-an-ai-social-network-in-imessage/" target="_blank" rel="noopener">Two college kids raise a $5.1 million pre-seed to build an AI social network in iMessage</a></h3>
+        
+        <div class="source">TechCrunch · 04/24 21:05</div>
+        <p class="summary">Series, a social networking app that's grown popular on college campuses, announced a $5.1 million pre-seed round from some big names in tech.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/24/metas-loss-is-thinking-machines-gain/" target="_blank" rel="noopener">Meta’s loss is Thinking Machines’ gain</a></h3>
+        
+        <div class="source">TechCrunch · 04/24 20:52</div>
+        <p class="summary">Meta has been poaching talent from Thinking Machines Lab. But it's a two-way street.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/918572/microsoft-windows-updates-pause-35-days" target="_blank" rel="noopener">Microsoft will let you pause Windows Updates indefinitely, 35 days at a time</a></h3>
+        
+        <div class="source">The Verge · 04/24 20:45</div>
+        <p class="summary">Windows users will no longer be forced to run automatic updates in the middle of a game or a busy day. Microsoft is rolling out some long-awaited changes to Windows Update to users on its Dev and Experimental Windows Insider channels, including the ability to indefinitely delay updates up to 35 days...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/24/x-energy-stock-pops-27-on-first-day-of-trading-following-upsized-ipo/" target="_blank" rel="noopener">X-energy stock pops 27% on first day of trading following upsized IPO</a></h3>
+        
+        <div class="source">TechCrunch · 04/24 20:10</div>
+        <p class="summary">Investors flocked to nuclear power startup X-energy in its first day of public trading on the Nasdaq.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/918527/alex-jones-infowars-takeover-the-onion-tim-heidecker" target="_blank" rel="noopener">Alex Jones has uncovered another massive conspiracy</a></h3>
+        
+        <div class="source">The Verge · 04/24 20:10</div>
+        <p class="summary">Alex Jones may soon lose Infowars, the digital perch that he's used for decades to traffic in conspiracy theories, to The Onion, the satirical newspaper. But not before he's uncovered something truly dastardly: comedian Tim Heidecker's past (publicly available) work. "The Onion newspaper has been ro...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/24/1136422/why-deepseeks-v4-matters/" target="_blank" rel="noopener">Three reasons why DeepSeek’s new model V4 matters</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/24 21:40</div>
+        <p class="summary">On Friday, Chinese AI firm DeepSeek released a preview of V4, its long-awaited new flagship model. Notably, the model can process much longer prompts than its last generation, thanks to a new design that helps it handle large amounts of text more efficiently. Like DeepSeek’s previous models, V4 is o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/gemini/gemini-spring-cleaning-tips/" target="_blank" rel="noopener">8 Gemini tips for organizing your space (and life)</a></h3>
+        
+        <div class="source">Google AI Blog · 04/24 19:00</div>
+        <p class="summary">Black screen with illustrations including a laptop with document and email icons streaming out, a smiling person holding a phone and looking at a checklist, and a user activating Gemini Live</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://developers.openai.com/api/docs/changelog" target="_blank" rel="noopener">OpenAI releases GPT-5.5 and GPT-5.5 Pro in the API</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/24 18:23</div>
+        <p class="summary">GPT-5.5 - https://news.ycombinator.com/item?id=47879092 - April 2026 (1010 comments) Comments URL: https://news.ycombinator.com/item?id=47894000 Points: 173 # Comments: 104</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://electrek.co/2026/04/23/tesla-tsla-quietly-discloses-2-billion-ai-hardware-acquisition-10q/" target="_blank" rel="noopener">Tesla discloses $2B AI hardware company acquisition in filing</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/24 16:51</div>
+        <p class="summary">Article URL: https://electrek.co/2026/04/23/tesla-tsla-quietly-discloses-2-billion-ai-hardware-acquisition-10q/ Comments URL: https://news.ycombinator.com/item?id=47892765 Points: 64 # Comments: 43</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/browser-use/browser-harness" target="_blank" rel="noopener">Show HN: Browser Harness – Gives LLM freedom to complete any browser task</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/24 14:31</div>
+        <p class="summary">Hey HN,We got tired of browser frameworks restricting the LLM, so we removed the framework and gave the LLM maximum freedom to do whatever it's trained on. We gave the harness the ability to self correct and add new tools if the LLM wants (is pre-trained on) that.Our Browser Use library is tens of t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://atomicapp.ai/" target="_blank" rel="noopener">Show HN: Atomic – Local-first, AI-augmented personal knowledge base</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/24 12:07</div>
+        <p class="summary">Article URL: https://atomicapp.ai/ Comments URL: https://news.ycombinator.com/item?id=47889110 Points: 54 # Comments: 38</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.com/news/articles/c4gx1n0dl9no" target="_blank" rel="noopener">South Korea police arrest man for posting AI photo of runaway wolf</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/24 09:17</div>
+        <p class="summary">Article URL: https://www.bbc.com/news/articles/c4gx1n0dl9no Comments URL: https://news.ycombinator.com/item?id=47887683 Points: 216 # Comments: 139</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html" target="_blank" rel="noopener">FIRESTARTER Backdoor Hit Federal Cisco Firepower Device, Survives Security Patches</a></h3>
+        
+        <div class="source">The Hacker News · 04/24 17:06</div>
+        <p class="summary">The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has revealed that an unnamed federal civilian agency's Cisco Firepower device running Adaptive Security Appliance (ASA) software was compromised in September 2025 with malware called FIRESTARTER. FIRESTARTER, per CISA and the U.K.'s Na...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/nasa-employees-duped-in-chinese.html" target="_blank" rel="noopener">NASA Employees Duped in Chinese Phishing Scheme Targeting U.S. Defense Software</a></h3>
+        
+        <div class="source">The Hacker News · 04/24 14:13</div>
+        <p class="summary">The Office of Inspector General (OIG) of the U.S. National Aeronautics and Space Administration (NASA) has revealed how a Chinese national posed as a U.S. researcher as part of a spear-phishing campaign to obtain sensitive information from the space agency, as well as from government entities, unive...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/bridging-ai-agent-authority-gap.html" target="_blank" rel="noopener">Bridging the AI Agent Authority Gap: Continuous Observability as the Decision Engine</a></h3>
+        
+        <div class="source">The Hacker News · 04/24 11:49</div>
+        <p class="summary">The AI Agent Authority Gap - From Ungoverned to Delegation As discussed in our previous article, AI agents are exposing a structural gap in enterprise security, but the problem is often framed too narrowly. The issue is not simply that agents are new actors. It is that agents are delegated actors. T...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/26-fakewallet-apps-found-on-apple-app.html" target="_blank" rel="noopener">26 FakeWallet Apps Found on Apple App Store Targeting Crypto Seed Phrases</a></h3>
+        
+        <div class="source">The Hacker News · 04/24 11:48</div>
+        <p class="summary">Cybersecurity researchers have discovered a set of malicious apps on the Apple App Store that impersonate popular cryptocurrency wallets in an attempt to steal recovery phrases and private keys since at least fall 2025. "Once launched, these apps redirect users to browser pages designed to look simi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/tropic-trooper-uses-trojanized.html" target="_blank" rel="noopener">Tropic Trooper Uses Trojanized SumatraPDF and GitHub to Deploy AdaptixC2</a></h3>
+        
+        <div class="source">The Hacker News · 04/24 09:29</div>
+        <p class="summary">Chinese-speaking individuals are the target of a new campaign that uses a trojanized version of SumatraPDF reader to deploy the AdaptixC2 Beacon post-exploitation agent and ultimately facilitate the abuse of Microsoft Visual Studio Code (VS Code) tunnels for remote access. Zscaler ThreatLabz, which ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html" target="_blank" rel="noopener">LMDeploy CVE-2026-33626 Flaw Exploited Within 13 Hours of Disclosure</a></h3>
+        
+        <div class="source">The Hacker News · 04/24 07:24</div>
+        <p class="summary">A high-severity security flaw in LMDeploy, an open-source toolkit for compressing, deploying, and serving LLMs, has come under active exploitation in the wild less than 13 hours after its public disclosure. The vulnerability, tracked as CVE-2026-33626 (CVSS score: 7.5), relates to a Server-Side Requ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ZiYuCai1984/items/44a25a429a1edfd15f38" target="_blank" rel="noopener">現代 LMS アーキテクチャ実践（3）：ユーザー管理に Department / DepartmentAssignment を組み込む</a></h3>
+        
+        <div class="source">Qiita - C# · 04/24 10:11</div>
+        <p class="summary">本記事は筆者の考えをベースに、ChatGPT 5.4 を用いて構成・推敲したものです。 内容の主張と判断は筆者によるものであり、文章表現の整理に ChatGPT 5.4 を活用しています。 本記事で扱うプロジェクトのリポジトリはこちらです。 Repository: ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/polnareff/items/8943415c1dc49c988f42" target="_blank" rel="noopener">【C#】LINQでやりがちな落とし穴とパフォーマンス改善Tips【実務向け】</a></h3>
+        
+        <div class="source">Qiita - C# · 04/24 09:30</div>
+        <p class="summary">はじめに LINQは可読性が高く生産性を上げてくれる強力なツールですが、遅延実行・多重列挙・不適切なデータ構造などでパフォーマンス問題を招きやすいです。 この記事では、実務でよく遭遇する落とし穴を再現コードとともに示し、すぐ使える改善策を具体例で解説します。コードはそのま...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

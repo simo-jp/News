@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月26日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月26日 / 全39件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">7</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/26/what-were-looking-for-in-startup-battlefield-2026-and-how-to-apply-in-time-for-the-may-27-deadline/" target="_blank" rel="noopener">What we’re looking for in Startup Battlefield 2026, and how to apply in time for the May 27 deadline</a></h3>
+        
+        <div class="source">TechCrunch · 05/26 22:55</div>
+        <p class="summary">Startup Battlefield applications are due tomorrow, so now's the time to put the finishing touches on your submission!</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/26/trump-admin-permits-volvo-to-keep-selling-connected-cars-in-the-u-s/" target="_blank" rel="noopener">Trump Admin permits Volvo to keep selling connected cars in the U.S.</a></h3>
+        
+        <div class="source">TechCrunch · 05/26 22:55</div>
+        <p class="summary">Volvo, which is majority owned by China's Geely Holdings, said it can now move forward with its expansion plans for its U.S. factory.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/26/trump-admin-wants-nuclear-startups-to-use-plutonium-for-their-reactors/" target="_blank" rel="noopener">Trump admin wants nuclear startups to use plutonium for their reactors</a></h3>
+        
+        <div class="source">TechCrunch · 05/26 22:37</div>
+        <p class="summary">The U.S. government is sitting on dozens of tons of weapons-grade plutonium. It's hoping startups can find a use for it.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/" target="_blank" rel="noopener">DuckDuckGo installs are up 30% as users reject being ‘force-fed’ Google’s AI Search</a></h3>
+        
+        <div class="source">TechCrunch · 05/26 22:32</div>
+        <p class="summary">Google overhauled Search at I/O 2026, replacing blue links with AI agents. The backlash has been swift. DuckDuckGo app installs spiked 30% as users seek a way out.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/science/937775/nasa-moon-base-moonfall-updates" target="_blank" rel="noopener">NASA&#8217;s permanent Moon base plans start with three missions this year</a></h3>
+        
+        <div class="source">The Verge · 05/26 22:24</div>
+        <p class="summary">On Tuesday, NASA announced several upcoming lunar missions to the Moon's South Pole region. These missions will pave the way for the crewed Artemis landing slated for 2028, starting with three Moon Base missions NASA says are "the first of more than a dozen missions that will be announced this year....</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/27/news065.html" target="_blank" rel="noopener">IPOを控えるSpaceXの「Starlink」、アメリカン航空も採用へ</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/26 22:14</div>
+        <p class="summary">アメリカン航空は、SpaceXの衛星通信網「Starlink」を500機以上のナローボディ機に導入すると発表した。2027年第1四半期から搭載を開始し、対象機では会員向けに無料で高速Wi-Fiを提供する。Starlinkは航空会社との契約を拡大しており、来月のIPOへの追い風となる。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/26/starships-path-to-reusability-looks-murky-after-spacexs-s-1/" target="_blank" rel="noopener">Starship’s path to reusability looks murky after SpaceX’s S-1</a></h3>
+        
+        <div class="source">TechCrunch · 05/26 21:03</div>
+        <p class="summary">SpaceX's recent IPO and Starship rocket test flight delivered two big data points that offer a realistic vision for the coming years — and one that may disappoint both the company's boosters and its critics.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/937534/google-health-fitbit-app-ai" target="_blank" rel="noopener">Google Health is here, but a lot of people want their Fitbit app back instead</a></h3>
+        
+        <div class="source">The Verge · 05/26 19:00</div>
+        <p class="summary">The Fitbit app is no more. Along with the launch of the new Fitbit Air (which you can expect a full review of once we've spent more time with it), Google has officially replaced it with Google Health, as previously announced, and many of the responses we've seen so far are full of confusion, frustra...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/doing-more-with-github-copilot/" target="_blank" rel="noopener">Doing More with GitHub Copilot as a .NET Developer</a></h3>
+        
+        <div class="source">.NET Blog · 05/26 17:05</div>
+        <p class="summary">Want to get more out of your GitHub Copilot experience? Here are some easy ways to get started. The post Doing More with GitHub Copilot as a .NET Developer appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/doing-more-with-github-copilot/" target="_blank" rel="noopener">Doing More with GitHub Copilot as a .NET Developer</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/26 17:05</div>
+        <p class="summary">Want to get more out of your GitHub Copilot experience? Here are some easy ways to get started. The post Doing More with GitHub Copilot as a .NET Developer appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-maui-material-3/" target="_blank" rel="noopener">Give Your .NET MAUI Android Apps a Material 3 Makeover</a></h3>
+        
+        <div class="source">.NET Blog · 05/26 17:00</div>
+        <p class="summary">Material 3 (a.k.a. Material You) support is now available for .NET MAUI apps on Android. Here is how to enable it, what changes today, and what is still on the way. The post Give Your .NET MAUI Android Apps a Material 3 Makeover appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-maui-material-3/" target="_blank" rel="noopener">Give Your .NET MAUI Android Apps a Material 3 Makeover</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/26 17:00</div>
+        <p class="summary">Material 3 (a.k.a. Material You) support is now available for .NET MAUI apps on Android. Here is how to enable it, what changes today, and what is still on the way. The post Give Your .NET MAUI Android Apps a Material 3 Makeover appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/visual-studio-may-update-plan-review-refine/" target="_blank" rel="noopener">Visual Studio May Update – Plan, Review, Refine</a></h3>
+        
+        <div class="source">Visual Studio Blog · 05/26 15:00</div>
+        <p class="summary">There&#8217;s a particular rhythm to good development work: you think, you try, you check, you adjust. This month&#8217;s Visual Studio update leans into that rhythm. Whether you&#8217;re sketching an approach with the Plan agent before touching a single file, reviewing a wave of changes across many...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/nikotaro713/items/503d9023de223f4c7d43" target="_blank" rel="noopener">Unityでプレイヤー追尾Enemyを作った時の速度調整メモ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/26 13:16</div>
+        <p class="summary">はじめに 2Dアクションゲーム制作にて、簡易的なプレイヤー追尾エネミーを作成した。その際に、エネミーの移動速度が想定とは異なるものになったため、備忘として残す。 今回作成したエネミー プレイヤーの方向に向かって一定速度で移動するシンプルなエネミーを作成した。 実際のコー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/msms/items/8019a03dd24bba81e2da" target="_blank" rel="noopener">EntityFrameworkCoreのバージョンをプロジェクトごとに分けてマイグレーションを実行する（WPF + MSIX + SQLite）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/26 10:16</div>
+        <p class="summary">Microsoft.EntityFrameworkCore.Toolsでマイグレーションファイルをつくる時に、プロジェクトごとでEntityFrameworkCoreのバージョンを変えたかったので、その方法についてです。 その他dbの場所指定についてつまづいた部分です。 こ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kariyan/items/91717eeba2e2a97a514b" target="_blank" rel="noopener">[C#] 改造したMPC-BEを外部から操作してみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/26 08:25</div>
+        <p class="summary">はじめに 前回はC++で、外部からMPC-BEを操作するために改造しました（前回の記事はこちら）。今回はC#から改造したMPC-BEを操作するために作ったクラスについて書いていきます。C++とWin32APIの知識が前提となります。 開発環境 C# .NET 10.0 ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/muddywater-uses-dll-side-loading-in.html" target="_blank" rel="noopener">MuddyWater Uses DLL Side-Loading in Espionage Campaign Targeting 9 Countries</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 15:48</div>
+        <p class="summary">The Iranian hacking group known as MuddyWater has been linked to a new campaign affecting at least nine organizations across nine countries on four continents in the first quarter of 2026. The activity targeted industrial and electronics manufacturing, education and public-sector bodies, financial s...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-ai-ddos-attacks-are-smarter-learn.html" target="_blank" rel="noopener">[THN Webinar] New AI DDoS Attacks Are Smarter. Learn How to Fight Back</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 11:58</div>
+        <p class="summary">Every single day, hackers are finding new ways to crash websites and steal data. But right now, something has changed. Hackers are no longer working alone. They are now using powerful Artificial Intelligence (AI) tools to make their attacks faster, stronger, and much harder to stop. According to rec...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-patches-sharepoint-rce-flaw.html" target="_blank" rel="noopener">Microsoft Patches SharePoint RCE Flaw CVE-2026-45659 Across Server Versions</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 11:49</div>
+        <p class="summary">Microsoft has rolled out updates to fix a remote code execution vulnerability impacting SharePoint that could be exploited by bad actors in attacks without requiring any specialized conditions to be met. The vulnerability, tracked as CVE-2026-45659, carries a CVSS score of 8.8. It has been assigned ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html" target="_blank" rel="noopener">MFA Prompt Bombing: Why Your Second Factor Isn't Saving You</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 10:30</div>
+        <p class="summary">Multi-factor authentication (MFA) was supposed to close a critical gap in identity security. It meant that, even if an attacker possessed the account credentials, they couldn't log in without the second factor. While that logic was sound, attackers have now figured out that they don't need to steal ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html" target="_blank" rel="noopener">CERT-In Recommends 12-Hour Patching for Internet-Facing Flaws Amid AI-Assisted Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 09:13</div>
+        <p class="summary">The Indian Computer Emergency Response Team (CERT-In) has issued new guidelines requiring organizations to patch critical security vulnerabilities in internet-exposed systems within 12 hours of being flagged where "feasible" to safeguard against potential threats stemming from threat actors' abuse o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/iranian-hackers-deploy-minifast-and.html" target="_blank" rel="noopener">Iranian Hackers Deploy MiniFast and MiniJunk V2 via Phishing and SEO Poisoning</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 07:13</div>
+        <p class="summary">The Iranian state-sponsored threat actor known as Nimbus Manticore (aka Screening Serpens and UNC1549) has been attributed to a fresh campaign using lures impersonating organizations in the aviation and software sectors across the U.S., Europe, and the Middle East following the joint U.S.-Israeli mi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/knowledgedeliver-lms-flaw-exploited-to.html" target="_blank" rel="noopener">KnowledgeDeliver LMS Flaw Exploited to Deploy Godzilla and Cobalt Strike</a></h3>
+        
+        <div class="source">The Hacker News · 05/26 05:19</div>
+        <p class="summary">A now-patched high-severity security flaw affecting Digital Knowledge KnowledgeDeliver, a Learning Management System (LMS) popular in Japan, was exploited as a zero-day to deliver the Godzilla web shell and ultimately facilitate the deployment of Cobalt Strike Beacon. The vulnerability, tracked as C...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/26/1137584/rethinking-organizational-design-in-the-age-of-agentic-ai/" target="_blank" rel="noopener">Rethinking organizational design in the age of agentic AI</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/26 14:54</div>
+        <p class="summary">Amid rapidly growing adoption of enterprise-level AI agents, there’s a disconnect emerging between ambition and execution.&#160; Although 85% of organizations say they want to be agentic within the next three years, 76% say their current operations and infrastructure can’t support that change. They ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/" target="_blank" rel="noopener">Outsourcing plus local AI will soon become more economical vs. frontier labs</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/26 12:08</div>
+        <p class="summary">Article URL: https://www.signalbloom.ai/posts/outsourcing-plus-localai-will-soon-become-more-economical-vs-frontier-labs/ Comments URL: https://news.ycombinator.com/item?id=48278610 Points: 223 # Comments: 243</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://pluralistic.net/2026/05/26/the-ai-will-continue/#until-morale-improves" target="_blank" rel="noopener">The AI bubble isn't like the internet bubble</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/26 10:37</div>
+        <p class="summary">Article URL: https://pluralistic.net/2026/05/26/the-ai-will-continue/#until-morale-improves Comments URL: https://news.ycombinator.com/item?id=48277784 Points: 69 # Comments: 87</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify" target="_blank" rel="noopener">Uber president says AI spending is getting 'harder to justify'</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/26 10:01</div>
+        <p class="summary">Article URL: https://www.theverge.com/transportation/937116/uber-ai-investment-hard-to-justify Comments URL: https://news.ycombinator.com/item?id=48277485 Points: 249 # Comments: 132</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/" target="_blank" rel="noopener">A reality check on the AI jobs hysteria</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/26 09:00</div>
+        <p class="summary">Haven’t you heard? White-collar jobs are going away, decimated by AI. Waves of layoffs in the tech sector (most recently at Coinbase and Meta and Cisco) are said to presage what will soon come for all of us knowledge workers. But before you quit your job as a software developer or financial analyst—...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/26/1137865/its-time-to-address-the-looming-crisis-in-entry-level-work/" target="_blank" rel="noopener">It’s time to address the looming crisis in entry-level work.</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/26 09:00</div>
+        <p class="summary">Artificial intelligence has not so far produced a clean story of mass unemployment. Aggregate employment in developed countries remains broadly stable, and recent assessments have found limited evidence that AI has shifted the headline numbers. But a troubling change may be hiding beneath the surfac...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://simonwillison.net/2026/May/25/encyclical-on-ai/" target="_blank" rel="noopener">Notes on Pope Leo XIV's Encyclical on AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/26 04:45</div>
+        <p class="summary">Article URL: https://simonwillison.net/2026/May/25/encyclical-on-ai/ Comments URL: https://news.ycombinator.com/item?id=48275098 Points: 61 # Comments: 12</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/" target="_blank" rel="noopener">Using AI to write better code more slowly</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/25 23:16</div>
+        <p class="summary">Article URL: https://nolanlawson.com/2026/05/25/using-ai-to-write-better-code-more-slowly/ Comments URL: https://news.ycombinator.com/item?id=48272984 Points: 1126 # Comments: 416</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/73ae89312fc0b5" target="_blank" rel="noopener">React × Tailwind CSS 入門 #08｜useContext｜コンポーネント間でデータを共有する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/26 14:13</div>
+        <p class="summary">はじめに 前回はReact Hook Formを使ったフォームとバリデーションを学びました。 今回は、React中級者への第一歩であるuseContext（ユーズコンテキスト）を学びます。 Reactでは通常、親コンポーネントから子コンポーネントへ「props」を使ってデータを渡します。しかし、アプリが大きくなりコンポーネントが深くネストされると、**「propsのバケツリレー」**が発生し、コードが非常に煩雑になります。 AIにアプリ全体の機能（ログイン状態の管理など）を作らせると、高確率でこのuseContextが使われたコードが出力されます。仕組みを理解して、コードの意図を正確...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/dewins/articles/continue-m-w-g" target="_blank" rel="noopener">【 MCPの富豪設計に敗北宣言 】ローカルLLM運用は自作のTool組み込みの方が圧倒的に有利な件</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/26 13:58</div>
+        <p class="summary">1. はじめに：完全ローカルで最新のモダンWeb開発をやりたかったという話 https://zenn.dev/dewins/articles/mordern-web-guidance 先日のAntigravityでの成功に味をしめて、今回はローカルLLMにModern Web Guidance（以下MWG）を今度はローカルのLLMで試したらどうなるのだろうか。 そんな好奇心から先日導入したContinueを使用してローカルのGemma4-26Bで同じようにフロント画面を作製してみました。 果たしてちゃんと動かせるのか、成果物の出来栄えはどうなのか、タイトルに結末が滲み出てはいますが筆...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/technical-writing-in-the-ai-age/" target="_blank" rel="noopener">Technical Writing in the AI Age</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/26 13:49</div>
+        <p class="summary">This isn’t totally about AI. It’s about technical writing in the age of AI. I have some thoughts on this and I hope it’s helpful to you humans reading. Technical Writing in the AI Age originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sora_kumo/articles/e96601aac95e4d" target="_blank" rel="noopener">Next.js と TanStack Start の RSC の比較と注意点</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/26 13:13</div>
+        <p class="summary">Next.js一強だったReact Server Components（RSC）のエコシステムに、Viteベースのフルスタックフレームワークである「TanStack Start」が本格的に参入してきました。Next.jsのApp RouterでRSCを書いていて、独自ルールの多さや複雑なキャッシュに少し疲れてしまった人にとって、TanStack Startはかなり魅力的な選択肢に見えるはずです。 今回は、この2つのフレームワークがRSCに対してどういうアプローチをとっているのか、実装時の型安全性やデータ取得の挙動を踏まえながら、実際に触ってみて感じた違いを整理します。 1. 基盤ア...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/05m/items/8cd806373b64caa1f338" target="_blank" rel="noopener">【学習記録】ReactのCRUDアプリで学んだ：スプレッド構文とprevState、どちらを使うべき？</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/26 07:23</div>
+        <p class="summary">ReactでTodoアプリなどのCRUDアプリを作っていると、こんなコードを書く場面が出てきます。 const handleAddTodo = () =&gt; { setTodos([...todos, { id: todoId, title: todoTitle }]) ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Adachit-1411/items/3cde0e68be608132c457" target="_blank" rel="noopener">Next.jsを極める</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/26 06:38</div>
+        <p class="summary">Next.jsを極める：なぜこれがWeb開発の未来なのか はじめに Next.js は、本番環境に対応した React アプリケーションを構築するための 事実上の標準（de facto standard） となっています。Vercel によって開発・維持されているこの...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sasuke_sss/items/5a43e20004d5995c30cd" target="_blank" rel="noopener">[Vue] コンポーネント イベントの発行</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/26 05:40</div>
+        <p class="summary">Vue公式のチュートリアル イベントの発行 これは初めて知ったかも・・。 props を受け取るだけでなく、子コンポーネントは親コンポーネントにイベントを発行することもできます: child側</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ashinohitooo/items/c691301fa319323add29" target="_blank" rel="noopener">【Part2】kintoneのget系APIで画面UIの「今」の状態を読み取ろう！</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/26 04:48</div>
+        <p class="summary">はじめに Part1では、show系APIを使ってUIパーツの表示／非表示を切り替える方法を解説しました。 show系APIの活用やアクセス件の設定により非表示になったUIパーツは、get系APIで今の状態を確認することが出来ます。 2025年7月以降、より多くのg...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

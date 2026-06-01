@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月02日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月02日 / 全24件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">3</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">7</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/03/news023.html" target="_blank" rel="noopener">マリオ好きにはたまらないけど映画としては……？ マリオ新作映画を見てマンガ家が首を傾げた理由</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/02 22:14</div>
+        <p class="summary">24日に公開された映画「ザ・スーパーマリオギャラクシー・ムービー」の国内興行収入が、公開3日で16億109万3600円を記録しました。ボクも大満足で劇場を後にした、と言いたかったのですが……なぜかそれほど満足感がありませんでした。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/" target="_blank" rel="noopener">AI-generated actors and scripts are now ineligible for Oscars</a></h3>
+        
+        <div class="source">TechCrunch · 05/02 21:54</div>
+        <p class="summary">Bad news for Tilly Norwood.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/02/farewell-jeeves-ask-com-shuts-down/" target="_blank" rel="noopener">Farewell, Jeeves: Ask.com shuts down</a></h3>
+        
+        <div class="source">TechCrunch · 05/02 21:11</div>
+        <p class="summary">Owner IAC says it's discontinuing its search business.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/922380/new-mexico-meta-public-nuisance-trial-kids-safety" target="_blank" rel="noopener">Meta&#8217;s historic loss in court could cost a lot more than $375 million</a></h3>
+        
+        <div class="source">The Verge · 05/02 18:25</div>
+        <p class="summary">New Mexico Attorney General Ra&#250;l Torrez won a historic sum of $375 million in a landmark child safety case against Meta earlier this year. But the next stage of the fight could be even more consequential for Meta and the social media industry at large. Beginning Monday, attorneys for Meta and N...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/business/922788/spirit-airlines-shutdown" target="_blank" rel="noopener">Spirit Airlines shuts down after Trump’s war on Iran doubled jet fuel prices</a></h3>
+        
+        <div class="source">The Verge · 05/02 17:51</div>
+        <p class="summary">The ultra-low-cost air carrier Spirit Airlines shut down operations after 34 years in business and canceled all flights at 3AM ET on Saturday morning. Its website now redirects to spiritrestructuring.com, instructing fliers not to go to airports, with air traffic control records capturing controller...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/02/netflix-delays-greta-gerwigs-narnia-movie-for-big-theatrical-push-in-2027/" target="_blank" rel="noopener">Netflix delays Greta Gerwig’s ‘Narnia’ movie for big theatrical push in 2027</a></h3>
+        
+        <div class="source">TechCrunch · 05/02 17:05</div>
+        <p class="summary">"The Magician's Nephew" looks like a big next step in Netflix's thawing relationship with movie theaters.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/922513/aura-aspen-carver-walden-digital-photo-frame-mothers-day-deal-sale" target="_blank" rel="noopener">Aura’s delightful Aspen photo frame is on sale for $30 off this weekend</a></h3>
+        
+        <div class="source">The Verge · 05/02 17:00</div>
+        <p class="summary">Aura’s digital frames are kind of like living photo albums that get better with time, which is why we often recommend them for Mother’s Day. They’re gifts that keep on giving, in a way, and right now, a number of Aura’s connected frames are on sale ahead of the holiday. One of the best deals [&#8230...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/02/the-best-ai-powered-dictation-apps-of-2025/" target="_blank" rel="noopener">The best AI dictation apps, tested and ranked</a></h3>
+        
+        <div class="source">TechCrunch · 05/02 16:00</div>
+        <p class="summary">AI-powered dictation apps are useful for replying to emails, taking notes, and even coding through your voice</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/akisatoon/items/78cca9da2ab90939bfb0" target="_blank" rel="noopener">ドローンのピッチ角をPDで制御してみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/02 17:47</div>
+        <p class="summary">ドローンのピッチ角をPDで制御してみた 概要 ドローンのピッチ角の制御のためにPDのパラメータを調整した。 そのパラメータの適切な調整による成果やそれまでの大まかなプロセスを述べる。 ドローンの前提知識 今回扱っているのはunity上で実装した仮想的なドローン。ドロー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Tenere/items/7b221ade500a5af5aa8a" target="_blank" rel="noopener">C#のラムダ式についての備忘録</a></h3>
+        
+        <div class="source">Qiita - C# · 05/02 10:07</div>
+        <p class="summary">はじめに 4月で C# の基本的な文法を学んだ。しかし、ここから先に進もうとすると、 ラムダ式を避けては通れないと分かった。 誤りについては優しく指摘してくださると嬉しいです。 ラムダ式 一言で言ってしまえば、その場限りの関数をサクッと定義する糖衣構文。 引数 =&gt; 処...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KNTy1018/items/bf23fa6c84a5e4ebcd0b" target="_blank" rel="noopener">明示的に例外（Exception）を投げてみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/02 04:06</div>
+        <p class="summary">ゲーム開発をする中で「この変数の中身がnullだったらエラー出して欲しいなぁ」という時があり、とりあえず知ってる NullRefereceException を使っていたのですが、使い方を勉強した方がいいなと思う機会ができたため調べたことをまとめていきます 鵜呑みにするので...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/engineertakesi/items/31507c49a4b15bc8f07b" target="_blank" rel="noopener">Ciscoでpingが間欠ロスする時の切り分け｜microburst・QoSドロップ・CPU高負荷</a></h3>
+        
+        <div class="source">Qiita - C# · 05/02 03:35</div>
+        <p class="summary">はじめに 「pingが時々こけてる」と言われたとき、完全断線じゃなくて間欠ロスだとめちゃくちゃ厄介。100発中に1〜3発だけ落ちる、あの状況です。Ciscoスイッチで間欠ロスが出るときの主犯はだいたい次の3つに収束します。 microburst（TXキュードロップ） ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/prozolic/articles/a861cc1da6b0e1" target="_blank" rel="noopener">【.NET 11 Preview 3】ファイルベースアプリのファイル分割</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/02 01:17</div>
+        <p class="summary">はじめに つい先日に.NET 11 Preview 3がリリースされました。 https://devblogs.microsoft.com/dotnet/dotnet-11-preview-3/ その中の一つに、ファイルベースアプリが複数ファイルに分割して起動できるようになったらしいので、サンプルアプリでの確認とその際にちょっと詰まった点があったので、それらを記載しておきます。 確認環境 .NET 11 preview 3ランタイムで確認しています。 バージョン &gt; dotnet --version 11.0.100-preview.3.26207.106 incl...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://arxiv.org/abs/2509.00462" target="_blank" rel="noopener">AI Self-preferencing in Algorithmic Hiring: Empirical Evidence and Insights</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/02 15:28</div>
+        <p class="summary">Article URL: https://arxiv.org/abs/2509.00462 Comments URL: https://news.ycombinator.com/item?id=47987256 Points: 313 # Comments: 168</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://mljar.com/" target="_blank" rel="noopener">Show HN: Mljar Studio – local AI data analyst that saves analysis as notebooks</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/02 10:21</div>
+        <p class="summary">Hi HN,I’ve been working on mljar-supervised (open-source AutoML for tabular data) for a few years. Recently I built a desktop app around it called MLJAR Studio.The idea is simple: you talk to your data in natural language, the AI generates Python code, executes it locally, and the whole conversation...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/lahfir/agent-desktop" target="_blank" rel="noopener">Show HN: Agent-desktop – Native desktop automation CLI for AI agents</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/02 02:18</div>
+        <p class="summary">I've been building computer-use tools for a while, and I quietly launched this about a month ago (122 Stars on GH). I figured it was worth sharing here.Over the last few months, a lot of computer-use agents have come out: Codex, Claude Code, CUA, and others. Most of them seem to work roughly like th...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/fsitlab/items/8116fe5479eae734325f" target="_blank" rel="noopener">ＡＷＳで整理する、フロントエンドの知識地図</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/02 11:42</div>
+        <p class="summary">【序章】はじめに クラウドエンジニアがフロントエンドの領域に手を伸ばすと、React・Next.js・Vue・Nuxt・Laravel・Rails・FastAPI…と技術の選択肢が山ほどあり、何がどう違うのか理解しにくい。本記事では、デプロイ先のインフラ構成を軸に、各フレ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/chronoll/articles/ce938206da753d" target="_blank" rel="noopener">Date.now() がビルドエラーになる理由から理解する Next.js の Cache Components と PPR</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/02 11:10</div>
+        <p class="summary">Date.now() のビルドエラーで知った Next.js Cache Components / PPR の境界 きっかけ Next.js 16 で開発していたら、以下のエラーでビルドが落ちました。 Cannot access `Date.now()`, `Date()`, or `new Date()` before other uncached data or Request data in a Server Component Date.now()という普通の JavaScript の API が、Server Component というだけでここまで強く弾かれるのは違和...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/303d6e63597c0e7a6769" target="_blank" rel="noopener">Same Game を vanilla JS で実装した - フラッドフィル + 重力 + 列圧縮</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/02 09:50</div>
+        <p class="summary">作ったもの Same Game — https://sen.ltd/portfolio/same-game/ 3 難易度（10×10/3 色、15×12/4 色、20×15/5 色） ホバーで候補グループをハイライト、クリックで削除（モバイルはダブルタップ） Undo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/2f7b07fc9fd62dcb103a" target="_blank" rel="noopener">100 案件達成 - ポートフォリオを分析する自己メタダッシュボード</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/02 09:45</div>
+        <p class="summary">作ったもの Portfolio Stats — https://sen.ltd/portfolio/portfolio-stats/ https://sen.ltd/portfolio/data.json をランタイム fetch ヘッドライン統計（総エントリ数、総...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/49cf26587b71862d4cdb" target="_blank" rel="noopener">神経衰弱ゲームを CSS 3D フリップとイミュータブル状態で実装した</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/02 09:40</div>
+        <p class="summary">作ったもの Memory Game — https://sen.ltd/portfolio/memory-game/ 4 難易度（12 / 16 / 36 / 64 枚） 5 テーマ（絵文字 / 数字 / アルファベット / 図形 / ひらがな） CSS 3D フリッ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/fujishu/articles/c7c7799140b488" target="_blank" rel="noopener">なぜ大規模ではバレルエクスポートが使えないのか ー 中・小規模では使えるのか</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/02 08:00</div>
+        <p class="summary">背景 前回の記事で、「バレルエクスポートが保守性を悪くする例」についてのフィードバックをいただいたため、本記事ではバレルエクスポート導入派と断絶派の両方の視点で分析します。 私自身、両方を使ってみてやはり「トレードオフ」にあるという考えに至っています。 以下、フィードバックをいただいた記事です。 https://zenn.dev/link/comments/2bc79513530e16 何をするか この記事ではNext.js環境で考えます。 近似式を用いてオーバーヘッドを考える Next.jsの設計における例 トレードオフの提唱 ※ 「数学が嫌いです」という方は 2. からお...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/6f87f5d5308419" target="_blank" rel="noopener">UIライブラリの選び方：エンジニアがPMに説明できる5つの比較軸</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/02 05:44</div>
+        <p class="summary">「このライブラリを使いたいんですが、どれがいいですか？」 プロジェクトでこの質問が出たとき、技術的な説明だけでは相手に伝わらないことがある。PMや上司が聞きたいのは「それを選ぶと何がどう変わるのか」だからだ。 この記事では、UIライブラリを選ぶときの 5つの比較軸 と、それをビジネス言語に翻訳する方法をまとめる。具体的なライブラリの比較デモは UI Memo にまとめているので、詳しくはそちらを参照してほしい。 選ぶ前に確認する3つのこと 比較軸の前に、そもそも何を確認すべきかを整理する。 1. プロジェクトの性質 管理画面・業務システムを作るのか、データ分析ダッシュボードなのか、...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/trellix-confirms-source-code-breach.html" target="_blank" rel="noopener">Trellix Confirms Source Code Breach With Unauthorized Repository Access</a></h3>
+        
+        <div class="source">The Hacker News · 05/02 06:41</div>
+        <p class="summary">Cybersecurity company Trellix has announced that it suffered a breach that enabled unauthorized access to a "portion" of its source code. It said it "recently identified" the compromise of its source code repository and that it began working with "leading forensic experts" to resolve the matter imme...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月27日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月27日 / 全36件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/938635/google-polymarket-insider-trading-prediction-market-bets" target="_blank" rel="noopener">A Google employee allegedly used inside information to win $1.2 million on Polymarket</a></h3>
+        
+        <div class="source">The Verge · 05/27 22:30</div>
+        <p class="summary">Federal prosecutors charged a Google employee with fraud after he allegedly made $1.2 million on Polymarket bets related to Search-related trends in 2025, as reported earlier by ABC News. In their now-unsealed complaint, prosecutors allege that Michele Spagnuolo "knew the outcome of these wagers bef...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/28/news076.html" target="_blank" rel="noopener">Meta、Instagramなど主要アプリに新サブスク「Plus」導入へ　将来は「Meta One」に一本化</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/27 22:23</div>
+        <p class="summary">Metaは、FacebookやInstagramなどに新たな定額制サービス「Plus」を導入すると発表した。最終的にこれらを「Meta One」ブランドに一本化する方針だ。広告依存からの脱却と収益多角化が目的で、一般向けのほか、高度なAI機能が使えるプラン、ビジネス向けプランなどもテスト展開する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/28/news039.html" target="_blank" rel="noopener">毎日500mlの「炭酸水」で間食と飲酒が減る？　アサヒ飲料などが学術誌で研究発表</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/27 22:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/28/news074.html" target="_blank" rel="noopener">YouTube、AIで生成した動画を自動検出してラベル表示──クリエイターの申告なしでも</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/27 21:25</div>
+        <p class="summary">YouTubeは、動画にリアルなAIが使われていることを検知した場合、ラベルを自動適用すると発表した。これまではクリエイターの自己申告に依存していたが、システムによる自動検出を順次開始する。また、通常の動画ではプレーヤー直下に、ショート動画では映像上に重ねるなど、表示位置もより目立つ形に変更する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/27/rivian-will-deliver-the-first-r2-suvs-on-june-9/" target="_blank" rel="noopener">Rivian will deliver the first R2 SUVs on June 9</a></h3>
+        
+        <div class="source">TechCrunch · 05/27 21:15</div>
+        <p class="summary">The company has finally set a date for the first customer deliveries of what CEO RJ Scaringe has said is "maybe the most important thing we’ve launched to date."</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/27/triomics-nabs-22m-to-bring-oncology-specific-ai-to-cancer-centers/" target="_blank" rel="noopener">Triomics nabs $22M to bring oncology-specific AI to cancer centers</a></h3>
+        
+        <div class="source">TechCrunch · 05/27 21:11</div>
+        <p class="summary">The Series B round was led by Battery Ventures.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/938519/apple-ipad-air-m4-deal-sale" target="_blank" rel="noopener">Apple’s newest iPad Air is up to $100 off for the first time</a></h3>
+        
+        <div class="source">The Verge · 05/27 21:08</div>
+        <p class="summary">If you want an iPad that’s more powerful than the entry-level model but less expensive than the iPad Pro, the latest iPad Air is the one to buy, and it’s down to one its best prices to date. The 11-inch Air with 128GB of storage and Wi-Fi connectivity is available at Amazon starting at $519.99 [&#82...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/28/news042.html" target="_blank" rel="noopener">バラの香り、脳の萎縮を防ぎ認知症予防に役立つ可能性　京大などが2024年に研究発表　1カ月嗅ぐと脳に影響</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/27 21:00</div>
+        <p class="summary">京都大学などに所属する研究者らが2024年3月に発表した論文「Continuous inhalation of essential oil increases gray matter volume」は、バラの香りを嗅ぎ続けると脳の構造がどうなるかを分析した研究報告だ。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/" target="_blank" rel="noopener">YouTube to automatically label AI-generated videos</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/27 20:00</div>
+        <p class="summary">https://variety.com/2026/digital/news/youtube-ai-video-label... Comments URL: https://news.ycombinator.com/item?id=48299753 Points: 396 # Comments: 206</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/" target="_blank" rel="noopener">DuckDuckGo search saw 28% more visits after Google said people love AI mode</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/27 16:28</div>
+        <p class="summary">Article URL: https://www.pcgamer.com/hardware/duckduckgos-ai-free-search-saw-nearly-28-percent-more-visits-in-the-week-following-googles-insistence-that-people-love-ai-mode/ Comments URL: https://news.ycombinator.com/item?id=48296649 Points: 598 # Comments: 301</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://posthog.com/blog/training-ai-models" target="_blank" rel="noopener">Training our own AI models</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/27 16:08</div>
+        <p class="summary">Article URL: https://posthog.com/blog/training-ai-models Comments URL: https://news.ycombinator.com/item?id=48296359 Points: 187 # Comments: 127</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/" target="_blank" rel="noopener">Tech CEOs are apparently suffering from AI psychosis</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/27 15:20</div>
+        <p class="summary">Article URL: https://techcrunch.com/2026/05/27/tech-ceos-are-apparently-suffering-from-ai-psychosis/ Comments URL: https://news.ycombinator.com/item?id=48295679 Points: 507 # Comments: 265</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/cisco" target="_blank" rel="noopener">Cisco and OpenAI redefine enterprise engineering with Codex</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/27 11:00</div>
+        <p class="summary">Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate defect remediation.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://orchidfiles.com/im-tired-of-ai-generated-answers/" target="_blank" rel="noopener">I'm Tired of Talking to AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/27 10:43</div>
+        <p class="summary">Article URL: https://orchidfiles.com/im-tired-of-ai-generated-answers/ Comments URL: https://news.ycombinator.com/item?id=48292224 Points: 1818 # Comments: 885</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/building-self-improving-tax-agents-with-codex" target="_blank" rel="noopener">Building self-improving tax agents with Codex</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/27 07:00</div>
+        <p class="summary">See how OpenAI, Thrive, and Crete built a self-improving tax agent with Codex, automating filings, improving accuracy, and accelerating workflows.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://theaileverageweekly.com/posts/your-ai-tools-are-only-as-good-as-your-judgment-and-that-s-the-point.html" target="_blank" rel="noopener">AI tools are only as good as your judgment</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/27 00:00</div>
+        <p class="summary">Article URL: https://theaileverageweekly.com/posts/your-ai-tools-are-only-as-good-as-your-judgment-and-that-s-the-point.html Comments URL: https://news.ycombinator.com/item?id=48287649 Points: 81 # Comments: 22</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/grandoreiro-malware-and-btmob-rat.html" target="_blank" rel="noopener">Grandoreiro Malware and BTMOB RAT Campaigns Target Windows and Android Users</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 16:10</div>
+        <p class="summary">Latin America and Europe become the target of two banking trojan campaigns that are designed to infect Windows and Android devices with Grandoreiro and BTMOB malware, respectively. That's according to new findings from WatchGuard and ESET, which have observed the two malware families being used to s...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/malicious-npm-package-stole-files-from.html" target="_blank" rel="noopener">Malicious npm Package Stole Files From Claude AI User Directory via GitHub</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 15:44</div>
+        <p class="summary">Cybersecurity researchers have discovered a new malicious package on the npm registry that comes with information stealing capabilities. According to OX Security, the package, named "mouse5212-super-formatter," is designed to upload files from "/mnt/user-data," a dedicated directory used by Anthropi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/5-steps-to-managing-shadow-ai-tools.html" target="_blank" rel="noopener">5 Steps to Managing Shadow AI Tools Without Slowing Down Employees</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 13:28</div>
+        <p class="summary">When an employee installs an AI writing assistant, connects a coding copilot to their IDE, or starts summarizing meetings with a new browser tool, they are doing exactly what a productive employee should do: finding faster ways to work. Across most organizations today, employees are running three to...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html" target="_blank" rel="noopener">GlassWorm Malware Takedown Disrupts Developer Supply Chain Attack Infrastructure</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 11:48</div>
+        <p class="summary">CrowdStrike, in partnership with Google and the Shadowserver Foundation, has announced the simultaneous disruption of all command-and-control (C2) channels associated with GlassWorm, a persistent software chain campaign targeting software developers through malicious packages and extensions. "Since ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/3-soc-steps-that-shut-down-incident.html" target="_blank" rel="noopener">3 SOC Steps that Shut Down Incident Risks Early</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 11:45</div>
+        <p class="summary">Most organizations still picture cyber defense as a fortress problem: build stronger walls, add more guards, buy another detection engine. But modern incidents rarely crash through the front gate. They drift in disguised as routine activity, hide inside legitimate processes, and quietly accumulate r...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html" target="_blank" rel="noopener">Gitea Vulnerability Exposes Private Container Images without Authentication</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 10:06</div>
+        <p class="summary">Cybersecurity researchers have disclosed a security flaw in Gitea, an open-source, self-hosted platform for version control, that allows unauthenticated remote attackers to pull private container images from Gitea deployments without requiring an account, password, or other credentials. The vulnerab...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ai-chatbot-recommendations-redirect.html" target="_blank" rel="noopener">AI Chatbot Recommendations Redirect Users to Cryptojacking Malware Sites</a></h3>
+        
+        <div class="source">The Hacker News · 05/27 07:45</div>
+        <p class="summary">Microsoft has warned of an active cryptojacking campaign that makes use of artificial intelligence (AI) chatbot interactions as a mechanism for surfacing malicious download sites. "This emerging delivery technique extends social engineering beyond conventional search results and increases the visibi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr260527.html#1" target="_blank" rel="noopener">Weekly Report: Twigに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT · 05/27 00:07</div>
+        <p class="summary">Twigに複数の脆弱性</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/nikotaro713/items/8c403f921fe95d6a2132" target="_blank" rel="noopener">Unity2Dで壁張り付きが発生した時の対処法</a></h3>
+        
+        <div class="source">Qiita - C# · 05/27 12:37</div>
+        <p class="summary">はじめに 2Dアクションゲーム制作にて、プレイヤーが壁に張り付く事象が発生した。 解決方法は簡単だったが、様々な場面で使える機能であるため備忘として残す。 発生した事象 プレイヤーがジャンプで壁に触れた際、方向キーを押し続けると壁に張り付いてしまう。 原因 Unit...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KM_20005/items/be5229a2944df6fa3e97" target="_blank" rel="noopener">【C#】.NET 10の「ファイルベース実行」で、dotnet runしただけなのにAOTエラーでクラッシュする原因と対策</a></h3>
+        
+        <div class="source">Qiita - C# · 05/27 11:33</div>
+        <p class="summary">概要 GitHub Actions やローカル環境において、.NET 10 以降でプロジェクトファイル（.csproj）を作らずに C# の単一ソースファイルを直接実行（dotnet run script.cs）した際、以下のような見慣れないエラーで実行が失敗する現象に直...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/arukaihatsusha/items/cc12193ff1b91bdd0c6b" target="_blank" rel="noopener">クラスから離れよう｜Unity・C#の速度のコツ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/27 10:21</div>
+        <p class="summary">第ゼロ部｜前置き ごきげんよう。サイドでございます。これは私の初めての記事なので、記事の書き方のコツはまだ分からず、これから時間をかけて勉強していきたいと思います。そして日本語はまだ勉強中ですので、忌憚のない評価をいただけると嬉しいです。 第一部｜前置き この記事は上級...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tugamecreate/items/7997ad7639d6dfb49b7c" target="_blank" rel="noopener">【C#基礎】Listとforの組み合わせ #4</a></h3>
+        
+        <div class="source">Qiita - C# · 05/27 06:38</div>
+        <p class="summary">はじめに 今回は、データをまとめて扱うのに便利なListの使い方と、Listとfor文を併用したループ処理について解説していきます。 この記事の目標 Listの宣言方法と要素へのアクセス方法を理解する Listへの要素の追加（Add）・削除（Remove）ができ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/revealing-text-with-css-letter-spacing/" target="_blank" rel="noopener">Revealing Text With CSS letter-spacing</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/27 12:37</div>
+        <p class="summary">Until we get something like ::nth-letter, there are still some really cool text effects we can make from existing CSS features, like letter-spacing, ::first-word and ::first-line. Revealing Text With CSS letter-spacing originally handwritten and published with love on CSS-Tricks. You should really g...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/SE_O_T/items/ffb061c670f056d50fe3" target="_blank" rel="noopener">kintoneで指定したpdfファィルを連結して出力する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/27 11:14</div>
+        <p class="summary">複数の添付ファイルフィールドに入力されたPDFファイルを結合して出力したいという要望があったので作成しました jsライブラリの適応 まず外部ライブラリのPDF-LIBを適応させます 今回は https://unpkg.com/pdf-lib@1.17.1/dist/pdf...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/chot/articles/30da2a9194a081" target="_blank" rel="noopener">TypeScript 7の襲来 — tsgoがもたらすパラダイムシフト</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/27 09:16</div>
+        <p class="summary">TypeScript 7の襲来 2026年4月21日、Microsoftは TypeScript 7.0 Beta を公式に発表しました。これはTypeScriptの12年の歴史における最大級のアーキテクチャ転換であり、TypeScript自身で書かれてきた既存コンパイラを丸ごと Go へ移植 した、いわば「中身を入れ替えた」リリースです。 本記事では、TypeScript 7 の目玉である tsgo の正体、なぜ Go が選ばれたのか(Rust じゃないのか)、現行の 5 系・6 系との違い、そして 7 への移行で準備すべきことを整理します。 TypeScript 7 の主要な...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/monotein/items/d3d58274a2e95d1c119f" target="_blank" rel="noopener">プログラミング学習のモチベーションが続かない本当の理由</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/27 03:05</div>
+        <p class="summary">勉強で挫折する理由 これまで多くのプログラミング初心者を見てきました。 その経験から言える「勉強で挫折する最大の理由」、それは..... 「成功体験の欠如」です。 勉強で挫折しない理由 「できた！」という喜びがあってこそ、「なぜうまくいったんだろう？」という学ぶ気持ちは...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/k-hata-tb/items/088ec9a992381bd6e6de" target="_blank" rel="noopener">【チートシート】Safari (macOS / iOS) で focus イベントが発火する要素・しない要素</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/27 03:02</div>
+        <p class="summary">🙂 はじめに こんにちは。 私が開発・サーバー運用を担当している「XD.GROWTH」ですが、お客様のWebサイトにタグを埋め込み、訪問者の行動（ページ閲覧・クリック・カート投入など）を捕捉して分析・施策につなげる、というよくあるタイプのMAツールです。 先日、お客様の１...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/paiza/articles/frontend_improve_open_api_development_flow" target="_blank" rel="noopener">巨大なOpenAPI定義を扱いやすくするためにやったこと</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/27 01:55</div>
+        <p class="summary">はじめに paiza株式会社でエンジニアをしている川辺(yaruki00)です。 この記事では、社内のフロントエンド改善委員会で半期に取り組んだ、OpenAPIを用いた開発フロー改善について紹介します。特に、巨大化したOpenAPI定義を扱いやすくするために、どのような課題を整理し、どのような方針で改善したのかを中心に書きます。 委員会活動について paizaでは、プロダクト開発を進める中で見えてきた技術的な課題や、開発体験に関する課題を継続的に改善するために、委員会活動を行っています。 日々の開発では、どうしても目の前の機能開発や不具合修正が優先されます。一方で、技術負債の返済...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/tamat_llc/articles/test-react-19-compiler" target="_blank" rel="noopener">React 19のReact Compilerを触ってみた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/27 01:19</div>
+        <p class="summary">こんにちは！TamaT（タマト）代表の田中です。 Next.jsでの開発をしていて、よく「この最適化、本当に必要なのかな...」と悩むことがあります。私自身、2014年からReactを使ってきましたが、パフォーマンス最適化の判断には常に頭を悩ませてきました。 今回は、React 19で導入される「React Compiler」について、実際の開発現場での経験を踏まえながら解説していきたいと思います。 現場エンジニアの「あるある」悩み 実際の開発で、こんな場面に遭遇したことはありませんか？ 私の場合、特にECサイトの開発で商品一覧を実装する際に、以下のような判断で何度も立ち止まりました...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/2ea3bc1bb1eb6dda0a2d" target="_blank" rel="noopener">CSS @keyframes をビジュアル編集するツールを作った — タイムライン UI と「アニメーションを再起動する」CSS のワナ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/27 00:07</div>
+        <p class="summary">CSS の @keyframes を書くとき、50% { transform: translateY(-40px); } の -40 を毎回変えてはブラウザリロード、しっくりこない、もう一回… を繰り返している。タイムライン UI で stop と各プロパティを編集 → ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月30日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月30日 / 全23件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">6</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/31/news014.html" target="_blank" rel="noopener">「Forza Horizon 6」にハマったマンガ家がレースゲームに興味ない人にも勧めたい理由は……できなくてもいい快適さ？</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/30 22:14</div>
+        <p class="summary">実はボクは車やレースゲームにそこまで興味があるわけではありませんが、「Forza Horizon 6」にはすっかりハマりました。ボクを夢中にさせたのは、その自由度の高さです。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/" target="_blank" rel="noopener">SoftBank says it will invest up to €75 billion to build French data centers</a></h3>
+        
+        <div class="source">TechCrunch · 05/30 21:45</div>
+        <p class="summary">The goal, the firm said, is to develop and operate up to 5 gigawatts of additional data center capacity.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/30/this-weekends-two-biggest-movies-were-both-directed-by-youtubers/" target="_blank" rel="noopener">This weekend’s two biggest movies were both directed by YouTubers</a></h3>
+        
+        <div class="source">TechCrunch · 05/30 21:12</div>
+        <p class="summary">The YouTube-to-prestige-horror pipeline is looking very strong.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/30/snap-alums-unveil-ghost-angels-fund/" target="_blank" rel="noopener">Snap alums unveil Ghost Angels fund</a></h3>
+        
+        <div class="source">TechCrunch · 05/30 17:00</div>
+        <p class="summary">A group of 20 Snap alumni has come together to launch a fund called Ghost Angels to back the next generation of social media.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/940421/backrooms-blockbuster-38-million-opening" target="_blank" rel="noopener">Backrooms is a certified blockbuster with a $38 million opening day</a></h3>
+        
+        <div class="source">The Verge · 05/30 16:58</div>
+        <p class="summary">The Kane Parsons' film Backrooms is expected to earn up to $90 million in its opening weekend after pulling down $38 million on Friday alone. That's not only above expectations, but absolutely obliterates A24's previous opening weekend record of $25.5 million for Alex Garland's Civil War. It's also ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/" target="_blank" rel="noopener">‘What a joke’: Github Copilot’s new token-based billing spurs consternation among devs</a></h3>
+        
+        <div class="source">TechCrunch · 05/30 16:30</div>
+        <p class="summary">The golden age of Microsoft's Github Copilot appears to be at an end.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/939930/welcome-to-night-vale-host-cecil-baldwin-shares-his-tech-pet-peeves" target="_blank" rel="noopener">Welcome to Night Vale host Cecil Baldwin shares his tech pet peeves</a></h3>
+        
+        <div class="source">The Verge · 05/30 16:00</div>
+        <p class="summary">Cecil Baldwin's r&#233;sum&#233; includes appearances on Gravity Falls, narrating the documentary Scream, Queen! My Nightmare on Elm Street, and performing as part of the New York Neo-Futurists theater company. But he is best known as the host of the podcast Welcome to Night Vale, a long-running fic...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/" target="_blank" rel="noopener">Meta is reportedly developing an AI pendant</a></h3>
+        
+        <div class="source">TechCrunch · 05/30 15:59</div>
+        <p class="summary">Meta seems to be making big bets on AI-powered hardware.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://musings.martyn.berlin/to-have-a-moral-stance-on-ai-is-to-be-an-outcast-and-it-sucks" target="_blank" rel="noopener">To have a moral stance on AI is to be an outcast, and it sucks</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/30 16:04</div>
+        <p class="summary">Article URL: https://musings.martyn.berlin/to-have-a-moral-stance-on-ai-is-to-be-an-outcast-and-it-sucks Comments URL: https://news.ycombinator.com/item?id=48337676 Points: 116 # Comments: 258</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://jackmaguire.org/blog/ai-job-grief/" target="_blank" rel="noopener">AI job grief: A psychological crisis hitting tech workers</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/30 14:41</div>
+        <p class="summary">Article URL: https://jackmaguire.org/blog/ai-job-grief/ Comments URL: https://news.ycombinator.com/item?id=48336760 Points: 86 # Comments: 100</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup" target="_blank" rel="noopener">Anthropic surpasses OpenAI to become most valuable AI startup</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/30 13:56</div>
+        <p class="summary">Article URL: https://qazinform.com/news/anthropic-surpasses-openai-to-become-worlds-most-valuable-ai-startup Comments URL: https://news.ycombinator.com/item?id=48336233 Points: 385 # Comments: 437</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.wsj.com/tech/ai/corporate-america-is-starting-to-ration-ai-as-cost-skyrockets-1eb99d7a" target="_blank" rel="noopener">Corporate America Is Starting to Ration AI as Cost Skyrockets</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/30 12:17</div>
+        <p class="summary">Article URL: https://www.wsj.com/tech/ai/corporate-america-is-starting-to-ration-ai-as-cost-skyrockets-1eb99d7a Comments URL: https://news.ycombinator.com/item?id=48335388 Points: 138 # Comments: 135</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/tomehen/items/03a20b785f2a2fb48210" target="_blank" rel="noopener">ぼくが考えた最強のデザインパターンがちゃんと使えるものだった件について</a></h3>
+        
+        <div class="source">Qiita - C# · 05/30 14:10</div>
+        <p class="summary">導入 ゲームのロジックを管理するクラスは、 状態遷移、ルール、オブジェクト管理などが混在しやすく、 分岐の増加とともに急速に複雑化する。 特に、状態ごとに処理が大きく変わる場合、 ifやswitchによる分岐が肥大化し、見通しが悪くなる。 それに分岐で解決しようとすると破...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Sky-Guitar/items/685238c88a1c063791ae" target="_blank" rel="noopener">【Unity】AudioMixerの音量を線形スケールで扱う拡張メソッド 【AudioMixer】</a></h3>
+        
+        <div class="source">Qiita - C# · 05/30 08:33</div>
+        <p class="summary">スライダーの値をそのまま渡せる、シンプルな音量設定の実装パターンです。 はじめに Unity のAudioMixer.SetFloat()はデシベル値を受け取ります。ただ、UIスライダーが返すのは 0〜1 の線形スケール。この変換を呼び出し側で毎回書くのは少し面倒ですし、...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/SHIJIMI_EN/items/5d78a013ca6066b26bf3" target="_blank" rel="noopener">HTTPClinetをnewしまくるとどうなるか。</a></h3>
+        
+        <div class="source">Qiita - C# · 05/30 07:14</div>
+        <p class="summary">HTTPClient とは アプリケーションが API リクエストを送るときに使うもの。 var client = new HttpClient(); プロパティには、 URL 設定 I/O のタイムアウト設定 UserAgent 設定 やりとりの形式を指定する設定 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/gaokohaku/articles/e40e0ec8871eeb" target="_blank" rel="noopener">【C#】非表示にしたコントロールの空間を詰めるシンプルな方法</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/30 04:46</div>
+        <p class="summary">概要 フォームアプリで、ボタンなどのコントロールを非表示(Visible = false)にした時、コントロールの存在していた場所に空間ができてしまいます。この空間を詰める方法を紹介します！ 状態 実行結果 備考 通常 非表示 button2を非表示 非表示＆詰める button2を非表示非表示分の空間を詰める 開発環境 .Net 8.0 .Visual Studio 2022 方法 デザイナーでボタンをflowLayoutPanelの上に設置するだけで、実現できます。 (とてもシンプルです！） flowLayoutPanelは、ツールボ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/tkmvictim/articles/6e82da5d62267c" target="_blank" rel="noopener">内部実装から理解する Bunshi 入門</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/30 12:59</div>
+        <p class="summary">はじめに Bunshi は、Jotai の atom や Zustand の store といった状態を molecule という単位にまとめ、scope に応じてインスタンスを出し分ける dependency injection ライブラリです。 公式ドキュメントを読むと、基本的な使い方はかなりシンプルです。 import { molecule } from "bunshi"; import { atom } from "jotai/vanilla"; export const CountMolecule = molecule(() =&gt; atom(0)); React で...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/acntechjp/articles/d4719fca446824" target="_blank" rel="noopener">Amazon CloudWatch RUM のセッションリプレイ機能を試してみた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/30 09:50</div>
+        <p class="summary">導入 背景 2026年5月1日のアップデートにより、Amazon CloudWatch RUM でセッションリプレイ（Session Replay）がサポートされるようになりました。 この機能により、ユーザーがブラウザ上で行ったクリック・スクロール・ページ遷移・エラーを動画のように再現でき、問題を自ら再現しなくてもフロントエンドの不具合を視覚的に診断できます。 本ブログでは、Session Replay の概要を解説したうえで、実際に機能を有効化してセッションを記録・確認するまでの手順を紹介します。 本記事の目的 Session Replay を有効化することで、サーバ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KAI_Mutsumi/items/178739fa4bb95f2c574c" target="_blank" rel="noopener">気象庁サイトを利用したビューアの作成 12 津波情報(地図)</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/30 09:44</div>
+        <p class="summary">目次・全体的な注意点(第1回の記事) 前回は津波情報を表形式で表示してきましたが、今回は地図形式で表示してみます 前回同様、津波に関する情報は発表頻度が低いため、この通りに書いても動かない場面もあるかもしれません。ご了承ください apiのURL 最近発生した地震...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/watanabe_trtr/items/c9318993fd2ecdf0d4a2" target="_blank" rel="noopener">ReactのuseEffectクリーンアップ（return）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/30 05:51</div>
+        <p class="summary">useEffect の中で使う return（クリーンアップ関数）は、コンポーネントのアンマウント時や、次のエフェクトが実行される前に「前回の処理を片付ける」ための重要な仕組みである。 1. なぜクリーンアップ（return）が必要か useEffect 内で外部システム...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kariu/items/055d52092bcd6d9f0c7d" target="_blank" rel="noopener">URLSearchParamsについて</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/30 03:01</div>
+        <p class="summary">URLSearchParamsとは？ URLSearchParamsは、URLのクエリパラメータ（?以降）を簡単に取得・追加・削除・更新するためのWeb標準API。 https://developer.mozilla.org/ja/docs/Web/API/URLSear...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/motowo/articles/claude-code-mobile-ux-reviewer-agent" target="_blank" rel="noopener">Claude Code のレビューエージェントを実戦で育てる——モバイルUXレビュアー開発記</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/30 03:00</div>
+        <p class="summary">はじめに：読者の6割はスマートフォンなのに、レビューに「スマートフォンの目」がなかった 筆者は Zenn 記事のレビューを Claude Code のカスタムエージェントで自動化しています。 この記事は、そのパイプラインに「モバイル UX レビュアー」を追加し、実戦で育てた記録です。 きっかけは GA4 でした。自分の記事の閲覧環境を見て、手が止まったのです。 内訳は Mobile 約 60％ / Desktop 約 35％ / Tablet 約 5％、Safari（モバイル）のエンゲージメント率は 22.7％。 読者の 6 割はスマートフォンで読んでいるのに、レビューパイプライン...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html" target="_blank" rel="noopener">PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation</a></h3>
+        
+        <div class="source">The Hacker News · 05/30 06:41</div>
+        <p class="summary">Palo Alto Networks has warned that a recently disclosed medium-severity security flaw impacting PAN-OS and Prisma Access has come under active exploitation in the wild. The vulnerability, tracked as CVE-2026-0257 (CVSS score: 7.8), refers to a case of authentication bypass that could be exploited by...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

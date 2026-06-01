@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月22日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月22日 / 全37件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ohisama@github/items/228e31de973b3c37d20c" target="_blank" rel="noopener">plunkerでwebcam</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/22 21:40</div>
+        <p class="summary">概要 plunkerでgetUserMediaがセキュリティに弾かれて、使用できない状態でした。 解決策を、思い付きました。 解決策 Raw Previewを使う。 写真 成果物 以上。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/the-state-of-css-centering-in-2026/" target="_blank" rel="noopener">The State of CSS Centering in 2026</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/22 13:44</div>
+        <p class="summary">Despite the countless number of online resources, it’s easy to get confused when trying to center an element. There are documented solutions, but do you really understand why the code you picked works? Let's look at the current state of centering options today in 2026. The State of CSS Centering in ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/four-levels-customer-understanding/" target="_blank" rel="noopener">Four Levels Of Customer Understanding</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/22 13:00</div>
+        <p class="summary">What people say, feel, think, and do are often very different things. To understand the underlying reasons for user behavior, it helps to look beyond the surface and explore hidden motivations, root causes, and the different layers of reality that shape how people act. Brought to you by Measuring UX...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Ran3/items/93bd938ea3b176790279" target="_blank" rel="noopener">【自給自足シリーズ】Chrome拡張機能-PiP（ピクチャー イン ピクチャー）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/22 11:28</div>
+        <p class="summary">はじめに 皆さんはPiP（ピクチャー イン ピクチャー）をご存知でしょうか。以降はPiPと呼びます。 ふとYoutubeを使っていて以前はPiPが標準の機能として備わっていた気がしますが、現在では「ミニプレイヤー」という機能があります。ミニプレイヤーはブラウザ内でYout...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/5ef733518da593" target="_blank" rel="noopener">React × Tailwind CSS 入門 #04｜useEffectを理解する｜データ取得と副作用の基礎</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/22 10:38</div>
+        <p class="summary">はじめに 前回は、useStateを使ってクリックで動くUIを作りました。 今回は、React初心者の最大の関門とも言われる useEffect（ユーズエフェクト） を学びます。 useEffectは、コンポーネントの中で「副作用（Side Effect）」を扱うための機能（Hook）です。 「副作用」とは、画面を描画する（レンダリング）こと「以外」の処理全般を指します。具体的には以下のようなものです： 外部のAPIからデータを取得する タイマーをセットする ブラウザのタブのタイトルを変更する これらはすべてuseEffectの管轄になります。AIにコンポーネントを作らせる際も、...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/merpro-dev/items/04a3c3111ca57ea31029" target="_blank" rel="noopener">【電脳せどり】利益計算が一瞬で出来るツールを開発した話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/22 10:28</div>
+        <p class="summary">はじめに こんにちは！今日は『電脳せどり』向けの利益計算ツールを開発してみました。 🛠️ 作ったもの （右上にある利益計算ツールが開発したやつです。） 販売価格、原価、配送料を入れるだけで、手数料10%を自動計算して利益と利益率を瞬時に出してくれる機能です。もし 赤字...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/reformas/articles/67e67b05c58591" target="_blank" rel="noopener">Claude Code Review を GitHub Actions に5分で導入する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/22 09:01</div>
+        <p class="summary">本記事は Next.js / TypeScript のフロントエンド開発を前提としていますが、構成自体はリポジトリの言語を問わず流用できます。 はじめに AI でコードを書ける時代になって便利になった反面、コード品質で気になる点が増えてきました。 適切にコンポーネント化されていない 共通化されていない デッドコードがある AI によって開発速度が上がった分、品質の低いコードも量産されやすくなっているという負の側面があると感じています。 そこで今回、Claude Code のサブスクリプションプラン（Max プラン）の枠内で CI からコードレビューを回す仕組みを導入しました。ミニ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ThangDang/items/b510f665fb4b81b592af" target="_blank" rel="noopener">position: sticky が効かない？原因は overflow: hidden かもしれない</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/22 07:51</div>
+        <p class="summary">overflow: clip — position: sticky が壊れる問題の解決策 TL;DR: overflow: hidden の代わりに overflow: clip を使えば、sticky はそのまま動き、はみ出しも隠せる。 問題 こういうレイアウト...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/22/blue-origin-cleared-to-fly-new-glenn-mega-rocket-after-april-mishap/" target="_blank" rel="noopener">Blue Origin cleared to fly New Glenn mega-rocket after April mishap</a></h3>
+        
+        <div class="source">TechCrunch · 05/22 21:37</div>
+        <p class="summary">Jeff Bezos' rocket company confirmed an engine failure led to the loss of an AST SpaceMobile satellite last month, but offered little detail.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/22/google-goes-for-the-glitter-with-disco-ball-icons-are-yall-sure-you-still-want-this/" target="_blank" rel="noopener">Google goes for the glitter with disco-ball icons: ‘Are y’all sure you still want this?’</a></h3>
+        
+        <div class="source">TechCrunch · 05/22 21:02</div>
+        <p class="summary">You can now disco ball-ify your entire Pixel home screen, says Google.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/" target="_blank" rel="noopener">How VCs and founders use inflated ‘ARR’ to crown AI startups</a></h3>
+        
+        <div class="source">TechCrunch · 05/22 20:40</div>
+        <p class="summary">Some AI startups are stretching traditional revenue metrics when talking about progress publicly. And their investors are fully aware.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard" target="_blank" rel="noopener">Google&#8217;s AI search is so broken it can &#8216;disregard&#8217; what you&#8217;re looking for</a></h3>
+        
+        <div class="source">The Verge · 05/22 20:39</div>
+        <p class="summary">Google's AI Overviews are running into an interesting problem right now. Earlier on Friday, if you searched for the term "disregard," the AI Overview section would include a response like what you'd see from a more traditional AI chatbot instead of the typical AI summary, as spotted on X. As you can...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/936200/twelve-south-airfly-pro-2-memorial-day-deal-sale" target="_blank" rel="noopener">Twelve South’s AirFly Pro 2 has hit one of its best prices ahead of summer travel</a></h3>
+        
+        <div class="source">The Verge · 05/22 18:00</div>
+        <p class="summary">With Memorial day weekend kicking off the travel season, we’re seeing a lot of deals pop up on travel gadgets, from portable power banks to noise-canceling headphones. One of the best right now is Twelve South’s AirFly Pro 2 Bluetooth adapter, which lets you use your wireless headphones with in-flig...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/936290/meta-forum-facebook-groups-app-hands-on" target="_blank" rel="noopener">Meta’s Forum is part Reddit, part Facebook, and part Google AI Overview</a></h3>
+        
+        <div class="source">The Verge · 05/22 17:27</div>
+        <p class="summary">Meta's new Forum app for iPhones takes Facebook Groups and moves them to a dedicated app with a dedicated AI chatbot to go with it, like an AI revamp of the ill-fated Groups app Facebook shut down in 2017. Rather than going to ChatGPT or tacking "Reddit" onto the end of a Google search, Forum [&#823...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen" target="_blank" rel="noopener">Elon, stop trying to make Grok happen</a></h3>
+        
+        <div class="source">The Verge · 05/22 17:17</div>
+        <p class="summary">There is a harsh truth about Elon Musk's "truth-seeking" AI chatbot Grok: It's not very good, and not many people are using it. That's the takeaway of a new Reuters report, which found that Grok barely appears in federal records of how the US government used AI last year. It's not the only sign xAI'...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/936196/best-memorial-day-sales-tech-deals-2026" target="_blank" rel="noopener">The best Memorial Day sales you can shop this weekend</a></h3>
+        
+        <div class="source">The Verge · 05/22 16:50</div>
+        <p class="summary">Memorial Day is nearly here, meaning the seasonal sales are in full swing. If your weekend plans involve pool parties or barbecues, now is a great time to pick up a portable speaker or set of solar lights, as many of our favorite models are currently on sale. You can also find deals on everything [&...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://github.com/anomalyco/models.dev" target="_blank" rel="noopener">Models.dev: open-source database of AI model specs, pricing, and capabilities</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/22 20:26</div>
+        <p class="summary">Article URL: https://github.com/anomalyco/models.dev Comments URL: https://news.ycombinator.com/item?id=48241172 Points: 72 # Comments: 10</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/io-2026-dialogues-recap/" target="_blank" rel="noopener">Catch up on the Dialogues stage at Google I/O 2026.</a></h3>
+        
+        <div class="source">Google AI Blog · 05/22 18:00</div>
+        <p class="summary">Alphabet CEO Sundar Pichai in conversation on the I/O 2026 Dialogues stage</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/" target="_blank" rel="noopener">AI has a multiplying effect on existing technical skills</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/22 13:22</div>
+        <p class="summary">Article URL: https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/ Comments URL: https://news.ycombinator.com/item?id=48235526 Points: 269 # Comments: 268</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://libertas.software/en/knowledge-hub/19/the-companies-cutting-headcount-for-ai-will-lose-to-the-ones-who-didnt" target="_blank" rel="noopener">The Companies Cutting Headcount for AI Will Lose to the Ones Who Didn't</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/22 11:45</div>
+        <p class="summary">Article URL: https://libertas.software/en/knowledge-hub/19/the-companies-cutting-headcount-for-ai-will-lose-to-the-ones-who-didnt Comments URL: https://news.ycombinator.com/item?id=48234547 Points: 194 # Comments: 185</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://annas-archive.gl/blog/llms-txt.html" target="_blank" rel="noopener">If you’re an LLM, please read this</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/22 11:28</div>
+        <p class="summary">Article URL: https://annas-archive.gl/blog/llms-txt.html Comments URL: https://news.ycombinator.com/item?id=48234413 Points: 692 # Comments: 386</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arnon.dk/the-current-ai-pricing-was-always-going-to-go-away/" target="_blank" rel="noopener">The current AI pricing was always going to go away</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/22 11:24</div>
+        <p class="summary">Article URL: https://arnon.dk/the-current-ai-pricing-was-always-going-to-go-away/ Comments URL: https://news.ycombinator.com/item?id=48234391 Points: 72 # Comments: 89</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://modelrift.com/blog/openscad-llm-benchmark/" target="_blank" rel="noopener">Antigravity 2.0 Tops the OpenSCAD Architectural 3D LLM Benchmark</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/22 10:38</div>
+        <p class="summary">Article URL: https://modelrift.com/blog/openscad-llm-benchmark/ Comments URL: https://news.ycombinator.com/item?id=48234090 Points: 329 # Comments: 129</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/22/1137813/google-i-o-showed-how-the-path-for-ai-science-is-shifting/" target="_blank" rel="noopener">Google I/O showed how the path for AI-driven science is shifting</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/22 10:00</div>
+        <p class="summary">During Tuesday’s Google I/O keynote, Demis Hassabis, the CEO of Google DeepMind, proclaimed that we are currently “standing in the foothills of the singularity.” It was a striking statement—the singularity is the theoretical future moment when AI rapidly exceeds human intelligence and dramatically t...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html" target="_blank" rel="noopener">First VPN Dismantled in Global Takedown Over Use by 25 Ransomware Groups</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 17:35</div>
+        <p class="summary">Authorities in Europe and North America have announced the dismantling of a criminal virtual private network (VPN) service used by criminal actors to obscure the origins of ransomware attacks, data theft, scanning, and denial-of-service attacks. The disruption of First VPN Service was led by France ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/" target="_blank" rel="noopener">Lawmakers Demand Answers as CISA Tries to Contain Data Leak</a></h3>
+        
+        <div class="source">Krebs on Security · 05/22 16:34</div>
+        <p class="summary">Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity &#038; Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of other agency secrets on a public GitHub ac...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ghostwriter-targets-ukraine-government.html" target="_blank" rel="noopener">Ghostwriter Targets Ukraine Government Entities with Prometheus Phishing Malware</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 16:20</div>
+        <p class="summary">The Belarus-aligned threat actor known as Ghostwriter (aka UAC-0057 and UNC1151Ukraine's National Security and Defense Council) has been observed using lures related to Prometheus, a Ukrainian online learning platform, to target government organizations in the country. The activity, per the Computer...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/megalodon-github-attack-targets-5561.html" target="_blank" rel="noopener">Megalodon GitHub Attack Targets 5,561 Repos with Malicious CI/CD Workflows</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 11:55</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a new automated campaign called Megalodon that has pushed 5,718 malicious commits to 5,561 GitHub repositories within a six-hour window. "Using throwaway accounts and forged author identities (build-bot, auto-ci, ci-bot, pipeline-bot), the attacker...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/making-vulnerable-drivers-exploitable.html" target="_blank" rel="noopener">Making Vulnerable Drivers Exploitable Without Hardware - The BYOVD Perspective</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 11:38</div>
+        <p class="summary">1 Introduction This article provides a technical analysis of how many Windows kernel mode drivers can be interacted with from user mode without the hardware they were developed for. This work was motivated by driver-oriented vulnerability research and the need to evaluate the exploitability of indiv...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/kimwolf-ddos-botnet-operator-arrested.html" target="_blank" rel="noopener">Kimwolf DDoS Botnet Operator Arrested in Canada Over DDoS-for-Hire Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 08:50</div>
+        <p class="summary">The U.S. Department of Justice (DoJ) on Thursday announced the arrest of a Canadian man in connection with allegedly operating a distributed denial-of-service (DDoS) botnet known as Kimwolf. In tandem, Jacob Butler (aka Dort), 23, Ottawa, Canada, has been charged with offenses related to the develop...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cisa-adds-exploited-langflow-and-trend.html" target="_blank" rel="noopener">CISA Adds Exploited Langflow and Trend Micro Apex One Vulnerabilities to KEV</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 05:47</div>
+        <p class="summary">The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added two security flaws impacting Langflow and Trend Micro Apex One to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities in question are listed below - CVE-2025-...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html" target="_blank" rel="noopener">Cisco Patches CVSS 10.0 Secure Workload REST API Flaw Enabling Data Access</a></h3>
+        
+        <div class="source">The Hacker News · 05/22 05:36</div>
+        <p class="summary">Cisco has rolled out updates for a maximum-severity security flaw impacting Secure Workload that could allow an unauthenticated, remote attacker to access sensitive data. Tracked as CVE-2026-20223 (CVSS score: 10.0), the vulnerability arises from insufficient validation and authentication when acces...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/4a4a4d96fec8479993e6" target="_blank" rel="noopener">AIに頼り切ってタスクアプリを追加開発する。：ファイルアップロード機能追加</a></h3>
+        
+        <div class="source">Qiita - C# · 05/22 09:53</div>
+        <p class="summary">前回までの概要 前回まででタスク管理アプリの大枠作成、ブラッシュアップをしました。 今回はファイルアップロード機能の追加を行います。 プロンプト タスク修正画面にファイルをアップロードできるように修正してください。 項目はDatagrid等、直接の操作は出来ずReadO...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/a2ae82a469f4e3647481" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：画面作成</a></h3>
+        
+        <div class="source">Qiita - C# · 05/22 09:53</div>
+        <p class="summary">はじめに 前回、家計簿アプリの設計を行いました(AIがやりました) 今回はその設計内容を元に取りあえず動く状態にします。 プロンプト 家計簿アプリの開発を行います。 最低限画面を表示したいため、コードを出力してください。 各画面の機能等は後ほど実装します。 要件は以下で...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/a6467899fcabe61e9920" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：設計</a></h3>
+        
+        <div class="source">Qiita - C# · 05/22 09:53</div>
+        <p class="summary">はじめに 今回からAIに頼り切った家計簿アプリを開発していきます。 要件 今回考えている最低限の要件は以下 ・OCR取り込み(レシート等)で手入力を最小限に ・データはSQLiteで管理してみる ・Excel出力機能で拡張性を上げる プロンプト 家計簿アプリの開発を検...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tugamecreate/items/ba04b2dd1f3798d3276f" target="_blank" rel="noopener">【C#入門】switchの使い方</a></h3>
+        
+        <div class="source">Qiita - C# · 05/22 08:17</div>
+        <p class="summary">ゲーム制作のための switch を学ぶ はじめに switch は「値に応じて処理を振り分ける」ための構文です。ゲーム開発ではキャラクターの状態（待機・走行・ジャンプなど）を分岐する場面でよく使われます。この記事では基本的な使い方に加え、制作でよく遭遇する落とし穴とその...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sitio1/articles/5d9f66005dbd21" target="_blank" rel="noopener">設計を逆転させたら、ウェーハマップ描画が3秒から1.6ミリ秒になった話</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/22 00:00</div>
+        <p class="summary">はじめに .NETでビットマップ描画をループで組んでいるなら、この記事は参考になるかもしれません。 数年前、.NET Framework でウェーハマップ画像生成ツールを作ったとき、10万ダイ・1024×1024 ピクセルの画像を生成するのに約 3秒 かかっていました。UIに組み込むと明らかにもたつく数字です。 今回 .NET 10 で同等の処理を書き直す機会があり、設計をシンプルに絞ったら 2000×2000 ピクセル・10万ダイで 1.6ミリ秒 まで短縮できました。この記事では、その考え方と実装を紹介します。 上記はウェーハマップ画像の例(200 x 200 ピクセル) ! 計...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

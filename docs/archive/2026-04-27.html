@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月27日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月27日 / 全35件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">7</span></button></div>
+    </div>
+    
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/knc/articles/b1a4e34e445b84" target="_blank" rel="noopener">【Revit 2027】全ユーザー向けインストール先変更とバンドル配布時の注意点</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/27 22:32</div>
+        <p class="summary">Revit 2025〜2027など、複数バージョンに対応したアドインをバンドル形式で配布するインストーラーを作成した際、「なぜかRevit 2027だけアドインが読み込まれない！」という現象に遭遇しました。 原因は、Revit 2027からの全ユーザー（All-Users）向けアドインの配置場所の仕様変更でした。同じようなトラップにハマる方を減らすため、簡潔に情報を共有します。 変更の概要：ProgramDataからProgram Filesへ Revit 2027ではセキュリティ向上のため、全ユーザー向けアドインの読み込み先が ProgramData から Program File...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/api-versioning-in-dotnet-10-applications/" target="_blank" rel="noopener">Combining API versioning with OpenAPI in .NET 10 applications</a></h3>
+        
+        <div class="source">.NET Blog · 04/27 20:00</div>
+        <p class="summary">Learn how to implement API versioning in your .NET 10 applications using OpenAPI for better API management and documentation. The post Combining API versioning with OpenAPI in .NET 10 applications appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/api-versioning-in-dotnet-10-applications/" target="_blank" rel="noopener">Combining API versioning with OpenAPI in .NET 10 applications</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/27 20:00</div>
+        <p class="summary">Learn how to implement API versioning in your .NET 10 applications using OpenAPI for better API management and documentation. The post Combining API versioning with OpenAPI in .NET 10 applications appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Mitsuki0003/items/260d0f64cdc580de181c" target="_blank" rel="noopener">キャッシュ戦略の徹底比較～Lazyキャッシュを中心に～</a></h3>
+        
+        <div class="source">Qiita - C# · 04/27 05:02</div>
+        <p class="summary">Lazyキャッシュ（Cache-Aside）を軸に、他の戦略と何がどう違うのか を実例とコードで比較していきます。 1. なぜ比較が必要か 「とりあえずRedis入れてキャッシュした」では本番で必ず痛い目を見ます。各戦略には明確な得意領域と地雷ポイントがあり、ワークロード...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/23/news048.html" target="_blank" rel="noopener">「宇宙は極低温だから放熱が楽」は本当か？　宇宙データセンターの実現に欠かせない冷却の話</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/27 22:00</div>
+        <p class="summary">「宇宙空間は真空で冷たく、AI半導体のような高発熱機器も地上より楽に冷やせるのではないか」――そんな直感から、軌道上データセンター構想を合理的な未来像として語る言説もある。だが実際の宇宙機開発では、熱をどう集め、どう運び、どう捨てるかは、今もなお難しい課題だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/28/news050.html" target="_blank" rel="noopener">OpenAIとMicrosoft、提携契約を再改定　OpenAIはAWSなど任意のクラウドで製品提供可能に</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/27 22:00</div>
+        <p class="summary">OpenAIとMicrosoftが提携内容を更新した。OpenAIはAzure以外のクラウドでも自社技術の販売が可能になり、APIの独占提供が終了する。MicrosoftによるOpenAIへの収益分配は終了するが、OpenAIからMicrosoftへの収益分配は継続される。両社は柔軟性を確保しつつ、他社との提携を含むマルチクラウド戦略を加速させる。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/24/news120.html" target="_blank" rel="noopener">「LoL」はどれくらい脳機能を向上させる？　5カ月遊んだ68人の脳を分析、他ゲームと比較　学術誌に掲載</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/27 22:00</div>
+        <p class="summary">中国の電子科技大学などに所属する研究者らがBrain Sciences誌に発表した論文「Effects of Video Game Type on Cognitive Performance and Brain Functional Connectivity: A Longitudinal EEG Study」は、ビデオゲームのジャンルによって脳にどのような影響を及ぼすのかを分析した研究報告だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/09/news010.html" target="_blank" rel="noopener">AIに調べごとを頼み……失敗　漫画「1週間後に生成AIで恥をかく新入社員」【残り2日】</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/27 22:00</div>
+        <p class="summary">とある企業に入社した新入社員「ニイジマ」が、AI活用の“地雷”を踏みまくっていく様子を通して、会社におけるAIの使い方、その初歩を紹介します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/919411/canonical-ubuntu-linux-ai-features" target="_blank" rel="noopener">Canonical lays out a plan for AI in Ubuntu Linux</a></h3>
+        
+        <div class="source">The Verge · 04/27 20:47</div>
+        <p class="summary">One of the most popular Linux distributions is about to get an influx of AI features. As reported by Phoronix, Jon Seager, VP of engineering at Ubuntu developer Canonical, shared a blog post on Monday detailing plans to add AI features to the Linux distro over the next year. As the post states, the ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/27/letterboxd-sale-film-social-media-semafor-versant-ankler/" target="_blank" rel="noopener">Letterboxd, the social platform for film buffs, reportedly looking for new owner</a></h3>
+        
+        <div class="source">TechCrunch · 04/27 20:37</div>
+        <p class="summary">Potential buyers of Letterboxd include Versant, the parent company of CNBC and MS NOW, and Hollywood media company The Ankler, according to Semafor.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/27/consumers-lost-2-1-billion-to-social-media-scams-in-2025-ftc-reports/" target="_blank" rel="noopener">Consumers lost $2.1B to social media scams in 2025, FTC reports</a></h3>
+        
+        <div class="source">TechCrunch · 04/27 19:09</div>
+        <p class="summary">The agency reports that losses from social media scams have increased eightfold and that social media scams resulted in higher losses than any other method scammers used to contact consumers.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/919337/president-trump-jimmy-kimmel-fire-abc" target="_blank" rel="noopener">Trump demands ABC fire Jimmy Kimmel</a></h3>
+        
+        <div class="source">The Verge · 04/27 18:18</div>
+        <p class="summary">President Donald Trump is calling for Disney to fire Jimmy Kimmel. On Thursday, Kimmel joked that Melania Trump had looked like an "expectant widow" in a skit about the upcoming White House Correspondents' Dinner. The skit aired days before an armed gunman made an assassination attempt at the event,...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ettomio0518/items/f642cbf9e6bb148911bc" target="_blank" rel="noopener">「舞いカレンダー」AI機能の搭載と、アプリ・Web間「双方向同期」の構築</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/27 21:05</div>
+        <p class="summary">はじめに 私の個人開発アプリに、ついにAI（Gemini）という「羅針盤」を搭載しました。 AIは現在Web版の「今日のカード」に実装しており、今後はWeb側でAIと共にデータを作成・編集する機会が劇的に増えることが予想されます。そこで避けて通れないのが、**「スマホアプ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ke-tan/items/0c26fbc6dfca9b0f0263" target="_blank" rel="noopener">ポートフォリオ制作記</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/27 21:02</div>
+        <p class="summary">※今後、編集予定 前書き ChatGPTと切磋琢磨しながら進めてきたため後からの振り返りになり、製作時間などうろ覚えな箇所がある所をご了承ください。 製作時間（推定）はポートフォリオで1ヵ月、Todoアプリで2週間ほど。 苦労したポイント 感想と疑問 今後の課題 苦...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ke-tan/items/22362f0b4d63b2693e8a" target="_blank" rel="noopener">React学習過程で出てきたJSメソッド</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/27 20:06</div>
+        <p class="summary">※現在、途中経過の記事です 動画教材やChat GPTに質問する過程で出てきたJSのメソッド crypto.randomUUID Array.isArray includes every flatMap new Set Object.entries localStora...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ke-tan/items/698b40ab2a7d74220455" target="_blank" rel="noopener">React</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/27 19:32</div>
+        <p class="summary">※現在、途中経過の記事です 学習教材・環境 教材 ・React完全入門ガイド CodeMafia - Udemy 質問 ・ChatGPT 特定のエラーや機能、メソッドを解説させるのに便利。自分のレベルに合わせてかみ砕いて解説してくれるため、記事で長文を読む必要がない。記事...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/using-nonexistent-nth-letter-selector-now/" target="_blank" rel="noopener">Let’s Use the Nonexistent ::nth-letter Selector Now</a></h3>
+        
+        <div class="source">CSS-Tricks · 04/27 13:55</div>
+        <p class="summary">My shim might give the powers that be another reason to say native support isn't necessary, or if lots of people use my :nth-letter hack in the wild, the browser gods might recognize the need to implement it for real. Let’s Use the Nonexistent ::nth-letter Selector Now originally handwritten and pub...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/04/bug-free-workforce-ai-disrupting-teams/" target="_blank" rel="noopener">The “Bug-Free” Workforce: How AI Efficiency Is Subtly Disrupting The Interactions That Build Strong Teams</a></h3>
+        
+        <div class="source">Smashing Magazine · 04/27 10:00</div>
+        <p class="summary">AI tools are eliminating the need to “bug” colleagues for help, but the informal interactions they replace are the very scaffolding that builds team trust, belonging, and innovation. Casey Hudetz and Eric Olive explore the research and potential impacts behind that risk and offer practical strategie...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/lv/articles/214f22bbc6df17" target="_blank" rel="noopener">TypeScript 5.5の型ガードとZod v4で、APIレスポンスを安全に扱おう</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/27 08:50</div>
+        <p class="summary">はじめに 外部のAPIから返ってくるJSONが、本当にこちらの想定どおりの形をしているか？ TypeScriptで書いていてコンパイルが通っても、実行時にこの不安が残る場面が出てくると思います。 型注釈はコンパイル後に消えてしまう仕様なので、ランタイムでは型を見てくれていないからです。 実行時にデータの形をチェックする手段としてのユーザー定義型ガードと、Zodによるスキーマバリデーションを、現場で踏みやすい落とし穴と一緒に整理してみます。 本記事では、Zodはv4系の最新APIに合わせて書いています。 https://zod.dev/v4 TL;DR TypeScriptの型は...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/socialplus/articles/280d86acbd98c6" target="_blank" rel="noopener">pnpm v10 へのアップグレードで Vercel ビルドが失敗した話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/27 06:00</div>
+        <p class="summary">こんにちは、steshima です。 ソーシャル PLUS のフロントエンドでは、パッケージマネージャーに pnpm を使用しています。 先日、その pnpm のバージョンを v9 から v10 にアップグレードしたところ、Vercel 上でのビルドが失敗するようになりました。 原因や対応内容を備忘録として残しておきます。 発生したエラー ビルド失敗時、Vercel では下記のビルドログが出力されていました。 Detected `pnpm-lock.yaml` 9 which may be generated by pnpm@9.x or pnpm@10.x Using pnpm@9...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/27/1136456/the-missing-step-between-hype-and-profit/" target="_blank" rel="noopener">The missing step between hype and profit</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/27 16:13</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. In February, I picked up a flyer at an anti-AI march in London. I can’t say for sure whether or not its writers meant to riff on South Park’s underpants gnomes. B...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/919028/canva-magic-layers-ai-replacing-palestine" target="_blank" rel="noopener">Canva apologizes after its AI tool replaces 'Palestine' in designs</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/27 14:58</div>
+        <p class="summary">Article URL: https://www.theverge.com/ai-artificial-intelligence/919028/canva-magic-layers-ai-replacing-palestine Comments URL: https://news.ycombinator.com/item?id=47922518 Points: 63 # Comments: 26</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/openai-available-at-fedramp-moderate" target="_blank" rel="noopener">OpenAI available at FedRAMP Moderate</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/27 14:00</div>
+        <p class="summary">OpenAI is available at FedRAMP Moderate authorization for ChatGPT Enterprise and the OpenAI API, enabling secure AI adoption for U.S. federal agencies.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/27/1136322/rebuilding-the-data-stack-for-ai/" target="_blank" rel="noopener">Rebuilding the data stack for AI</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/27 13:00</div>
+        <p class="summary">Artificial intelligence may be dominating boardroom agendas, but many enterprises are discovering that the biggest obstacle to meaningful adoption is the state of their data. While consumer-facing AI tools have dazzled users with speed and ease, enterprise leaders are discovering that deploying AI a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/kaggle-genai-intensive-course-vibe-coding-june-2026/" target="_blank" rel="noopener">Join the new AI Agents Vibe Coding Course from Google and Kaggle</a></h3>
+        
+        <div class="source">Google AI Blog · 04/27 13:00</div>
+        <p class="summary">A web next to a laptop</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.cnbc.com/2026/04/27/meta-manus-china-blocks-acquisition-ai-startup.html" target="_blank" rel="noopener">China blocks Meta's acquisition of AI startup Manus</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/27 11:43</div>
+        <p class="summary">https://www.reuters.com/world/asia-pacific/china-blocks-fore...https://www.bbc.com/news/articles/cj0v0gr2yz7o Comments URL: https://news.ycombinator.com/item?id=47920315 Points: 249 # Comments: 146</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.forbes.com/sites/iainmartin/2026/04/16/how-frances-mistral-built-a-14-billion-ai-empire-by-not-being-american/" target="_blank" rel="noopener">Mistral built a $14B AI empire by not being American</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/27 10:14</div>
+        <p class="summary">Article URL: https://www.forbes.com/sites/iainmartin/2026/04/16/how-frances-mistral-built-a-14-billion-ai-empire-by-not-being-american/ Comments URL: https://news.ycombinator.com/item?id=47919725 Points: 201 # Comments: 156</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://app.oravys.com/blog/mercor-breach-2026" target="_blank" rel="noopener">4TB of voice samples just stolen from 40k AI contractors at Mercor</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/27 09:57</div>
+        <p class="summary">Article URL: https://app.oravys.com/blog/mercor-breach-2026 Comments URL: https://news.ycombinator.com/item?id=47919630 Points: 406 # Comments: 153</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html" target="_blank" rel="noopener">Checkmarx Confirms GitHub Repository Data Posted on Dark Web After March 23 Attack</a></h3>
+        
+        <div class="source">The Hacker News · 04/27 14:19</div>
+        <p class="summary">Checkmarx has disclosed that its ongoing investigation tied to the supply chain security incident has revealed that a cybercriminal group published data related to the company on the dark web. "Based on current evidence, we believe this data originated from Checkmarx's GitHub repository, and that ac...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/weekly-recap-fast16-malware-xchat.html" target="_blank" rel="noopener">⚡ Weekly Recap: Fast16 Malware, XChat Launch, Federal Backdoor, AI Employee Tracking & More</a></h3>
+        
+        <div class="source">The Hacker News · 04/27 13:30</div>
+        <p class="summary">Everything is dumb again. This week feels broken in a very familiar way. Old tricks are back. New tools are doing shady crap. Supply chains got hit. Fake help desks worked. Weird research showed how easy some attacks still are. Most of it feels like stuff we should have fixed years ago. Bad extensio...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/mythos-changed-math-on-vulnerability.html" target="_blank" rel="noopener">Mythos Changed the Math on Vulnerability Discovery. Most Teams Aren't Ready for the Remediation Side</a></h3>
+        
+        <div class="source">The Hacker News · 04/27 11:58</div>
+        <p class="summary">Anthropic’s Claude Mythos Preview has dominated security discussions since its April 7 announcement. Early reporting describes a powerful cybersecurity-focused AI system capable of identifying vulnerabilities at scale and raising serious questions about how quickly organizations can validate, priori...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/phantomcore-exploits-trueconf.html" target="_blank" rel="noopener">PhantomCore Exploits TrueConf Vulnerabilities to Breach Russian Networks</a></h3>
+        
+        <div class="source">The Hacker News · 04/27 11:54</div>
+        <p class="summary">A pro-Ukrainian hacktivist group called PhantomCore has been attributed to attacks actively targeting servers running TrueConf video conferencing software in Russia since September 2025. That's according to a report published by Positive Technologies, which found the threat actors to be leveraging a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html" target="_blank" rel="noopener">Researchers Uncover 73 Fake VS Code Extensions Delivering GlassWorm v2 Malware</a></h3>
+        
+        <div class="source">The Hacker News · 04/27 11:23</div>
+        <p class="summary">Cybersecurity researchers have flagged dozens of Microsoft Visual Studio Code (VS Code) extensions on the Open VSX repository that are linked to a persistent information-stealing campaign dubbed GlassWorm. The cluster of 73 extensions has been identified as cloned versions of their legitimate counte...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html" target="_blank" rel="noopener">Fake CAPTCHA IRSF Scam and 120 Keitaro Campaigns Drive Global SMS, Crypto Fraud</a></h3>
+        
+        <div class="source">The Hacker News · 04/27 06:33</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a telecommunications fraud campaign that uses fake CAPTCHA verification tricks to dupe unsuspecting users into sending international text messages that incur charges on their mobile bills, generating illicit revenue for the threat actors who lease ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2025/at250021.html" target="_blank" rel="noopener">注意喚起: Cisco ASAおよびFTDにおける複数の脆弱性（CVE-2025-20333、CVE-2025-20362）に関する注意喚起  (更新)</a></h3>
+        
+        <div class="source">JPCERT · 04/27 01:47</div>
+        
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

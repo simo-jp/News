@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月28日 / 全37件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">6</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">7</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ohisama@github/items/568c325007d69a7fbfab" target="_blank" rel="noopener">bloggerでshadertoy</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/28 22:05</div>
+        <p class="summary">概要 bloggerにshadertoy、載せてみた。 写真 サンプルコード</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ryamate/items/b470c3fca357a915cc0f" target="_blank" rel="noopener">いまこそ読むMDN Web Docs (4) - ヘッド部には何が入る? ウェブページのメタデータ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/28 21:57</div>
+        <p class="summary">はじめに MDN Web Docs の HTML の head には何が入る? HTML のメタデータ のページを読みます。 これまで読んだページは以下の通りです。 いまこそ読む MDN Web Docs - HTML: ハイパーテキストマークアップ言語 いまこそ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/maaaashin324/items/e9c6c4799345362ebb20" target="_blank" rel="noopener">Python と JavaScript の違い：デフォルト引数への副作用の可否</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/28 13:22</div>
+        <p class="summary">Python ではデフォルト引数を与えると関数の宣言時に評価されるので、宣言後にデフォルト引数として与えられている変数を変えたとしても処理は変わらない。他方で JavaScript では変えられてしまう＝副作用がある。 グローバル変数をデフォルト引数に設定する Pyth...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/miraicompass_jp/items/479a1249f581db4ccfc3" target="_blank" rel="noopener">CSP connect-src 'none' で完結する家計簿Webアプリを作って Cloudflare Pages で運用してる話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/28 13:11</div>
+        <p class="summary">CSP connect-src 'none' で完結する家計簿Webアプリを作って Cloudflare Pages で運用してる話 TL;DR 家計データを扱うWebアプリで「外部送信を物理的に不可能」にしたかった CSP connect-src 'none' +...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/seekseep/articles/css-new-features-catch-up-2026" target="_blank" rel="noopener">最近のCSS、全然追えてなかった。ここ1〜2年で使えるようになった機能10選</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/28 04:32</div>
+        <p class="summary">この記事では、2024〜2025年にかけて主要ブラウザで使えるようになったCSS（一部HTML）の機能を10個紹介します。「昔はセレクターとか頑張って追いかけてたけど、最近は全然追えてない」という方を対象としています。 それぞれの機能について、目的・できること・昔のやり方・注意点をまとめました。コードを見ながら「こんなの使えるようになったのか」と感じてもらえたら嬉しいです。 1. CSS Nesting（ネイティブCSSネスト） 目的 SassやLESSなどのプリプロセッサなしで、CSSにネスト（入れ子）構造を書けるようにすることです。 できること セレクターを親子関係で入れ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/shutingstar/articles/6df52208a0a96d" target="_blank" rel="noopener">クラスとインスタンス、オブジェクト指向をサッカーで整理する ― 「選手の設計図」と「実際の選手」の話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/28 04:00</div>
+        <p class="summary">はじめに こんにちは、YSです。 今回は クラス / インスタンス / オブジェクト指向 について整理します。 このあたりの言葉、最初に聞くとかなり抽象的です。 クラスは設計図 インスタンスは実体 オブジェクト指向は、データと処理をまとめる考え方 と言われても、「なるほど、分からん」となりがちです。 自分も最初は、言葉だけが先に立っていて、実装のイメージがあまり湧いていませんでした。 ただ、サッカーで考えると少し分かりやすくなります。 この記事では、 class は 選手の設計図 instance は 実際にピッチに立つ選手 プロパティは 選手の状態 メソッドは 選手...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/10/news006.html" target="_blank" rel="noopener">AIに丸投げ……で失敗　漫画「1週間後に生成AIで恥をかく新入社員」【残り1日】</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/28 22:00</div>
+        <p class="summary">とある企業に入社した新入社員「ニイジマ」が、AI活用の“地雷”を踏みまくっていく様子を通して、会社におけるAIの使い方、その初歩を紹介します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/920131/james-comey-indicted-over-instagram-seashell-photo-that-allegedly-threatened-trump" target="_blank" rel="noopener">James Comey indicted over Instagram seashell photo that allegedly threatened Trump</a></h3>
+        
+        <div class="source">The Verge · 04/28 21:40</div>
+        <p class="summary">The US Department of Justice has once again indicted James Comey - this time, for an alleged threat the former FBI director made toward President Donald Trump on Instagram, as reported earlier by CNN. In its indictment, filed in a North Carolina federal court on Tuesday, the DOJ cites the now-delete...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/920048/elon-musk-testimony-save-humanity" target="_blank" rel="noopener">Elon Musk tells the jury that all he wants to do is save humanity</a></h3>
+        
+        <div class="source">The Verge · 04/28 20:46</div>
+        <p class="summary">On the stand, Elon Musk is positioning himself as a savior. In the high-profile trial between him and his fellow OpenAI co-founder, now CEO, Sam Altman, Musk opened by going through his background. He went as far back as being raised in South Africa and arriving in Canada for college with "2,500 in ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/919827/taylor-swift-trademarks-ai-copycats" target="_blank" rel="noopener">Taylor Swift is stepping up the legal war on AI copycats</a></h3>
+        
+        <div class="source">The Verge · 04/28 20:30</div>
+        <p class="summary">Taylor Swift has been at the center of AI imitation controversies for years, and now, she's become the latest celebrity who's escalating attempts to protect herself from AI copycats. As usual, however, the legal system intersects with technology in complicated ways - and Swift's efforts may be a lon...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/28/amazon-is-already-offering-new-openai-products-on-aws/" target="_blank" rel="noopener">Amazon is already offering new OpenAI products on AWS</a></h3>
+        
+        <div class="source">TechCrunch · 04/28 19:48</div>
+        <p class="summary">A day after OpenAI got Microsoft to agree to end exclusive rights, AWS announced a slate of OpenAI model offerings, including a new agent service.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/streaming/919958/youtube-tv-custom-multiview-channel" target="_blank" rel="noopener">Now YouTube TV lets you multiview any channel you want</a></h3>
+        
+        <div class="source">The Verge · 04/28 19:46</div>
+        <p class="summary">YouTube CEO Neal Mohan announced Tuesday that YouTube TV is getting "fully customizable" multiview. Users have "full control to mix and match live streams" and can "build the personalized viewing experience you've been asking for," Mohan says. You can pin up to four streams in your multiview window....</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/919739/fcc-disney-abc-broadcast-licenses-threat" target="_blank" rel="noopener">The FCC is going after the broadcast licenses of Disney-owned ABC stations</a></h3>
+        
+        <div class="source">The Verge · 04/28 19:36</div>
+        <p class="summary">The Federal Communications Commission has ordered the ABC stations owned and operated by Disney to file for an early license renewal, as reported earlier by The New York Times. In a filing on Tuesday, the FCC claims it made the decision as part of an investigation into Disney's policies on diversity...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit" target="_blank" rel="noopener">Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI</a></h3>
+        
+        <div class="source">The Verge · 04/28 19:27</div>
+        <p class="summary">Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusing OpenAI of abandoning its founding mission of developing AI to benefit humanity and shifting focus to boosting profits ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/visual-studio-april-update-cloud-agent-integration/" target="_blank" rel="noopener">Visual Studio April Update – Cloud Agent Integration</a></h3>
+        
+        <div class="source">Visual Studio Blog · 04/28 19:00</div>
+        <p class="summary">GitHub Copilot in Visual Studio is becoming more agentic with every release. This update brings cloud agent integration front and center, letting you start remote coding sessions without leaving the IDE. The post Visual Studio April Update – Cloud Agent Integration appeared first on Visual Studio Bl...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/inuinu/articles/csharp-union-performance" target="_blank" rel="noopener">Union型パフォーマンス比較: Non Boxingなカスタムユニオンの場合【C#15 preview】</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/28 17:45</div>
+        <p class="summary">! この記事では.NET11 preview 3の提案段階のものが含まれます。 正式なC#15のunionとは実装が異なる可能性があります。 unionのパフォーマンスが気になった https://rksoftware.hatenablog.com/entry/2026/04/19/120000 こちらのunionの紹介記事ではinterfaceとunionのパフォーマンス比較をしています。 2点、気になりました。 BenchmarkDotNetを使っていないのでアロケーションが比較されてない 公式に説明のあるnon boxingなカスタムユニオンを比較してない そこで調べてみ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/welcome-to-skia-sharp-40-preview1/" target="_blank" rel="noopener">Welcome to SkiaSharp 4.0 Preview 1</a></h3>
+        
+        <div class="source">.NET Blog · 04/28 17:06</div>
+        <p class="summary">SkiaSharp 4.0 Preview 1 is here. Learn all about the new features and how Uno Platform has stepped up as a co-maintainer. The post Welcome to SkiaSharp 4.0 Preview 1 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/welcome-to-skia-sharp-40-preview1/" target="_blank" rel="noopener">Welcome to SkiaSharp 4.0 Preview 1</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/28 17:06</div>
+        <p class="summary">SkiaSharp 4.0 Preview 1 is here. Learn all about the new features and how Uno Platform has stepped up as a co-maintainer. The post Welcome to SkiaSharp 4.0 Preview 1 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/high-performance-distributed-caching-dotnet-postgres-azure/" target="_blank" rel="noopener">High-Performance Distributed Caching with .NET and Postgres on Azure</a></h3>
+        
+        <div class="source">.NET Blog · 04/28 17:05</div>
+        <p class="summary">Adding caching to your application architecture can significantly improve key performance metrics, cut latency, and reduce load across downstream systems. In this walkthrough, we highlight the latest caching best practices and incorporate these design patterns into a reusable .NET application that y...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/high-performance-distributed-caching-dotnet-postgres-azure/" target="_blank" rel="noopener">High-Performance Distributed Caching with .NET and Postgres on Azure</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/28 17:05</div>
+        <p class="summary">Adding caching to your application architecture can significantly improve key performance metrics, cut latency, and reduce load across downstream systems. In this walkthrough, we highlight the latest caching best practices and incorporate these design patterns into a reusable .NET application that y...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kix/items/044e35a23e7cee5a1ed6" target="_blank" rel="noopener">C#で日本語識別子（変数名・メソッド名）を使う方法と実務上の注意点</a></h3>
+        
+        <div class="source">Qiita - C# · 04/28 12:25</div>
+        <p class="summary">TL;DR C# の識別子は Unicode をサポートしており、漢字・ひらがな・カタカナをそのまま変数名・メソッド名・クラス名に使える Visual Studio 2022（17.x）でインテリセンス・Rename・Find All References は正常動作す...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tugamecreate/items/6b6717147eb22ea4b46e" target="_blank" rel="noopener">C#基礎①　変数と型・演算</a></h3>
+        
+        <div class="source">Qiita - C# · 04/28 11:38</div>
+        <p class="summary">はじめに 今回はC#を用いたプログラミングに欠かせない変数と型・演算について解説していきます。 変数、型とは 変数とはデータを格納するための領域のことで、数字や文字などを記憶しておくためのものです。それに対し、型は変数が格納できるデータの種類とバイト長を指定するため...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/researchers-discover-critical-github.html" target="_blank" rel="noopener">Researchers Discover Critical GitHub CVE-2026-3854 RCE Flaw Exploitable via Single Git Push</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 18:19</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a critical security vulnerability impacting GitHub.com and GitHub Enterprise Server that could allow an authenticated user to obtain remote code execution with a single "git push" command. The flaw, tracked as CVE-2026-3854 (CVSS score: 8.7), is a ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/brazilian-lofygang-resurfaces-after.html" target="_blank" rel="noopener">Brazilian LofyGang Resurfaces After Three Years With Minecraft LofyStealer Campaign</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 17:39</div>
+        <p class="summary">A cybercrime group of Brazilian origin has resurfaced after more than three years to orchestrate a campaign that targets Minecraft players with a new stealer called LofyStealer (aka GrabBot). "The malware disguises itself as a Minecraft hack called 'Slinky,'" Brazil-based cybersecurity company ZenoX...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html" target="_blank" rel="noopener">VECT 2.0 Ransomware Irreversibly Destroys Files Over 131KB on Windows, Linux, ESXi</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 14:01</div>
+        <p class="summary">Threat hunters are warning that the cybercriminal operation known as VECT 2.0 acts more like a wiper than a ransomware due to a critical flaw in its encryption implementation across Windows, Linux, and ESXi variants that renders recovery impossible even for the threat actors. The fact that VECT's lo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/why-secure-data-movement-is-zero-trust.html" target="_blank" rel="noopener">Why Secure Data Movement Is the Zero Trust Bottleneck Nobody Talks About</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 11:58</div>
+        <p class="summary">Every security program is betting on the same assumption: once a system is connected, the problem is solved. Open a ticket, stand up a gateway, push the data through. Done. That assumption is wrong. It is also a major reason Zero Trust programs stall. New research my team just published puts numbers...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html" target="_blank" rel="noopener">Critical Unpatched Flaw Leaves Hugging Face LeRobot Open to Unauthenticated RCE</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 11:18</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a critical security flaw impacting LeRobot, Hugging Face's open-source robotics platform with nearly 24,000 GitHub stars, that could be exploited to achieve remote code execution. The vulnerability in question is CVE-2026-25874 (CVSS score: 9.3), w...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/after-mythos-new-playbooks-for-zero.html" target="_blank" rel="noopener">After Mythos: New Playbooks For a Zero-Window Era</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 10:30</div>
+        <p class="summary">When patching isn’t fast enough, NDR helps contain the next era of threats. If you’ve been tracking advancements in AI, you know the exploit window, the short buffer that organizations relied on to patch and protect after a vulnerability disclosure, is closing fast. Anthropic’s new model, Claude Myt...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/chinese-silk-typhoon-hacker-extradited.html" target="_blank" rel="noopener">Chinese Silk Typhoon Hacker Extradited to U.S. Over COVID Research Cyberattacks</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 07:57</div>
+        <p class="summary">A Chinese national accused of being a member of the Silk Typhoon hacking group has been extradited to the U.S. from Italy.&nbsp; Xu Zewei, 34, was arrested in July 2025 by Italian authorities for his alleged links to the Chinese state-sponsored threat group and for orchestrating cyber attacks agains...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/microsoft-patches-entra-id-role-flaw.html" target="_blank" rel="noopener">Microsoft Patches Entra ID Role Flaw That Enabled Service Principal Takeover</a></h3>
+        
+        <div class="source">The Hacker News · 04/28 06:37</div>
+        <p class="summary">An administrative role meant for artificial intelligence (AI) agents within Microsoft Entra ID could enable privilege escalation and identity takeover attacks, according to new findings from Silverfort. Agent ID Administrator is a privileged built-in role introduced by Microsoft as part of its agent...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://status.claude.com/incidents/9l93x2ht4s5w" target="_blank" rel="noopener">Claude.ai unavailable and elevated errors on the API</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/28 18:01</div>
+        <p class="summary">Article URL: https://status.claude.com/incidents/9l93x2ht4s5w Comments URL: https://news.ycombinator.com/item?id=47938097 Points: 247 # Comments: 205</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.wheresyoured.at/ais-economics-dont-make-sense/" target="_blank" rel="noopener">AI's Economics Don't Make Sense</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/28 16:39</div>
+        <p class="summary">Related: AI's biggest critic has lost the plot - https://news.ycombinator.com/item?id=47934353 Comments URL: https://news.ycombinator.com/item?id=47936867 Points: 180 # Comments: 148</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/" target="_blank" rel="noopener">Celebrating 20 years of Google Translate: Fun facts, tips and new features to try</a></h3>
+        
+        <div class="source">Google AI Blog · 04/28 16:00</div>
+        <p class="summary">The Google Translate logo sits in the middle of colorful illustrated scenes, including people translating live conversations and a birthday cake topped by candles with the numeral 20</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal" target="_blank" rel="noopener">Google and Pentagon reportedly agree on deal for 'any lawful' use of AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/28 15:49</div>
+        <p class="summary">Article URL: https://www.theverge.com/ai-artificial-intelligence/919494/google-pentagon-classified-ai-deal Comments URL: https://news.ycombinator.com/item?id=47936156 Points: 258 # Comments: 246</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/microsoft/VibeVoice" target="_blank" rel="noopener">VibeVoice: Open-source frontier voice AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/28 11:56</div>
+        <p class="summary">Article URL: https://github.com/microsoft/VibeVoice Comments URL: https://news.ycombinator.com/item?id=47933236 Points: 298 # Comments: 165</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/openai-on-aws" target="_blank" rel="noopener">OpenAI models, Codex, and Managed Agents come to AWS</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/28 00:00</div>
+        <p class="summary">OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/04/27/1136466/elon-musk-and-sam-altman-are-going-to-court-over-openais-future/" target="_blank" rel="noopener">Elon Musk and Sam Altman are going to court over OpenAI’s future</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 04/27 22:52</div>
+        <p class="summary">After a yearslong legal feud, Elon Musk and OpenAI CEO Sam Altman are heading to trial this week in Northern California in a case that could have sweeping consequences. Ahead of OpenAI’s highly anticipated IPO, the court could rule on whether the company is allowed to exist as a for-profit enterpris...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

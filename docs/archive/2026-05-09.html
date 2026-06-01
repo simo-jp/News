@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月09日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月09日 / 全24件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">7</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/10/news014.html" target="_blank" rel="noopener">中国産ソシャゲ「NTE」をプレイしたマンガ家が思う「アニメ調オープンワールド大作」を日本が作らなくてもいい理由</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/09 22:14</div>
+        <p class="summary">最近、SNSで盛り上がっている話題の一つに「日本のゲーム業界はアニメ調のオープンワールドゲームをなぜ作らないのか」というものがあります。キッカケは「NTE: Neverness to Everness」でした。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/09/artificial-intelligence-definition-glossary-hallucinations-guide-to-common-ai-terms/" target="_blank" rel="noopener">So you’ve heard these AI terms and nodded along; let’s fix that</a></h3>
+        
+        <div class="source">TechCrunch · 05/09 21:45</div>
+        <p class="summary">The rise of AI has brought an avalanche of new terms and slang. Here is a glossary with definitions of some of the most important words and phrases you might encounter.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/09/fintech-startup-parker-files-for-bankruptcy/" target="_blank" rel="noopener">Fintech startup Parker files for bankruptcy</a></h3>
+        
+        <div class="source">TechCrunch · 05/09 20:32</div>
+        <p class="summary">Parker, a well-funded startup offering corporate credit cards and banking services, has filed for bankruptcy and is widely reported to have shut down.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/09/gm-agrees-to-pay-12-75m-in-california-driver-privacy-settlement/" target="_blank" rel="noopener">GM agrees to pay $12.75M in California driver privacy settlement</a></h3>
+        
+        <div class="source">TechCrunch · 05/09 19:05</div>
+        <p class="summary">General Motors has reached a privacy-related settlement with a group of law enforcement agencies led by California Attorney General Rob Bonta.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/926942/dyson-360-vis-nav-robot-vacuum-woot-dust-busting-deals-sale" target="_blank" rel="noopener">Dyson’s powerful 360 Vis Nav robovac is down to $279.99 for a limited time</a></h3>
+        
+        <div class="source">The Verge · 05/09 16:00</div>
+        <p class="summary">If you’re tired of running your vacuum multiple times just to get the dirt and debris out of the carpets in your living room, Dyson’s 360 Vis Nav is worth a look. It’s one of the more powerful robot vacuums currently available, and now through May 11th (or while supplies last), it&#8217;s on sale at...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/09/the-instax-wide-400-builds-on-instant-photographys-simplicity-and-stretches-it-literally/" target="_blank" rel="noopener">The Instax Wide 400 builds on instant photography’s simplicity and stretches it, literally</a></h3>
+        
+        <div class="source">TechCrunch · 05/09 15:45</div>
+        <p class="summary">In an AI and digital world, analog instant film and retro-style cameras continue to remain popular, fueled by a mix of both nostalgia and novelty.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/09/nvidia-has-already-committed-40b-to-equity-ai-deals-this-year/" target="_blank" rel="noopener">Nvidia has already committed $40B to equity AI deals this year</a></h3>
+        
+        <div class="source">TechCrunch · 05/09 14:43</div>
+        <p class="summary">Nvidia continues to be a big investor in the AI ecosystem.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/927310/best-digital-gift-ideas-mothers-day-online-cards-subscriptions-2026" target="_blank" rel="noopener">These great digital gifts will arrive just in time for Mother’s Day</a></h3>
+        
+        <div class="source">The Verge · 05/09 14:00</div>
+        <p class="summary">And just like that, Mother’s Day is tomorrow, May 10th, which is too soon for most online purchases to arrive in time. That said, you aren’t alone if you waited too long to pick up a gift this year, and you definitely aren’t alone in feeling guilty for considering digital gifts instead of something ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ZiYuCai1984/items/eabb413467a8c3edffcf" target="_blank" rel="noopener">現代 LMS アーキテクチャ実践（5）：Academic モジュールにおける時間テンプレート・学期・現在学期のモデリング</a></h3>
+        
+        <div class="source">Qiita - C# · 05/09 18:42</div>
+        <p class="summary">本記事は筆者の考えをベースに、ChatGPT 5.5 を用いて構成・推敲したものです。 内容の主張と判断は筆者によるものであり、文章表現の整理に ChatGPT 5.4 を活用しています。 本記事で扱うプロジェクトのリポジトリはこちらです。 Repository: ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/juner/items/dc3cdba53b05a2c55f20" target="_blank" rel="noopener">業務中に 難解プログラミング言語をC#から呼びたいときに使うライブラリを作ったよ！（そんな業務あってたまるか！）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/09 13:49</div>
+        <p class="summary">皆さん、難解プログラミング言語（Esolang） って知っておりますでしょうか？ 有名なのだと、 Brainfuck の様な 意図的に読解が困難なように設計されたプログラミング言語 のことです。 で本題 で、 まず、 C# には source generator を...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/maedan/articles/d615644a9e2a09" target="_blank" rel="noopener">LINEスタンプ画像処理を手助けするアプリを作ってみた</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/09 09:15</div>
+        <p class="summary">はじめに この記事では、C# / WPF を使って「LINEスタンプ用画像を作るデスクトップアプリ」を作ったので、プログラムの主要な部分を解説します。 「C#ってなに？」「WPFって聞いたことあるけど難しそう…」という方を対象に書いています。コードの細かい文法より「こうやってアプリを作るんだ」という感覚をつかんでもらえればけっこう嬉しいです。 作ったもの 最近、画像生成AIが素晴らしくて、LINEスタンプ用の画像を作ってもらって自分用のスタンプを作ったんですが、画像を切り分ける作業が面倒だったので、その為のアプリを作成しました。 LINEスタンプ画像の"切り出し"と"リサイズ"、...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/k-shimaoka-dev/items/7cc255f9424b0e2adb69" target="_blank" rel="noopener">処理は追えるのに「なぜそれをしているのか」が分からない人へ ｜ コードから目的を読み解く考え方</a></h3>
+        
+        <div class="source">Qiita - C# · 05/08 23:14</div>
+        <p class="summary">はじめに ・処理の流れは追える ・どこで何をしているかも分かる でも、 👉 「なんでこの処理が必要なの？」 で止まる人へ 例えば、 if (stock &lt;= 0) { throw new BusinessException(); } コードは読めます。 でも、 ・...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/5dc9ccd8e31a3663849e" target="_blank" rel="noopener">【個人開発】【はやくねろ】深夜のコーディングを強制終了！ブラウザだけで動く「物理学チックな」おやすみアラートを作ってみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/09 15:34</div>
+        <p class="summary">はじめに 夜中までコードを書いていて、つい寝るのが遅くなってしまうことはありませんか？ そんな自分（や皆さん）のために、時間になると画面全体で強烈に就寝を促してくるWebアプリ「おやすみアラート」を開発しました。 外部の画像や音声ファイル、さらにはReactなどのフレーム...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/picolas/articles/8ab5170fdd353d" target="_blank" rel="noopener">ブラウザだけで動く“問題解決フロー記録アプリ” LocalFlow を作った話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/09 15:28</div>
+        <p class="summary">日々の開発やトラブルシューティングで、 「どうやって問題を解決したか」を後から思い出せず困ることが多くありました。 どんな手順を試したか どこで詰まったか 何が原因だったか どうやって解決したか これらを体系的に残せるツールが欲しかったのですが、 既存のツールは アカウント必須・クラウド保存・重い といった課題がありました。 アカウント必須、クラウドというだけでそもそも会社では使用できず、大きな課題となっていました。 そこで、ブラウザだけで動くローカル完結のフロー記録アプリ「LocalFlow」 を作りました。 LocalFlow とは？ LocalFlow は、問題解決のプロ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/32380b92f841b20c6c1f" target="_blank" rel="noopener">【初心者向け】HTMLファイル1つで作る！SFチックな「中二病」ToDoアプリを作ってみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/09 14:29</div>
+        <p class="summary">はじめに プログラミングの学習で最初に作ることが多い「ToDoアプリ」。 でも、ただのToDoアプリを作るだけじゃつまらない…ということで、見た目はクリーンで使いやすいのに、裏側が「量子力学」や「物理学」の用語で動いている、少し中二病テイストなToDoアプリを作ってみまし...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/aity-homan-02666/items/a81787506eeb30a968ba" target="_blank" rel="noopener">JavaScriptツール　メモ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/09 13:45</div>
+        <p class="summary">とりあえずのメモ とりあえずコードを貼っておきたいのでメモ書き程度に残します。 また空いた時間ができたら書き直します 簡単に解説 下記のJSのコードはtest.htmlを開いたときに動作し、実行ボタンを押すとtest2.htmlのh1タグを読み取るという処理を行うもので...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/karumaru/articles/27816ff08dfd2e" target="_blank" rel="noopener">TypeScriptのsatisfiesを業務コード全部に効かせたら、型エラーが1/3になった話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/09 13:00</div>
+        <p class="summary">TypeScriptのsatisfiesを業務コード全部に効かせたら、型エラーが1/3になった話 「型を狭めずに、制約だけ効かせる」── これがsatisfiesの本質だ。 TL;DR（先に結論） as は 型を上書きする ／ satisfies は 型を検査だけする 業務コードで as を使っている箇所の 9割は satisfies で置き換え可能 私のチームでは、3,000行規模のフロントとAPI層に投入した結果、CIで検出される型エラーが 約1/3、レビュー時の「これanyになってるよ」コメントが ほぼゼロになった 本記事は 動くサンプル7本 で satisf...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/y_ta/articles/why-tailwind-leading-tracking" target="_blank" rel="noopener">なぜ Tailwind CSS は line-height を leading と呼ぶのか？ 由来や経緯を調べてみた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/09 12:58</div>
+        <p class="summary">Tailwind CSSを使っていると、いつも直面する問題があります。それは、行間と文字間の指定方法を毎回忘れてしまうことです。 CSSでは、行間はline-height、文字間はletter-spacingで指定します。ところがTailwind CSSでは、それぞれleadingとtrackingという、どこから出てきたのかまるでわからない名前を使用します。 &lt;p class="leading-7 tracking-wide"&gt; Tailwind CSS &lt;/p&gt; 最近はAIが出てきて別に忘れてしまったからと言って特段困るということはありませんが、以前は毎回...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ktr_web_dev/items/e7c31843bd794359208b" target="_blank" rel="noopener">JavaScript初心者が最初に覚えたい重要ポイントまとめ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/09 04:58</div>
+        <p class="summary">JavaScript初心者が最初に覚えたい重要ポイントまとめ JavaScriptを勉強し始めると、 覚えることがかなり多く感じます。 自分も最初は、 何から覚えればいいのか分からない Reactになると急に難しく感じる エラーの意味が分からない という状態でした。 ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md" target="_blank" rel="noopener">All my clients wanted a carousel, now it's an AI chatbot</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/09 07:23</div>
+        <p class="summary">Article URL: https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md Comments URL: https://news.ycombinator.com/item?id=48072720 Points: 137 # Comments: 60</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://antman-does-software.com/i-will-never-use-ai-to-code-or-write" target="_blank" rel="noopener">I Will Never Use AI to Code</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/09 06:14</div>
+        <p class="summary">Article URL: https://antman-does-software.com/i-will-never-use-ai-to-code-or-write Comments URL: https://news.ycombinator.com/item?id=48072319 Points: 61 # Comments: 74</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://mccue.dev/pages/5-8-26-ai-art" target="_blank" rel="noopener">People Hate AI Art</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/09 00:39</div>
+        <p class="summary">Article URL: https://mccue.dev/pages/5-8-26-ai-art Comments URL: https://news.ycombinator.com/item?id=48070548 Points: 134 # Comments: 166</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/08/1137008/musk-v-altman-week-2-openai-fires-back-and-shivon-zilis-reveals-that-musk-tried-to-poach-sam-altman/" target="_blank" rel="noopener">Musk v. Altman week 2: OpenAI fires back, and Shivon Zilis reveals that Musk tried to poach Sam Altman</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/08 23:59</div>
+        <p class="summary">In the second week of the landmark trial between Elon Musk and OpenAI, Musk’s motivations for bringing the suit were under scrutiny. Last week, Musk took the stand, alleging that OpenAI CEO Sam Altman and president Greg Brockman had deceived him into donating $38 million to the company. He claimed t...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html" target="_blank" rel="noopener">cPanel, WHM Release Fixes for Three New Vulnerabilities — Patch Now</a></h3>
+        
+        <div class="source">The Hacker News · 05/09 07:16</div>
+        <p class="summary">cPanel has released updates to address three vulnerabilities in cPanel and Web Host Manager (WHM) that could be exploited to achieve privilege escalation, code execution, and denial-of-service. The list of vulnerabilities is as follows - CVE-2026-29201 (CVSS score: 4.3) - An insufficient input valid...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

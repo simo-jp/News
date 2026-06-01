@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月17日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月17日 / 全22件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">4</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">3</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/932215/microsoft-teams-together-mode" target="_blank" rel="noopener">Microsoft is retiring Teams’ Together Mode</a></h3>
+        
+        <div class="source">The Verge · 05/17 21:15</div>
+        <p class="summary">Microsoft launched Teams' Together Mode during the pandemic to give the illusion of a bunch of people sitting in a conference room together, even if they were really sitting at home without pants on. But times have changed, and it's now being retired in favor of a more simplified Teams experience. T...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/17/apples-siri-revamp-could-include-auto-deleting-chats/" target="_blank" rel="noopener">Apple’s Siri revamp could include auto-deleting chats</a></h3>
+        
+        <div class="source">TechCrunch · 05/17 20:15</div>
+        <p class="summary">Privacy will be a major theme when Apple unveils a new version of Siri.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/17/why-trust-is-a-big-question-at-the-elon-musk-openai-trial/" target="_blank" rel="noopener">Why trust is a big question at the Elon Musk-OpenAI trial</a></h3>
+        
+        <div class="source">TechCrunch · 05/17 19:46</div>
+        <p class="summary">A big theme in the trial’s final days was whether OpenAI CEO Sam Altman is trustworthy.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/932207/siri-apple-intelligence-auto-deleting-chats" target="_blank" rel="noopener">Revamped Siri will reportedly offer auto-deleting chats</a></h3>
+        
+        <div class="source">The Verge · 05/17 18:40</div>
+        <p class="summary">Apple is hoping that its record on privacy can be the differentiator on the AI front, and maybe even buy it a little slack as it continues to lag behind the competition. According to Bloomberg's Mark Gurman, the more chatbot-like Siri set to debut in iOS 27 will include the option to autodelete chat...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/932203/university-of-arizona-students-boo-eric-schmidt-ai-commencement" target="_blank" rel="noopener">University of Arizona students boo Eric Schmidt’s AI cheerleading during commencement</a></h3>
+        
+        <div class="source">The Verge · 05/17 17:22</div>
+        <p class="summary">Former Google CEO Eric Schmidt delivered the commencement address at the University of Arizona on Friday. And, as his speech veered into talk of AI, he was repeatedly drowned out by boos. AI is already a contentious topic, and it's not surprising that those about to enter a ravaged job market feel p...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/17/if-youre-giving-a-commencement-speech-in-2026-maybe-dont-mention-ai/" target="_blank" rel="noopener">If you’re giving a commencement speech in 2026, maybe don’t mention AI</a></h3>
+        
+        <div class="source">TechCrunch · 05/17 16:32</div>
+        <p class="summary">It's tough to get graduating students excited about a future shaped by artificial intelligence.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/17/techcrunch-mobility-the-ai-skills-arms-race-is-coming-for-automotive/" target="_blank" rel="noopener">TechCrunch Mobility: The AI skills arms race is coming for automotive</a></h3>
+        
+        <div class="source">TechCrunch · 05/17 16:05</div>
+        <p class="summary">Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/17/for-eclipse-the-2-5b-cerebras-win-is-just-the-start-of-realizing-its-physical-world-thesis/" target="_blank" rel="noopener">For Eclipse, the $2.5B Cerebras win is just the start of realizing its  physical-world thesis</a></h3>
+        
+        <div class="source">TechCrunch · 05/17 15:00</div>
+        <p class="summary">Investing in the real world was lonely for Lior Susan 10 years ago. Now his firm finds itself at the center of the tech world's action.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.andymasley.com/p/the-ai-water-issue-is-fake" target="_blank" rel="noopener">The AI water issue is fake</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/17 18:35</div>
+        <p class="summary">Article URL: https://blog.andymasley.com/p/the-ai-water-issue-is-fake Comments URL: https://news.ycombinator.com/item?id=48171826 Points: 75 # Comments: 52</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.businessinsider.com/mistral-ceo-warns-europe-2-years-avoid-us-ai-dependence-2026-5" target="_blank" rel="noopener">Mistral's CEO: Europe has 2 years to stop becoming America's AI 'vassal state'</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/17 16:04</div>
+        <p class="summary">Article URL: https://www.businessinsider.com/mistral-ceo-warns-europe-2-years-avoid-us-ai-dependence-2026-5 Comments URL: https://news.ycombinator.com/item?id=48170122 Points: 94 # Comments: 142</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://daringfireball.net/2026/05/ai_is_technology_not_a_product" target="_blank" rel="noopener">AI is a technology not a product</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/17 13:11</div>
+        <p class="summary">Article URL: https://daringfireball.net/2026/05/ai_is_technology_not_a_product Comments URL: https://news.ycombinator.com/item?id=48168626 Points: 279 # Comments: 105</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/" target="_blank" rel="noopener">I don't think AI will make your processes go faster</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/17 12:13</div>
+        <p class="summary">Article URL: https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/ Comments URL: https://news.ycombinator.com/item?id=48168221 Points: 452 # Comments: 323</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.thestateofbrand.com/news/ai-subscription-time-bomb" target="_blank" rel="noopener">AI subscriptions are a ticking time bomb for enterprise</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/17 11:49</div>
+        <p class="summary">Article URL: https://www.thestateofbrand.com/news/ai-subscription-time-bomb Comments URL: https://news.ycombinator.com/item?id=48168056 Points: 356 # Comments: 363</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/shinkai_/items/d83057bda755f76f1958" target="_blank" rel="noopener">JavaScript／Node.jsでのMap初期化処理、あのお決まりの3行書かなくて良くなったって　Map.prototype.getOrInsert()</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/17 17:55</div>
+        <p class="summary">はじめに システム開発において、データの集計やグループ化で Map を使う機会は非常に多いですよね。 これまでは皆さん、キーが存在しない場合の初期化処理を if 文や has メソッドを使って書いていたと思います。慣れればどうということはないのですが、毎回同じような分岐処...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mashuel/items/944e27cfbdfede3e92a0" target="_blank" rel="noopener">JavaScriptとか文字化け</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/17 13:15</div>
+        <p class="summary">以下の処理では文字化けするものがあります。何行目かお分かり頂けるでしょうか。 new Worker(URL.createObjectURL(new Blob(["console.log(1,'一丁')"]))); new Worker("data:,console.log(...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ennagara128/items/9f9c0a1255772b3fbcf5" target="_blank" rel="noopener">2026/05/17 今日のQiitaトレンド記事をポッドキャストで聴こう！</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/17 02:52</div>
+        <p class="summary">前日夜の最新トレンド記事のAIポッドキャストを毎日朝7時に更新しています。 通勤中などにながら聴きしよう！ （Qiita投稿は通勤には間に合わないと思われますが） フィードバックとか助かりますのでください ↓こちらから 出典 AIにコードを書かせ続けて気づいた、エンジニア...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/_ohuton/items/8993659c71d061e1c72f" target="_blank" rel="noopener">C言語、Javascriptのstatic用途の明確な違いについて</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/17 01:58</div>
+        <p class="summary">C言語のstatic 主な用途 変数・関数の隠蔽（カプセル化） 例 C言語では、グローバル変数や関数にstaticをつけることで、 他のファイル（ソースファイル）からアクセスできないようにします。 // file1.c int show_num = 0; ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html" target="_blank" rel="noopener">NGINX CVE-2026-42945 Exploited in the Wild, Causing Worker Crashes and Possible RCE</a></h3>
+        
+        <div class="source">The Hacker News · 05/17 11:57</div>
+        <p class="summary">A newly disclosed security flaw impacting NGINX Plus and NGINX Open has come under active exploitation in the wild, days after its public disclosure, according to VulnCheck. The vulnerability, tracked as CVE-2026-42945 (CVSS score: 9.2), is a heap buffer overflow in ngx_http_rewrite_module affecting...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/grafana-github-token-breach-led-to.html" target="_blank" rel="noopener">Grafana GitHub Token Breach Led to Codebase Download and Extortion Attempt</a></h3>
+        
+        <div class="source">The Hacker News · 05/17 07:13</div>
+        <p class="summary">Grafana has disclosed that an "unauthorized party" obtained a token that granted them the ability to access the company's GitHub environment and download its codebase. "Our investigation has determined that no customer data or personal information was accessed during this incident, and we have found...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/HEROWL74/items/03d6bc4ff35470e5a34f" target="_blank" rel="noopener">Unity6のゲーム開発にて、DOTSを本格導入してみた！(Vol.1)</a></h3>
+        
+        <div class="source">Qiita - C# · 05/17 06:59</div>
+        <p class="summary">Unity6のDOTSについて 今現在Unityは、Unity6へと進化したことで、今までのオブジェクト指向でのゲーム開発ではなく、データ型指向への転換を推奨し始めています。 私的には、ただUnityでゲームを作れる、オブジェクト指向でゲームが作れる、のではなく、どれだけ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/YKVKDX12/items/5d0300be4faec53721f8" target="_blank" rel="noopener">【小ネタ】高校数学で習うシグマ計算のスニペット</a></h3>
+        
+        <div class="source">Qiita - C# · 05/17 03:55</div>
+        <p class="summary">単純なシグマ計算 C++ #include long long sigma_loop(int n) { long long sum = 0; // 1からnまで順番に足し合わせる for (int i = 1; i &lt;= n...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/snake97123/items/1ff725bc6295ec68a6b6" target="_blank" rel="noopener">【C#入門】null許容値型やnull関連演算子に関してまとめてみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/17 01:55</div>
+        <p class="summary">はじめに 最近入った案件先でC#を使うことになりました。 いままで触ったことがなかったので、整理をかねてまとめようと思います。 今回はnull許容値型とnull関連演算子についてです。 null許容値型とは まず、intやcharなどの値型は通常nullを設定することが...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

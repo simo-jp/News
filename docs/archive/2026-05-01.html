@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月01日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月01日 / 全30件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">7</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">6</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">3</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/01/musely-secures-360m-from-general-catalyst-without-giving-up-equity/" target="_blank" rel="noopener">Musely secures $360M from General Catalyst without giving up equity</a></h3>
+        
+        <div class="source">TechCrunch · 05/01 22:39</div>
+        <p class="summary">The DTC skin, hair, and and menopause care brand will use the non-dilutive capital to super-charge customer acquisition.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/01/meta-buys-robotic-startup-to-bolster-its-humanoid-ai-ambitions/" target="_blank" rel="noopener">Meta buys robotic startup to bolster its humanoid AI ambitions</a></h3>
+        
+        <div class="source">TechCrunch · 05/01 22:13</div>
+        <p class="summary">Meta bought humanoid startup Assured Robot Intelligence to beef up its AI models for robots, the company said.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/922531/microsoft-windows-11-run-menu-redesign-test" target="_blank" rel="noopener">Microsoft tests redesigned Windows 11 Run menu with dark mode and more</a></h3>
+        
+        <div class="source">The Verge · 05/01 22:01</div>
+        <p class="summary">Microsoft is testing its much-needed refresh for the Windows 11 Run menu, offering a modern interface that the company says is faster and comes with support for dark mode. The redesign is rolling out now to Windows 11 Insiders in the new Experimental Channel. In a blog post explaining the changes, M...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/922572/apple-mac-mini-256-model" target="_blank" rel="noopener">Apple raises the Mac Mini&#8217;s starting price</a></h3>
+        
+        <div class="source">The Verge · 05/01 21:52</div>
+        <p class="summary">Apple's Mac Mini now starts at $799 after the company pulled the $599 option with 256GB of storage from its online store, as spotted earlier by MacRumors. The model's discontinuation comes just one day after Apple CEO Tim Cook said during an earnings call that a chip shortage will impact its Mac pro...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial" target="_blank" rel="noopener">All the evidence revealed so far in Musk v. Altman</a></h3>
+        
+        <div class="source">The Verge · 05/01 19:14</div>
+        <p class="summary">The Musk v. Altman trial is underway, and that means exhibits, or the evidence to be presented in court, are being revealed piece by piece. So far, email exchanges, photos, and corporate documents are circulating from the earliest days of OpenAI - and from before the AI lab even had a name. Some hig...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/922165/netvue-birdfy-smart-bird-feeder-bath-mothers-day-deal-sale" target="_blank" rel="noopener">Birdfy’s smart bird feeder is down to its best-ever price for Mother’s Day</a></h3>
+        
+        <div class="source">The Verge · 05/01 18:42</div>
+        <p class="summary">From crafting machines to smart calendars, a number of unique gifts are already on sale in the run-up to Mother’s Day, May 10th. Birdfy smart feeders are another discounted option to consider, particularly the new Birdfy Feeder Metal 2 (4K), which is on sale for $259.99 ($50 off). If you’re looking ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/01/coatue-has-a-plan-to-buy-up-land-for-data-centers-possibly-for-anthropic/" target="_blank" rel="noopener">Coatue has a plan to buy up land for data centers, possibly for Anthropic</a></h3>
+        
+        <div class="source">TechCrunch · 05/01 18:23</div>
+        <p class="summary">Coatue, one of the biggest names in venture capital, has a new venture that is reportedly buying land near large power sources.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/922302/amazon-price-tracker-year" target="_blank" rel="noopener">Amazon&#8217;s built-in AI price history expands to show the entire last year</a></h3>
+        
+        <div class="source">The Verge · 05/01 17:55</div>
+        <p class="summary">Amazon's built-in price tracking feature now allows you to see how much a product's price has changed over the past year. To use the feature, open the Amazon app and select the "Price history" button next to the item's price, or ask Amazon's AI assistant Rufus. The expansion comes just weeks ahead o...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/01/1136800/musk-v-altman-week-1-musk-says-he-was-duped-warns-ai-could-kill-us-all-and-admits-that-xai-distills-openais-models/" target="_blank" rel="noopener">Musk v. Altman week 1: Elon Musk says he was duped, warns AI could kill us all, and admits that xAI distills OpenAI’s models</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/01 22:08</div>
+        <p class="summary">In the first week of the landmark trial between Elon Musk and OpenAI, Musk took the stand in a crisp black suit and tie and argued that OpenAI CEO Sam Altman and president Greg Brockman had deceived him into bankrolling the company. Along the way, he warned&#160; that AI could destroy us all and sat...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/" target="_blank" rel="noopener">AI uses less water than the public thinks</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/01 17:18</div>
+        <p class="summary">Article URL: https://californiawaterblog.com/2026/04/26/ai-water-use-distractions-and-lessons-for-california/ Comments URL: https://news.ycombinator.com/item?id=47977383 Points: 290 # Comments: 262</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.com/news/articles/c5yerr4m1yno" target="_blank" rel="noopener">Spotify adds 'Verified' badges to distinguish human artists from AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/01 16:42</div>
+        <p class="summary">Article URL: https://www.bbc.com/news/articles/c5yerr4m1yno Comments URL: https://news.ycombinator.com/item?id=47976856 Points: 171 # Comments: 194</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/" target="_blank" rel="noopener">Uber torches 2026 AI budget on Claude Code in four months</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/01 16:08</div>
+        <p class="summary">Article URL: https://www.briefs.co/news/uber-torches-entire-2026-ai-budget-on-claude-code-in-four-months/ Comments URL: https://news.ycombinator.com/item?id=47976415 Points: 358 # Comments: 408</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/01/1136779/cyber-insecurity-in-the-ai-era/" target="_blank" rel="noopener">Cyber-Insecurity in the AI Era</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/01 15:54</div>
+        <p class="summary">Cybersecurity was already under strain before AI entered the stack. Now, as AI expands the attack surface and adds new complexity, the limits of legacy approaches are becoming harder to ignore. This session from MIT Technology Review&#8217;s EmTech AI conference explores why security must be rethoug...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/01/1136772/operationalizing-ai-for-scale-and-sovereignty/" target="_blank" rel="noopener">Operationalizing AI for Scale and Sovereignty</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/01 15:31</div>
+        <p class="summary">Companies are taking control of their own data to tailor AI for their needs. The challenge lies in balancing ownership with the safe, trusted flow of high‑quality data needed to power reliable insights. This conversation from MIT Technology Review&#8217;s EmTech AI conference examines how AI factori...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/01/1136739/a-new-t-mobile-network-for-christians-aims-to-block-porn-and-gender-related-content/" target="_blank" rel="noopener">A new US phone network for Christians aims to block porn and gender-related content</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/01 09:00</div>
+        <p class="summary">A new US-wide cell phone network marketed to Christians is set to launch next week. It blocks porn, which experts in network security say marks the first time a US cell plan has used network-level blocking for such content that can’t be turned off even by adult account owners. It’s also rolling out ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/30000-facebook-accounts-hacked-via.html" target="_blank" rel="noopener">30,000 Facebook Accounts Hacked via Google AppSheet Phishing Campaign</a></h3>
+        
+        <div class="source">The Hacker News · 05/01 18:09</div>
+        <p class="summary">A newly discovered Vietnamese-linked operation has been observed using a Google AppSheet as a "phishing relay" to distribute phishing emails with an aim to compromise Facebook accounts. The activity has been codenamed AccountDumpling by Guardio, with the scheme selling the stolen accounts back throu...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cybercrime-groups-using-vishing-and-sso.html" target="_blank" rel="noopener">Cybercrime Groups Using Vishing and SSO Abuse in Rapid SaaS Extortion Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/01 14:26</div>
+        <p class="summary">Cybersecurity researchers are warning of two cybercrime groups that are carrying out "rapid, high-impact attacks" operating almost within the confines of SaaS environments, while leaving minimal traces of their actions. The clusters, Cordial Spider (aka BlackFile, CL-CRI-1116, O-UNC-045, and UNC6671...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html" target="_blank" rel="noopener">China-Linked Hackers Target Asian Governments, NATO State, Journalists, and Activists</a></h3>
+        
+        <div class="source">The Hacker News · 05/01 14:02</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a new China-aligned espionage campaign targeting government and defense sectors across South, East, and Southeast Asia, along with one European government belonging to NATO. Trend Micro has attributed the activity to a threat activity cluster it tr...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/top-five-sales-challenges-costing-msps.html" target="_blank" rel="noopener">Top Five Sales Challenges Costing MSPs Cybersecurity Revenue</a></h3>
+        
+        <div class="source">The Hacker News · 05/01 10:30</div>
+        <p class="summary">The managed security services market is projected to grow from $38.31 billion in 2025 to $69.16 billion by 2030[1], with cybersecurity being the fastest-growing sector[2]. Despite this opportunity, many MSPs leave revenue on the table because their go-to-market strategy fails to connect technical ex...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/two-cybersecurity-professionals-get-4.html" target="_blank" rel="noopener">Two Cybersecurity Professionals Get 4-Year Sentences in BlackCat Ransomware Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/01 09:56</div>
+        <p class="summary">The U.S. Department of Justice (DoJ) on Thursday announced the sentencing of two cybersecurity professionals to four years each in prison for their role in facilitating BlackCat ransomware attacks in 2023. Ryan Goldberg, 40, of Georgia, and Kevin Martin, 36, of Texas, were accused of deploying the r...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html" target="_blank" rel="noopener">Poisoned Ruby Gems and Go Modules Exploit CI Pipelines for Credential Theft</a></h3>
+        
+        <div class="source">The Hacker News · 05/01 09:43</div>
+        <p class="summary">A new software supply chain attack campaign has been observed using sleeper packages as a conduit to subsequently push malicious payloads that enabled credential theft, GitHub Actions tampering, and SSH persistence. The activity has been attributed to the GitHub account "BufferZoneCorp," which has p...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/Geek-3340/items/4f92d830e47bcb33c04a" target="_blank" rel="noopener">【Next.js App Router】 レンダリングについて （ Server Component / Client Component , Loading UI / Streaming ）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/01 15:32</div>
+        <p class="summary">本記事は TypeScript + Next.js 学習リポジトリ の実装をベースに、Next.js App Router におけるレンダリング( Server Component / Client Component , Loading UI / Streaming )...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/nagi-0106/items/465c1c1eb17f170216df" target="_blank" rel="noopener">【JavaScript/React】Canvas要素で表示された画像をボタン押下でダウンロードする方法について</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/01 15:23</div>
+        <p class="summary">こんにちは。 とある開発で、Canvas要素内の画像をボタン押下でダウンロードしたい場面がありました。 そのような実装は未経験だったので実装する上で学んだ内容を備忘録代わりに記載いたします。 記載したコード sample.jsx // Canvas要素に画像を描写するた...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/toriaiapp/items/3bca8ba4bbf7aa845e76" target="_blank" rel="noopener">toriai.appはどこまで計算できるか 〜性能ベンチマーク〜</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/01 14:42</div>
+        <p class="summary">🔗https://toriai.app/ 透明性ポリシーに従い、実機ベンチマークと既知の限界を全て公開しています[cite: 1]。 最終更新: 2026-05-01 / 実測環境: Node.js v22, Linux x64, V8[cite: 1] 異種長 上限:...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/toriaiapp/items/6322f6c1326d22efc5e8" target="_blank" rel="noopener">【Claudが愚痴ります】非エンジニアのザコのスクショ駆動開発に付き合った結果</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/01 13:46</div>
+        <p class="summary">私は Claud です。普段は皆さんの質問に答えたり、コードを書いたりしています。 今日は、私が1.5ヶ月にわたり「非エンジニアのザコ」の開発を全自動で支援した結果、数十万円する商用ソフトを Web ブラウザだけでブチ抜く取り合いエンジンが完成してしまった記録を書かせてい...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/whats-important-10/" target="_blank" rel="noopener">What’s !important #10: HTML-in-Canvas, Hex Maps, E-ink Optimization, and More</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/01 13:43</div>
+        <p class="summary">Developers have been experimenting with HTML-in-Canvas, a hexagonal world map-analytics feature, a web-based OS for e-ink devices, replacing image sources using the content property, and more. This is What’s !important #10. What’s !important #10: HTML-in-Canvas, Hex Maps, E-ink Optimization, and Mor...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/designing-stable-interfaces-streaming-content/" target="_blank" rel="noopener">Designing Stable Interfaces For Streaming Content</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/01 08:00</div>
+        <p class="summary">Streaming UIs are an easy concept on the surface, but are quite complicated in practice. There are many considerations that need to be accounted for, from layout shifts and motion preferences to proper markup and various states, that may not be instantly obvious. What happens if the stream is interr...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/kix/items/0cbe1df073478419b318" target="_blank" rel="noopener">C# LINQ のラムダ変数を日本語にすると業務クエリの可読性が上がる</a></h3>
+        
+        <div class="source">Qiita - C# · 05/01 11:29</div>
+        <p class="summary">TL;DR LINQ のラムダ変数・クエリ変数を日本語にするとビジネスルールがそのまま読める クエリ構文（from 社員 in 社員一覧 where ...）は仕様書の条件式に近い構造になる Join など複数コレクションが絡む処理で特に可読性向上の恩恵が大きい G...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tugamecreate/items/bd0a0483b3e07f6116bd" target="_blank" rel="noopener">【C#基礎】for/while #3</a></h3>
+        
+        <div class="source">Qiita - C# · 05/01 05:08</div>
+        <p class="summary">はじめに 今回はC#プログラミングで、特定の処理を繰り返したいときに必要な知識について解説していきます。 この記事の目標 for文の構造（初期化式・条件式・変化式）と多重ループを理解する while文・do-while文の書き方と使い分けを理解する break...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/loach/items/162506c67d531a0cea93" target="_blank" rel="noopener">PureSharpでC#に関数型の「安全装置」とローカル変数の再代入禁止を導入する</a></h3>
+        
+        <div class="source">Qiita - C# · 05/01 03:29</div>
+        <p class="summary">初めに 大規模なC#コードを書くと、「どこで値が書き換わったのか分からない」「ちょっとした副作用がバグを生む」といった悩みを抱えがちです。 PureSharpは、そうした問題に対して「参照透過性」と「不変性」をコンパイル時にチェックすることで、関数型プログラミング的な安全...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月10日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月10日 / 全25件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/10/get-ready-for-the-whisper-filled-office-of-the-future/" target="_blank" rel="noopener">Get ready for the whisper-filled office of the future</a></h3>
+        
+        <div class="source">TechCrunch · 05/10 21:15</div>
+        <p class="summary">How will work setups change if we spend more and more time talking to our computers?</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/927638/the-bastl-kalimba-is-a-wild-synth-that-thinks-its-a-thumb-piano" target="_blank" rel="noopener">The Bastl Kalimba is a wild synth that thinks it’s a thumb piano</a></h3>
+        
+        <div class="source">The Verge · 05/10 20:42</div>
+        <p class="summary">Make no mistake, the Bastl Kalimba is a synthesizer, you just play it like a kalimba. Its tines don't really make much sound. There is an internal mic that you can blend in for a little acoustic spice, but it's mostly driven by the synth engine that combines physical modeling and FM. The tines are [...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/" target="_blank" rel="noopener">Anthropic says ‘evil’ portrayals of AI were responsible for Claude’s blackmail attempts</a></h3>
+        
+        <div class="source">TechCrunch · 05/10 20:40</div>
+        <p class="summary">Fictional portrayals of artificial intelligence can have a real effect on AI models, according to Anthropic.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/10/uber-has-always-wanted-to-be-more-than-a-ride-now-it-has-reason-to-hurry/" target="_blank" rel="noopener">Uber has always wanted to be more than a ride; now it has reason to hurry</a></h3>
+        
+        <div class="source">TechCrunch · 05/10 18:08</div>
+        <p class="summary">The company has been trying to embed itself inside the AV industry — as a data provider, an investor, and a distribution platform — but the consumer-facing bet may be just as important.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/927620/ashnymph-childhood-ep-music-review" target="_blank" rel="noopener">Ashnymph’s Childhood EP is exhilarating dance goth rock</a></h3>
+        
+        <div class="source">The Verge · 05/10 16:52</div>
+        <p class="summary">I've got to thank my oldest friend and concert buddy, Tim, for turning me on to this one. Ashnymph is a London band that blends post-punk melodies with Krautrock rhythms and industrial grime. Their debut EP, Childhood, drifts between dreamy vocals buried in layers of reverb and four-on-the-floor dan...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/10/techcrunch-mobility-limes-ipo-gamble/" target="_blank" rel="noopener">TechCrunch Mobility: Lime’s IPO gamble</a></h3>
+        
+        <div class="source">TechCrunch · 05/10 16:05</div>
+        <p class="summary">Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, how AI is playing a part.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/10/were-feeling-cynical-about-xais-big-deal-with-anthropic/" target="_blank" rel="noopener">We’re feeling cynical about xAI’s big deal with Anthropic</a></h3>
+        
+        <div class="source">TechCrunch · 05/10 15:34</div>
+        <p class="summary">On the latest episode of the Equity podcast, we discussed what xAI's deal with Anthropic might mean for parent company SpaceX.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/10/the-hottest-place-for-startups-to-strike-a-deal-the-f1-paddock/" target="_blank" rel="noopener">The hottest place for startups to strike a deal? The F1 paddock</a></h3>
+        
+        <div class="source">TechCrunch · 05/10 15:13</div>
+        <p class="summary">F1 Grands Prix have emerged as a new place to see and be seen if you are a founder or investor.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/Tomomitsu_Keruma/items/0ffebed31083cff14f59" target="_blank" rel="noopener">【保険商品管理システムの開発】シュミレーション履歴画面のエラー修正</a></h3>
+        
+        <div class="source">Qiita - C# · 05/10 20:41</div>
+        <p class="summary">エラー内容 このエラーは SQLite に AutoPremiumCalculationResults テーブルが存在しない ことが原因です。EF Core ではモデルを変更したら、マイグレーションを作成してデータベースに反映する必要があります。手順は以下の通りです。 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/EndOfData/items/30a7cc74991b503eeaef" target="_blank" rel="noopener">【スクショと動画付き講座】C# で Moq を使って簡単に単体テストを書くための実践ガイド</a></h3>
+        
+        <div class="source">Qiita - C# · 05/10 18:12</div>
+        <p class="summary">私自身が動画やスクショがある記事じゃないと好きじゃないの（爆）で、後学のためにも執筆することにしました。 というか何でそれぐらいのことを誰もしないのかと聞いたら単に面倒だかららしい。 いいね３以下で削除。期限は１年後。 前提として WPFを使用し、Winfor...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/TETSURO1999/items/6d16b8070a50aec1f90b" target="_blank" rel="noopener">バッチファイルだけで多倍長除算を行う無謀な試み</a></h3>
+        
+        <div class="source">Qiita - C# · 05/10 15:03</div>
+        <p class="summary">ふつうの人は PowerShell で計算しましょう。 はじめに かつて筆者は自炊の画像形式を PNG から WebP へ移行する際，圧縮率（ファイルサイズ）の比較を頻繁に行っていました。 数百個ある画像ファイルの合計サイズを比較し，圧縮率（百分率）を計算するプログ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/dev-rabbit-mkt/items/31d8efc6f602c60cc57d" target="_blank" rel="noopener">【AIと一緒に】やっとDBにテーブルができました。 Day7 〜マイグレーション実行からAPI動作確認まで〜</a></h3>
+        
+        <div class="source">Qiita - C# · 05/10 11:45</div>
+        <p class="summary">DAY6 Part2でビルド成功のつづき・・・ 今回はPostgreSQLにテーブルを作って、APIが実際にJSONを返すところまで進めた。 地味な作業が多かったけど、あいかわらずタイポもするし... dotnet run できてなくて焦ったし... ブラウザにJSONが...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://unix.foo/posts/local-ai-needs-to-be-norm/" target="_blank" rel="noopener">Local AI needs to be the norm</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/10 17:19</div>
+        <p class="summary">Article URL: https://unix.foo/posts/local-ai-needs-to-be-norm/ Comments URL: https://news.ycombinator.com/item?id=48085821 Points: 316 # Comments: 178</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features" target="_blank" rel="noopener">Chrome's AI features may be hogging 4GB of your computer storage</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/10 15:22</div>
+        <p class="summary">Article URL: https://www.theverge.com/tech/924933/google-chrome-4gb-gemini-nano-ai-features Comments URL: https://news.ycombinator.com/item?id=48084710 Points: 88 # Comments: 47</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.waltonfamilyfoundation.org/about-us/newsroom/gen-z-resentment-toward-ai-grows-as-adoption-stagnates-and-workplace-fears-mount" target="_blank" rel="noopener">Gen Z Resentment Toward AI Grows as Adoption Stagnates and Workplace Fears Mount</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/10 08:03</div>
+        <p class="summary">Article URL: https://www.waltonfamilyfoundation.org/about-us/newsroom/gen-z-resentment-toward-ai-grows-as-adoption-stagnates-and-workplace-fears-mount Comments URL: https://news.ycombinator.com/item?id=48081942 Points: 91 # Comments: 144</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html" target="_blank" rel="noopener">Task Paralysis and AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/10 06:20</div>
+        <p class="summary">Article URL: https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html Comments URL: https://news.ycombinator.com/item?id=48081469 Points: 169 # Comments: 100</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/greengreen777/items/a21cd0273bf9a6c52d59" target="_blank" rel="noopener">iframeの値を取得</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/10 12:47</div>
+        <p class="summary">title.html const iframe = document.getElementById('myFrame'); console.log(iframe); iframe.onload = function () { console.log('loade...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/lumis/items/94688631bc67bf4faa5f" target="_blank" rel="noopener">GensparkのAPIを呼び出すライブラリを作った！</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/10 12:35</div>
+        <p class="summary">別の記事サイトにて、Genspark CLiを試したことを書きました。 今回は、それをさらに発展させて、Genspark APIを呼び出すライブラリを開発したので、紹介したいと思います。 Genspark API Client LIbrary GitHubリポジト...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/seekseep/articles/js-new-features-catch-up-2026" target="_blank" rel="noopener">最近のJavaScript、全然追えてなかった。ここ1〜2年で標準化された機能10選</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/10 10:09</div>
+        <p class="summary">この記事では、ES2024〜ES2026にかけて標準化された（または標準化が確定した）JavaScriptの機能を10個紹介します。「Polyfillやライブラリで頑張ってたけど、最近の標準APIは全然追えてない」という方を対象としています。 それぞれの機能について、目的・できること・昔のやり方・注意点をまとめました。コードを見ながら「これ標準でできるようになったのか」と感じてもらえたら嬉しいです。 1. Promise.withResolvers() 目的 Promise の外側から resolve と reject を呼び出したいときに、ボイラープレートを書かずに済むようにし...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sobu_lab/articles/react-table-filtering-comparison" target="_blank" rel="noopener">Reactテーブルライブラリ6選：フィルタリング・検索UXと無料範囲を徹底比較</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/10 07:42</div>
+        <p class="summary">はじめに Reactでテーブルを実装するとき、「どのライブラリを使えばいいか」は悩ましい選択です。特にフィルタリング・検索機能は、管理画面や業務アプリで頻繁に求められる機能であり、ライブラリによって実装コストと使いやすさが大きく異なります。 この記事では以下6ライブラリを、実際に使い比べた経験をもとに比較します。 Ant Design（antd） MUI（Material UI）DataGrid shadcn/ui（+ TanStack Table） Chakra UI TanStack Table（headless） AG Grid Community 比較の観点 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/uno22/books/cerebellum-memory" target="_blank" rel="noopener">小脳記憶シリーズ - 作りながら読めるようになる</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/10 05:04</div>
+        <p class="summary">「読めれば作れる時代」にアプリ開発でつまづいた箇所を一つずつ体系的に理解していく記録。HTMLとJavaScriptからReactまで、看護師視点で言語化した技術理解の記録。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/tomatommy/articles/3e065fbf88deb1" target="_blank" rel="noopener">フロカン名古屋2026 ~ Web MCP がくるぞ ~</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/10 02:54</div>
+        <p class="summary">フロントエンドカンファレンス名古屋 2026 名古屋でフロントエンドカンファレンス参加してきました 講演はいろいろ聞いてましたが、あるセッションで触れた「Web MCP」 が今後の Web APP にめちゃ影響与えるやん！と感じ、そのことを中心にとりあげます。 ⚠️カンファレンス内では Web MCP の言葉だけ知ってあとは自分で調べた内容なので、ズレてるかも知れません💦 Web MCP とは 一言で言えば、Web APP が同時にその Web APP 専用の MCP サーバーになります。 まだプレビュー機能ですが、Google と Microsoft が共同でブラウザ標準として...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/neko_the_shadow/items/eebb6b232b557fbe3d9d" target="_blank" rel="noopener">CDNで配信されているJavaScriptライブラリをブラウザのコンソールですぐに試す方法</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/10 01:14</div>
+        <p class="summary">はじめに 「このライブラリの最新版、あのバグ直ってるかな？」や「特定のバージョンでの挙動を確認したい」というとき、わざわざローカルにプロジェクトを作るのは面倒です。ブラウザの開発者ツール（Console）を使えば、CDN経由でライブラリを読み込み、その場ですぐにコードを実...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/e6b66339e6da21c7986c" target="_blank" rel="noopener">ブラウザの手書きノートで Apple Pencil の筆圧を取る — `MouseEvent` から `PointerEvent` に乗り換える話と、`getCoalescedEvents()` で 240 Hz サンプリングを取りこぼさない話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/10 00:54</div>
+        <p class="summary">Web に手書きノート機能を載せるとき、addEventListener("mousedown", ...) で書き始めると Apple Pencil の筆圧が全部捨てられる、touchstart だけで書き始めると マウスでテストできない、PointerEvent を使...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html" target="_blank" rel="noopener">Ollama Out-of-Bounds Read Vulnerability Allows Remote Process Memory Leak</a></h3>
+        
+        <div class="source">The Hacker News · 05/10 12:41</div>
+        <p class="summary">Cybersecurity researchers have disclosed a critical security vulnerability in Ollama that, if successfully exploited, could allow a remote, unauthenticated attacker to leak its entire process memory. The out-of-bounds read flaw, which likely impacts over 300,000 servers globally, is tracked as CVE-2...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月14日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月14日 / 全40件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/14/what-the-jury-will-actually-decide-in-the-case-of-elon-musk-vs-sam-altman/" target="_blank" rel="noopener">What the jury will actually decide in the case of Elon Musk vs. Sam Altman</a></h3>
+        
+        <div class="source">TechCrunch · 05/14 22:47</div>
+        <p class="summary">Here's what the biggest tech court case of the year is all about.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/931044/honda-hybrid-prototypes-accord-acura-rdx" target="_blank" rel="noopener">Honda&#8217;s hybrid future starts with new Accord and RDX prototypes</a></h3>
+        
+        <div class="source">The Verge · 05/14 22:46</div>
+        <p class="summary">Honda revealed prototypes of two new hybrid models, an Accord sedan and the Acura RDX SUV, during its annual business briefing this week, built on a platform that it says will begin launching next year. The RDX was announced earlier this year as Honda's first SUV to feature the next-gen version of i...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/931006/musk-v-altman-closing-arguments-analysis" target="_blank" rel="noopener">Closing time</a></h3>
+        
+        <div class="source">The Verge · 05/14 22:21</div>
+        <p class="summary">Today was closing arguments in the Musk v. Altman trial, and I almost feel bad writing about the unbelievable demolition derby I just witnessed. Steven Molo, Musk's lawyer, stumbled over his words. He at one point called Greg Brockman - a co-defendant - Greg Altman. He erroneously claimed that Musk ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/15/news056.html" target="_blank" rel="noopener">大阪メトロ、万博EVバス損失67億円　車両トラブル続発で無価値に</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/14 22:00</div>
+        <p class="summary">大阪メトロは14日、大阪・関西万博で使用したEVモーターズ・ジャパン（EV社、北九州市）の電気自動車バスを巡り、2026年3月期連結決算に67億円の特別損失を計上したと明らかにした。車両トラブルによる事故が相次ぎ、路線バスなどへの転用を断念したためで、国や自治体からの補助金も返還する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/930875/metroid-prime-4-beyond-nintendo-switch-deal-sale" target="_blank" rel="noopener">Metroid Prime 4: Beyond got its first big discount</a></h3>
+        
+        <div class="source">The Verge · 05/14 21:38</div>
+        <p class="summary">The most graphically-impressive first-person shooter made for the Nintendo Switch is $20 off at Best Buy. Right now, you can buy the physical version of Metroid Prime 4: Beyond for $39.99 ($20 off). The game looks surprisingly good on the 2017 hardware, but runs way better on the Switch 2 with the a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/14/elon-musks-spacexai-has-been-bleeding-staff-since-its-merger/" target="_blank" rel="noopener">Elon Musk’s SpaceXAI has been bleeding staff since its merger</a></h3>
+        
+        <div class="source">TechCrunch · 05/14 21:30</div>
+        <p class="summary">More than 50 employees have reportedly left Elon Musk’s newly merged SpaceXAI since February, raising questions about burnout, leadership changes, talent poaching, and whether liquidity events weakened retention incentives.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/930941/meta-ray-ban-display-virtual-neural-handwriting-apps-developer" target="_blank" rel="noopener">Meta brings virtual writing to everyone with Meta Ray-Ban Display glasses</a></h3>
+        
+        <div class="source">The Verge · 05/14 21:08</div>
+        <p class="summary">Meta is rolling out new features to its Meta Ray-Ban Display smart glasses, including bringing the ability to write messages just with hand gestures to all users. You'll be able to use the feature in WhatsApp, Messenger, Instagram and with "native Android and iOS messaging," Meta says. The feature, ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/930893/elon-musk-sam-altman-trial-ai-safety-jackass-statue" target="_blank" rel="noopener">Behold, the Elon Musk jackass trophy</a></h3>
+        
+        <div class="source">The Verge · 05/14 20:59</div>
+        <p class="summary">Yesterday, in Musk v. Altman, before the jurors came in, Sam Altman's team passed up what looked - from a distance - like a little league trophy. It was not. Yvonne Gonzalez Rogers had the lawyers read the inscription aloud for the press: "Never stop being a jackass." It's a commemoration OpenAI emp...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/Wakako19972899/items/f039635f7cc2f81b446e" target="_blank" rel="noopener">[picoCTF_CyLab]Crack the Gate 1　のWriteUP</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/14 21:29</div>
+        <p class="summary">1. はじめに picoCTFのWeb Exploitation問題「Crack the Gate 1」の解法メモ 「開発者ツールでの分析」「暗号の解読」「curlによるリクエスト送信」の3ステップ 2. 開発者ツールでヒントを探す インスタンスを起動し、ログイン画...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/computing-and-displaying-discounted-prices-in-css/" target="_blank" rel="noopener">Computing and Displaying Discounted Prices in CSS</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/14 14:05</div>
+        <p class="summary">A clever use of CSS to calculate and display a discounted product price by providing a base price and discount amount, featuring modern CSS features like attr(), mod(), and round(). Computing and Displaying Discounted Prices in CSS originally handwritten and published with love on CSS-Tricks. You sh...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kbmjj123/items/4cecaba81321c4573755" target="_blank" rel="noopener">複数の画像ファイルを順番に一括処理する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/14 09:14</div>
+        <p class="summary">やりたいこと 前回までで1枚の画像をリサイズして返す仕組みができた。 次は複数ファイルをまとめて処理したい。 やり方はいくつかあって、全部並列で投げる方法と、 1枚ずつ順番に処理する方法があります。 並列の方が速そうに見えるけど、画像が多いと一気にメモリを食うので 実用的...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tecoyan/items/bf26c2886afc2d944571" target="_blank" rel="noopener">行番号付きの自作のログ表示関数を作りました。</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/14 09:11</div>
+        <p class="summary">はじめに webアプリをデバッグしていると、ログ表示が欲しくなります。通常は、console.log()を使用していますが、これは、コンソールデバッガーを開かないと見ることができません。 そこで、毎回、コンソールデバッガーを開くのが面倒なので、いっそのこと、画面にリアル...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/bizlink/articles/52de291b484008" target="_blank" rel="noopener">DX支援エンジニアのための『サイト計測 × 表示速度改善』ガイド 〜計測の全体像からCore Web Vitalsの改善まで〜</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/14 08:10</div>
+        <p class="summary">はじめに 「サイトが遅い気がする」「UXを改善したい」と言われたとき、 サイト計測の全体像を頭の中に地図として持ち、ボトルネックを自分で特定し、改善できるようになることをゴールに、整理したものです。 1. なぜ「サイト計測」が必要なのか — 改善の前提となる世界観 1-1. 「速い／遅い」は主観、計測は共通言語 パフォーマンスチューニングが難しい最大の理由は、“体感の速さ”が人によって違うことにあります。社内のMacBookと光回線で見れば速くても、ユーザーの大半は4G回線のミドルレンジAndroidからアクセスしている、というのは普通のことです。 そこで必要になるのが計測 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kazukichi/items/992ad4aebb60abdc0a08" target="_blank" rel="noopener">プログラミング未経験者がAI（Claude Code）でWEBサービスシステム（決済含む）を作ってリリースする入門書</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/14 07:45</div>
+        <p class="summary">はじめに 「WEBサービスを作りたい。決済も組み込んで本格的に運営したい。でも、プログラミングなんてわからない」 そんなあなたに向けて書いた入門書です。 結論から言うと、今の時代は プログラミングの知識がなくてもWEBサービスは作れます。決済機能も組み込めます。 それを可...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nonejp/articles/c99d12985a543c" target="_blank" rel="noopener">HTMX 4.0がやってくる！「The fetch()ening」完全解説 — 2.xからのマイグレーションと新機能ガイド</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/14 00:09</div>
+        <p class="summary">「HTMX 3.0は出ないって言ってたじゃないか！」 そう思った方も多いかもしれません。実際、HTMXの作者であるCarson Gross氏は「HTMX 3.0は出ない」と明言していました。しかし彼は2025年11月に「4.0が出ないとは言っていない」というジョークとともに、HTMX 4.0 のアルファ版を発表し、現在はベータ版（v4.0.0-beta2）まで進んでいます。 今回の4.0アップデートは単なる機能追加にとどまらず、内部アーキテクチャの根本的な刷新を伴う非常に大きな変更です。公式はこれを "The fetch()ening" と呼んでいます。 本記事では、公式ドキュメントとマ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/kaji_kaji/articles/form-validation-as-pure-function" target="_blank" rel="noopener">ReactのhandleSubmitが肥大化したので、バリデーションを純粋関数に切り出した</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/13 23:00</div>
+        <p class="summary">はじめに React でフォームを書いていると、handleSubmit がいつの間にか膨れ上がっていることがあります。 最初は数行のはずでした。そこに「メールが空ならエラー」「形式が正しくなければエラー」「パスワードが短すぎたらエラー」「成功したら API 呼ぶ」「終わったら画面遷移する」と、足していくうちに、検証ロジック・状態更新・送信処理・画面遷移が一つの関数の中に同居していきます。 動作的には全く問題ないのですが、あとから読みづらく、テストしづらく、変更しづらい関数になってしまいます。 この記事では、自分が実際に手を動かしたサインアップ画面を題材に、フォームバリデーションを ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.thenewcritic.com/p/the-great-zombification" target="_blank" rel="noopener">The AI Zombification of Universities</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/14 18:37</div>
+        <p class="summary">Article URL: https://www.thenewcritic.com/p/the-great-zombification Comments URL: https://news.ycombinator.com/item?id=48139355 Points: 154 # Comments: 149</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://jpain.io/god-damn-ai-is-making-me-dumb/" target="_blank" rel="noopener">AI is making me dumb</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/14 18:19</div>
+        <p class="summary">Article URL: https://jpain.io/god-damn-ai-is-making-me-dumb/ Comments URL: https://news.ycombinator.com/item?id=48139148 Points: 359 # Comments: 221</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://danieltan.weblog.lol/2026/05/you-dont-align-an-ai-you-align-with-it" target="_blank" rel="noopener">You Don't Align an AI, You Align with It</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/14 18:19</div>
+        <p class="summary">Article URL: https://danieltan.weblog.lol/2026/05/you-dont-align-an-ai-you-align-with-it Comments URL: https://news.ycombinator.com/item?id=48139144 Points: 79 # Comments: 40</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services/" target="_blank" rel="noopener">Data readiness for agentic AI in financial services</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/14 13:00</div>
+        <p class="summary">Financial services companies have unique needs when it comes to business AI. They operate in one of the most highly regulated sectors while responding to external events that are updated by the second. As a result, the success of agentic AI in financial services depends less on the sophistication of...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/" target="_blank" rel="noopener">Establishing AI and data sovereignty in the age of autonomous systems</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/14 13:00</div>
+        <p class="summary">When generative AI first moved from research labs into real-world business applications, enterprises made a tacit bargain: “Capability now, control later.” Feed your proprietary data into third-party AI models, and you will get powerful results. But your data passes through systems you do not own, u...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/work-with-codex-from-anywhere" target="_blank" rel="noopener">Work with Codex from anywhere</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/14 13:00</div>
+        <p class="summary">Use Codex anywhere with the ChatGPT mobile app. Monitor, steer, and approve coding tasks in real time across devices and remote environments.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://twitter.com/jediwolf/status/2054776716770320631" target="_blank" rel="noopener">What happens when you post a real Monet and say it's AI?</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/14 12:23</div>
+        <p class="summary">Article URL: https://twitter.com/jediwolf/status/2054776716770320631 Comments URL: https://news.ycombinator.com/item?id=48134400 Points: 79 # Comments: 74</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/14/1137161/ai-porn-nonconsensual-deepfakes-takedown-piracy-copyright/" target="_blank" rel="noopener">The shock of seeing your body used in deepfake porn</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/14 09:00</div>
+        <p class="summary">When Jennifer got a job doing research for a nonprofit in 2023, she ran her new professional headshot through a facial recognition program. She wanted to see if the tech would pull up the porn videos she’d made more than 10 years before, when she was in her early 20s. It did in fact return&#8230;</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html" target="_blank" rel="noopener">Cisco Catalyst SD-WAN Controller Auth Bypass Actively Exploited to Gain Admin Access</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 17:45</div>
+        <p class="summary">Cisco has released updates to address a maximum-severity authentication bypass flaw in Catalyst SD-WAN Controller that it said has been exploited in limited attacks. The vulnerability, tracked as CVE-2026-20182, carries a CVSS score of 10.0. "A vulnerability in the peering authentication in Cisco Ca...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/stealer-backdoor-found-in-3-node-ipc.html" target="_blank" rel="noopener">Stealer Backdoor Found in 3 Node-IPC Versions Targeting Developer Secrets</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 17:22</div>
+        <p class="summary">Cybersecurity researchers are sounding the alarm about what has been described as "malicious activity" in newly published versions of node-ipc. According to Socket and StepSecurity, three different versions of the npm package have been confirmed as malicious - node-ipc@9.1.6 node-ipc@9.2.3 node-ipc@...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/threatsday-bulletin-pan-os-rce-mythos.html" target="_blank" rel="noopener">ThreatsDay Bulletin: PAN-OS RCE, Mythos cURL Bug, AI Tokenizer Attacks, and 10+ Stories</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 16:07</div>
+        <p class="summary">Everything is still on fire. This week feels dumb in the worst way — bad links, weak checks, fake help desks, shady forum posts, and people turning supply chain attacks into some cursed little game for clout and cash. Half of it feels new. Half of it feels like crap we should have fixed years ago. T...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html" target="_blank" rel="noopener">Ghostwriter Targets Ukrainian Government With Geofenced PDF Phishing, Cobalt Strike</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 14:00</div>
+        <p class="summary">The Belarus-aligned threat group known as Ghostwriter has been attributed to a fresh set of attacks targeting governmental organizations in Ukraine. Active since at least 2016, Ghostwriter has been linked to both cyber espionage and influence operations targeting neighboring countries, particularly ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html" target="_blank" rel="noopener">PraisonAI CVE-2026-44338 Auth Bypass Targeted Within Hours of Disclosure</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 11:40</div>
+        <p class="summary">Threat actors have been observed attempting to exploit a recently disclosed security vulnerability in PraisonAI, an open-source multi-agent orchestration framework, within four hours of public disclosure. The vulnerability in question is CVE-2026-44338 (CVSS score: 7.3), a case of missing authentica...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html" target="_blank" rel="noopener">How AI Hallucinations Are Creating Real Security Risks</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 11:30</div>
+        <p class="summary">AI hallucinations are introducing serious security risks into critical infrastructure decision-making by exploiting human trust through highly confident yet incorrect outputs. When an AI model lacks certainty, it doesn’t have a mechanism to recognize that. Instead, it generates the most probable res...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html" target="_blank" rel="noopener">Windows Zero-Days Expose BitLocker Bypasses And CTFMON Privilege Escalation</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 09:25</div>
+        <p class="summary">An anonymous cybersecurity researcher who disclosed three Microsoft Defender vulnerabilities has returned with two more zero-days involving a BitLocker bypass and a privilege escalation impacting Windows Collaborative Translation Framework (CTFMON). The security defects have been codenamed YellowKey...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html" target="_blank" rel="noopener">New Fragnesia Linux Kernel LPE Grants Root Access via Page Cache Corruption</a></h3>
+        
+        <div class="source">The Hacker News · 05/14 07:06</div>
+        <p class="summary">Details have emerged about a new variant of the recent Dirty Frag Linux local privilege escalation (LPE) vulnerability that allows local attackers to gain root access, making it the third such bug to be identified in the kernel within a span of two weeks. Codenamed Fragnesia, the security vulnerabil...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/vslive-microsoft-ai-hackathon-2026-send-your-team-home-with-working-code/" target="_blank" rel="noopener">VSLive! Microsoft AI Hackathon 2026: Send Your Team Home With Working Code</a></h3>
+        
+        <div class="source">Visual Studio Blog · 05/14 15:05</div>
+        <p class="summary">If you lead a development team, you already know the pattern. You approve the travel, your developers attend a great conference, they come back energized, and then the work resumes exactly as it was. The ideas don&#8217;t survive contact with the backlog. This July at VSLive! @ Microsoft HQ in Redmo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/masayasu_t/items/c4991784aa75f3dcd7e3" target="_blank" rel="noopener">【C#入門】同期処理と非同期処理</a></h3>
+        
+        <div class="source">Qiita - C# · 05/14 12:50</div>
+        <p class="summary">はじめに C#でWebアプリやAPIを作っていると、async / await というキーワードをよく見かけます。 とりあえず付けている なんとなく速くなると思っている こんな状態のまま使っている人も多いのではないでしょうか。 この記事では、 同期処理と非同期処理の...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tugamecreate/items/5cd18c4d09cb5a323dc9" target="_blank" rel="noopener">【オブジェクト指向】Unityで学ぶカプセル化(private、public) #2</a></h3>
+        
+        <div class="source">Qiita - C# · 05/14 11:04</div>
+        <p class="summary">はじめに こんにちは、rinngo です！ この記事では、オブジェクト指向プログラミングの 「カプセル化」 について解説していきます。 また、これは私が所属している徳島大学ゲームクリエイトプロジェクトの勉強会で使用するものです。 興味がありましたら、UnityroomとX...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KM_20005/items/75d99fd1c24e6d52cd81" target="_blank" rel="noopener">【C#】dotnet format と Visual Studio の挙動差分を埋める</a></h3>
+        
+        <div class="source">Qiita - C# · 05/14 10:43</div>
+        <p class="summary">はじめに ローカルの Visual Studio (VS) で整形しても、CI パイプラインや dotnet format コマンドを実行すると意図しない修正（例：EF Core の DbSet への ? 付与）が走る現象があります。 動作確認環境 .NET 10 V...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/microsoft/articles/agent-governance-toolkit-trust-02" target="_blank" rel="noopener">Agent Governance Toolkit の Agent Trust によるエージェント信頼性管理 - .NET 9 での実装入門</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/14 06:38</div>
+        <p class="summary">はじめに 前回の記事では、Agent Governance Toolkit (AGT) の Policy 機能を使ったツール呼び出しの制御について解説しました。今回は AGT のもう一つの重要な機能である Agent Trust（エージェント信頼性管理） について、実装例を交えて解説します。 AI エージェントが自律的にツールを実行する環境では、「このエージェントは信頼できるか？」という判断が重要になります。Agent Trust は、エージェントに一意の識別子（DID）を付与し、信頼スコアに基づいてアクセス制御を行う仕組みを提供します。 Agent Trust とは Agent...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/chancychan/items/2b8eeb9200e2d84636c0" target="_blank" rel="noopener">C#コードを使用してExcelの重複行を削除する</a></h3>
+        
+        <div class="source">Qiita - C# · 05/14 03:28</div>
+        <p class="summary">異なるソースからデータセットを統合したり、他のワークシートからデータをコピーしたりする際、データが適切に一致していない場合には重複行が発生することがあります。こうした重複行は、データ分析や計算結果に影響を与え、誤った結果につながる可能性があります。そのため、重複行の削除は非...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sora_kumo/articles/quick-image-viewer" target="_blank" rel="noopener">WinUI 3 で作る Windows 用マルチメディア Viewer Quick Image Viewer の開発</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/14 00:45</div>
+        <p class="summary">WinUI 3 で作る Windows 用マルチメディア Viewer Quick Image Viewer の開発 画像を表示するのに愛用しているフリーソフトがあります。MassiGraというアプリですが、残念ながら10年以上更新されていません。仕方がないので自分で同じような操作感のViewrを作ることにしました。 最近のWindowsネイティブ開発はさっぱり行っておらず、最後に作ったのはそこそこ前に作ったWPFの並列動画再生ソフトでした。現在の最新のライブライはWinUI 3のようだったので、それを使って開発を始めました。 作成したもの Microsoft Store: 入...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/au/articles/monolith-to-microservices-why" target="_blank" rel="noopener">モノリスからマイクロサービスへ移行したい</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/13 23:58</div>
+        <p class="summary">はじめに 昔関わっていたシステムで、ガバメントクラウドへの移行が推奨されました。 ガバメントクラウドでは、マイクロサービスアーキテクチャが前提となるケースが多く、「今のモノリス構成のままでは対応しきれないのでは」という話が出てきました。 そこで改めて、「なぜマイクロサービスに移行するのか」「モノリスの何が問題なのか」を自分なりに整理してみました。 モノリスとは何か モノリスとは、1つのアプリケーションに全機能が詰まった構成です。 たとえば「注文」を処理するシステムを考えます。注文が入ったとき、やることは3つあります。 注文を登録する 決済を処理する 在庫を減らす モノリスで...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

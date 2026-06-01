@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月05日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月05日 / 全35件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">6</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/05/lucid-motors-doesnt-know-how-many-evs-it-will-build-this-year/" target="_blank" rel="noopener">Lucid Motors doesn’t know how many EVs it will build this year</a></h3>
+        
+        <div class="source">TechCrunch · 05/05 22:31</div>
+        <p class="summary">Lucid Motors pulled its guidance for the year, as it navigates swelling inventory and a companywide cost-cutting measure.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/924755/google-home-gemini-3-1-upgrade" target="_blank" rel="noopener">Google Home&#8217;s Gemini AI can handle more complicated requests</a></h3>
+        
+        <div class="source">The Verge · 05/05 21:46</div>
+        <p class="summary">Google Home users can now ask Gemini to complete more complex, multi-step tasks and combine multiple tasks in a single command. Google has updated Gemini for Home to Gemini 3.1, which it says will improve the smart home assistant's ability to interpret and act on requests. The upgrade will also make...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/924706/apple-iphone-siri-intelligence-class-action-lawsuit-settlement" target="_blank" rel="noopener">Apple agrees to pay iPhone owners $250 million for not delivering AI Siri</a></h3>
+        
+        <div class="source">The Verge · 05/05 21:18</div>
+        <p class="summary">Apple has agreed to pay $250 million to settle a class action lawsuit that accused it of misleading customers about the availability of its Apple Intelligence features. The proposed settlement would apply to people in the US who purchased all models of the iPhone 16 and the iPhone 15 Pro between Jun...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/05/as-crypto-cools-a16zcrypto-raises-a-2-2b-fund/" target="_blank" rel="noopener">As crypto cools, a16z crypto raises a $2.2B fund</a></h3>
+        
+        <div class="source">TechCrunch · 05/05 21:15</div>
+        <p class="summary">As some of the biggest VCs in crypto start to consider funding AI startups, a16z crypto's new fund will stay the course.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/" target="_blank" rel="noopener">Apple plans to make iOS 27 a Choose Your Own Adventure of AI models</a></h3>
+        
+        <div class="source">TechCrunch · 05/05 20:56</div>
+        <p class="summary">With Apple's latest operating system updates, users will reportedly have their pick of which third-party AI models they want to use for a host of tasks.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us/" target="_blank" rel="noopener">ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming for us</a></h3>
+        
+        <div class="source">TechCrunch · 05/05 20:06</div>
+        <p class="summary">Christophe Fouquet, who became ASML's CEO in 2024 after more than a decade at the company, sat down with this editor on the rooftop deck of his Beverly Hills hotel Tuesday morning ahead of his appearance at the Milken Institute Global Conference. Dressed in a blue suit and white shirt, he was relaxe...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/05/volkswagen-becomes-rivians-top-shareholder-displacing-amazon/" target="_blank" rel="noopener">Volkswagen becomes Rivian’s top shareholder, displacing Amazon</a></h3>
+        
+        <div class="source">TechCrunch · 05/05 19:58</div>
+        <p class="summary">VW Group's stake will continue to grow under the $5.8 billion joint venture with Rivian.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/924551/microsoft-xbox-ceo-copilot-ai-asha-sharma" target="_blank" rel="noopener">Microsoft gives up on Xbox Copilot AI</a></h3>
+        
+        <div class="source">The Verge · 05/05 19:54</div>
+        <p class="summary">Xbox is "winding down Copilot on mobile" and "will stop development of Copilot on console," new Xbox CEO Asha Sharma announced on Tuesday. The move follows Sharma's reorganization of the Xbox platform team earlier on Tuesday, which added executives from Microsoft's CoreAI team - where Sharma worked ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/coredump/items/a5faaa2baba00bfd0451" target="_blank" rel="noopener">C# フォームアプリ WebView2 注意点</a></h3>
+        
+        <div class="source">Qiita - C# · 05/05 19:09</div>
+        <p class="summary">WebView2使用時の注意点 C# 4.8 フォームアプリでWebView2を使用して気づいた注意点です その1 NavigationStarting/WebMessageReceived等のwebview2からイベントが飛んできたときに、ダイアログ等を出すと例外もキ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/gk28/items/ca3f56dadfe8af6aaeac" target="_blank" rel="noopener">VB.NET WinForms に「ブラウザ帳票デザイナー」を WebView2 で組み込む手順</a></h3>
+        
+        <div class="source">Qiita - C# · 05/05 13:37</div>
+        <p class="summary">業務 SI で 17 年触ってきた立場から、レガシー帳票ツールの置き換え検証として ブラウザだけで動く帳票デザイナー gkReport を WinForms に組み込んでみました。 本記事は gkReport β v0.6 を前提にした実装手順です。 商用利用は v1.0...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/aakei/articles/my-scratch-browser" target="_blank" rel="noopener">C#でJavaScriptEngine+ブラウザ自作した</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/05 08:17</div>
+        <p class="summary">! この記事の内容は2026/5/5時点のものです。 文章を書くのが苦手なので、本文は半分以上AIに書いてもらいました。 はじめに C# で JavaScript エンジンを書いていたら、最終的に簡単な Web サイトを表示して JavaScript も少し動くブラウザのようなものができました。 WebView2 や Chromium Embedded Framework を使ったものではありません。JavaScript エンジン、DOM と JavaScript の接続、HTML/CSS から描画データへの変換、レイアウト、入力、HTTP リクエストまわりをほぼ C# で実装して...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/maruma1178/items/87870cad760bd55d11f1" target="_blank" rel="noopener">C# if文</a></h3>
+        
+        <div class="source">Qiita - C# · 05/04 23:55</div>
+        <p class="summary">if文 → 条件によって処理を行う ブロック → 複数の処理を行うときに{}を使用する 例 int a = 5; if(a % 2 == 0) { Console.WriteLine($"{a}は偶数です。"); } else { Console.WriteL...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Tenere/items/3ee58a36c9ece741651f" target="_blank" rel="noopener">C#でbit全探索のお勉強 (ABC 128 C-Switches)</a></h3>
+        
+        <div class="source">Qiita - C# · 05/04 23:30</div>
+        <p class="summary">はじめに 応用力をつけるためにAtCoderを始めたが、せっかくなら強くなりたいので勉強している。その中でbit全探索があったのでABC 128 C-Switchesという問題で実装した。 この記事ではbit全探索のより簡単な応用例を見たのち、問題の回答記録に入っていく。...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-5-5-instant/" target="_blank" rel="noopener">GPT‑5.5 Instant</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/05 17:02</div>
+        <p class="summary">Article URL: https://openai.com/index/gpt-5-5-instant/ Comments URL: https://news.ycombinator.com/item?id=48025274 Points: 69 # Comments: 15</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/" target="_blank" rel="noopener">Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.</a></h3>
+        
+        <div class="source">Google AI Blog · 05/05 16:00</div>
+        <p class="summary">Google is partnering with XPRIZE and Range Media Partners on the $3.5 million Future Vision film competition.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://susam.net/inverse-laws-of-robotics.html" target="_blank" rel="noopener">Three Inverse Laws of AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/05 15:27</div>
+        <p class="summary">Article URL: https://susam.net/inverse-laws-of-robotics.html Comments URL: https://news.ycombinator.com/item?id=48023861 Points: 325 # Comments: 221</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://idiallo.com/blog/ai-didnt-delete-your-database-you-did" target="_blank" rel="noopener">AI didn't delete your database, you did</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/05 14:07</div>
+        <p class="summary">Article URL: https://idiallo.com/blog/ai-didnt-delete-your-database-you-did Comments URL: https://news.ycombinator.com/item?id=48022742 Points: 479 # Comments: 263</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://tooldirectory.ai/ai-graveyard" target="_blank" rel="noopener">AI Product Graveyard</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/05 13:00</div>
+        <p class="summary">Article URL: https://tooldirectory.ai/ai-graveyard Comments URL: https://news.ycombinator.com/item?id=48021968 Points: 240 # Comments: 85</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-5-5-instant-system-card" target="_blank" rel="noopener">GPT-5.5 Instant System Card</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/05 10:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-5-5-instant" target="_blank" rel="noopener">GPT-5.5 Instant: smarter, clearer, and more personalized</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/05 10:00</div>
+        <p class="summary">GPT-5.5 Instant updates ChatGPT’s default model with smarter, more accurate answers, reduced hallucinations, and improved personalization controls.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/" target="_blank" rel="noopener">When everyone has AI and the company still learns nothing</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/05 09:30</div>
+        <p class="summary">Article URL: https://www.robert-glaser.de/when-everyone-has-ai-and-the-company-still-learns-nothing/ Comments URL: https://news.ycombinator.com/item?id=48020063 Points: 293 # Comments: 204</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html" target="_blank" rel="noopener">Critical Apache HTTP/2 Flaw (CVE-2026-23918) Enables DoS and Potential RCE</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 16:19</div>
+        <p class="summary">The Apache Software Foundation (ASF) has released security updates to address several security vulnerabilities in the HTTP Server, including a severe vulnerability that could potentially lead to remote code execution (RCE). The vulnerability, tracked as CVE-2026-23918 (CVSS score: 8.8), has been des...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/daemon-tools-supply-chain-attack.html" target="_blank" rel="noopener">DAEMON Tools Supply Chain Attack Compromises Official Installers with Malware</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 16:07</div>
+        <p class="summary">A newly identified supply chain attack targeting DAEMON Tools software has compromised its installers to serve a malicious payload, according to findings from Kaspersky. "These installers are distributed from the legitimate website of DAEMON Tools and are signed with digital certificates belonging t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/china-linked-uat-8302-targets.html" target="_blank" rel="noopener">China-Linked UAT-8302 Targets Governments Using Shared APT Malware Across Regions</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 14:19</div>
+        <p class="summary">A sophisticated China-nexus advanced persistent threat (APT) group has been attributed to attacks targeting government entities in South America since at least late 2024 and government agencies in southeastern Europe in 2025. The activity is being tracked by Cisco Talos under the moniker UAT-8302, w...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/the-back-door-attackers-know-about-and.html" target="_blank" rel="noopener">The Back Door Attackers Know About — and Most Security Teams Still Haven’t Closed</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 11:58</div>
+        <p class="summary">Every AI tool, workflow automation, and productivity app your employees connected to Google or Microsoft this year left something behind: a persistent OAuth token with no expiration date, no automatic cleanup, and in most organizations, no one watching it. Your perimeter controls don't see it. Your ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/metinfo-cms-cve-2026-29014-exploited.html" target="_blank" rel="noopener">MetInfo CMS CVE-2026-29014 Exploited for Remote Code Execution Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 11:56</div>
+        <p class="summary">Threat actors are actively exploiting a critical security flaw impacting an open-source content management system (CMS) known as MetInfo, according to new findings from VulnCheck. The vulnerability in question is CVE-2026-29014 (CVSS score: 9.8), a code injection flaw that could result in arbitrary ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/we-scanned-1-million-exposed-ai.html" target="_blank" rel="noopener">We Scanned 1 Million Exposed AI Services. Here's How Bad the Security Actually Is</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 10:30</div>
+        <p class="summary">While the software industry has made genuine strides over the past few decades to deliver products securely, the furious pace of AI adoption is putting that progress at risk. Businesses are moving fast to self-host LLM infrastructure, drawn by the promise of AI as a force multiplier and the pressure...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/scarcruft-hacks-gaming-platform-to.html" target="_blank" rel="noopener">ScarCruft Hacks Gaming Platform to Deploy BirdCall Malware on Android and Windows</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 09:07</div>
+        <p class="summary">The North Korea-aligned state-sponsored hacking group known as ScarCruft has compromised a video game platform in a supply chain espionage attack, trojanizing its components with a backdoor called BirdCallto likely target ethnic Koreans residing in China. While prior versions of the backdoor have pr...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/weaver-e-cology-rce-flaw-cve-2026-22679.html" target="_blank" rel="noopener">Weaver E-cology RCE Flaw CVE-2026-22679 Actively Exploited via Debug API</a></h3>
+        
+        <div class="source">The Hacker News · 05/05 07:37</div>
+        <p class="summary">A critical security vulnerability in Weaver (Fanwei) E-cology, an enterprise office automation (OA) and collaboration platform, has come under active exploitation in the wild. The vulnerability (CVE-2026-22679, CVSS score: 9.8) relates to a case of unauthenticated remote code execution affecting Wea...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/Frecca/items/59c82b857518f0e97b20" target="_blank" rel="noopener">PHP初心者がメンター予約フォームを作る③【confirm.php編】〜POST送信と確認画面、バリデーションとデータ復元の実装〜</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/05 13:08</div>
+        <p class="summary">1. はじめに（今回の目的） 前回は、入力画面（index.php）を作成しました。 今回は、フォームに入力した内容を確認するための確認画面（confirm.php）を実装します。 具体的には、以下の内容を行いました。 フォームから送信されたデータ（POST）の受け取り...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tuanphan/items/5a8343dba7aa604f0a5b" target="_blank" rel="noopener">[Frontend Performance - Part 11] State設計最適化：無駄な再レンダリングを防ぐアーキテクチャ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/05 09:00</div>
+        <p class="summary">📝 注意 本記事はAIの補助を受けて編集しています。 内容は大規模Webアプリケーションの実務経験に基づいています。 📚 目次 1. 問題提起：なぜコードはきれいなのにUIが遅いのか？ 2. 「State Boundaries」 – stateの影響範囲を意識...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ryohei--k/items/af38240498b07b2a1d3a" target="_blank" rel="noopener">JavaScriptの演算子(&&、||、??、?.)を整理したい</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/05 08:11</div>
+        <p class="summary">はじめに バックエンドから取得したオブジェクトの値がundefinedだったりnullだったり、はたまただったりしますよね。 そんなときフロントエンドでレンダーするコンポーネントを条件分岐させる際に使用する演算子の特徴を整理したかったので本記事を書きました。 事前知識 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kitamura371/items/92bc3880fac40cb4c352" target="_blank" rel="noopener">学習記録アプリを改修してみました</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/05 08:07</div>
+        <p class="summary">はじめに 皆さんこんにちは！こんばんは！お疲れ様です！ 今回は以前に作成した学習記録アプリを改修してみました。 改修作業の内容 1.Supabaseを利用してデータを保存削除すること 2.firebaseを利用してスマートフォンからも閲覧、操作ができること 3.CI/C...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/rethinking-experience-system-tools/" target="_blank" rel="noopener">Rethinking The Experience Of System Tools</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/05 08:00</div>
+        <p class="summary">Design always starts with function &mdash; function shapes form. But if that function can’t be made completely invisible and people still have to interact with it, it inevitably becomes part of their experience. In this article, Kyrylo Levashov shares four common software design assumptions.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nekotrack/articles/35849cff2ba1c4" target="_blank" rel="noopener">OKLCH グラデーションで色かぶりが起きる理由と、なめらかな解消法</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/05 05:13</div>
+        <p class="summary">「OKLCH を使うとパレットが作りやすい」——そういった記事は増えてきました。たしかに OKLCH の知覚的均等性は強力で、L を一定にして H を回転させるだけで視覚的に揃ったパレットが作れます。 しかしグラデーション補間においては、OKLCH は 「諸刃の剣」 でもあります。色相が円形であるため、補間経路が予期せぬ迂回をして意図しない色の帯が現れることがあります。青から黄色へのグラデーションで中間に緑っぽい帯が現れる、シアンから赤への経路で橙が混じる——こういった問題はモダンブラウザでも発生し、W3C CSS Working Group でも 2021 年から議論が続いています。 ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月16日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月16日 / 全29件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">6</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">1</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/17/news015.html" target="_blank" rel="noopener">「Switch 2」値上げ！　持っている人も今のうちにやっておきたいことをゲーム好きマンガ家が解説</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/16 22:14</div>
+        <p class="summary">任天堂は「Nintendo Switch 2」などを5月25日から値上げすると発表しました。でも、今回値上げが発表されたのは、ゲーム機本体だけではありません。オンラインサービスも7月1日から値上げされます。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/16/the-haves-and-have-nots-of-the-ai-gold-rush/" target="_blank" rel="noopener">The haves and have nots of the AI gold rush</a></h3>
+        
+        <div class="source">TechCrunch · 05/16 20:17</div>
+        <p class="summary">The vibes around the current AI boom aren't great, even in the tech industry.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/16/marketing-operating-system-nectar-social-raises-30m-series-a-in-round-led-by-menlo/" target="_blank" rel="noopener">Marketing operating system Nectar Social raises $30M Series A led by Menlo</a></h3>
+        
+        <div class="source">TechCrunch · 05/16 19:26</div>
+        <p class="summary">AI-powered marketing platform Nectar Social announced Thursday that it raised a $30 million Series A round led by Menlo Ventures and its Anthology Fund, which was created alongside Anthropic.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/16/research-repository-arxiv-will-ban-authors-for-a-year-if-they-let-ai-do-all-the-work/" target="_blank" rel="noopener">Research repository ArXiv will ban authors for a year if they let AI do all the work</a></h3>
+        
+        <div class="source">TechCrunch · 05/16 18:54</div>
+        <p class="summary">ArXiv is doing more to crack down on the careless use of large language models in scientific papers.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/932153/snap-youtube-tiktok-lawsuit-social-media-addiction-schools" target="_blank" rel="noopener">Snap, YouTube, and TikTok settle suit over harm to students</a></h3>
+        
+        <div class="source">The Verge · 05/16 18:34</div>
+        <p class="summary">Snap, YouTube, and TikTok have settled the first lawsuit of its kind, alleging that social media addiction has cost public schools massive amounts of money, according to Bloomberg. The suit, filed by the Breathitt County School District in Kentucky, claims that social media has disrupted learning an...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/16/the-offline-desk-gadget-that-actually-got-me-to-sit-up-straight/" target="_blank" rel="noopener">The offline desk gadget that actually got me to sit up straight</a></h3>
+        
+        <div class="source">TechCrunch · 05/16 16:00</div>
+        <p class="summary">Deep Care's $350 device is pricy, but it runs offline and helps you improve your posture and movement habits</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/932133/sony-xperia-1-xiii-ai-camera-assistant" target="_blank" rel="noopener">Sony tries to explain that its AI Camera Assistant doesn’t suck</a></h3>
+        
+        <div class="source">The Verge · 05/16 15:37</div>
+        <p class="summary">After Sony drew some unwanted attention for a post demonstrating its AI Camera Assistant on the Xperia 1 XIII, it's trying to clarify how the feature works. The company says it doesn't edit photos, but makes suggestions based on lighting, depth, and subject. Point the camera at something, and it wil...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/16/openai-co-founder-greg-brockman-reportedly-takes-charge-of-product-strategy/" target="_blank" rel="noopener">OpenAI co-founder Greg Brockman takes charge of product strategy</a></h3>
+        
+        <div class="source">TechCrunch · 05/16 15:33</div>
+        <p class="summary">OpenAI's latest shakeup comes as the company reportedly plans to combine ChatGPT and its programming product Codex.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai" target="_blank" rel="noopener">US is starting to see heavy job losses in roles exposed to AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/16 17:59</div>
+        <p class="summary">Article URL: https://www.bloomberg.com/news/articles/2026-05-15/us-is-starting-to-see-heavy-job-losses-in-roles-exposed-to-ai Comments URL: https://news.ycombinator.com/item?id=48162354 Points: 133 # Comments: 197</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.seangoedecke.com/steering-vectors/" target="_blank" rel="noopener">DeepSeek-V4-Flash means LLM steering is interesting again</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/16 14:58</div>
+        <p class="summary">Article URL: https://www.seangoedecke.com/steering-vectors/ Comments URL: https://news.ycombinator.com/item?id=48160807 Points: 186 # Comments: 65</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://petapixel.com/2026/05/14/someone-shared-a-real-monet-painting-as-ai-and-asked-for-critiques/" target="_blank" rel="noopener">Someone Shared a Real Monet Painting as AI and Asked for Critiques</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/16 08:30</div>
+        <p class="summary">Article URL: https://petapixel.com/2026/05/14/someone-shared-a-real-monet-painting-as-ai-and-asked-for-critiques/ Comments URL: https://news.ycombinator.com/item?id=48158110 Points: 52 # Comments: 62</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://kabir.au/blog/the-ctf-scene-is-dead" target="_blank" rel="noopener">Frontier AI has broken the open CTF format</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/16 07:01</div>
+        <p class="summary">Article URL: https://kabir.au/blog/the-ctf-scene-is-dead Comments URL: https://news.ycombinator.com/item?id=48157559 Points: 320 # Comments: 287</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/malta-chatgpt-plus-partnership" target="_blank" rel="noopener">OpenAI and Malta partner to bring ChatGPT Plus to all citizens</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/16 00:00</div>
+        <p class="summary">OpenAI and Malta partner to expand AI access, offering ChatGPT Plus and training to help citizens build practical AI skills and use AI responsibly.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/" target="_blank" rel="noopener">Musk v. Altman week 3: Elon Musk and Sam Altman traded blows over each other’s credibility. Now the jury will pick a side.</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/15 23:39</div>
+        <p class="summary">In the final week of the Musk v. Altman trial, lawyers traded blows over Elon Musk’s and OpenAI CEO Sam Altman’s credibility. Altman was grilled on his alleged history of lying and self-dealing involving companies that do business with OpenAI. But he fired back, painting Musk as a power-seeker who w...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html" target="_blank" rel="noopener">Funnel Builder Flaw Under Active Exploitation Enables WooCommerce Checkout Skimming</a></h3>
+        
+        <div class="source">The Hacker News · 05/16 15:20</div>
+        <p class="summary">A critical security vulnerability impacting the Funnel Builder plugin for WordPress has come under active exploitation in the wild to inject malicious JavaScript code into WooCommerce checkout pages with the goal of stealing payment data. Details of the activity were published by Sansec this week. T...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/abhijeet620380/items/0922f56c45f6a9b25cf9" target="_blank" rel="noopener">TV Garden - 世界中の無料ライブテレビチャンネルを探索して視聴</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/16 12:10</div>
+        <p class="summary">TV Garden を公開しました TV Garden は、世界中の無料ライブテレビチャンネルを地球儀のようなインタラクティブな画面で探索し、そのまま視聴できるWebアプリです。 🔗 https://freetool.odoo.com/tv-garden 開発した理由 公開...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ncdc/articles/image_resize_type" target="_blank" rel="noopener">画像のリサイズ関数の裏側では何が起きている？~補間アルゴリズムの違いを知ろう~</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/16 08:02</div>
+        <p class="summary">普段何気なく使っていた画像リサイズ系のライブラリ関数。 option指定できる"補間アルゴリズム"の違いを意識できておらず、要件に対してテスト結果が引っかかることがありました。 「意識せずデフォルト設定のままで画像リサイズ等の加工処理を実行すると、UXやサーバーコスト、学習・推論精度などに影響を及ぼす可能性がある」 ってことを理解して適切に使い分けれるようになりましょう。（自戒） 前提・背景 ライブラリによる画像データのリサイズ処理は、内部的には"補間アルゴリズム"が動いています。 「ライブラリ関数の内部的にいい感じに対応してくれる」ことはありがたいが、「知ってて任せるのと、知らずに...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/biyorasu/items/05a69b2300eea9ad7b6c" target="_blank" rel="noopener">信号機プログラム</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/16 07:07</div>
+        <p class="summary">信号機プログラムを作ってみた 信号機の信号が切り替わる仕組みをプログラミングで再現してみました。 以下はhtmlとcssになります。 信号機.html</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ettomio0518/items/7169241bd7d8bd4bcfa9" target="_blank" rel="noopener">73歳を前に、体力の劣化を感じる</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/16 06:29</div>
+        <p class="summary">これは数年前から感じているが、足が上がらなくなった。だから、躓きやすくなった。 まだ弱みは見せたくはない。自分で認めしまうと本当にそっちに流されてしまう。 体力の衰えだけではないように思う。 簡単な計算も時間がかかる気がする。 アプリは5/24迄しょっちゅうアップデートし...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/rapls/articles/fbeebba55696b8" target="_blank" rel="noopener">「あ」→「雨」を自力で実装する｜IMEに頼らない日本語サジェストの作り方</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/16 03:31</div>
+        <p class="summary">! この記事は、自ブログ Rapls Works で公開した記事を、Zenn 向けに再構成したものです。コードと実装の詳細にフォーカスした内容にしています。 はじめに Google の検索窓に「あ」と入力すると、「雨」「赤」「青」のような漢字の候補がすっと出てきます。 自分のブログ内検索にも、ああいう日本語サジェストを付けられたら便利だな、と思って実装方法を調べ始めました。最初に思いついたのは「IME の変換候補を JavaScript で取れないか」というアプローチです。 ところが、これは技術的に不可能でした。バグでも仕様の不備でもなく、セキュリティとプライバシーを守るための意図...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nekotrack/articles/290dea9ac90fa9" target="_blank" rel="noopener">Oklch+ 3パラメータで CIEDE2000 を超える色差改善の記録</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/16 02:49</div>
+        <p class="summary">! この記事は「OKLCH グラデーションで色かぶりが起きる理由と、なめらかな解消法」「OKLCH 極座標補間の特異点を「滑らかに」解消する」の続編です。前稿で使用した Hue 変調のパラメータ（n=0.87, σ=0.34）の出自が、この記事で明らかになります。 はじめに Oklab/Oklch は、知覚均等性を目指して設計された色空間です。しかし「知覚的均等性を目指した」ことと「達成している」ことは別の話です。 Oklch は Oklab の極座標表現です。L（明度）は両者で共通で、Oklab の直交座標 (a, b) が Oklch では C（彩度 = √(a²+b²)）と...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kbmjj123/items/802b5d556b676d6036fd" target="_blank" rel="noopener">ブラウザで画像からExif情報を削除する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/16 01:32</div>
+        <p class="summary">Exif が問題になる場面 スマホで撮った写真には Exif という形式でメタデータが埋め込まれています。 撮影日時、カメラの機種名、そして GPS 情報。 ブログやサービスに写真をアップするとき、 何も考えずにアップすると撮影場所が特定できる状態になっていることがありま...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/izumuzui/articles/27a4f78f75e030" target="_blank" rel="noopener">「ふわっと出して」を卒業するためのUIモーション語彙集まとめ</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/15 23:57</div>
+        <p class="summary">! TL;DR UI改善が「ふわっと」「いい感じに」で止まる原因の多くは、動きの名前を共有できていないこと 本記事では、現場でよく使うUIモーションを「カテゴリ → パターン名 → 用途 → 指示文」の形で整理した 同じ語彙で、デザイナー / 実装者 / AI のいずれにも具体的に依頼できるようになる（と思う） UIを作っていると、こういう会話がよくあります。 「このカード、もう少し気持ちよく出したい」 「モーダルをふわっと表示したい」 「ローディングがちょっと寂しい」 「エラー時に、なんか違和感なく気づけるようにしたい」 ここで困るのが その“動き”の名前がわからない ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/harness/articles/aspnet-core-identity-to-commonlibrary" target="_blank" rel="noopener">ASP.NET Core移行でIdentityエンティティを共通化した判断</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/16 11:11</div>
+        <p class="summary">はじめに 個人で .NET Framework 版の業務系テンプレート DevNet と、ASP.NET Core 10 版の後継テンプレート DevNext を保守しています。 二世代のテンプレートで、ApplicationUser の置き場所を変えました。DevNet では Site/Entity/ApplicationUser.cs と Web プロジェクト側に置いていたのが、DevNext では CommonLibrary/Entity/ApplicationUser.cs と共通ライブラリ側に寄せました。 最初は「共通ライブラリを Identity から完全に切り離した」と...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/yshi112358/items/572d8f18a829f2a3c12a" target="_blank" rel="noopener">【Unity × Cursor】Cursorが.slnx非対応なので、.slnに自動変換する拡張機能を作った話</a></h3>
+        
+        <div class="source">Qiita - C# · 05/16 07:29</div>
+        <p class="summary">はじめに 現行バージョンのUnityでは、Visual Studio用のファイルとして .slnx が生成される。 CursorではMicrosoft純正 C#拡張機能 が使えないため .slnx を読み込むことができない。 この .slnx を .sln に変換するこ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/prozolic/articles/d982d5f9f82973" target="_blank" rel="noopener">【.NET】最近マージされたLINQのMin/Maxの最適化</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/16 07:13</div>
+        <p class="summary">はじめに 最近dotnet/runtimeにマージされたPRで、個人的に面白いと思ったLINQのMin/Maxの最適化方法について紹介しておこうと思います。 ! PR自体は、すでにmainブランチへマージはされていますが、まだ.NET 11 Preview 4には含まれていないものになります。 おそらく.NET 11 Preview 5以降で含まれると思いますが、正式リリースには含まれていない内容であるため、現時点（2026年5月15日）では、参考程度に読んでもらえればと思います。 LINQのMin/Maxの内部ロジック https://github.com/dotnet/ru...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/inuta-one/items/cea85abca110cacd63b0" target="_blank" rel="noopener">【まとめ】Pythonで学習したCNNモデルを5つの方法で推論してみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/16 04:50</div>
+        <p class="summary">はじめに このシリーズでは、PythonでCNNモデルを学習し、 推論部分を5つの異なる実装で比較してきた。 記事 内容 1本目 Python (PyTorch) で学習・推論 2本目 C++ (libtorch) で推論 3本目 ONNX Runt...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/inuta-one/items/31ea766cbfaa3fbc1653" target="_blank" rel="noopener">Pythonで学習したCNNモデルをONNX Runtime (C#) で推論してみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/16 04:44</div>
+        <p class="summary">はじめに 前回の記事では、 ONNX Runtime (C++) で推論し、0.04msという圧倒的な速度を得た。 ただしC++は環境構築が手間で、コードも冗長になりがちだ。 今回は同じmodel.onnxを使い、C#のONNX Runtime APIで推論してみる。 N...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/k-shimaoka-dev/items/d68c210e1894e05539d8" target="_blank" rel="noopener">処理は書けるのに「どこに書けばいいか」が分からない人へ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/15 23:49</div>
+        <p class="summary">はじめに ・処理内容は分かる ・コードも書ける でも、 👉 「これ、どこに書けばいいの？」 で止まる人へ 例えば、 ・とりあえず今触っているクラスに書く ・近くに似た処理があったのでそこへ書く ・動いたからそのままにする 👉 こんな経験ありませんか？ 実務では、 ・UI開発...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

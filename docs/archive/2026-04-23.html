@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月23日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月23日 / 全38件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/917880/xbox-game-pass-starter-edition-discord-nitro-bundle" target="_blank" rel="noopener">Leak reveals new Xbox Game Pass ‘Starter Edition’ that’s part of Discord Nitro</a></h3>
+        
+        <div class="source">The Verge · 04/23 22:36</div>
+        <p class="summary">Microsoft started teasing a mysterious Discord and Xbox Game Pass partnership yesterday, and a new leak appears to have detailed exactly what's coming. Discord Previews has uncovered a new Xbox Game Pass "Starter Edition" that is bundled with Discord Nitro. The Starter Edition reportedly includes "a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/917871/anthropic-claude-personal-app-connectors" target="_blank" rel="noopener">Claude is connecting directly to your personal apps like Spotify, Uber Eats, and TurboTax</a></h3>
+        
+        <div class="source">The Verge · 04/23 22:27</div>
+        <p class="summary">Claude users can access more apps with Anthropic's AI now thanks to new connectors for everything from hiking to grocery shopping. Anthropic already supported connecting numerous work-related apps to Claude, like Microsoft apps, but this expansion focuses on personal apps like Audible, Spotify, Uber...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/07/news020.html" target="_blank" rel="noopener">“生成AIで資料作成”……で大失敗　漫画「1週間後に生成AIで恥をかく新入社員」【残り4日】</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/23 22:00</div>
+        <p class="summary">とある企業に入社した新入社員「ニイジマ」が、AI活用の“地雷”を踏みまくっていく様子を通して、会社におけるAIの使い方、その初歩を紹介します。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/917810/brendan-carr-fcc-transgender-nonbinary-childrens-programming" target="_blank" rel="noopener">Brendan Carr’s war on wokeness targets inclusive children&#8217;s television</a></h3>
+        
+        <div class="source">The Verge · 04/23 21:36</div>
+        <p class="summary">Under the guidance of consummate bully / chairman Brendan Carr, the FCC is taking steps towards cracking down on children's entertainment that in any way explores the complexities of gender identity. On Wednesday, the FCC's Media Bureau announced that it is soliciting comments from the public about ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/23/social-media-ban-children-countries-list/" target="_blank" rel="noopener">These are the countries moving to ban social media for children</a></h3>
+        
+        <div class="source">TechCrunch · 04/23 21:33</div>
+        <p class="summary">Australia was the first country to issue a ban in late 2025, aiming to reduce the pressures and risks that young users may face on social media, including cyberbullying, social media addiction, and exposure to predators.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/23/bret-taylors-sierra-buys-yc-backed-ai-startup-fragment/" target="_blank" rel="noopener">Bret Taylor’s Sierra buys YC-backed AI startup Fragment</a></h3>
+        
+        <div class="source">TechCrunch · 04/23 21:00</div>
+        <p class="summary">Sierra, the AI customer service agent startup founded by technologist Bret Taylor, announced today that it has acquired the YC-backed French startup Fragment.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/23/instagram-tests-a-new-instants-app-for-sharing-disappearing-photos/" target="_blank" rel="noopener">Instagram tests a new ‘Instants’ app for sharing disappearing photos</a></h3>
+        
+        <div class="source">TechCrunch · 04/23 20:03</div>
+        <p class="summary">The app lets users share disappearing photos with their friends that can be viewed only once and remain available for 24 hours.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/917611/sonos-refurbished-era-beam-move-speaker-deal-sale" target="_blank" rel="noopener">Sonos’ big sale on refurbished speakers is about to end</a></h3>
+        
+        <div class="source">The Verge · 04/23 19:54</div>
+        <p class="summary">Portable audio and home theater upgrades can be very pricey, which is why we make a habit out of telling readers when there are good deals happening. With that in mind, here’s a friendly reminder that a heap of refurbished Sonos gear is steeply discounted, and will be until the company’s sale ends A...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/unc6692-impersonates-it-helpdesk-via.html" target="_blank" rel="noopener">UNC6692 Impersonates IT Helpdesk via Microsoft Teams to Deploy SNOW Malware</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 18:16</div>
+        <p class="summary">A previously undocumented threat activity cluster known as UNC6692 has been observed leveraging social engineering tactics via Microsoft Teams to deploy a custom malware suite on compromised hosts. "As with many other intrusions in recent years, UNC6692 relied heavily on impersonating IT helpdesk em...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/bitwarden-cli-compromised-in-ongoing.html" target="_blank" rel="noopener">Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 13:42</div>
+        <p class="summary">Bitwarden CLI has been compromised as part of the newly discovered and ongoing Checkmarx supply chain campaign, according to new findings from JFrog and Socket. "The affected package version appears to be @bitwarden/cli@2026.4.0, and the malicious code was published in 'bw1.js,' a file included in t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/threatsday-bulletin-290m-defi-hack.html" target="_blank" rel="noopener">ThreatsDay Bulletin: $290M DeFi Hack, macOS LotL Abuse, ProxySmart SIM Farms +25 New Stories</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 13:17</div>
+        <p class="summary">You scroll past one incident and see another that feels familiar, like it should have been fixed years ago, but it still works with small changes. Same bugs. Same mistakes. The supply chain is messy. Packages you did not check are stealing data, adding backdoors, and spreading. Attacking the systems...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/webinar-mythos-reality-check-beating.html" target="_blank" rel="noopener">[Webinar] Mythos Reality Check: Beating Automated Exploitation at AI Speed</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 12:03</div>
+        <p class="summary">Imagine a world where hackers don't sleep, don't take breaks, and find weak spots in your systems instantly. Well, that world is already here. Thanks to AI, attackers are now launching automated, large-scale exploits faster than ever before. The time you have to fix a vulnerability before it gets at...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html" target="_blank" rel="noopener">Project Glasswing Proved AI Can Find the Bugs. Who's Going to Fix Them?</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 11:30</div>
+        <p class="summary">Last week, Anthropic announced Project Glasswing, an AI model so effective at discovering software vulnerabilities that they took the extraordinary step of postponing its public release. Instead, the company has given access to Apple, Microsoft, Google, Amazon, and a coalition of others to find and ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/china-linked-gopherwhisper-infects-12.html" target="_blank" rel="noopener">China-Linked GopherWhisper Infects 12 Mongolian Government Systems with Go Backdoors</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 09:04</div>
+        <p class="summary">Mongolian governmental institutions have emerged as the target of a previously undocumented China-aligned advanced persistent threat (APT) group tracked as GopherWhisper. "The group wields a wide array of tools mostly written in Go, using injectors and loaders to deploy and execute various backdoors...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/vercel-finds-more-compromised-accounts.html" target="_blank" rel="noopener">Vercel Finds More Compromised Accounts in Context.ai-Linked Breach</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 08:40</div>
+        <p class="summary">Vercel on Wednesday revealed that it has identified an additional set of customer accounts that were compromised as part of a security incident that enabled unauthorized access to its internal systems. The company said it made the discovery after expanding its investigation to include an extra set o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/apple-patches-ios-flaw-that-stored.html" target="_blank" rel="noopener">Apple Fixes iOS Flaw That Let FBI Recover Deleted Signal Messages</a></h3>
+        
+        <div class="source">The Hacker News · 04/23 08:06</div>
+        <p class="summary">Apple has rolled out a software fix for iOS and iPadOS to address a Notification Services flaw that stored notifications marked for deletion on the device. The vulnerability, tracked as CVE-2026-28950 (CVSS score: N/A), has been described as a logging issue that has been addressed with improved data...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-gpt-5-5/" target="_blank" rel="noopener">GPT-5.5</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/23 18:01</div>
+        <p class="summary">Article URL: https://openai.com/index/introducing-gpt-5-5/ Comments URL: https://news.ycombinator.com/item?id=47879092 Points: 894 # Comments: 517</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.meshcore.io/2026/04/23/the-split" target="_blank" rel="noopener">MeshCore development team splits over trademark dispute and AI-generated code</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/23 16:55</div>
+        <p class="summary">Article URL: https://blog.meshcore.io/2026/04/23/the-split Comments URL: https://news.ycombinator.com/item?id=47878117 Points: 113 # Comments: 67</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/what-is-a-tpu/" target="_blank" rel="noopener">Here’s how our TPUs power increasingly demanding AI workloads.</a></h3>
+        
+        <div class="source">Google AI Blog · 04/23 12:00</div>
+        <p class="summary">Learn how Google’s TPUs power increasingly demanding AI workloads with this new video.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-5-5-system-card" target="_blank" rel="noopener">GPT-5.5 System Card</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/23 11:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-gpt-5-5" target="_blank" rel="noopener">Introducing GPT-5.5</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/23 11:00</div>
+        <p class="summary">Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/academy/what-is-codex" target="_blank" rel="noopener">What is Codex?</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/23 10:00</div>
+        <p class="summary">Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/academy/codex-automations" target="_blank" rel="noopener">Automations</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/23 10:00</div>
+        <p class="summary">Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/academy/codex-plugins-and-skills" target="_blank" rel="noopener">Plugins and skills</a></h3>
+        
+        <div class="source">OpenAI Blog · 04/23 10:00</div>
+        <p class="summary">Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/kuto110/items/75c0336a25c6d0afd1af" target="_blank" rel="noopener">ZStringを読もう(4) buffer</a></h3>
+        
+        <div class="source">Qiita - C# · 04/23 18:01</div>
+        <p class="summary">どうもKutoです。 プログラミングの勉強って底なし沼だな〜と感じるこの頃ですが、AIのおかげでそれも昔よりはマシなのかなとも思いますよね。 ということで、ZStringを読もうの第4回です。 前回は Utf16ValuesStringBuilder が struct であ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/whats-new-for-dotnet-in-ubuntu-2604/" target="_blank" rel="noopener">What’s new for .NET in Ubuntu 26.04</a></h3>
+        
+        <div class="source">.NET Blog · 04/23 17:25</div>
+        <p class="summary">Ubuntu 26.04 (Resolute Raccoon) ships today with .NET 10. Here's how to install .NET 10 from the archive, use the new -resolute container tags, build Native AOT apps, and install .NET 8 and 9 from the dotnet-backports PPA. The post What&#8217;s new for .NET in Ubuntu 26.04 appeared first on .NET Blo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/whats-new-for-dotnet-in-ubuntu-2604/" target="_blank" rel="noopener">What’s new for .NET in Ubuntu 26.04</a></h3>
+        
+        <div class="source">ASP.NET Blog · 04/23 17:25</div>
+        <p class="summary">Ubuntu 26.04 (Resolute Raccoon) ships today with .NET 10. Here's how to install .NET 10 from the archive, use the new -resolute container tags, build Native AOT apps, and install .NET 8 and 9 from the dotnet-backports PPA. The post What&#8217;s new for .NET in Ubuntu 26.04 appeared first on .NET Blo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Tenere/items/824a5bc6823cc3c4a1f1" target="_blank" rel="noopener">C#のデリゲートについての備忘録</a></h3>
+        
+        <div class="source">Qiita - C# · 04/23 13:01</div>
+        <p class="summary">はじめに 誤りについては優しく指摘してくださると嬉しいです。 デリゲートとは メソッドを参照する型のこと。 デリゲートという名前の通り、他のメソッドに処理を移譲するためのオブジェクト。 delegate 戻り値型 デリゲートの名前(引数リスト);として定義し、 デリゲー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kashin777/items/5678e5c1d0faf3637a0d" target="_blank" rel="noopener">Wikipedia日本語版dumpのベクターストアを構築してみる</a></h3>
+        
+        <div class="source">Qiita - C# · 04/23 10:36</div>
+        <p class="summary">はじめに にて、ベクターストアを使ったRAGを試したので、作業ログとして残しておきます。 データはWikpedia日本語版のダンプファイル（の極めて少ないページ数） RAG (Retrieval-Augmented Generation)とは チャッピー RAG...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Tenere/items/76bd345c8e12e4b481e7" target="_blank" rel="noopener">C#における抽象メソッド・仮想メソッド・インターフェースの備忘録</a></h3>
+        
+        <div class="source">Qiita - C# · 04/23 10:17</div>
+        <p class="summary">はじめに 誤りについては優しく指摘してくださると嬉しいです。 早見表 抽象メソッド 仮想メソッド インターフェース インスタンス化 × 〇 × デフォルト実装 × 〇必須 〇任意 オーバーライド 〇必須 △任意 ×各自で実装 プロパティ 共通...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/tomo_local/articles/typescript-mini-zod" target="_blank" rel="noopener">TypeScriptのバリデーションライブラリ「Zod」を自作して仕組みを理解する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/23 16:32</div>
+        <p class="summary">はじめに 今回はZodのコアコンセプトを理解するために、簡易版をスクラッチで自作していきたいと思います。まず動かしてみて、少しずつ仕組みを理解していくスタイルで進めていきます。 ZodはTypeScriptと組み合わせて、プログラムが実際に動いているときの値の検証を行うライブラリです。フォームの入力値やAPIのレスポンスなど、外から来る値を安全に扱うために広く使われています。 ! 今回の簡易版の制約 z.union() / z.enum() / z.literal() は実装しません .optional() / .nullable() は実装しません z.transform(...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/test551512/items/301c89d4ce7c8b90059e" target="_blank" rel="noopener">Netlifyで公開したReactサイトをGoogle Search Consoleに登録してSEOテストしてみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/23 15:08</div>
+        <p class="summary">Reactで作成したサイトをNetlifyにデプロイし、Google検索に表示されるかSEOのテストを行いました。 ■ サイトURL https://zippy-brioche-c26cb0.netlify.app/ ■ 実施内容 ・Netlifyでデプロイ ・sitema...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mikasyun1217/items/55af727d098cdb9ed813" target="_blank" rel="noopener">JavaScriptでのAPI取得</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/23 14:40</div>
+        <p class="summary">JavaScriptでのAPI取得についての勉強の備忘録。 fetchとAxiosについてまとめました。 fetchについて 記述方法 const data = fetch("url",{ method:"GET"、"POST"など header:{ ~...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/freefreefree1222/items/2ca283db2a1ae40a4291" target="_blank" rel="noopener">GAS × JSON-LDスクレイピングで「動くけど正しくない」を3回繰り返した話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/23 13:41</div>
+        <p class="summary">構造化データ（JSON-LD）が埋め込まれていれば楽勝だろう、と思って着手した求人サイトスクレイピング。結果として3回ハマって、最後は JSON.parse を捨てました。同じ罠を踏みそうな方の参考に、具体的なコード例と判断の流れを共有します。 環境 実行環境: Goo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/recreating-apples-vision-pro-animation-in-css/" target="_blank" rel="noopener">Recreating Apple’s Vision Pro Animation in CSS</a></h3>
+        
+        <div class="source">CSS-Tricks · 04/23 13:22</div>
+        <p class="summary">Putting CSS’s more recent scrolling animation capabilities to the test to recreate a complex animation of the Apple Vision Pro headset from Apple's website. Recreating Apple’s Vision Pro Animation in CSS originally handwritten and published with love on CSS-Tricks. You should really get the newslett...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/53able/articles/e97e2b7a982521" target="_blank" rel="noopener">designlangは何に効くのか？ 既存Webサイトから“設計言語”を抽出するツールの利用価値を考える。</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/23 13:21</div>
+        <p class="summary">既存のWebサイトを見て、こんなことを思ったことはないでしょうか。 このサイトの色・余白・タイポグラフィのルールを素早く把握したい Figmaではなく、実際に公開されているUIを基準にデザインシステムを棚卸ししたい AIコーディングに「このサイトっぽさ」をもっと正確に渡したい デザインの崩れやトークンのドリフトを継続監視したい こうした課題に対して、最近おもしろい立ち位置にいるのが designlang です。 公式には、Playwright で live DOM をクロールし、計算済みCSSやDOMシグナルからデザイン言語を抽出して、Design Tokens、Tailwind設...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ArakiPhp/items/1f43866f4cc14242e6a9" target="_blank" rel="noopener">実務1年目駆け出しエンジニアがLaravel&ReactでWebアプリケーション開発に挑戦してみた！（フロントエンド実装編⑯）~コメント一覧表示モーダル作成~</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/23 12:15</div>
+        <p class="summary">実務1年目駆け出しエンジニアがLaravel&amp;ReactでWebアプリケーション開発に挑戦してみた！（その36） 0. 初めに こんにちは！ Webアプリケーションの作り方をゼロから解説しています！ 前回までで作成・編集モーダルシリーズが完了しました。 今回は、コメント...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/aldagram_tech/articles/nextjs-bundle-size-reduction" target="_blank" rel="noopener">Next.js (Turbopack) のバンドルサイズを元の半分まで削減した話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/23 00:00</div>
+        <p class="summary">こんにちは！アルダグラムでエンジニアをしている今町です。 今回は、弊社で運用している Next.js 製の Web アプリケーションの バンドルサイズを元の半分まで削減した話 を書いていきます。 単に「サイズが減って嬉しい」だけじゃなくて、どのページを開いても巨大な共通チャンクが必ずロードされる という構造的な問題を抱えていたので、そこを解きほぐしていく過程を書き残しておきます。Turbopack / webpack を問わず、Next.js をある程度の規模で運用している現場なら、どこかで一度は踏む地雷だと思うので、参考になれば幸いです。 背景：バンドルがクソデカすぎる問題 🔥 対...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

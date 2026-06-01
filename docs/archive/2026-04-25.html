@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年04月25日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年04月25日 / 全27件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">6</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2604/26/news017.html" target="_blank" rel="noopener">“金髪幼女”が話題のゲーム「プラグマタ」、クリアしたマンガ家が彼女に抱いたのは父性か、それとも……</a></h3>
+        
+        <div class="source">ITmedia NEWS · 04/25 22:14</div>
+        <p class="summary">カプコンの新作ゲーム「PRAGMATA（プラグマタ）」が発売から2日で全世界100万本突破と好調です。「美形の金髪幼女」であるディアナが一部で小児性愛を想起させるといった意見もあるようですが、プレイしてみれば異なる印象を受けると思います。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/" target="_blank" rel="noopener">Anthropic created a test marketplace for agent-on-agent commerce</a></h3>
+        
+        <div class="source">TechCrunch · 04/25 21:43</div>
+        <p class="summary">In a recent experiment, Anthropic created a classified marketplace where AI agents represented both buyers and sellers, striking real deals for real goods and real money.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/" target="_blank" rel="noopener">Maine’s governor vetoes data center moratorium</a></h3>
+        
+        <div class="source">TechCrunch · 04/25 20:57</div>
+        <p class="summary">L.D. 307 would have imposed the country’s first statewide moratorium on new data centers — lasting, in this case, until November 1, 2027.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/science/918769/trump-fires-the-entire-national-science-board" target="_blank" rel="noopener">Trump fires the entire National Science Board</a></h3>
+        
+        <div class="source">The Verge · 04/25 19:20</div>
+        <p class="summary">Multiple sources are reporting that the Trump administration has dismissed the entire National Science Board (NSB). The NSB advises the president and Congress on the National Science Foundation (NSF), which has already been funding research at historically low levels and has seen significant delays ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/918765/an-influx-of-used-evs-could-drive-down-prices" target="_blank" rel="noopener">An influx of used EVs could drive down prices</a></h3>
+        
+        <div class="source">The Verge · 04/25 18:25</div>
+        <p class="summary">Part of what has held back electric cars has been the cost. But an influx of used vehicles over the next three years could bring prices down dramatically. In 2025, just 123,000 leases on EVs expired. That is expected to more than double to 300,000 in 2026, and double again to 600,000 in 2027 and [&#...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/" target="_blank" rel="noopener">OpenAI CEO apologizes to Tumbler Ridge community</a></h3>
+        
+        <div class="source">TechCrunch · 04/25 17:17</div>
+        <p class="summary">In a letter to the residents of Tumbler Ridge, Canada, OpenAI CEO Sam Altman said he is “deeply sorry” that his company failed to alert law enforcement about the suspect in a recent mass shooting.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/25/the-climate-tech-ipo-window-could-finally-be-cracking-open/" target="_blank" rel="noopener">The climate tech IPO window could finally be cracking open</a></h3>
+        
+        <div class="source">TechCrunch · 04/25 16:33</div>
+        <p class="summary">Nuclear startup X-energy went public, geothermal startup Fervo is about to. Could this be the moment that climate tech investors have been waiting for?</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/" target="_blank" rel="noopener">Why Cohere is merging with Aleph Alpha</a></h3>
+        
+        <div class="source">TechCrunch · 04/25 16:00</div>
+        <p class="summary">Canadian AI startup Cohere is taking over Germany-based Aleph Alpha with support from Lidl’s owner, Schwarz Group. With the blessing of their governments, the companies intend to offer a sovereign alternative to enterprises in an AI landscape dominated by American players.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash" target="_blank" rel="noopener">The AI Industry Is Discovering That the Public Hates It</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/25 21:11</div>
+        <p class="summary">Article URL: https://newrepublic.com/article/209163/ai-industry-discovering-public-backlash Comments URL: https://news.ycombinator.com/item?id=47904568 Points: 138 # Comments: 160</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-5-5-bio-bug-bounty/" target="_blank" rel="noopener">GPT‑5.5 Bio Bug Bounty</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/25 14:17</div>
+        <p class="summary">Article URL: https://openai.com/index/gpt-5-5-bio-bug-bounty/ Comments URL: https://news.ycombinator.com/item?id=47901734 Points: 115 # Comments: 88</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://victortaelin.github.io/lambench/" target="_blank" rel="noopener">Lambda Calculus Benchmark for AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/25 11:16</div>
+        <p class="summary">Article URL: https://victortaelin.github.io/lambench/ Comments URL: https://news.ycombinator.com/item?id=47900506 Points: 122 # Comments: 37</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/nex-crm/wuphf" target="_blank" rel="noopener">Show HN: A Karpathy-style LLM wiki your agents maintain (Markdown and Git)</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/25 08:53</div>
+        <p class="summary">I shipped a wiki layer for AI agents that uses markdown + git as the source of truth, with a bleve (BM25) + SQLite index on top. No vector or graph db yet.It runs locally in ~/.wuphf/wiki/ and you can git clone it out if you want to take your knowledge with you.The shape is the one Karpathy has been...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://alash3al.github.io/stash?_v01" target="_blank" rel="noopener">Open source memory layer so any AI agent can do what Claude.ai and ChatGPT do</a></h3>
+        
+        <div class="source">Hacker News (AI) · 04/25 01:24</div>
+        <p class="summary">Article URL: https://alash3al.github.io/stash?_v01 Comments URL: https://news.ycombinator.com/item?id=47897790 Points: 158 # Comments: 69</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/jerrywdlee/items/5f311e272384f7212271" target="_blank" rel="noopener">JSでスタイル付きテキストとプレーンテキストを同時にコピーする方法</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/25 21:07</div>
+        <p class="summary">はじめに Web アプリケーションにおいて「コピー」機能を実装する際、貼り付け先が「リッチテキストエディタ（Outlook, Teams, Word 等）」か「プレーンテキスト入力（textarea, ターミナル, LLM のプロンプト欄等）」かによって、期待されるデータ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/watanabe_trtr/items/89ea60ebe1d0cbc61748" target="_blank" rel="noopener">CSSの疑似クラス（_hover / _active / _focus など）の違いと使い分け</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/25 17:34</div>
+        <p class="summary">ボタンをクリックしたのに色が変わらない、別の場所をクリックしたら変わる、といった現象に遭遇したことはないでしょうか。 この記事では、よく使う疑似クラスの違いと使い方を整理します。 （Panda CSSを用いた例で紹介) _hover：マウスが乗ったとき _hover:...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/momokonomi/items/e405ef4137acad516db5" target="_blank" rel="noopener">【JS/TS】突然変異テスト</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/25 13:40</div>
+        <p class="summary">突然変異テストとは テストの品質を測るテスト 実装の一部分に変更を加えて単体テストを実行し、各テストが落ちることを確認する。 テストの品質が高い場合、実装の一部が変わればテストは落ちる。しかし、テストの品質が低い場合、実装の一部が変わってもテストが通る。 本項では 突然変...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ike_mfr/items/9f3a76c4cde008fc9d32" target="_blank" rel="noopener">【数学×JS】画像から輪郭を抽出してフーリエ変換＆エピサイクルで描画するWebアプリの裏側</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 04/25 11:23</div>
+        <p class="summary">【数学×JS】画像から輪郭を抽出してフーリエ変換＆エピサイクルで描画するWebアプリの裏側 こんにちは。今回は、マウスで描いた絵やアップロードした画像の輪郭を抽出し、離散フーリエ変換（DFT）を用いてエピサイクル（回転する円の連鎖） で再現するWebアプリ「FouriT...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/564aba3f468e95" target="_blank" rel="noopener">Framer Motionで実装するアニメーション6パターン【コピペで使える】</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/25 07:39</div>
+        <p class="summary">CSSアニメーションで困るのは、Reactのstateと連携させようとしたときだ。 「表示/非表示をstateで切り替えたい」「リストに要素が追加されたときにアニメーションしたい」——こういった要件をCSSだけで実現しようとすると、クラスの付け外しやタイミング制御が複雑になりがちだ。 Framer Motionはそこを解決してくれる。Reactのstateと自然に連携し、宣言的にアニメーションを書ける。 この記事では、実際の開発でよく使う6パターンをコピペで使える形でまとめた。 インストール npm install framer-motion 基本的なimportはこれだけ。 imp...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/66a2dfd5f5833d" target="_blank" rel="noopener">jQueryエンジニアがReactで最初につまずく「考え方の壁」とその乗り越え方</a></h3>
+        
+        <div class="source">Zenn - Frontend · 04/25 07:29</div>
+        <p class="summary">jQueryを書いてきたエンジニアがReactを触ると、不思議な感覚に陥ることがある。 チュートリアルは終わらせた。コードも一応動いている。でも何かがおかしい。「自分のjQueryの書き方をReactに翻訳しているだけ」で、Reactらしさが全然わかっていない気がする——。 この記事は、そういう人に向けて書いた。 Reactの文法を教えるつもりはない。「jQueryで染み付いた考え方」から「Reactの考え方」へシフトするために、何を捨てて何を得るのかを整理する。 壁その1：「DOMを直接触りたい」衝動 jQueryで10年戦ってきたエンジニアの体には、こういう反射が染み付いている...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/microsoft/articles/github-copilot-dotnet-project" target="_blank" rel="noopener">最近使っている GitHub Copilot CLI + .NET 向けのカスタムエージェントとスキル</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/25 10:45</div>
+        <p class="summary">はじめに GitHub Copilot CLI や VS Code の Agent モードでコードを書くとき、copilot-instructions.md やカスタムエージェント、スキルを使ってプロジェクト固有の知識を教えておくと、Copilot が文脈を理解した上で動いてくれるので開発の精度がかなり上がります。 自分は以前からこういった仕組みを活用して開発をしていて、以下の記事ではタスク管理の仕組みを紹介しました。 https://zenn.dev/microsoft/articles/copilot-task-management 今回は、最近自分が .NET プロジェクトの開...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/chunn777/articles/28b161bfba096b" target="_blank" rel="noopener">ブランク明けSEが、AI黎明期に学び直す記録</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/25 09:38</div>
+        <p class="summary">はじめまして、chunn777 です。 システムエンジニアを25年やっていました（1997〜2022年）。 2022年に一度現場を離れ、5年近いブランクを経て、いま学び直しています。 なぜ学び直すのか、正直に書くと—— うつを長く抱えています。体調にも波があります。 「毎日コンスタントに動ける人」ではありません。 動ける日に動いて、動けない日は休む。それだけです。 そんな状態でも、せっかく AI が面白い時代になったので、 乗り遅れたくないという気持ちがあります。 やっていること VB.NET・C# から順に再習得中（25年のベースがあるので「思い出す」感覚） Claude などの...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tor4kichi/items/a97f10cd95ec59e4dd2e" target="_blank" rel="noopener">DocxTemplater（C#）で台本出力したい</a></h3>
+        
+        <div class="source">Qiita - C# · 04/25 08:50</div>
+        <p class="summary">私は絵コンテアプリを作っていて、カット情報として記入したセリフなどを整理して台本として出力したいと考えました。 PDFでも表組みを表現できるけど、docxの方が一般的に扱いやすいだろうと思い、↓を使っていい感じの台本を作ってみようとおもいました。 準備 諸事情あって...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/k-shimaoka-dev/items/861cd93eec42dffbc184" target="_blank" rel="noopener">ソースは読めるのに処理が追えないのはなぜ？｜迷子になる原因と対処法</a></h3>
+        
+        <div class="source">Qiita - C# · 04/25 04:23</div>
+        <p class="summary">はじめに ・コードは読めるのに、処理を追っている途中で迷子になる人へ ソースコードは読める。 でも、 👉 気づいたら何を追っているのか分からなくなる ・フローを追っていたはずなのに ・I/Fの処理を見ていて ・気づいたらデータを追っている 👉 「あれ？何してたんだっ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/r-dev95/items/671f81ff05a38a1dba4b" target="_blank" rel="noopener">🙌 Windows 向けの画面録画アプリ OpRec を開発しました</a></h3>
+        
+        <div class="source">Qiita - C# · 04/25 01:17</div>
+        <p class="summary">OpRecについて 操作説明などチュートリアル動画作成に特化したWindows向け画面録画アプリOpRecを開発しました。 クリックハイライト・キー表示・ズーム機能などを備えています。 またホットキー・映像品質・FPS・音声キャプチャモードなどの設定を保存・管理できます。...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/r_dev95/articles/0004-introduce-oprec" target="_blank" rel="noopener">Windows 向けの画面録画アプリ OpRec を開発しました</a></h3>
+        
+        <div class="source">Zenn - .NET · 04/25 01:16</div>
+        <p class="summary">OpRecについて 操作説明などチュートリアル動画作成に特化したWindows向け画面録画アプリOpRecを開発しました。 クリックハイライト・キー表示・ズーム機能などを備えています。 またホットキー・映像品質・FPS・音声キャプチャモードなどの設定を保存・管理できます。 紹介記事： https://r-dev95.netlify.app/posts/0004-introduce-oprec/ Github： https://github.com/r-dev95/OpRec デモ 操作イメージ： WindowsのSnipping Tool風な操作感で使えます。 録画イメージ： ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html" target="_blank" rel="noopener">Researchers Uncover Pre-Stuxnet ‘fast16’ Malware Targeting Engineering Software</a></h3>
+        
+        <div class="source">The Hacker News · 04/25 09:26</div>
+        <p class="summary">Cybersecurity researchers have discovered a new Lua-based malware created years before the notorious Stuxnet worm that aimed to sabotage Iran's nuclear program by destroying uranium enrichment centrifuges. According to a new report published by SentinelOne, the previously undocumented cyber sabotage...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/04/cisa-adds-4-exploited-flaws-to-kev-sets.html" target="_blank" rel="noopener">CISA Adds 4 Exploited Flaws to KEV, Sets May 2026 Federal Deadline</a></h3>
+        
+        <div class="source">The Hacker News · 04/25 05:08</div>
+        <p class="summary">The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added four vulnerabilities impacting SimpleHelp, Samsung MagicINFO 9 Server, and D-Link DIR-823X series routers to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The list of vulnera...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

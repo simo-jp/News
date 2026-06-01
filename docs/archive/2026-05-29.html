@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月29日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月29日 / 全36件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/940275/nvidia-n1x-laptop-processor-arm-microsoft-teaser" target="_blank" rel="noopener">Nvidia, Microsoft, and Arm are all teasing Nvidia’s new N1X laptop processors</a></h3>
+        
+        <div class="source">The Verge · 05/29 23:03</div>
+        <p class="summary">It's the world's worst kept secret that Nvidia is about to announce its own Arm-powered laptop chips at Computex this weekend, and now Microsoft, Nvidia, and Arm are all openly teasing the announcement. The Windows and Nvidia GeForce accounts on X both posted "A new era of PC" earlier today, and now...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/29/spacex-awarded-6-45b-in-space-force-contracts-ahead-of-ipo/" target="_blank" rel="noopener">SpaceX awarded $6.45B in Space Force contracts ahead of IPO</a></h3>
+        
+        <div class="source">TechCrunch · 05/29 22:21</div>
+        <p class="summary">SpaceX already generated one-fifth of its 2025 revenue from government contracts, the company revealed in its IPO filing.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/" target="_blank" rel="noopener">Coders are refusing to work without AI — and that could come back to bite them</a></h3>
+        
+        <div class="source">TechCrunch · 05/29 22:14</div>
+        <p class="summary">While AI is helping coders produce code faster, it may not be producing better code, researchers warn. And that could cause problems down the road for them.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/30/news022.html" target="_blank" rel="noopener">イメージセンサーを“湾曲“させて広角撮影時の周辺ぼやけを抑える技術、NHK技研が開発</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/29 22:00</div>
+        <p class="summary">NHK放送技術研究所は、技術展示イベント「技研公開2026」（5月28日～31日）で、広視野カメラの小型化と高画質化を両立する「凹面湾曲イメージセンサー」を展示している。厚さわずか0.01mmまで薄くしたセンサーを凹面状に湾曲させ、広角レンズで生じる映像周辺部のぼやけを抑える。2030年ごろの実用化を目指す。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/science/940207/spacex-golden-dome-satellite-contract" target="_blank" rel="noopener">SpaceX gets $4 billion contract to build missile-tracking ‘Golden Dome’ satellites</a></h3>
+        
+        <div class="source">The Verge · 05/29 21:48</div>
+        <p class="summary">The Pentagon awarded SpaceX a $4.16 billion contract to build missile-tracking satellites linked with President Donald Trump's planned "Golden Dome" defense system, as reported earlier by Bloomberg. In an announcement on Friday, the US Space Force says the sensor-equipped satellites will allow it to...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/30/news031.html" target="_blank" rel="noopener">OpenAIが生命科学推論AI「GPT-Rosalind」をバイオディフェンスに開放　デュアルユースリスクに懸念も</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/29 21:48</div>
+        <p class="summary">OpenAIは、生命科学研究に特化したフロンティア推論モデル「GPT-Rosalind」を活用した「Rosalind Biodefense」プログラムを発表した。生物脅威の検知など防衛目的に限定し、審査済みの開発者や米政府機関および同盟国のパートナー組織にAPIを無償提供する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/30/news028.html" target="_blank" rel="noopener">フルカラー3D像が空中に浮かぶ「透明ホログラム」、NHK技研が公開　30年に動画表示目指す</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/29 20:00</div>
+        <p class="summary">NHK放送技術研究所は、フルカラーの3次元像を空中に映し出す「透明ホログラム」を開発した。技術展示イベント「技研公開2026」（5月28日～31日）で公開中だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/940091/acer-nitro-blaze-link-linux-handheld" target="_blank" rel="noopener">Acer’s launching a Linux handheld for streaming your PC games</a></h3>
+        
+        <div class="source">The Verge · 05/29 19:01</div>
+        <p class="summary">The Acer Nitro Blaze Link might run on Linux, but it's no Steam Deck. Acer says it's a "streaming-first handheld and companion device," like a PlayStation Portal for your PC. Announced ahead of Computex on Friday, it's launching in Q4 2026 with a 7-inch (1920 x 1200) display, Wi-Fi 6, just 1GB of LP...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/49cc299da5a1ee7a6733" target="_blank" rel="noopener">Tech Radar 試してみた #1 — TOON (Token-Oriented Object Notation) で JSON のトークン数を 71% 削る</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/29 21:30</div>
+        <p class="summary">Thoughtworks Technology Radar Vol 34 (April 2026) の Assess 枠に TOON (Token-Oriented Object Notation) が載った。LLM のコンテキストコストを削るための JSON 代替フォー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/seekseep/articles/html-img-attributes-from-pr-review" target="_blank" rel="noopener">PRレビューで初めて知ったimg要素の属性たち（decoding / loading / fetchpriority）</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/29 13:08</div>
+        <p class="summary">この記事では、開発中のPRレビューで指摘されて初めて知った&lt;img&gt;要素の属性を紹介します。imgタグなんてもう何百回と書いてきたつもりだったのに、まだ知らない属性があった、というあなたを対象としています。 具体的にはdecoding、loading、fetchpriorityの3つを取り上げます。どれもHTML標準で定義されており、ReactでもそのままDOM属性として書けるものです。それぞれの概要・取りうる値・使い所をまとめていきましょう。 どういうときに使うのか まずは全体像から押さえます。これらの属性が登場するのは、たいてい次のようなレビュー指摘がきっかけです。 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/2d773e3998a140" target="_blank" rel="noopener">React × Tailwind CSS 入門 #10｜useMemo・useCallback｜パフォーマンス最適化の基礎</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/29 11:20</div>
+        <p class="summary">はじめに 前回は useReducer を使い、複雑な状態管理を一箇所にスッキリとまとめる方法を学びました。 今回は、Reactアプリの動作を軽く（最適化）するためのフック、useMemo（ユーズメモ）と useCallback（ユーズコールバック）を学びます。 Reactは「状態（state）が変わるたびに、コンポーネントの関数を上から下まで丸ごと再実行して画面を描き直す（再レンダリング）」という性質を持っています。小規模なアプリでは全く気になりませんが、処理が重くなったりアプリが巨大化してくると、この「無駄な再計算」や「関数の作り直し」が動作をモッサリさせる原因になります。 この...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/linkjobaija/articles/d7bd933b0100c0" target="_blank" rel="noopener">【Web Audio API】マイク入力を16bit PCMに変換してWebSocketで低遅延ストリーミングする最小実装</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/29 11:00</div>
+        <p class="summary">リアルタイムの音声AIアシスタントや音声認識（STT）のシステムを構築する際、ブラウザ側のマイク入力をバックエンドへ低遅延でストリーミングする必要があります。 通常、ブラウザの MediaRecorder API をそのまま使うと、データが数秒ごとのチャンク（Blob）になってしまい、リアルタイムな対話には向きません。低遅延を実現するには、AudioWorklet または ScriptProcessor を用いて、音声のRawデータ（PCM）をミリ秒単位で直接キャプチャし、WebSocketで生流しするのが定石です。 本記事では、ブラウザで取得した Float32 形式の音声を、多くの音...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/higakin/articles/79956b50a93191" target="_blank" rel="noopener">Backend APIを立てる / 立てない。Next.js時代のアーキテクチャ選択基準を1分で</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/29 08:02</div>
+        <p class="summary">対象者 Next.js の Route Handler / Server Action があるから、サーバーいらんやん！全部 Next.js やと何があかんの？という方向け。 立てない。サーバーレス使用 （Next.js + Vercel / Cloudflare Workers / Lambda...） ! Next.jsのRoute Handler / Server Action にバックエンドロジックを記載する。 ※Node.js / Edge runtime 環境で実行される Next.js のモノレポになる 小規模だと⭕️ ️コードベース/デプロイ管理が楽 大規模...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/cybozu_frontend/articles/web-standards-trends-202605" target="_blank" rel="noopener">Web 標準動向 2026年5月版</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/29 06:54</div>
+        <p class="summary">こんにちは！ サイボウズ株式会社 プロダクトエンジニアの くらっち (@kuracchi04) です。 はじめに サイボウズは 2025 年 4 月より、W3C のメンバーに加入しました。 https://blog.cybozu.io/entry/joining-w3c 標準化プロセスに関わることができるようになるための最初の一歩として、フロントエンドエンジニアの一部のメンバーは積極的に Web 標準のキャッチアップを行っています。 そこで、毎月メンバーが興味を持った Web 標準に関する話題や、実際に標準化プロセスに関わることができた場合にはその報告などを 1 つの記事としてまとめ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tangentkoh/items/d69ad8b5d7763ba74cb8" target="_blank" rel="noopener">itoアプリを作ってみたい</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/29 06:37</div>
+        <p class="summary">はじめに 突然ですが、レクリエーションで使えるアプリを作りたくなったので作りました。今回はカードゲームのitoをWebアプリケーションとしてデプロイしました。 1.概要 まず「ito」というゲームについて、簡単に説明しておくと、 ・プレイヤー全員が1から100までの...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kai_kou/items/fe9b0e65e2252af773c9" target="_blank" rel="noopener">Claude Code Dynamic Workflows入門 — 並列サブエージェントで大規模タスクを自動化する</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/29 05:16</div>
+        <p class="summary">はじめに 2026年5月28日、AnthropicはClaude Opus 4.8のリリースと同時に、Claude Codeの新機能Dynamic Workflowsをリサーチプレビューとして公開しました。 従来のClaude Codeは1つのチャットターンを起点に順番...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://github.com/jmaczan/tiny-vllm" target="_blank" rel="noopener">Show HN: Tiny-vLLM – high performance LLM inference engine in C++ and CUDA</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/29 19:38</div>
+        <p class="summary">Article URL: https://github.com/jmaczan/tiny-vllm Comments URL: https://news.ycombinator.com/item?id=48328184 Points: 56 # Comments: 7</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/io-2026-vibe-coded-quiz/" target="_blank" rel="noopener">Take our I/O 2026 quiz, vibe coded in Google AI Studio.</a></h3>
+        
+        <div class="source">Google AI Blog · 05/29 19:00</div>
+        <p class="summary">We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/" target="_blank" rel="noopener">Robinhood now lets your AI agents trade stocks</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/29 17:46</div>
+        <p class="summary">Article URL: https://techcrunch.com/2026/05/27/robinhood-now-lets-your-ai-agents-trade-stocks/ Comments URL: https://news.ycombinator.com/item?id=48326659 Points: 85 # Comments: 156</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-3-5-videos/" target="_blank" rel="noopener">9 demos of Gemini Omni and Gemini 3.5 in action</a></h3>
+        
+        <div class="source">Google AI Blog · 05/29 17:30</div>
+        <p class="summary">Gemini Omni & Gemini 3.5 hero</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://koenvangilst.nl/lab/mistral-ai-now-summit" target="_blank" rel="noopener">Notes from the Mistral AI Now Summit</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/29 16:22</div>
+        <p class="summary">Article URL: https://koenvangilst.nl/lab/mistral-ai-now-summit Comments URL: https://news.ycombinator.com/item?id=48325340 Points: 287 # Comments: 94</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.liquid.ai/blog/lfm2-5-8b-a1b" target="_blank" rel="noopener">Liquid AI reveals 8B-A1B MoE trained on 38T</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/29 16:19</div>
+        <p class="summary">Article URL: https://www.liquid.ai/blog/lfm2-5-8b-a1b Comments URL: https://news.ycombinator.com/item?id=48325306 Points: 127 # Comments: 39</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://research.roundtable.ai/captchas-detect-ai/" target="_blank" rel="noopener">CAPTCHAs can still detect AI agents</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/29 15:57</div>
+        <p class="summary">Article URL: https://research.roundtable.ai/captchas-detect-ai/ Comments URL: https://news.ycombinator.com/item?id=48324910 Points: 56 # Comments: 47</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://shawnsmucker.substack.com/p/please-use-ai" target="_blank" rel="noopener">Please Use AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/29 13:50</div>
+        <p class="summary">Article URL: https://shawnsmucker.substack.com/p/please-use-ai Comments URL: https://news.ycombinator.com/item?id=48323101 Points: 704 # Comments: 364</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html" target="_blank" rel="noopener">ChatGPhish Vulnerability Turns ChatGPT Web Summaries Into a Phishing Surface</a></h3>
+        
+        <div class="source">The Hacker News · 05/29 18:07</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a vulnerability in OpenAI ChatGPT that leverages the artificial intelligence (AI) assistant's implicit trust in Markdown links and images to trigger prompt injections and open the door to phishing attacks. The technique has been codenamed ChatGPhis...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html" target="_blank" rel="noopener">Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit</a></h3>
+        
+        <div class="source">The Hacker News · 05/29 14:39</div>
+        <p class="summary">An unknown threat actor has been observed using a large language model (LLM) agent to conduct post-compromise actions after obtaining initial access following the exploitation of a publicly-accessible Marimo network using a recently disclosed vulnerability. "The attacker compromised an internet-reac...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html" target="_blank" rel="noopener">New Russian-Linked GREYVIBE Targets Ukraine with AI-Powered Cyberattacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/29 11:31</div>
+        <p class="summary">A previously undocumented threat actor dubbed GREYVIBE has been attributed to ongoing and persistent attacks targeting Ukraine and Ukraine-related entities since at least August 2025. GREYVIBE, per WithSecure, is assessed to be a Russian-speaking group operating broadly in the Russian time zone, wit...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/what-2000-exposed-vibe-coded-apps.html" target="_blank" rel="noopener">What 2,000 Exposed Vibe-Coded Apps Reveal About the Limits of Most Security Stacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/29 10:30</div>
+        <p class="summary">Shadow AI used to mean employees pasting things they shouldn't into ChatGPT. It now means something bigger: employees building full applications with AI, wiring them into production systems, and publishing them on the open internet. Without Security or IT in the loop. The artifact moved from a promp...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/malicious-sicoob-nuget-steals-banking.html" target="_blank" rel="noopener">Malicious Sicoob NuGet Steals Banking Credentials as npm Packages Target Cloud Secrets</a></h3>
+        
+        <div class="source">The Hacker News · 05/29 09:11</div>
+        <p class="summary">Cybersecurity researchers have discovered a malicious NuGet package that masquerades as a C# software development kit for Sicoob, one of Brazil's largest cooperative financial systems, to siphon client IDs and PFX certificates. According to Socket, versions 2.0.0 through 2.0.4 of "Sicoob.Sdk" contai...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/kimsuky-deploys-httpspy-expands-arsenal.html" target="_blank" rel="noopener">Kimsuky Deploys HTTPSpy, Expands Arsenal with HelloDoor and VS Code Tunnels</a></h3>
+        
+        <div class="source">The Hacker News · 05/29 05:57</div>
+        <p class="summary">The North Korean state-sponsored threat actor known as Kimsuky (aka Velvet Chollima) has been attributed to a fresh set of cyber attacks targeting South Korean military and corporate entities through March and April 2026. "Kimsuky employed a range of tailored social engineering tactics, such as spoo...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/microsoft/articles/super-dotnet-new-aspire-copilot" target="_blank" rel="noopener">超dotnet new で「Aspire と GitHub Copilot の連携」というタイトルで登壇しました</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/29 11:03</div>
+        <p class="summary">はじめに 2026/05/29 に品川の日本マイクロソフトオフィスで開催された「超dotnet new」という勉強会に参加してきました。5 分の LT 枠で「Aspire と GitHub Copilot の連携」というタイトルで登壇したので、当日話した内容を軽くまとめておこうと思います。 https://dotnetnew.connpass.com/event/392979/ この勉強会は「参加者＝登壇者」というスタイルで、参加した人それぞれが 5 分ずつ最近気になっている技術を紹介し合う形でした。5 分という時間は短いようで意外と話せるし、いろんな人の「今ハマっているもの」が一気...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/oosugi-t/items/421b9e8072de5497589e" target="_blank" rel="noopener">Pleasanterをバックグラウンドに利用して販売・注文管理システムを構築した #4 Entity・API連携(前編)</a></h3>
+        
+        <div class="source">Qiita - C# · 05/29 08:41</div>
+        <p class="summary">はじめに Pleasanterをバックグラウンドに利用して販売・注文管理システム構築の4回目、今回はEntity・API連携構築編です。 長くなりますので、前後編に分けて作っていきたいと思います。 第一回(構成) 第二回(環境構築) 第三回(Pleasanter設計) 前...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/986a813a7a31dda7c65e" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：登録画面ブラッシュアップ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/29 05:42</div>
+        <p class="summary">はじめに 前回までで、家計簿アプリが一旦完成しました。(AIがやりました) 今回は支出登録画面を修正します。 プロンプト 支出登録画面の修正をしたいです。 以下修正点 ・画面にID項目追加、入力+returnで該当情報をロード ・他画面から開、引数にIDがある場合に該当...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/1cc6275355c73d2ffc45" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：一覧表示処理</a></h3>
+        
+        <div class="source">Qiita - C# · 05/29 05:42</div>
+        <p class="summary">はじめに 前回までで、家計簿アプリの設計からOCR処理までの実装を行いました(AIがやりました) 今回は一覧表示処理を実装します。 プロンプト 支出一覧画面の一覧表示処理を実装したい。 コードを出力してください。 回答 以下は: 支出一覧画面 の一覧表示処理実装例で...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/788b811b62b6cbadd863" target="_blank" rel="noopener">AIに頼り切って家計簿アプリを追加開発する。：レシートドラッグドロップ対応</a></h3>
+        
+        <div class="source">Qiita - C# · 05/29 05:42</div>
+        <p class="summary">はじめに 前回までで、家計簿アプリの設計からOCR処理までの実装を行いました(AIがやりました) 今回はレシートのドラッグドロップ処理を実装します。 プロンプト レシート画像をドラッグドロップで取り込みたい。 コードを出力してください。 回答 WinFormsでは: ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sitio1/articles/9de31f703af95e" target="_blank" rel="noopener">OR-Tools の CP-SAT で 2D パッキングを C# で解く――最適解より「使える解」をより早く</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/29 01:00</div>
+        <p class="summary">はじめに 業務で Google OR-Tools を使って「作業に対して人をアサインし、スケジュールを自動生成する機能」を実装しました。OR-Tools はスケジューリング以外にもさまざまな最適化問題に対応しているということで、他の機能も試してみたくなりました。 今回は 2D パッキング問題（二次元詰め込み問題）に挑戦します。「指定サイズのコンテナに、複数の荷物を重ならないように配置する」という問題で、倉庫管理や梱包、基板レイアウトなど実務でも登場する問題です。 実装には C# / .NET を使います（Python のサンプルはよく見かけるので、あえて C# で）。 ! 本記事のコ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

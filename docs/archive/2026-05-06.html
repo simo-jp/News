@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月06日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月06日 / 全33件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">7</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">4</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">6</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/06/a-20-minute-pitch-wins-indian-startup-pronto-backing-from-lachy-groom/" target="_blank" rel="noopener">A 20-minute pitch wins Indian startup Pronto backing from Lachy Groom</a></h3>
+        
+        <div class="source">TechCrunch · 05/06 22:30</div>
+        <p class="summary">The investment comes as Pronto scales to 26,000 daily bookings and the market heads toward a potential $18 billion size.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/925601/star-fox-nintendo-switch-2" target="_blank" rel="noopener">Nintendo announces a new Star Fox for the Switch 2</a></h3>
+        
+        <div class="source">The Verge · 05/06 22:07</div>
+        <p class="summary">It turns out Fox McCloud's appearance in the Super Mario Galaxy Movie was a tease of things to come: Nintendo just surprise announced the first new Star Fox game in a decade. The game is called, simply, Star Fox, and it's out very soon, launching on June 25th. Nintendo says that it's "based" on the ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/06/barry-diller-trusts-sam-altman-but-trust-is-irrelevant-as-agi-nears-he-says/" target="_blank" rel="noopener">Barry Diller trusts Sam Altman. But ‘trust is irrelevant’ as AGI nears, he says.</a></h3>
+        
+        <div class="source">TechCrunch · 05/06 21:57</div>
+        <p class="summary">Barry Diller defended OpenAI CEO Sam Altman, while warning that AGI remains an unpredictable force needing guardrails.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/07/news048.html" target="_blank" rel="noopener">Anthropic、マスク氏のSpaceXと契約　GPU22万基超を確保し「Claude」の利用制限を緩和</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/06 21:48</div>
+        <p class="summary">Anthropicは、SpaceXとデータセンター「Colossus 1」の全演算能力を利用する契約を締結した。NVIDIA製GPUを22万基以上備えた環境を確保し、Claudeの利用制限を大幅に緩和する。マスク氏は同社の能力を高く評価しており、将来的な宇宙データセンター構想への協力も視野に入れている。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/06/snap-says-its-400m-deal-with-perplexity-amicably-ended/" target="_blank" rel="noopener">Snap says its $400M deal with Perplexity ‘amicably ended’</a></h3>
+        
+        <div class="source">TechCrunch · 05/06 21:43</div>
+        <p class="summary">The deal, announced last November, would have seen Perplexity's AI search engine integrated directly into Snapchat.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/06/is-xai-a-neocloud-now/" target="_blank" rel="noopener">Is xAI a neocloud now?</a></h3>
+        
+        <div class="source">TechCrunch · 05/06 21:32</div>
+        <p class="summary">xAI's real business may be more about building data centers than training AI models.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/925559/google-project-mariner-shut-down" target="_blank" rel="noopener">Google shuts down Project Mariner</a></h3>
+        
+        <div class="source">The Verge · 05/06 21:21</div>
+        <p class="summary">Google has pulled the plug on Project Mariner, an experimental feature designed to perform tasks for you across the web, as reported earlier by Wired's Maxwell Zeff. The Project Mariner landing page now contains a message that says: "Thank you for using Project Mariner. It was shut down on May 4th, ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/06/insurance-startup-corgi-hits-1-3b-valuation-4-months-after-its-series-a/" target="_blank" rel="noopener">Insurance startup Corgi hits $1.3B valuation 4 months after its Series A</a></h3>
+        
+        <div class="source">TechCrunch · 05/06 20:39</div>
+        <p class="summary">Corgi announced on Wednesday a $160 million Series B, led by TCV, valuing the startup at $1.3 billion.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ishi720/items/e26cb9ded7006113ff43" target="_blank" rel="noopener">ホテリングの法則シミュレーターを作ってみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/06 22:28</div>
+        <p class="summary">はじめに 牛丼チェーンの「吉野家」と「すき家」などの同業他社が同じ交差点の角に並んで建っているのを見て、「わざわざ同じ場所に集まるんだろう？」 と疑問に思ったことはありませんか？ 実は、経済学的な理由があります。ハロルド・ホテリングが提唱した 「競合する企業は互いに立地を...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/googles-prompt-api/" target="_blank" rel="noopener">Google’s Prompt API</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/06 19:41</div>
+        <p class="summary">Mat Marquis on Google pulling the web standards equivalent of U2 album marketing: As a Chrome user, you’ll have&#160;received Gemini Nano in the form of a 4GB transfer&#160;recently; no permission asked or required. If you remove it, &#8230; Google’s Prompt API originally handwritten and published w...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/whitestonex39-debug/items/0ad14d6ecc2570ad8a7f" target="_blank" rel="noopener">aボタン設計</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/06 16:08</div>
+        <p class="summary">ボタン 画面クリック＝ボタン(1個)の例 Ex.js document.addEventListener('DOMContentLoaded', () =&gt; { document.addEventListener('click',(e)=&gt;{ //...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/recdnd/items/f35383d3a34f4df8ff72" target="_blank" rel="noopener">[LLMなし個人開発]観察可能な決定論的 text-cleanup pipeline をブラウザで実装した</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/06 14:41</div>
+        <p class="summary">ChatGPT や Claude を毎日使っていると、地味に増えていくものがあります。 text noise です。 例えば： 壊れた bullet duplicated line invisible char weird spacing PDF コピペ由来の崩れ 微妙に...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/zigzag-css-grid-layouts/" target="_blank" rel="noopener">Making Zigzag CSS Layouts With a Grid + Transform Trick</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/06 13:50</div>
+        <p class="summary">Most grid layouts sit in neat rows, perfectly aligned, like soldiers in formation. But sometimes you want something with more rhythm like, say, a zigzag pattern. Here's how to do it with CSS Grid. Making Zigzag CSS Layouts With a Grid + Transform Trick originally handwritten and published with love ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/architecture-local-first-web-development/" target="_blank" rel="noopener">The Architecture Of Local-First Web Development</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/06 10:00</div>
+        <p class="summary">An honest perspective on building local-first web apps in 2026, written for developers who’ve been doing this long enough to be skeptical of silver bullets.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/gtakairo/items/d40a66b69cae9cc10a15" target="_blank" rel="noopener">JavaScript の SourceMap を基礎から理解する【仕組み・デバッグ・セキュリティ】</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/06 06:11</div>
+        <p class="summary">はじめに minify されたコードのエラーを見たとき、こんな行番号が出たことはありませんか？ Uncaught TypeError: Cannot read properties of undefined at a.b (app.min.js:1:4832) ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nijima/articles/e60031e0c40d65" target="_blank" rel="noopener">【2026年版】開発体験（DX）を極限まで高める：モダンフロントエンド環境構築の最適解</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/06 04:15</div>
+        <p class="summary">はじめに：DXへの投資は、最高のプロダクトを作るための「前提条件」 「開発環境の構築なんて、最初だけ動けばいい」 もしチーム内にそんな空気が流れているとしたら、それは非常に危険なサインです。 数千人規模のユーザーが利用するような複雑なダッシュボードや、高度なステート管理が求められる現代のWebアプリケーション開発において、開発体験（DX：Developer Experience）の低さは、そのままプロダクトの品質低下と直結します。 フォーマットのブレ、インポート順の指摘、不要な再レンダリングの温床…。 これらを手動でチェックしていては、本来エンジニア同士がすべき「高い技術力に基づいた...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/mirai-based-xlabsv1-botnet-exploits-adb.html" target="_blank" rel="noopener">Mirai-Based xlabs_v1 Botnet Exploits ADB to Hijack IoT Devices for DDoS Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 20:21</div>
+        <p class="summary">Cybersecurity researchers have exposed a new Mirai-derived botnet that self-identifies as xlabs_v1 and targets internet-exposed devices running Android Debug Bridge (ADB) to enlist them in a network capable of carrying out distributed denial-of-service (DDoS) attacks. Hunt.io, which detailed the mal...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/muddywater-uses-microsoft-teams-to.html" target="_blank" rel="noopener">MuddyWater Uses Microsoft Teams to Steal Credentials in False Flag Ransomware Attack</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 13:00</div>
+        <p class="summary">The Iranian state-sponsored hacking group known as MuddyWater (aka Mango Sandstorm, Seedworm, and Static Kitten) has been attributed to a ransomware attack in what has been described as a "false flag" operation. The attack, observed by Rapid7 in early 2026, has been found to leverage social engineer...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/the-hacker-news-launches-cybersecurity.html" target="_blank" rel="noopener">The Hacker News Launches 'Cybersecurity Stars Awards 2026' — Submissions Now Open</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 12:03</div>
+        <p class="summary">For nearly 20 years, we at The Hacker News have mostly told scary stories about cyberspace — big hacks, broken systems, and new threats. But behind every headline, there’s a quieter, better story. It’s the story of leaders making tough calls under pressure, teams building smarter defenses, and secur...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/your-ai-agents-are-already-inside.html" target="_blank" rel="noopener">Your AI Agents Are Already Inside the Perimeter. Do You Know What They're Doing?</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 10:57</div>
+        <p class="summary">Analysts recently confirmed what identity security teams have quietly feared: AI agents are being deployed faster than enterprises can govern them. In their inaugural Market Guide for Guardian Agents, Gartner states that “enterprise adoption of AI agents is accelerating, outpacing maturity of govern...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/android-apps-get-public-verification.html" target="_blank" rel="noopener">Google's Android Apps Get Public Verification to Stop Supply Chain Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 09:13</div>
+        <p class="summary">Google has announced expanded Binary Transparency for Android as a way to safeguard the ecosystem from supply chain attacks. "This new public ledger ensures the Google apps on your device are exactly what we intended to build and distribute," Google's product and security teams said. The initiative ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/windows-phone-link-exploited-by-cloudz.html" target="_blank" rel="noopener">Windows Phone Link Exploited by CloudZ RAT to Steal Credentials and OTPs</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 08:34</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of an intrusion that involved the use of a CloudZ remote access tool (RAT) and a previous undocumented plugin dubbed Pheno with the aim of facilitating credential theft. "According to the functionalities of the CloudZ RAT and Pheno plugin, this was wi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/palo-alto-pan-os-flaw-under-active.html" target="_blank" rel="noopener">Palo Alto PAN-OS Flaw Under Active Exploitation Enables Remote Code Execution</a></h3>
+        
+        <div class="source">The Hacker News · 05/06 06:14</div>
+        <p class="summary">Palo Alto Networks has released an advisory warning that a critical buffer overflow vulnerability in its PAN-OS software has been exploited in the wild. The vulnerability, tracked as CVE-2026-0300, has been described as a case of unauthenticated remote code execution. It carries a CVSS score of 9.3 ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/durable-workflows-in-microsoft-agent-framework/" target="_blank" rel="noopener">Durable Workflows in the Microsoft Agent Framework</a></h3>
+        
+        <div class="source">.NET Blog · 05/06 17:00</div>
+        <p class="summary">Build durable AI agent workflows with the Microsoft Agent Framework. Start with in-process console apps, add durability with the Durable Task runtime, scale with parallel AI agents, and host on Azure Functions for serverless execution. The post Durable Workflows in the Microsoft Agent Framework appe...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/durable-workflows-in-microsoft-agent-framework/" target="_blank" rel="noopener">Durable Workflows in the Microsoft Agent Framework</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/06 17:00</div>
+        <p class="summary">Build durable AI agent workflows with the Microsoft Agent Framework. Start with in-process console apps, add durability with the Durable Task runtime, scale with parallel AI agents, and host on Azure Functions for serverless execution. The post Durable Workflows in the Microsoft Agent Framework appe...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/EndOfData/items/5fac826cd3655f08a46b" target="_blank" rel="noopener">【C#】Cursorに見る肥大化したメソッド・クラスを適切に責務分離する方法</a></h3>
+        
+        <div class="source">Qiita - C# · 05/06 08:34</div>
+        <p class="summary">【C#】How to Reduce Bloated Methods and Classes: Insights from Cursor 【C#】How to Eliminate Bloated Methods and Classes with Refactoring 【C#...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/yy7613/articles/bb5fa8cdb6bf64" target="_blank" rel="noopener">Microsoft Agent Framework をローカルLLMで試してみるその13(ミドルウェア)</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/06 02:50</div>
+        <p class="summary">はじめに Microsoft Agent FrameworkをローカルLLMで試してみるその12では、Structured Outputでモデル出力をJSON Schemaに合わせる方法を確認しました。 その13ではAgentにミドルウェアを設定する方法と設定した時の動作を確認します。 ミドルウェアをどう登録して使うのか どの順序、どのタイミングで呼ばれるのか 呼ばれた時にどのようなステート、引数が渡されるのか 環境 Microsoft Agent Framework 1.3.0 今回確認するフロー 確認するフローは次のようになります。 ミドルウェアの使い方 ミド...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/search/gardening-tips/" target="_blank" rel="noopener">5 gardening tips you can try right in Search</a></h3>
+        
+        <div class="source">Google AI Blog · 05/06 16:00</div>
+        <p class="summary">An abstract background featuring soft, stippled illustrations of flowers and a butterfly in a bright palette of blue, green, and red. In the center of the image is a white circle containing a magnifying glass.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://github.com/OxideAV/oxideav-magicyuv/issues/3" target="_blank" rel="noopener">FFmpeg developer calls out OxideAV for AI license laundering of his code</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/06 01:50</div>
+        <p class="summary">Article URL: https://github.com/OxideAV/oxideav-magicyuv/issues/3 Comments URL: https://news.ycombinator.com/item?id=48031185 Points: 76 # Comments: 6</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63" target="_blank" rel="noopener">Telus Uses AI to Alter Call-Agent Accents</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/06 01:38</div>
+        <p class="summary">Article URL: https://letsdatascience.com/news/telus-uses-ai-to-alter-call-agent-accents-a3868f63 Comments URL: https://news.ycombinator.com/item?id=48031109 Points: 226 # Comments: 205</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-chatgpt-futures-class-of-2026" target="_blank" rel="noopener">Introducing ChatGPT Futures: Class of 2026</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/06 00:00</div>
+        <p class="summary">Meet the ChatGPT Futures Class of 2026—26 student innovators using AI to build, research, and drive real-world impact. Discover how this generation is redefining learning, creativity, and opportunity with ChatGPT.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/uber" target="_blank" rel="noopener">Uber uses OpenAI to help people earn smarter and book faster</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/06 00:00</div>
+        <p class="summary">Uber uses OpenAI to power AI assistants and voice features that help drivers earn smarter and riders book faster across a global real-time marketplace.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-b2b-signals" target="_blank" rel="noopener">How frontier enterprises are building an AI advantage</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/06 00:00</div>
+        <p class="summary">OpenAI’s B2B Signals research shows how frontier enterprises deepen AI adoption, scale Codex-powered agentic workflows, and build durable competitive advantage.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

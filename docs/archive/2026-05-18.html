@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月18日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月18日 / 全38件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/19/news059.html" target="_blank" rel="noopener">Anthropic、SDKおよびMCPツール企業のStainlessを買収</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/18 22:22</div>
+        <p class="summary">Anthropicは、SDKおよびMCPサーバツールの開発企業であるStainlessを買収したと発表した。StainlessはAPI仕様から複数言語向けのSDKを自動生成するツールなどを提供しており、数百社に利用されている。Anthropicはこの買収により、Claude APIの開発者体験向上とAIエージェント連携機能の拡充を目指す。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/18/osha-probing-worker-death-at-spacexs-starbase-site/" target="_blank" rel="noopener">OSHA probing worker death at SpaceX’s Starbase site</a></h3>
+        
+        <div class="source">TechCrunch · 05/18 21:55</div>
+        <p class="summary">The death is the latest worker safety issue at the Starbase facility, which has a higher injury rate than all other SpaceX sites.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/19/news058.html" target="_blank" rel="noopener">イーロン・マスク氏のOpenAI訴訟、時効により請求棄却　陪審が全員一致の評決</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/18 21:48</div>
+        <p class="summary">イーロン・マスク氏がOpenAIのサム・アルトマンCEOらを相手取った訴訟を巡り、カリフォルニア州北部地区連邦地裁の陪審は、提訴の時効が成立しているとの全員一致の評決を下した。判事もこの判断に同意し、マスクの請求を棄却した。マスクは控訴する意向だが、判事は陪審の判断を強く支持した。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/18/sandboxaq-brings-its-drug-discovery-models-to-claude-no-phd-in-computing-required/" target="_blank" rel="noopener">SandboxAQ brings its drug discovery models to Claude — no PhD in computing required</a></h3>
+        
+        <div class="source">TechCrunch · 05/18 21:29</div>
+        <p class="summary">Other venture-backed companies like Chai Discovery and Isomorphic Labs have raced to build better models. SandboxAQ is betting that access is the bigger obstacle and that Claude solves it.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/932857/volvo-ex30-ev-replacement-affordable-ex60" target="_blank" rel="noopener">Volvo teases a new affordable EV to replace discontinued EX30</a></h3>
+        
+        <div class="source">The Verge · 05/18 20:41</div>
+        <p class="summary">Volvo's compact, quirky EX30 had a lot of problems when it was first released. Tariffs essentially erased its affordability, making it more expensive to own, and a battery recall made it dangerous to park indoors. But its discontinuation didn't spell the end of Volvo's efforts to sell more affordabl...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/932817/playstation-exclusive-games-pc" target="_blank" rel="noopener">PlayStation exclusives aren&#8217;t coming to PC anymore</a></h3>
+        
+        <div class="source">The Verge · 05/18 19:28</div>
+        <p class="summary">Sony reportedly won't release its major single-player PlayStation games on PC anymore. According to Bloomberg's Jason Schreier, Hermen Hulst, who heads up PlayStation's studios business, informed employees in a town hall on Monday about the change in strategy. Schreier had previously reported on the...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/18/anthropic-has-acquired-the-dev-tools-startup-used-by-openai-google-and-cloudflare/" target="_blank" rel="noopener">Anthropic has acquired the dev tools startup used by OpenAI, Google, and Cloudflare</a></h3>
+        
+        <div class="source">TechCrunch · 05/18 19:27</div>
+        <p class="summary">Stainless, a New York-based startup, founded in 2022, rose to prominence in the emerging AI industry for automating the creation and maintenance of software development kits, or SDKs — the libraries developers use to interact with APIs.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/932464/musk-v-altman-proved-that-ai-is-led-by-the-wrong-people" target="_blank" rel="noopener">Musk v. Altman proved that AI is led by the wrong people</a></h3>
+        
+        <div class="source">The Verge · 05/18 19:00</div>
+        <p class="summary">The tech trial of the year, Musk v. Altman, was ultimately a fight for control. Elon Musk argued that Sam Altman, with whom he helped found the now-massive company OpenAI, shouldn't direct the future of AI. Altman's lawyers, in turn, poked at Musk's own credibility. A jury came to a verdict on Monda...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/05/cisa-admin-leaked-aws-govcloud-keys-on-github/" target="_blank" rel="noopener">CISA Admin Leaked AWS GovCloud Keys on Github</a></h3>
+        
+        <div class="source">Krebs on Security · 05/18 20:48</div>
+        <p class="summary">Until this past weekend, a contractor for the Cybersecurity &#038; Infrastructure Security Agency (CISA) maintained a public GitHub repository that exposed credentials to several highly privileged AWS GovCloud accounts and a large number of internal CISA systems. Security experts said the public arc...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/interpol-operation-ramz-disrupts-mena.html" target="_blank" rel="noopener">INTERPOL Operation Ramz Disrupts MENA Cybercrime Networks with 201 Arrests</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 17:21</div>
+        <p class="summary">INTERPOL has coordinated a first-of-its-kind cybercrime crackdown across the Middle East and North Africa (MENA) that led to 201 arrests and the identification of an additional 382 suspects. The initiative involved the efforts of 13 countries from the region between October 2025 and February 2026, a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/weekly-recap-exchange-0-day-npm-worm.html" target="_blank" rel="noopener">⚡ Weekly Recap: Exchange 0-Day, npm Worm, Fake AI Repo, Cisco Exploit and More</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 13:50</div>
+        <p class="summary">Monday opens with a trust problem. A mail server flaw is under active use. A network control system was targeted. Trusted packages were poisoned. A fake model page pushed a stealer. Then came the familiar ransom claim: the data was returned and deleted. The pattern is clear. One weak dependency can ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/how-to-reduce-phishing-exposure-before.html" target="_blank" rel="noopener">How to Reduce Phishing Exposure Before It Turns into Business Disruption</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 13:00</div>
+        <p class="summary">What happens when a phishing email looks clean enough to pass through security, but dangerous enough to expose the business after one click? That is the gap many SOCs still struggle with: the attacks that leave teams unsure what was exposed, who else was targeted, and how far the risk has spread. Ea...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/developer-workstations-are-now-part-of.html" target="_blank" rel="noopener">Developer Workstations Are Now Part of the Software Supply Chain</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 11:23</div>
+        <p class="summary">Supply chain attackers are not only trying to slip malicious code into trusted software. They are trying to steal the access that makes trusted software possible. Recently, three separate campaigns hit npm, PyPI, and Docker Hub in a 48-hour window, and all three targeted secrets from developer envir...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ivanti-fortinet-sap-vmware-n8n-patch.html" target="_blank" rel="noopener">Ivanti, Fortinet, SAP, VMware, n8n Patch RCE, SQL Injection, Privilege Escalation Flaws</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 10:54</div>
+        <p class="summary">Ivanti, Fortinet, n8n, SAP, and VMware have released security fixes for various vulnerabilities that could be exploited by bad actors to bypass authentication and execute arbitrary code. Topping the list is a critical flaw impacting Ivanti Xtraction (CVE-2026-8043, CVSS score: 9.6) that could be exp...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html" target="_blank" rel="noopener">MiniPlasma Windows 0-Day Enables SYSTEM Privilege Escalation on Fully Patched Systems</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 08:57</div>
+        <p class="summary">Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw that grants attackers SYSTEM privileges on fully patched Windows systems. Codenamed MiniPlasma, the ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html" target="_blank" rel="noopener">Four Malicious npm Packages Deliver Infostealers and Phantom Bot DDoS Malware</a></h3>
+        
+        <div class="source">The Hacker News · 05/18 08:57</div>
+        <p class="summary">Cybersecurity researchers have discovered four new npm packages containing information-stealing malware, one of which is a clone of the Shai-Hulud worm open-sourced by TeamPCP. The list of identified packages is below - chalk-tempalte (825 Downloads) @deadcode09284814/axios-util (284 Downloads) axoi...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/18/1137439/what-to-expect-from-google-this-week/" target="_blank" rel="noopener">What to expect from Google this week</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/18 17:35</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. When Google opens its doors tomorrow for its annual developer conference, I/O, it will do so as a clear third place in the foundation model race. A year ago, at G...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/" target="_blank" rel="noopener">Inside Anduril and Meta’s quest to make smart glasses for warfare</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/18 16:01</div>
+        <p class="summary">The defense-tech company Anduril has shared new details about the augmented-reality headset for the military it’s prototyping with Meta, including a vision for ordering drone strikes via eye-tracking and voice commands. Quay Barnett, who leads the efforts as a vice president at Anduril following a c...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://archestra.ai/blog/only-responsible-ai" target="_blank" rel="noopener">We stopped AI bot spam in our GitHub repo using Git's –author flag</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/18 15:24</div>
+        <p class="summary">Article URL: https://archestra.ai/blog/only-responsible-ai Comments URL: https://news.ycombinator.com/item?id=48181125 Points: 368 # Comments: 175</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.404media.co/researchers-wanted-preschool-teachers-to-wear-cameras-to-train-ai/" target="_blank" rel="noopener">Researchers Wanted Preschool Teachers to Wear Cameras to Train AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/18 13:26</div>
+        <p class="summary">Article URL: https://www.404media.co/researchers-wanted-preschool-teachers-to-wear-cameras-to-train-ai/ Comments URL: https://news.ycombinator.com/item?id=48179569 Points: 80 # Comments: 28</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theregister.com/ai-ml/2026/05/17/enough-with-the-ai-fomo-go-slow-mo-says-domo-cdo/5240840" target="_blank" rel="noopener">Enough with the AI FOMO, go slow-mo, says Domo CDO</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/18 12:49</div>
+        <p class="summary">Article URL: https://www.theregister.com/ai-ml/2026/05/17/enough-with-the-ai-fomo-go-slow-mo-says-domo-cdo/5240840 Comments URL: https://news.ycombinator.com/item?id=48179029 Points: 144 # Comments: 77</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/6a0af5d0484fbf5fe9a7743e/1779103184855/2026-Spring-AI.pdf" target="_blank" rel="noopener">AI eats the world (Spring 26) [pdf]</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/18 12:49</div>
+        <p class="summary">Article URL: https://static1.squarespace.com/static/50363cf324ac8e905e7df861/t/6a0af5d0484fbf5fe9a7743e/1779103184855/2026-Spring-AI.pdf Comments URL: https://news.ycombinator.com/item?id=48179021 Points: 181 # Comments: 105</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://spectrum.ieee.org/voice-ai-audio-attacks" target="_blank" rel="noopener">Voice AI Systems Are Vulnerable to Hidden Audio Attacks</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/18 11:51</div>
+        <p class="summary">Article URL: https://spectrum.ieee.org/voice-ai-audio-attacks Comments URL: https://news.ycombinator.com/item?id=48178378 Points: 100 # Comments: 28</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.nbcnews.com/tech/tech-news/former-google-ceo-booed-graduation-speech-ai-rcna345585" target="_blank" rel="noopener">Eric Schmidt speech about AI booed during graduation</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/18 10:50</div>
+        <p class="summary">Article URL: https://www.nbcnews.com/tech/tech-news/former-google-ceo-booed-graduation-speech-ai-rcna345585 Comments URL: https://news.ycombinator.com/item?id=48177785 Points: 333 # Comments: 363</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/nuget-package-pruning-in-dotnet-10/" target="_blank" rel="noopener">NuGet Package Pruning: Cleaner Dependencies and Actionable Vulnerability Reports</a></h3>
+        
+        <div class="source">.NET Blog · 05/18 17:00</div>
+        <p class="summary">Package pruning in .NET 10 removes platform-provided packages from your dependency graph. With transitive auditing enabled by default, projects with these defaults have 70% fewer transitive vulnerability reports compared to projects using the previous defaults. The post NuGet Package Pruning: Cleane...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/nuget-package-pruning-in-dotnet-10/" target="_blank" rel="noopener">NuGet Package Pruning: Cleaner Dependencies and Actionable Vulnerability Reports</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/18 17:00</div>
+        <p class="summary">Package pruning in .NET 10 removes platform-provided packages from your dependency graph. With transitive auditing enabled by default, projects with these defaults have 70% fewer transitive vulnerability reports compared to projects using the previous defaults. The post NuGet Package Pruning: Cleane...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/microsoft/articles/agent-governance-toolkit-audit-telemetory-03" target="_blank" rel="noopener">Agent Governance Toolkit の監査とテレメトリ - 本番環境への道 - .NET 9 での実装入門</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/18 05:58</div>
+        <p class="summary">Agent Governance Toolkit の監査とテレメトリ - 本番環境への道 - .NET 9 での実装入門 はじめに 前回の記事では、Agent Governance Toolkit (AGT) の Agent Trust 機能を使った信頼スコアベースのアクセス制御について解説しました。今回は、その次のステップとして、本番環境での監査ログ収集 と テレメトリ統合 について、実装例を交えて解説します。 AI エージェントが重要な判断やツール実行を行う環境では、「何をしたのか？」「いつしたのか？」という監査証跡の記録が重要になります。AGT は、ガバナンスイベントを外部...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/xxxDATxxx/items/b1e0b66ce2dd9fe263fc" target="_blank" rel="noopener">.NETのドキュメントを作って読む</a></h3>
+        
+        <div class="source">Qiita - C# · 05/18 05:28</div>
+        <p class="summary">どういうこっちゃ MSDNのサイトが何故か.NET Framework 4.8.1の情報しか教えてくれなくなった DocFxなるツールがあり、そいつを上手いこと使えばドキュメントを生成してブラウザで読めるらしい とりあえず使ってみるか アカンところがあるので模索 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/vivinko/items/20530878da6a9e0d9fa8" target="_blank" rel="noopener">C#のMVVM入門｜WPF/MAUIに共通するViewModel・Binding・Commandの考え方【外伝G27】</a></h3>
+        
+        <div class="source">Qiita - C# · 05/18 04:15</div>
+        <p class="summary">連載Index（読む順・公開済リンクが最新） S00_門前の誓い_総合Index C#でWPFや.NET MAUIのアプリを作るなら、MVVMの考え方は早めに押さえておいた方がよいです。 WPFや.NET MAUIのようなXAML系のUIでは、画面部品と処理を直接結...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/au/articles/owasp-top10-business-app" target="_blank" rel="noopener">コードレビューで脆弱性と対策をしたい</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/18 00:08</div>
+        <p class="summary">はじめに 業務アプリの開発で「セキュリティ要件」として明文化されることは、思いのほか少ないです。 要件定義書には機能要件が並び、非機能要件にも「可用性99.9%」「レスポンスタイム1秒以内」といった記述はあっても、「SQLインジェクション対策をすること」「パスワードはBCryptでハッシュすること」とは書かれていません。 開発標準やコーディング規約にも、セキュリティに触れていないことがほとんどです。 結果として、セキュリティ対策は「書いた人のリテラシー次第」になりがちです。 コードレビューでセキュリティの観点を持ち込もうとしても、「何を見ればいいか」の共通認識がないと指摘しにくい。 ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/mikanmikan11/items/c0e03c6119b45a1f338d" target="_blank" rel="noopener">JavaScript のthisを理解する — ECMAScript の仕様から見る</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/18 16:28</div>
+        <p class="summary">JavaScript の this を理解する — ECMAScript の仕様から見る はじめに 本記事では JavaScript の this の正体を ECMAScript 仕様書に基づいて紐解いていきます。 随所に、ECMAScript の原文とその該当箇所への...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/sugaimo/articles/8b714cda65aefb" target="_blank" rel="noopener">「基本情報技術者試験をRPGで攻略する無料Webアプリを個人開発した話」</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/18 13:54</div>
+        <p class="summary">はじめに 基本情報技術者試験(FE)の勉強、続かなくないですか？ 過去問を黙々と解くだけだと、どうしてもモチベが維持できない。 「もっとゲーム感覚で続けられないかな」と思って、 過去問をRPGバトル形式で解ける無料Webアプリを個人開発しました。 🔗 公開URL: https://it-study.jp/ この記事では、開発の背景・技術選定・工夫した点を共有します。 どんなアプリ？ ⚔️ IT王国の勇者 ― 基本情報技術者試験RPG 正解 = モンスターに10ダメージ 不正解 = 勇者がダメージを受ける 連続正解で コンボボーナス 各ダンジョンのボスを倒すとクリア レベ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/rubasu/items/79c4e7c3df9b6b61bbb4" target="_blank" rel="noopener">「基本情報技術者試験をRPGで攻略する無料Webアプリを個人開発した話」</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/18 13:48</div>
+        <p class="summary">はじめに 基本情報技術者試験(FE)の勉強、続かなくないですか？ 過去問を黙々と解くだけだと、どうしてもモチベが維持できない。 「もっとゲーム感覚で続けられないかな」と思って、 過去問をRPGバトル形式で解ける無料Webアプリを個人開発しました。 🔗 公開URL: htt...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/cross-document-view-transitions-part-1/" target="_blank" rel="noopener">Cross-Document View Transitions: The Gotchas Nobody Mentions</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/18 13:47</div>
+        <p class="summary">This is Part 1 of a two-part series about cross-document view transitions, going over all the gotchas, from ditching the deprecated way to opt into them to a little-known 4-second timeout. Cross-Document View Transitions: The Gotchas Nobody Mentions originally handwritten and published with love on ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/atsuto/items/8f61170406e48ca30f3b" target="_blank" rel="noopener">非エンジニア向けの継続的なウェブサービス開発手法のまとめ</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/18 13:41</div>
+        <p class="summary">目的 非エンジニアが、WebサービスをAIで自作して世の中に使ってもらうまでの手法をまとめる。 実現したいこと・条件 ・ソースコードの中身が見えないAIサービスやプラットフォーム依存はNG。 ・継続的な開発が可能。 ・再現可能なやり方で。 ・アクセス数が少なければ無料で...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/yushiro20021111/articles/a206329e51d5ee" target="_blank" rel="noopener">Reactが「何をやっているのか」、ゼロから全部説明する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/18 13:00</div>
+        <p class="summary">Gmailを開いて、受信トレイからメールを1通クリックする。画面の内容が切り替わる。でも、ブラウザは一切リロードしていません。 なぜでしょうか。 これが気になって調べ始めたら、ReactとSPAの仕組みがそこに全部詰まっていました。この記事はその記録です。プログラミング経験がほぼない方でも読めるように書いていますが、概念の解説は一切端折りません。読み終わるころには「Reactって結局何をやっているんだろう」という霧が完全に晴れているはずです。 Webサイトの「当たり前」から疑ってみる まず前提の話をします。 今あなたが何かニュースサイトを読んでいるとしましょう。記事一覧から気になる...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tuanphan/items/ec91b03ed3ec2c9b0a87" target="_blank" rel="noopener">[Frontend Performance - Part 19] ユーザーが感じる遅さを可視化するWebパフォーマンス計測（RUM）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/18 08:59</div>
+        <p class="summary">📝 注意 本記事はAIの補助を受けて編集しています。 📚 目次 0. はじめに：徹底的に最適化したのに、ユーザーが実際どう感じているか分からない 1. RUMとは？ラボデータだけでは不十分な理由 2. RUMで追跡すべき指標 3. web-vitalsライブラリ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/rrr068/articles/62df19656db429" target="_blank" rel="noopener">OpenAPIとOrvalで実現、型安全なフロントエンド開発をして楽したい</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/18 05:30</div>
+        <p class="summary">はじめに 背景 現代のWebアプリケーション開発において、フロントエンドとバックエンドの連携は不可欠です。 しかし、APIの仕様変更によるフロントエンドの改修コストや、型定義の手動管理によるヒューマンエラーは、多くの開発者が直面する課題です。 課題 APIの仕様変更がフロントエンドに正しく伝わらないことによるバグの発生。 手動での型定義やAPIクライアントの記述による開発効率の低下。 バックエンドとフロントエンド間の認識齟齬。 解決策 OpenAPI: APIの仕様を機械判読可能な形式で定義し、バックエンドとフロントエンド間の「契約」を明確にする。 Orval: O...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

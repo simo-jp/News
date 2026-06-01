@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月19日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月19日 / 全37件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/sen-ltd/items/c63e15709147173407ab" target="_blank" rel="noopener">月相をブラウザで計算する — Julian Date、朔望月、SVG の terminator を ellipse arc で描く</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/19 22:43</div>
+        <p class="summary">「今日の月、何日目だっけ」を確かめるとき、月齢カレンダーをググるのが面倒だったので 200 行で書いた。Julian Date を計算して、参照新月からの経過日数を朔望月 29.530588853 日で割って小数部を取るだけで月相が出る。SVG で月面を描くときの ter...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/FMsarge/items/5c74c15f80732183451e" target="_blank" rel="noopener">Cookie ClickerのチートMod・拡張メニュー「FM-MOD」を公開</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/19 16:40</div>
+        <p class="summary">Cookie Clicker（ブラウザ版）向けの能拡張・支援チートModメニュー「FM-MOD」の開発者、FMsargeです。 本ツールは、ブラウザの開発者ツール（F12/コンソール）が制限されている環境（学校・企業等のPC環境）においても、ブックマークレット形式（お気に入...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tamakiiii/items/86b645238324e5dd2268" target="_blank" rel="noopener">Node.js v26 で標準化された JavaScript Temporal — Date の何が問題で、Temporal が何を解決するのか</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/19 15:43</div>
+        <p class="summary">TL;DR Node.js v26（2026-05-14）で Temporal が標準で使えるようになり、Firefox / Chrome / Edge とあわせて主要環境で揃った Temporal は 用途別に型を分けた日時 API。Date の構造的な問題（破壊的変...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/minewo/articles/penpot-react-design-system-contract" target="_blank" rel="noopener">PenpotとReactを同じ契約で運用するデザインシステムの作り方</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/19 15:05</div>
+        <p class="summary">! この記事は、Growth Lab の docs/design-system/operation-guide.md をもとに、Penpot と React 実装を同じ契約で運用するための考え方を Zenn 向けに整理したものです。 想定読者は、デザインツールと React 実装のズレを減らしたいフロントエンドエンジニア、または AI に UI 実装を任せる前提でデザインシステムを整えたい人です。 デザインシステムを作るとき、見た目のライブラリと実装が別々に育つことがあります。 Penpot にはコンポーネントがある。 React にもコンポーネントがある。 CSS にはトークンがある...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/b09a6a45eb650c" target="_blank" rel="noopener">React × Tailwind CSS 入門 #01｜最新v4で環境構築からHello Worldまで【初学者向け】</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/19 13:34</div>
+        <p class="summary">はじめに AIがコードを書いてくれる時代になりました。 私自身、日々のコーディングでAIツールをフル活用しています。 でも、「基礎を理解していないと、AIの出力を正しく評価できず、本当の意味で使いこなせない」 と痛感しています。 このシリーズは、ReactとTailwind CSSの基礎から、自分が学びながらリアルにコードを書いていく記録です。 初学者の目線で、詰まったところや「なぜこう動くのか」も正直に書いていきます。 今回は第1回として、最新の Tailwind CSS v4 を使った環境構築をサクッと終わらせます。 この記事でやること Node.jsのバージョン確認 V...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/aigfmedia/articles/c453113bfe311c" target="_blank" rel="noopener">AI girlfriend appのキャラクター状態をフロントエンドで扱う設計</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/19 12:13</div>
+        <p class="summary">前提 AI girlfriend appやAI companionサービスでは、キャラクターの状態をバックエンドだけでなくフロントエンドでも扱いやすい形にしておくと、UIの一貫性が保ちやすくなります。 ここでいうキャラクター状態とは、表示名、口調、会話トーン、ユーザーとの距離感、現在の会話モードなどです。落ち着いた会話体験を提供するAIコンパニオンのようなプロダクトでは、これらの状態がUIと応答生成の両方に影響します。 状態を分ける フロントエンドでは、永続的なプロフィールとセッション中だけの状態を分けると扱いやすくなります。 type CharacterProfile = { ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ohisama@github/items/8e69a095d6d5140be815" target="_blank" rel="noopener">blocklyでverilog その3</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/19 11:30</div>
+        <p class="summary">概要 blocklyでverilog、書いてみた。 verilogのblockが探せないので、blockを調べてみた。 block一覧 カテゴリー 名前 表示 コード Port Declaration module_dec Create new modul...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/dress_code/articles/92dfb9206f50f3" target="_blank" rel="noopener">React CompilerをannotationモードとOxlintで漸進的に導入する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/19 10:00</div>
+        <p class="summary">React CompilerをannotationモードとOxlintで漸進的に導入する はじめに こんにちは。ぷーじ（@yug1224）です。 約7,500ファイルのTypeScriptプロジェクトにReact Compilerを導入しました。本記事では、annotationモードとOxlintで、all モードの一括適用ではなく、段階的に Compiler を広げた進め方を紹介します。 導入の背景 最初は "all" モードをローカルで気軽に試してみたのですが、TanStack Table v8を使ったテーブルが軒並み壊れ、react-hook-formのフォームが無限ルー...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/934260/google-io-ai-singularity-demis-hassabis" target="_blank" rel="noopener">Demis Hassabis said this might be the &#8216;foothills of the singularity.&#8217; What?</a></h3>
+        
+        <div class="source">The Verge · 05/19 22:16</div>
+        <p class="summary">Welcome to a "profound moment for humanity," according to Google DeepMind CEO Demis Hassabis, who closed out Google I/O's keynote presentation on Tuesday, saying: Google's cutting-edge research and products will help unlock AGI's incredible potential for the benefit of the entire world. When we look...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/20/news068.html" target="_blank" rel="noopener">Google、パーソナルAIエージェント「Gemini Spark」発表――デバイスを閉じても自律で働く</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/19 22:15</div>
+        <p class="summary">Googleは開発者会議「Google I/O 2026」で、自律型AIエージェント「Gemini Spark」を発表した。従来の質問への回答にとどまらず、ユーザーの指示のもとで能動的に行動することが最大の特徴だ。クラウド上で24時間稼働し、Workspaceや外部ツールとのMCP連携で、複雑なワークフローを代行する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/podcast/934202/we-react-to-google-i-o-2026" target="_blank" rel="noopener">We react to Google I/O 2026</a></h3>
+        
+        <div class="source">The Verge · 05/19 21:48</div>
+        <p class="summary">What better way to unwind from a two-hour keynote presentation than to pore over the weirdest and wildest details, from a Gmail bot you can converse with to DeepMind's leader saying the singularity is near. The Vergecast went live right after the show, with senior AI reporter Hayden Field joining me...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/19/ai-design-tools-are-the-next-big-battleground-and-google-is-going-all-in-at-io-2026/" target="_blank" rel="noopener">Google just declared itself a contender in AI design at IO 2026</a></h3>
+        
+        <div class="source">TechCrunch · 05/19 21:33</div>
+        <p class="summary">Google says it's designed the app to be accessible to everyone, from teachers to small business owners.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/19/you-can-now-talk-to-your-gmail-inbox-as-seen-at-google-io-2026/" target="_blank" rel="noopener">You can now talk to your Gmail inbox, as seen at Google IO 2026</a></h3>
+        
+        <div class="source">TechCrunch · 05/19 21:25</div>
+        <p class="summary">Google expands Gmail’s AI Inbox with conversational voice search, letting users ask Gemini to find buried email details.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/934217/google-search-box-does-everything-ai-io-2026" target="_blank" rel="noopener">The future of Google is a search box that does everything</a></h3>
+        
+        <div class="source">The Verge · 05/19 21:24</div>
+        <p class="summary">Last year, after watching Google's I/O keynote, I wrote that it felt like Google's future was Google googling. After watching this year's I/O keynote on Tuesday, I don't think Google just wants to google for you - I think it wants to do everything for you, all from a search box. Take the trusty Goog...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/19/how-to-use-googles-new-ai-agents-to-go-beyond-your-standard-searches/" target="_blank" rel="noopener">How to use Google’s new AI agents to go beyond your standard searches</a></h3>
+        
+        <div class="source">TechCrunch · 05/19 21:16</div>
+        <p class="summary">Google is launching AI-powered “information agents” that can monitor topics in the background and proactively alert users to updates and changes.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/19/discord-enables-end-to-end-encrypted-voice-and-video-calling-for-every-user/" target="_blank" rel="noopener">Discord enables end-to-end encrypted voice and video calling for every user</a></h3>
+        
+        <div class="source">TechCrunch · 05/19 21:14</div>
+        <p class="summary">Good news! Discord's hundreds of millions of users now have their communications scrambled, so not even Discord can see them.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/sukimaengineer/items/830db7f141c601bfd663" target="_blank" rel="noopener">C++アプリケーションのUIをAvaloniaにするのは現実的か?</a></h3>
+        
+        <div class="source">Qiita - C# · 05/19 20:03</div>
+        <p class="summary">はじめに 前回記事: .NET 10 の LibraryImport を使いこなすうえでの注意点と変更点 本記事はその続編です。前回は「マネージドからネイティブを呼ぶ」側の細かい話に終始しましたが、今回はもう一歩踏み込み、「C++ で書かれたコアエンジンを持つアプリケー...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/sutaminajing40/items/f459d82e753664ebf707" target="_blank" rel="noopener">AddDbContext の1行がわからなすぎたので、分解して理解してみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/19 15:30</div>
+        <p class="summary">AddDbContext の1行がわからなすぎたので、分解して理解してみた 結論から言うと、このコードは「PostgreSQL を使う AppDbContext を、ASP.NET Core の DI コンテナに登録している」コードです。 var builder = We...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/au/articles/tdd-from-issue-to-test" target="_blank" rel="noopener">TDD：Issueからテストケースとどうやって実装するかを考えたい</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/19 13:58</div>
+        <p class="summary">はじめに 駆け出しエンジニアが技術力を上げようとしたとき、「とりあえず実装する」というサイクルを繰り返しがちです。動けばOKで進んでいくと、設計の考え方や仕様の読み方が身につきにくいです。 TDDはその突破口になると思っています。仕様の問題に気づき、設計を考え、実装を整理するという思考が、自然と身につきます。 ただ、TDDを始めようとしたとき、最初に詰まるのが「何のテストを書けばいいかわからない」という点です。 どこからテストを考えればいいかのプロセスが共有されていないと実践しにくいです。 この記事では、Issueを受け取ってからテスト設計に落とすまでの思考プロセスを整理します。 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/chancychan/items/bef5b54bfacefd0ca0e9" target="_blank" rel="noopener">C# コードを使用して PDF からフォームフィールドの値を抽出する</a></h3>
+        
+        <div class="source">Qiita - C# · 05/19 06:42</div>
+        <p class="summary">フォームフィールドは、アンケート、登録フォーム、フィードバックフォームなどのドキュメントで、ユーザーからデータを収集するためによく使用されます。フォームフィールドの値を抽出することで、送信されたデータを収集・整理し、後続の分析や処理に活用できます。この記事では、C# および...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/youx2moon/items/ef8901a94d2746fbb3ce" target="_blank" rel="noopener">WinUI 3で商用クオリティの「カスタムタイトルバー」を実装する</a></h3>
+        
+        <div class="source">Qiita - C# · 05/19 04:53</div>
+        <p class="summary">はじめに WinUI 3 Galleryのように、タイトルバーを独自にカスタマイズしたいと思ったことはありませんか？ WinUI 3 (Windows App SDK) ではタイトルバーの拡張が可能ですが、単にカスタムタイトルバーを設定するだけでは不十分です。クリック判定...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/advancing-content-provenance/" target="_blank" rel="noopener">OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/19 19:34</div>
+        <p class="summary">Article URL: https://openai.com/index/advancing-content-provenance/ Comments URL: https://news.ycombinator.com/item?id=48198291 Points: 120 # Comments: 55</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai" target="_blank" rel="noopener">Mistral AI Acquires Emmi AI to Create the Leading AI Stack</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/19 19:14</div>
+        <p class="summary">Article URL: https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai Comments URL: https://news.ycombinator.com/item?id=48197995 Points: 126 # Comments: 26</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-collection/" target="_blank" rel="noopener">I/O 2026</a></h3>
+        
+        <div class="source">Google AI Blog · 05/19 17:45</div>
+        <p class="summary">At Google I/O 2026, we shared how we’re making AI more helpful for everyone. See everything we announced.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/search/ai-mode-us-insights/" target="_blank" rel="noopener">How AI Mode is changing the way people search in the U.S.</a></h3>
+        
+        <div class="source">Google AI Blog · 05/19 17:45</div>
+        <p class="summary">A graphic features the text "How people are using AI Mode in the U.S." surrounded by colorful, stylized illustrations of a pencil, planet, banana, gift box, cursor, gamepad, and lipstick on a light blue background.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/workspace/workspace-updates/" target="_blank" rel="noopener">New ways to create and get things done in Google Workspace</a></h3>
+        
+        <div class="source">Google AI Blog · 05/19 17:45</div>
+        <p class="summary">Google Workspace</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/sundar-pichai-io-2026/" target="_blank" rel="noopener">I/O 2026: Welcome to the agentic Gemini era</a></h3>
+        
+        <div class="source">Google AI Blog · 05/19 17:45</div>
+        <p class="summary">a series of colorful icons representing Google I/O against a black background</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/" target="_blank" rel="noopener">Gemini 3.5: frontier intelligence with action</a></h3>
+        
+        <div class="source">Google AI Blog · 05/19 17:45</div>
+        <p class="summary">Gemini 3.5 text and multi-colored star icon on an abstract blue background.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/search/search-io-2026/" target="_blank" rel="noopener">A new era for AI Search</a></h3>
+        
+        <div class="source">Google AI Blog · 05/19 17:45</div>
+        <p class="summary">Text that reads "The best of a search engine with the best of AI"</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/trapdoor-android-ad-fraud-scheme-hit.html" target="_blank" rel="noopener">Trapdoor Android Ad Fraud Scheme Hit 659 Million Daily Bid Requests Using 455 Apps</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 16:38</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a new ad fraud and malvertising operation dubbed Trapdoor targeting Android device users. The activity, per HUMAN's Satori Threat Intelligence and Research Team, encompassed 455 malicious Android apps and 183 threat actor-owned command-and-control ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/dirtydecrypt-poc-released-for-linux.html" target="_blank" rel="noopener">DirtyDecrypt PoC Released for Linux Kernel CVE-2026-31635 LPE Vulnerability</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 14:56</div>
+        <p class="summary">Proof-of-concept (PoC) exploit code has now been released for a recently patched security flaw in the Linux kernel that could allow for local privilege escalation (LPE). Dubbed DirtyDecrypt (aka DirtyCBC), the vulnerability was discovered and reported by the Zellic and V12 security team on May 9, 20...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/the-new-phishing-click-how-oauth.html" target="_blank" rel="noopener">The New Phishing Click: How OAuth Consent Bypasses MFA</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 11:30</div>
+        <p class="summary">In February 2026, a phishing-as-a-service (PhaaS) platform called EvilTokens went live. Within five weeks, it had compromised more than 340 Microsoft 365 organizations across five countries.&nbsp; The targets of the platform received a message asking them to enter a short code at microsoft.com/devic...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/drupal-to-release-urgent-core-security.html" target="_blank" rel="noopener">Drupal to Release Urgent Core Security Updates on May 20, Sites Told to Prepare</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 10:44</div>
+        <p class="summary">Drupal has issued an alert stating that it intends to release a "core security release" for all supported branches on May 20, 2026, from 5-9 p.m. UTC. "The Drupal Security Team urges you to reserve time for core updates at that time because exploits might be developed within hours or days," the main...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/seppmail-secure-e-mail-gateway.html" target="_blank" rel="noopener">SEPPMail Secure E-Mail Gateway Vulnerabilities Enable RCE and Mail Traffic Access</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 09:23</div>
+        <p class="summary">Critical security vulnerabilities have been disclosed in SEPPMail Secure E-Mail Gateway, an enterprise-grade email security solution, that could be exploited to achieve remote code execution and enable an attacker to read arbitrary mails from the virtual appliance. "These vulnerabilities could have ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/compromised-nx-console-18950-targeted.html" target="_blank" rel="noopener">Compromised Nx Console 18.95.0 Targeted VS Code Developers with Credential Stealer</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 07:49</div>
+        <p class="summary">Cybersecurity researchers have flagged a compromised version of the Nx Console extension that was published to the Microsoft Visual Studio Code (VS Code) Marketplace. The extension in question is rwl.angular-console (version 18.95.0), a popular user interface and plugin for code editors like VS Code...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/github-actions-supply-chain-attack.html" target="_blank" rel="noopener">Popular GitHub Action Tags Redirected to Imposter Commit to Steal CI/CD Credentials</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 05:28</div>
+        <p class="summary">In yet another software supply chain attack, threat actors have compromised the popular GitHub Actions workflow, actions-cool/issues-helper, to run malicious code that harvests sensitive credentials and exfiltrates them to an attacker-controlled server. "Every existing tag in the repository has been...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/mini-shai-hulud-pushes-malicious-antv.html" target="_blank" rel="noopener">Mini Shai-Hulud Pushes Malicious AntV npm Packages via Compromised Maintainer Account</a></h3>
+        
+        <div class="source">The Hacker News · 05/19 04:54</div>
+        <p class="summary">Cybersecurity researchers have discovered a fresh software supply chain attack campaign that has compromised various npm packages associated with the @antv ecosystem as part of the ongoing Mini Shai-Hulud attack wave. "The attack affects packages tied to the npm maintainer account atool, including e...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

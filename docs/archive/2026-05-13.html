@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月13日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月13日 / 全38件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">6</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/kaji_kaji/articles/form-validation-as-pure-function" target="_blank" rel="noopener">ReactのhandleSubmitが肥大化したので、バリデーションを純粋関数に切り出した</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/13 23:00</div>
+        <p class="summary">はじめに React でフォームを書いていると、handleSubmit がいつの間にか膨れ上がっていることがあります。 最初は数行のはずでした。そこに「メールが空ならエラー」「形式が正しくなければエラー」「パスワードが短すぎたらエラー」「成功したら API 呼ぶ」「終わったら画面遷移する」と、足していくうちに、検証ロジック・状態更新・送信処理・画面遷移が一つの関数の中に同居していきます。 動作的には全く問題ないのですが、あとから読みづらく、テストしづらく、変更しづらい関数になってしまいます。 この記事では、自分が実際に手を動かしたサインアップ画面を題材に、フォームバリデーションを ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/ui_memo/articles/efec949e5cd9d1" target="_blank" rel="noopener">JSなしで実装できる！`<dialog>`・`popover`・`<details name>` 使い分けガイド【2025年版】</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/13 18:44</div>
+        <p class="summary">Reactでモーダルやポップオーバーを実装するとき、ライブラリに頼っていませんか？ 実は2025年現在、これらのUIはブラウザネイティブのHTML機能だけで実装できるようになっています。&lt;dialog&gt;・popover・&lt;details name&gt; の3つを使いこなせば、JavaScriptをほとんど書かずにインタラクティブなUIが作れます。 この記事では、3つの技術を比較・使い分けの観点で整理します。 3つの技術 一覧 技術 主な用途 JSなし対応 ブラウザ対応 &lt;dialog&gt; モーダル・ダイアログ △（一部JS必要） 全主要ブ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/u_shi/items/5f8be585e1e30026d604" target="_blank" rel="noopener">AIストリーミングにおける「Generative UI」の知財的価値</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/13 16:18</div>
+        <p class="summary">1. 導入 よくあるAIのUIについて: 最近、ChatGPTやGeminiなどで「文字が一文字ずつパラパラ流れてくるUI」をよく見かけます。 エンジニアの疑問: 「あのパラパラ表示させる実装って、何か特許が取れるのか」という点。 結論: 実は、ただの文字が一文字ずつ増...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/satokk/articles/3af070205a4a4d" target="_blank" rel="noopener">フロントエンドカンファレンス名古屋に行ってきた感想</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/13 15:31</div>
+        <p class="summary">最初に 自分は名古屋の方で学生をしています。個人的にWeb開発を主にやっていてReactなどを使っていてフロントエンドに興味があり、今回名古屋でフロントエンドカンファレンスをやるということで参加させてもらいました。 イベント内容 場所はウインクあいちでした、ブースの部屋とセッションの部屋に分かれています、最初はブースの部屋に行き会社の説明を聞きに行きました 会社の説明と特典がとても豪華でした、どの会社に行っても特典がもらえクイズやくじ引きなどフロントエンドに関連しているものが多く、フロントエンドだけの環境でとても面白かったです 特にみんなの開発の強化に関するメモのリストが展示され...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/tk0crypto/items/eeee0c6f50bb7cf8b211" target="_blank" rel="noopener">React早見表</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/13 15:28</div>
+        <p class="summary">完全に自分用です ReactDOMによるレンダリング Hello, ReactをReactコンポーネントで描画するベーシックなサンプルコード index.html in...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/almanac/functions/r/rotatex/" target="_blank" rel="noopener">rotateX()</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/13 14:36</div>
+        <p class="summary">The rotateX() function rotates an element around the x-axis in a three-dimensional space rotateX() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/almanac/functions/r/rotatey/" target="_blank" rel="noopener">rotateY()</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/13 14:33</div>
+        <p class="summary">The rotateY() function rotates an element around its vertical y-axis. rotateY() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/almanac/functions/r/rotatez/" target="_blank" rel="noopener">rotateZ()</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/13 14:33</div>
+        <p class="summary">The rotateZ() function rotates an element around its z-axis, so clockwise or counterclockwise. rotateZ() originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/14/news068.html" target="_blank" rel="noopener">米中首脳会談の代表団にイーロン・マスク氏、ジェンスン・フアン氏、ティム・クック氏など17人の企業幹部が参加</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/13 22:11</div>
+        <p class="summary">トランプ米大統領は、習近平国家主席との首脳会談に向けた訪中に、イーロン・マスク氏やジェンスン・フアン氏、ティム・クック氏ら17人の企業幹部を同行させた。中国との間で投資委員会や貿易委員会の設立について協議する見通しだ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/930188/microsoft-edge-copilot-ai-tabs" target="_blank" rel="noopener">Microsoft&#8217;s Edge Copilot update uses AI to pull information from across your tabs</a></h3>
+        
+        <div class="source">The Verge · 05/13 22:04</div>
+        <p class="summary">Microsoft Edge is adding a new feature that will allow its Copilot AI chatbot to gather information from all of your open tabs. When you start a conversation with Copilot, you can ask the chatbot questions about what's in your tabs, compare the products you're looking at, summarize your open article...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/930178/citr-rubio-visa-deportation-misinformation-research" target="_blank" rel="noopener">Trump administration defends right to ban content moderation experts from US</a></h3>
+        
+        <div class="source">The Verge · 05/13 21:58</div>
+        <p class="summary">The Trump administration is fighting for the right to keep some social media moderation advocates out of the US. On Wednesday, US District Court Judge James Boasberg heard arguments in a lawsuit between the nonprofit Coalition for Independent Technology Research (CITR) and Secretary of State Marco R...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/13/notion-just-turned-its-workspace-into-a-hub-for-ai-agents/" target="_blank" rel="noopener">Notion just turned its workspace into a hub for AI agents</a></h3>
+        
+        <div class="source">TechCrunch · 05/13 21:45</div>
+        <p class="summary">Notion’s new developer platform lets teams connect AI agents, external data sources, and custom code directly into their workspace as the company pushes deeper into agentic productivity software.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/930092/youtube-creators-shows-sponsors-netflix-upfront" target="_blank" rel="noopener">YouTube is courting creators — and sponsors — with streaming shows</a></h3>
+        
+        <div class="source">The Verge · 05/13 21:30</div>
+        <p class="summary">In the ongoing fight for content and talent, YouTube is pitching itself as the connector between the creators and advertisers - and marketing its creators not just as the future of social media, but also of advertising, TV, streaming, and entertainment more broadly. At the company's annual advertise...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/930132/amd-ryzen-pro-9000-series-3d-v-cache" target="_blank" rel="noopener">AMD&#8217;s best CPU tech for gamers is coming to workstations too</a></h3>
+        
+        <div class="source">The Verge · 05/13 20:38</div>
+        <p class="summary">For the first time, AMD is including its 3D V-Cache tech in its commercial workstation processors with a refreshed line of Ryzen PRO 9000 series chips. Up until now, AMD's 3D V-Cache chips have mainly been geared toward gamers, but they've also gotten better at creative tasks over recent years. In o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/13/musks-xai-is-running-nearly-50-gas-turbines-unchecked-at-its-mississippi-data-center/" target="_blank" rel="noopener">Musk’s xAI is running nearly 50 gas turbines unchecked at its Mississippi data center</a></h3>
+        
+        <div class="source">TechCrunch · 05/13 19:49</div>
+        <p class="summary">Gas turbines at xAI's Colossus 2 data center have drawn a lawsuit over the company's use of "mobile" gas turbines as power plants.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/13/anthropics-cat-wu-says-that-in-the-future-ai-will-anticipate-your-needs-before-you-know-what-they-are/" target="_blank" rel="noopener">Anthropic’s Cat Wu says that, in the future, AI will anticipate your needs before you know what they are</a></h3>
+        
+        <div class="source">TechCrunch · 05/13 19:28</div>
+        <p class="summary">The head of product for Claude Code and Cowork says that the next big step for AI is proactivity.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/process-api-improvements-in-dotnet-11/" target="_blank" rel="noopener">Process API Improvements in .NET 11</a></h3>
+        
+        <div class="source">.NET Blog · 05/13 21:00</div>
+        <p class="summary">Process API improvements in .NET 11, including high-level APIs for starting processes, capturing output without deadlocks, handle inheritance control, lifetime management features, and a lightweight `SafeProcessHandle`-based API surface. The post Process API Improvements in .NET 11 appeared first on...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/process-api-improvements-in-dotnet-11/" target="_blank" rel="noopener">Process API Improvements in .NET 11</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/13 21:00</div>
+        <p class="summary">Process API improvements in .NET 11, including high-level APIs for starting processes, capturing output without deadlocks, handle inheritance control, lifetime management features, and a lightweight `SafeProcessHandle`-based API surface. The post Process API Improvements in .NET 11 appeared first on...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/wkdme/items/daffad2f8dfed2bb1e53" target="_blank" rel="noopener">[c#基礎] オブジェクト指向とクラス</a></h3>
+        
+        <div class="source">Qiita - C# · 05/13 17:49</div>
+        <p class="summary">メモリ構造 Stack（スタック）: 関数のローカル変数や引数（ひきすう / 매개변수）を保存。関数終了時に自動で削除されます。 Heap（ヒープ）: 動的メモリを保存。C#ではガベージコレクタ（GC）が管理します。 Data（データ）: グローバル変数や静的（stati...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-maui-moves-to-coreclr-in-dotnet-11/" target="_blank" rel="noopener">.NET MAUI Moves to CoreCLR in .NET 11</a></h3>
+        
+        <div class="source">.NET Blog · 05/13 17:05</div>
+        <p class="summary">.NET MAUI apps on Android, iOS, and Mac Catalyst now run on CoreCLR by default in .NET 11, unifying the runtime across all of .NET. The post .NET MAUI Moves to CoreCLR in .NET 11 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-maui-moves-to-coreclr-in-dotnet-11/" target="_blank" rel="noopener">.NET MAUI Moves to CoreCLR in .NET 11</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/13 17:05</div>
+        <p class="summary">.NET MAUI apps on Android, iOS, and Mac Catalyst now run on CoreCLR by default in .NET 11, unifying the runtime across all of .NET. The post .NET MAUI Moves to CoreCLR in .NET 11 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/agent-skills-in-visual-studio/" target="_blank" rel="noopener">Agent Skills in Visual Studio: Teach Copilot How Your Team Works</a></h3>
+        
+        <div class="source">Visual Studio Blog · 05/13 16:00</div>
+        <p class="summary">Visual Studio now supports Agent Skills, which are reusable instruction sets that teach Copilot agents how to handle specific tasks like running a build pipeline, generating boilerplate, or following your team&#8217;s coding standards. Define a skill once, and the agent applies it automatically when...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/wkdme/items/43248667f7f442e4d89e" target="_blank" rel="noopener">[C#基礎] 列挙型（enum）と構造体（struct）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/13 15:24</div>
+        <p class="summary">列挙型（れっきょがた / enum） 列挙型（れっきょがた）は、プログラム内で扱う数字を言葉で定義し、コードの可読性（かどくせい）を向上させるための機能です。 例えば、switch文で case 1: と書く代わりに, case Fruits.Apple: と書くことで、...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/h455h1/articles/c0dd70eced5f1c" target="_blank" rel="noopener">C# の sealed ってなんですか？</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/13 15:21</div>
+        <p class="summary">はじめに sealed class A{ // 省略 } sealed ってなに？ 前提条件・検証環境 .NET SDK がインストール済みであること 検証バージョン：.NET 10 / C# 14 sealed とは 公式ドキュメントには以下のようにあります。 sealed 修飾子をクラスに適用すると、他のクラスがそのクラスから継承されなくなります。 次の例では、クラス B はクラス A から継承しますが、クラス B から継承できるクラスはありません。 class A {} sealed class B : A {} sealed (C# リファレンス) 一...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/929091/meta-ai-threads-account-block" target="_blank" rel="noopener">Meta won't let you block its AI account on Threads</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/13 20:22</div>
+        <p class="summary">Article URL: https://www.theverge.com/tech/929091/meta-ai-threads-account-block Comments URL: https://news.ycombinator.com/item?id=48126981 Points: 53 # Comments: 21</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/13/1137203/ai-chatbots-are-giving-out-peoples-real-phone-numbers/" target="_blank" rel="noopener">AI chatbots are giving out people’s real phone numbers</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/13 18:09</div>
+        <p class="summary">People report that their personal contact info was surfaced by Google AI—and there’s apparently no easy way to prevent it.&#160; A Redditor recently wrote that he was “desperate for help”: for about a month, he said, his phone had been inundated by calls from “strangers” who were “looking for a lawy...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theatlantic.com/technology/2026/05/ai-backlash-data-centers-political-violence/687151/" target="_blank" rel="noopener">The AI Backlash Could Get Ugly</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/13 14:44</div>
+        <p class="summary">Article URL: https://www.theatlantic.com/technology/2026/05/ai-backlash-data-centers-political-violence/687151/ Comments URL: https://news.ycombinator.com/item?id=48122624 Points: 68 # Comments: 137</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://avkcode.github.io/blog/us-winning-ai-race.html" target="_blank" rel="noopener">The US is winning the AI race where it matters most: commercialization</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/13 13:53</div>
+        <p class="summary">Article URL: https://avkcode.github.io/blog/us-winning-ai-race.html Comments URL: https://news.ycombinator.com/item?id=48121929 Points: 142 # Comments: 386</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/" target="_blank" rel="noopener">Software Developers Say AI Is Rotting Their Brains</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/13 13:34</div>
+        <p class="summary">Article URL: https://www.404media.co/software-developers-say-ai-is-rotting-their-brains/ Comments URL: https://news.ycombinator.com/item?id=48121717 Points: 86 # Comments: 105</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/building-codex-windows-sandbox" target="_blank" rel="noopener">Building a safe, effective sandbox to enable Codex on Windows</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/13 11:00</div>
+        <p class="summary">Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restrictions.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsofts-mdash-ai-system-finds-16.html" target="_blank" rel="noopener">Microsoft's MDASH AI System Finds 16 Windows Flaws Fixed in Patch Tuesday</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 13:46</div>
+        <p class="summary">Microsoft has unveiled a new multi-model artificial intelligence (AI)-driven system called MDASH to facilitate vulnerability discovery and remediation at scale, adding that it's being tested by some customers as part of a limited private preview. MDASH, short for multi-model agentic scanning harness...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/azerbaijani-energy-firm-hit-by-repeated.html" target="_blank" rel="noopener">Azerbaijani Energy Firm Hit by Repeated Microsoft Exchange Exploitation</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 13:00</div>
+        <p class="summary">A threat actor with affiliations to China has been linked to a "multi-wave intrusion" targeting an unnamed Azerbaijani oil and gas company between late December 2025 and late February 2026, marking an expansion of its targeting. The activity has been attributed by Bitdefender with moderate-to-high c...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/webinar-why-your-appsec-tools-miss.html" target="_blank" rel="noopener">[Webinar] How Modern Attack Paths Cross Code, Pipelines, and Cloud</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 11:52</div>
+        <p class="summary">TL;DR: Stop chasing thousands of "toast" alerts. Join experts from Wiz to learn how hackers connect tiny flaws to build a "Lethal Chain" to your data—and how to break it. Register for the Strategic Briefing Here. Most security tools work like a smoke alarm that goes off every time you burn a piece o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/most-remediation-programs-never-confirm.html" target="_blank" rel="noopener">Most Remediation Programs Never Confirm the Fix Actually Worked</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 11:30</div>
+        <p class="summary">Security teams have never had better visibility into their environments and never been worse at confirming what they fix stays fixed. Mandiant's M-Trends 2026 report puts the mean time to exploit at an estimated negative seven days. The Verizon 2025 DBIR puts median time to remediate edge device vul...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html" target="_blank" rel="noopener">Microsoft Patches 138 Vulnerabilities, Including DNS and Netlogon RCE Flaws</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 10:36</div>
+        <p class="summary">Microsoft on Tuesday released patches for 138 security vulnerabilities spanning its product portfolio, although none of them have been listed as publicly known or under active attack. Of the 138 flaws, 30 are rated Critical, 104 are rated Important, three are rated Moderate, and one is rated Low in ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/gemstuffer-abuses-150-rubygems-to.html" target="_blank" rel="noopener">GemStuffer Abuses 150+ RubyGems to Exfiltrate Scraped U.K. Council Portal Data</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 08:08</div>
+        <p class="summary">Cybersecurity researchers are calling attention to a new campaign dubbed GemStuffer that has targeted the RubyGems repository with more than 150 gems that use the registry as a data exfiltration channel rather than for malware distribution. "The packages do not appear designed for mass developer com...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/android-adds-intrusion-logging-for.html" target="_blank" rel="noopener">Android Adds Intrusion Logging for Sophisticated Spyware Forensics</a></h3>
+        
+        <div class="source">The Hacker News · 05/13 06:55</div>
+        <p class="summary">Google on Tuesday unveiled a new opt-in Android feature called Intrusion Logging for storing forensic logs to better analyze sophisticated spyware attacks. Intrusion Logging, available as part of Advanced Protection Mode, enables "persistent and privacy-preserving forensics logging to allow for inve...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2026/at260013.html" target="_blank" rel="noopener">注意喚起: GUARDIANWALL MailSuiteにおけるスタックベースのバッファオーバーフローの脆弱性に関する注意喚起  (公開)</a></h3>
+        
+        <div class="source">JPCERT · 05/13 06:33</div>
+        
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月07日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月07日 / 全40件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/07/openai-launches-new-voice-intelligence-features-in-its-api/" target="_blank" rel="noopener">OpenAI launches new voice intelligence features in its API</a></h3>
+        
+        <div class="source">TechCrunch · 05/07 22:24</div>
+        <p class="summary">The new features could be handy for customer service systems, but OpenAI says they have applications that work across a variety of other fields, including education and creator platforms.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/08/news018.html" target="_blank" rel="noopener">脳のオン/オフ切り替えは鍛えられる──イメトレで実際の運動能力向上に成功、慶應大がPNASで発表</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/07 22:00</div>
+        <p class="summary">慶應義塾大学に所属する研究者らがPNASで発表した論文「Brain-computer interface-based neurofeedback training enables transferable control of cortical state switching in humans」は、ブレイン・コンピュータ・インタフェース（BCI）を活用し、イメージトレーニング（イメトレ）中の脳状態を可視化することで、実際の運動能力を向上させることに成功した研究報告だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/07/kodiak-ai-raises-100m-at-a-steep-discount-sending-its-stock-tumbling-37/" target="_blank" rel="noopener">Kodiak AI raises $100M at a steep discount, sending its stock tumbling 37%</a></h3>
+        
+        <div class="source">TechCrunch · 05/07 21:49</div>
+        <p class="summary">The company made a series of other announcements during earnings, including a new commercial contract, a pilot program in Canada, and a collaboration.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/07/disney-looking-to-make-a-unified-super-app-report-says/" target="_blank" rel="noopener">Disney looking to make a unified ‘super app,’ report says</a></h3>
+        
+        <div class="source">TechCrunch · 05/07 21:40</div>
+        <p class="summary">Disney CEO Josh D'Amaro, who took over for Bob Iger earlier this year, has emphasized his intent to streamline the Disney experience.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/926458/canvas-shinyhunters-breach" target="_blank" rel="noopener">Canvas is down as ShinyHunters threatens to leak schools’ data</a></h3>
+        
+        <div class="source">The Verge · 05/07 21:29</div>
+        <p class="summary">The Instructure-owned learning management platform, Canvas, is down after recently confirming a massive data breach that impacted student names, email addresses, ID numbers, and messages. Students attempting to access the system on Thursday saw a message from the hacking group ShinyHunters, which cl...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/07/voi-founders-new-ai-startup-pit-has-become-the-latest-rising-star-out-of-stockholm/" target="_blank" rel="noopener">Voi founders’ new AI startup Pit has become the latest rising star out of Stockholm</a></h3>
+        
+        <div class="source">TechCrunch · 05/07 21:02</div>
+        <p class="summary">AI startup Pit is led by the co-founders of European scooter giant Voi and backed by a16z, which is leading the startup’s $16 million seed round.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/07/hackers-deface-school-login-pages-after-claiming-another-instructure-hack/" target="_blank" rel="noopener">Hackers deface school login pages after claiming another Instructure hack</a></h3>
+        
+        <div class="source">TechCrunch · 05/07 20:59</div>
+        <p class="summary">The cybercrime group ShinyHunters claimed to have hacked Instructure again, defacing the login pages of several Instructure customer schools with an extortion message.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/07/gusto-hits-1b-revenue-a-figure-that-brings-it-closer-to-public-markets/" target="_blank" rel="noopener">Gusto hits $1B revenue, a figure that brings it closer to public markets</a></h3>
+        
+        <div class="source">TechCrunch · 05/07 20:41</div>
+        <p class="summary">Gusto has shared an impressive milestone on its actual revenue, not an ARR number that estimates future income.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/inuinu/articles/where-is-csharp-used-2026" target="_blank" rel="noopener">C#はドコで使われているの? 2026</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/07 21:34</div>
+        <p class="summary">はじめに C#は誤解の多い言語 「Windows限定」 「ゲーム開発が主要用途」 ※ゲームはWindowsだけではないため、既にこの時点で矛盾している イメージで判断したり、古い情報のまま情報を更新しなかったり、日本語でしか調べなかったりすることが原因 実際のなるべく最新の調査結果、まとめてみました まとめ C#は… 用途：7割がWeb、5割がバックエンド、4割がデスクトップアプリ（複数回答, 2025） ゲーム開発は2割程度しかない dotnet CLIはLinux 約75%、Windows 約25%で使われている (2025) 開発環境全体ではWin...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/inutamago-dogegg/items/d4d947596d34e04e1189" target="_blank" rel="noopener">【Unity】LitMotionで逆再生無限ループを実装する時に詰まった話</a></h3>
+        
+        <div class="source">Qiita - C# · 05/07 17:45</div>
+        <p class="summary">まず、LitMotion には MotionHandle.PlaybackSpeed というプロパティーが存在する。これに 0f未満の値を代入すると逆再生を実現できる。(-1fで普通の逆再生) 無限ループをする際には、まず MotionHandle を使い回せるように Pr...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/copilot-studio-dotnet-10-migration/" target="_blank" rel="noopener">Copilot Studio gets faster with .NET 10 on WebAssembly</a></h3>
+        
+        <div class="source">.NET Blog · 05/07 17:00</div>
+        <p class="summary">Microsoft Copilot Studio recently upgraded its .NET WebAssembly engine to .NET 10. The migration was straightforward, simplified deployment, and delivered another round of meaningful performance gains for end users. The post Copilot Studio gets faster with .NET 10 on WebAssembly appeared first on .N...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/copilot-studio-dotnet-10-migration/" target="_blank" rel="noopener">Copilot Studio gets faster with .NET 10 on WebAssembly</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/07 17:00</div>
+        <p class="summary">Microsoft Copilot Studio recently upgraded its .NET WebAssembly engine to .NET 10. The migration was straightforward, simplified deployment, and delivered another round of meaningful performance gains for end users. The post Copilot Studio gets faster with .NET 10 on WebAssembly appeared first on .N...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/hitoshiro/articles/06ae76d18f57e0" target="_blank" rel="noopener">F# + ASP .NET Core Minimal APIとScribanで始めるWebサーバー</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/07 13:46</div>
+        <p class="summary">なぜ なぜF#なのか https://zenn.dev/hitoshiro/articles/37ad14eeb5eef3 なぜASP .NET Core Minimal APIなのか https://learn.microsoft.com/ja-jp/aspnet/core/fundamentals/minimal-apis?view=aspnetcore-10.0 せっかく.NETエコシステムに乗れるので、まずはそのまま乗ろうと考えたから。 なぜScribanなのか https://scriban.github.io https://github.com/scriba...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/Codingll/items/49b63b8631709e391891" target="_blank" rel="noopener">Microsoft Office なしで C# の Word を PDF に変換する方法（高速・サーバー向け）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/07 06:12</div>
+        <p class="summary">もしこれまでに Microsoft Office Interop を使って C# で Word を PDF に変換したことがあるなら、その大変さはよくご存じかもしれません。 COM 依存による問題、サーバー環境で不安定な Office 自動化、さらにドキュメント変換のため...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/nakamuuu_ow/items/4019ae960c2055bccf59" target="_blank" rel="noopener">「脆弱性のあるパッケージ」の警告が出たのに、自分でインストールしたパッケージじゃなかった話</a></h3>
+        
+        <div class="source">Qiita - C# · 05/07 02:29</div>
+        <p class="summary">はじめに Visual Studioを開いたら、こんな表示が出ていました。 このソリューションには、脆弱性のあるパッケージが含まれています。 「やばい、どのパッケージ？」と思って確認すると、NuGetパッケージマネージャーに**「推移的なパッケージ」**という見慣れな...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/takahashih_imagitech/items/126a8f1e5eef624a41f1" target="_blank" rel="noopener">Azure Functions 開発の初歩（.NET 8 / Isolated Worker）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/07 01:59</div>
+        <p class="summary">Azure Functions 開発の初歩（.NET 8 / Isolated Worker） 1. 使用バージョン 本ガイドでは以下のバージョンを使用します。 ツール バージョン .NET SDK 8.0.420 Azure Functions Co...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/" target="_blank" rel="noopener">AI slop is killing online communities</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/07 18:46</div>
+        <p class="summary">Article URL: https://rmoff.net/2026/05/06/ai-slop-is-killing-online-communities/ Comments URL: https://news.ycombinator.com/item?id=48053203 Points: 331 # Comments: 312</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-numbers" target="_blank" rel="noopener">Motherboard sales 'collapse' amid unprecedented shortages fueled by AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/07 15:23</div>
+        <p class="summary">Article URL: https://www.tomshardware.com/pc-components/motherboards/motherboard-sales-collapse-by-more-than-25-percent-as-chipmakers-strangle-enthusiast-pc-market-to-build-more-ai-chips-asus-projected-to-sell-5-million-fewer-boards-in-2025-gigabyte-msi-and-asrock-also-expected-to-see-reduced-sales-...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber" target="_blank" rel="noopener">Scaling Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/07 13:00</div>
+        <p class="summary">OpenAI expands Trusted Access for Cyber with GPT-5.5 and GPT-5.5-Cyber, helping verified defenders accelerate vulnerability research and protect critical infrastructure.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/parloa" target="_blank" rel="noopener">Parloa builds service agents customers want to talk to</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/07 11:00</div>
+        <p class="summary">Parloa leverages OpenAI models to power scalable, voice-driven AI customer service agents, enabling enterprises to design, simulate, and deploy reliable, real-time interactions.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api" target="_blank" rel="noopener">Advancing voice intelligence with new models in the API</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/07 10:00</div>
+        <p class="summary">Explore new realtime voice models in the OpenAI API that can reason, translate, and transcribe speech, enabling more natural and intelligent voice experiences.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://unsloth.ai/blog/nvidia-collab" target="_blank" rel="noopener">Making LLM Training Faster with Unsloth and NVIDIA</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/07 07:15</div>
+        <p class="summary">Article URL: https://unsloth.ai/blog/nvidia-collab Comments URL: https://news.ycombinator.com/item?id=48046397 Points: 108 # Comments: 20</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-trusted-contact-in-chatgpt" target="_blank" rel="noopener">Introducing Trusted Contact in ChatGPT</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/07 00:00</div>
+        <p class="summary">Introducing Trusted Contact in ChatGPT, an optional safety feature that notifies someone you trust if serious self-harm concerns are detected.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/testing-ads-in-chatgpt" target="_blank" rel="noopener">Testing ads in ChatGPT</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/07 00:00</div>
+        <p class="summary">OpenAI begins testing ads in ChatGPT to support free access, with clear labeling, answer independence, strong privacy protections, and user control.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/ivanti-epmm-cve-2026-6973-rce-under.html" target="_blank" rel="noopener">Ivanti EPMM CVE-2026-6973 RCE Under Active Exploitation Grants Admin-Level Access</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 17:55</div>
+        <p class="summary">Ivanti is warning that a new security flaw impacting Endpoint Manager Mobile (EPMM) has been explored in limited attacks in the wild. The high-severity vulnerability, CVE-2026-6973 (CVSS score: 7.2), is a case of improper input validation affecting EPMM before versions 12.6.1.1, 12.7.0.1, and 12.8.0...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/pcpjack-credential-stealer-exploits-5.html" target="_blank" rel="noopener">PCPJack Credential Stealer Exploits 5 CVEs to Spread Worm-Like Across Cloud Systems</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 17:45</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a new credential theft framework dubbed PCPJack that targets exposed cloud infrastructure and ousts any artifacts linked to TeamPCP from the environments. "The toolset harvests credentials from cloud, container, developer, productivity, and financi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html" target="_blank" rel="noopener">One Click, Total Shutdown: The "Patient Zero" Webinar on Killing Stealth Breaches</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 13:50</div>
+        <p class="summary">The hardest part of cybersecurity isn't the technology, it’s the people. Every major breach you’ve read about lately usually starts the same way: one employee, one clever email, and one "Patient Zero" infection. In 2026, hackers are using AI to make these "first clicks" nearly impossible to spot. If...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/pan-os-rce-exploit-under-active-use.html" target="_blank" rel="noopener">PAN-OS RCE Exploit Under Active Use Enabling Root Access and Espionage</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 13:34</div>
+        <p class="summary">Palo Alto Networks has disclosed that threat actors may have attempted to unsuccessfully exploit a recently disclosed critical security flaw as early as April 9, 2026. The vulnerability in question is CVE-2026-0300 (CVSS score: 9.3/8.7), a buffer overflow vulnerability in the User-ID Authentication ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/threatsday-bulletin-edge-plaintext.html" target="_blank" rel="noopener">ThreatsDay Bulletin: Edge Plaintext Passwords, ICS 0-Days, Patch-or-Die Alerts and 25+ New Stories</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 11:33</div>
+        <p class="summary">Bad week. Turns out the easiest way to get hacked in 2026 is still the same old garbage: shady packages, fake apps, forgotten DNS junk, scam ads, and stolen logins getting dumped into Discord channels like it’s normal. Some of these attack chains don’t even feel sophisticated anymore. More like some...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/day-zero-readiness-operational-gaps.html" target="_blank" rel="noopener">Day Zero Readiness: The Operational Gaps That Break Incident Response</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 10:54</div>
+        <p class="summary">Having an incident response retainer, or even a pre-approved external incident response firm, is not the same as being ready for an incident. A retainer means someone will answer the phone. Operational readiness determines whether that team can do meaningful work the moment they do.&nbsp; That disti...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/pypi-packages-deliver-zichatbot-malware.html" target="_blank" rel="noopener">PyPI Packages Deliver ZiChatBot Malware via Zulip APIs on Windows and Linux</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 09:20</div>
+        <p class="summary">Cybersecurity researchers have discovered three packages on the Python Package Index (PyPI) repository that are designed to stealthily deliver a previously unknown malware family called&nbsp;ZiChatBot on Windows and Linux systems. "While these wheel packages do implement the features described on th...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/vm2-nodejs-library-vulnerabilities.html" target="_blank" rel="noopener">vm2 Node.js Library Vulnerabilities Enable Sandbox Escape and Arbitrary Code Execution</a></h3>
+        
+        <div class="source">The Hacker News · 05/07 04:15</div>
+        <p class="summary">A dozen critical security vulnerabilities have been disclosed in the vm2 Node.js library that could be exploited by bad actors to break out of the sandbox and execute arbitrary code on susceptible systems. vm2 is an open-source library used to run untrusted JavaScript code inside a secure sandbox by...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/penguinengineer/articles/df03c410d8ea4f" target="_blank" rel="noopener">Reactを触る前に知るHTMLとCSSの最低限</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/07 16:22</div>
+        <p class="summary">みなさん、こんにちは！ ペンギンエンジニアです！ 「Reactを学びたい」と思って入門記事を開いたら、冒頭の「JSXは基本HTMLと同じです」の"HTML"の時点で手が止まった。 過去にそんな経験、ありませんか？ 筆者はSES現場で、Reactタスクを振られた未経験エンジニアを何人も見てきました。 体感としては、9割はReactの前にHTML/CSSで転んでいます。 この記事は、そんな「Reactの手前で詰まる人」に向けて書きました。 ReactはHTMLをJavaScriptで動的に書き出す仕組みです。だからReactに入る前に、まず"HTMLがどう組み立てられるか"と"CSSがどう...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/53able/articles/6abea37b880724" target="_blank" rel="noopener">shadcn/ui に Gantt（ガント）とカンバンを追加する：Kibo UI 導入記録</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/07 13:37</div>
+        <p class="summary">shadcn/ui でプロジェクトを組んでいると、Gantt（ガント） チャートやカンバンボードが欲しくなった瞬間に選択肢が減ります。有料クローズドソース、Canvas ベースで React のコンポーネントツリーと共存しにくい、そのどちらかです。 Kibo UI はその空白を埋めるライブラリです。shadcn/ui のカスタムレジストリとして機能し、CLI 一行でコンポーネントのソースコードをプロジェクトに取り込めます。MIT、永続無償、コードは自分のものになります。 https://github.com/shadcnblocks/kibo Kibo UI が何者でなぜ作られたかを調べ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/akito1019/articles/28ea3efaed00c2" target="_blank" rel="noopener">【個人開発】有名人（AI）に相談できるWebアプリ 第1回</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/07 13:22</div>
+        <p class="summary">はじめに 初めてのZennへの投稿になります。 今までの個人開発はやってみたものの途中で頓挫したり、仕事優先で結局途中で作る意欲が湧かなくなったりとしてきたため、ここで記事を投稿し、不特定多数の人に見られているという状況でなんとか完成まで持っていこうという魂胆です。 フロントエンドエンジニアとして4年ほど活動していますが、今までVue/Nuxtの案件が多いです。 React/Next.jsの経験もありますが、経験年数でいうと1年ほどでまだまだだと思っています。 「フロントエンドが本職の人がAI/RAG/Pythonバックエンドに踏み出すとどうなるか」という視点で温かく読んでもらえると...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/snooow/items/c62bd94fc98cfe85c5c1" target="_blank" rel="noopener">サイトブロッカーはなぜ"使わなくなる"のか——俺が考えた最強のChrome拡張</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/07 12:18</div>
+        <p class="summary">TL;DR 既存のサイトブロッカーは全て固定リスト方式で、「事前にブロック先を決める」というアプローチ自体に限界がある セッション中に初アクセスしたサイトでその場で Block / Allow を選ぶ動的ブロッカーを作った 競合調査した結果、このアプローチのChrom...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/a26679882beedb4b9af4" target="_blank" rel="noopener">【個人開発】Three.jsで作る！ブラウザで動く超高機動フライトアクション「High-Mobility Engine Demo」</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/07 11:48</div>
+        <p class="summary">はじめに ブラウザ上で、心地よい操作感とリッチな3D空間を楽しめるフライトアクションのプロトタイプ「High-Mobility Engine Demo (PDE)」を開発しました。 外部の画像ファイルや音声ファイルなどのアセットは一切読み込まず、Three.js と Va...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/f351052f6deb7b6b90fd" target="_blank" rel="noopener">【個人開発】ブラウザで動く！質量変動・マルチロック搭載のフライトアクションプロトタイプを作ってみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/07 11:42</div>
+        <p class="summary">はじめに ブラウザ上でサクサク動く、フライトアクションゲームのプロトタイプ「ZMF Flight Prototype」を開発しました！ 専用アプリのインストールは不要で、PCでもスマホ（仮想ジョイスティック対応）でもブラウザからすぐに遊べます。機体の「質量（慣性）」を切り...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/K_san0219/items/df0774848347c8bf940a" target="_blank" rel="noopener">【個人開発】ブラウザで動く！レトロゲーム風の音楽シーケンサー「ピコピコ音楽エディタ」を作ってみた</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/07 11:32</div>
+        <p class="summary">はじめに ブラウザ上で、昔懐かしいゲームボーイ風のチップチューン音楽を手軽に作成・保存できるWebアプリ「ピコピコ音楽エディタ（レトロピコピコ・シーケンサー）」を開発しました！ 専用のソフトをインストールすることなく、ブラウザを開くだけで誰でもすぐにピコピコ音を鳴らして遊...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nijima/articles/c3c65b2686d66b" target="_blank" rel="noopener">【2026年版】なぜ私たちは今もReactを選ぶのか？AI時代の「最強の生存戦略」としてのReact</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/07 05:09</div>
+        <p class="summary">はじめに 「AIがコードを書く時代に、なぜまだ特定のフレームワーク・ライブラリを学ぶ必要があるのか？」 その疑問への明確な答えが、現在のフロントエンド業界で圧倒的なシェアを誇る「React」にあります。 今回は、初学者が最初の武器としてReactを選ぶべき理由と、中級者がAIを相棒にして次の一歩を踏み出すための「推しポイント」をまとめました。 【初級者向け】「AIネイティブ」な学習体験と最速の立ち上がり 初学者が最初のフレームワークにReactを選ぶ最大の理由は、単なる技術的な優位性ではなく、「AIとの圧倒的な親和性」にあります。 1. Claude CodeやCursor...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

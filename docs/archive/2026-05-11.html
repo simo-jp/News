@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月11日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月11日 / 全34件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">7</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/928289/yarbo-remove-robot-lawn-mower-backdoor" target="_blank" rel="noopener">Yarbo says it will remove the intentional backdoor from its robot lawn mower</a></h3>
+        
+        <div class="source">The Verge · 05/11 22:40</div>
+        <p class="summary">The company behind the robot lawn mower that ran me over has changed its tune. Yarbo now plans to completely remove the remote backdoor access that could have let bad actors reprogram the robot over the internet. Yarbo customers will be able to decide whether that feature even gets installed in the ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/928309/mira-murati-thinking-machines-ai-interaction-model" target="_blank" rel="noopener">Here&#8217;s what Mira Murati&#8217;s AI company is up to</a></h3>
+        
+        <div class="source">The Verge · 05/11 22:19</div>
+        <p class="summary">Thinking Machines, the AI company founded by former OpenAI CTO Mira Murati, announced Monday that it's working on something called "interaction models." The idea behind interaction models, according to Thinking Machines, is that they will let people "collaborate with AI the way we naturally collabor...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/11/finally-texts-between-android-and-iphone-users-can-be-end-to-end-encrypted/" target="_blank" rel="noopener">Finally, texts between Android and iPhone users can be end-to-end encrypted</a></h3>
+        
+        <div class="source">TechCrunch · 05/11 21:59</div>
+        <p class="summary">Google had urged Apple for years to support RCS texting to make communication between each company's devices more seamless.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/12/news053.html" target="_blank" rel="noopener">OpenAI、企業向けAI導入支援を本格展開　「Deployment Company」設立</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/11 21:31</div>
+        <p class="summary">OpenAIは、AI導入を支援する新会社「OpenAI Deployment Company」を設立した。AIコンサルティング企業のTomoro買収により体制を強化し、専門エンジニアを顧客に派遣して業務フローのAI転換を推進する。TPGやソフトバンクなどから40億ドル超の資金を確保。Anthropicとの企業向けAI導入支援競争が激化している。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/928249/govee-table-lamp-classic-deal-sale" target="_blank" rel="noopener">Govee’s new portable smart lamp is on sale for the first time</a></h3>
+        
+        <div class="source">The Verge · 05/11 19:56</div>
+        <p class="summary">If you’ve always liked the idea of the Philips Hue Go portable lamp but couldn’t justify the $100+ price tag, Govee recently released a much cheaper alternative, the Govee Table Lamp Classic, and it’s already receiving its first discount. Right now, you can pick the rechargeable smart lamp up at Ama...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/report/928026/palantir-chore-coat" target="_blank" rel="noopener">Palantir&#8217;s true believers are wearing this jacket</a></h3>
+        
+        <div class="source">The Verge · 05/11 18:26</div>
+        <p class="summary">In late April, Palantir - the software company that, in recent years, has perhaps become best known for its defense industry contracts and work with Immigration and Customs Enforcement - announced that it would be adding new products to its merch store. The latest offering was a cotton chore coat. A...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/928141/apple-ios-26-5-rcs-messages-iphone-google-android" target="_blank" rel="noopener">Apple brings encrypted RCS chats to iPhone</a></h3>
+        
+        <div class="source">The Verge · 05/11 17:57</div>
+        <p class="summary">Apple now lets you have encrypted RCS conversations with Android users through the Messages app on iOS. As part of iOS 26.5, which was released on Monday, Apple added support for end-to-end encrypted RCS messaging in beta, meaning that Apple and Google can't see your messages while they're sent. Wit...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/11/daniel-ek-backed-defense-tech-helsing-to-raise-1-2b-at-18b-valuation/" target="_blank" rel="noopener">Daniel Ek-backed defense tech Helsing to raise $1.2B at $18B valuation</a></h3>
+        
+        <div class="source">TechCrunch · 05/11 17:38</div>
+        <p class="summary">Five-year old European military drone startup Helsing is close to raising another monster round.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055" target="_blank" rel="noopener">If AI writes your code, why use Python?</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/11 20:45</div>
+        <p class="summary">Article URL: https://medium.com/@NMitchem/if-ai-writes-your-code-why-use-python-bf8c4ba1a055 Comments URL: https://news.ycombinator.com/item?id=48100433 Points: 59 # Comments: 57</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/11/1137090/three-things-in-ai-to-watch-according-to-a-nobel-winning-economist/" target="_blank" rel="noopener">Three things in AI to watch, according to a Nobel-winning economist</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/11 17:35</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. A few months before he was awarded the Nobel Prize in economics in 2024, Daron Acemoglu published a paper that earned him few fans in Silicon Valley. Contrary to ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.404media.co/ucf-ai-commencement-speaker-booed/" target="_blank" rel="noopener">Students Boo Commencement Speaker After She Calls AI Next Industrial Revolution</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/11 15:53</div>
+        <p class="summary">Article URL: https://www.404media.co/ucf-ai-commencement-speaker-booed/ Comments URL: https://news.ycombinator.com/item?id=48096674 Points: 143 # Comments: 174</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/signals/research/2026q1-update" target="_blank" rel="noopener">How ChatGPT adoption broadened in early 2026</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/11 15:00</div>
+        <p class="summary">ChatGPT adoption surged in Q1 2026, with fastest growth among users over 35 and more balanced gender usage, signaling broader mainstream AI adoption.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/11/1136967/fostering-breakthrough-ai-innovation-through-customer-back-engineering/" target="_blank" rel="noopener">Fostering breakthrough AI innovation through customer-back engineering</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/11 13:33</div>
+        <p class="summary">Despite years of digitization, organizations capture less than one-third of the value expected from digital investments, according to McKinsey research. That’s because most big companies begin with technological capabilities and bolt applications onto them, rather than starting with customer needs a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.nytimes.com/2026/05/11/us/politics/google-hackers-attack-ai.html" target="_blank" rel="noopener">Google says criminal hackers used AI to find a major software flaw</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/11 13:20</div>
+        <p class="summary">Unlocked: https://www.nytimes.com/2026/05/11/us/politics/google-hacker..., https://archive.ph/I4Ui5https://apnews.com/article/google-ai-cybersecurity-exploitat...https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker... Comments URL: https://news.ycombinator.com/item?id=48094641 Points: 63 # C...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/11/1136786/implementing-advanced-ai-technologies-in-finance/" target="_blank" rel="noopener">Implementing advanced AI technologies in finance</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/11 13:00</div>
+        <p class="summary">In finance departments that have long been defined by precision and control, AI has arrived less as a neatly managed upgrade than as a quiet insurgency. Employees are already using it while leadership races to impose structure, governance, and strategy after the fact. The result is a paradox: one of...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/" target="_blank" rel="noopener">I work in Hollywood. Everyone who used to make TV is now training AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/11 11:05</div>
+        <p class="summary">Article URL: https://www.wired.com/story/i-work-in-hollywood-everyone-who-used-to-make-tv-now-training-ai/ Comments URL: https://news.ycombinator.com/item?id=48093446 Points: 100 # Comments: 75</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/teampcp-compromises-checkmarx-jenkins.html" target="_blank" rel="noopener">TeamPCP Compromises Checkmarx Jenkins AST Plugin Weeks After KICS Supply Chain Attack</a></h3>
+        
+        <div class="source">The Hacker News · 05/11 18:30</div>
+        <p class="summary">Checkmarx has confirmed that a modified version of the Jenkins AST plugin was published to the Jenkins Marketplace. "If you are using Checkmarx Jenkins AST plugin, you need to ensure that you are using the version 2.0.13-829.vc72453fa_1c16 that was published on December 17, 2025 or previously," the ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html" target="_blank" rel="noopener">cPanel CVE-2026-41940 Under Active Exploitation to Deploy Filemanager Backdoor</a></h3>
+        
+        <div class="source">The Hacker News · 05/11 17:54</div>
+        <p class="summary">A threat actor named Mr_Rot13 has been attributed to the exploitation of a recently disclosed critical cPanel flaw to deploy a backdoor codenamed Filemanager on compromised environments. The attack exploits CVE-2026-41940, a vulnerability impacting cPanel and WebHost Manager (WHM) that could result ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html" target="_blank" rel="noopener">Hackers Used AI to Develop First Known Zero-Day 2FA Bypass for Mass Exploitation</a></h3>
+        
+        <div class="source">The Hacker News · 05/11 15:45</div>
+        <p class="summary">Google on Monday disclosed that it identified an unknown threat actor using a zero-day exploit that it said was likely developed with an artificial intelligence (AI) system, marking the first time the technology has been put to use in the wild in a malicious context for vulnerability discovery and e...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/weekly-recap-linux-rootkit-macos-crypto.html" target="_blank" rel="noopener">⚡ Weekly Recap: Linux Rootkit, macOS Crypto Stealer, WebSocket Skimmers and More</a></h3>
+        
+        <div class="source">The Hacker News · 05/11 12:36</div>
+        <p class="summary">Rough Monday. Somebody poisoned a trusted download again, somebody else turned cloud servers into public housing, and a few crews are still getting into boxes with bugs that should’ve died years ago — the same old holes, same lazy access paths, same “how the hell is this still open” feeling. One rep...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/your-purple-team-isnt-purple-its-just.html" target="_blank" rel="noopener">Your Purple Team Isn't Purple — It's Just Red and Blue in the Same Room</a></h3>
+        
+        <div class="source">The Hacker News · 05/11 11:30</div>
+        <p class="summary">Defending a network at 2 am looks a lot like this: an analyst copy-pasting a hash from a PDF into a SIEM query. A red team script is being rewritten by hand so the blue team can use it. A patch waiting on a change-approval window that's longer than the exploitation window itself. Nobody in that chai...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html" target="_blank" rel="noopener">Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads</a></h3>
+        
+        <div class="source">The Hacker News · 05/11 07:05</div>
+        <p class="summary">A malicious Hugging Face repository managed to take a spot in the platform's trending list by impersonating OpenAI's Privacy Filter open-weight model to deliver a Rust-based information stealer to Windows users. The project, named Open-OSS/privacy-filter, masqueraded as its legitimate counterpart re...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/kix/items/f6c508ab4d81fab967e8" target="_blank" rel="noopener">C# 2026年のプロパティ宣言まとめ——fieldキーワード・init・required・プライマリコンストラクタ</a></h3>
+        
+        <div class="source">Qiita - C# · 05/11 12:32</div>
+        <p class="summary">TL;DR C# 14（.NET 10）の field キーワードで、バッキングフィールドを手動宣言せずにカスタムアクセサを書ける init（C# 9）で初期化後に変更不可のプロパティ、required（C# 11）で初期化必須のプロパティを宣言できる プライマリコン...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/hibara/items/06630becf7395b631539" target="_blank" rel="noopener">Thunderbirdのメッセージフィルターを別マシンに移植するツールを作った話 ― 図らずも仕様駆動開発になった</a></h3>
+        
+        <div class="source">Qiita - C# · 05/11 06:50</div>
+        <p class="summary">はじめに Thunderbird には「メッセージフィルター」という、受信メールを自動で振り分けたりタグ付けしたりする強力な機能があります。長年メールを使っていると、またユーザーからの問い合わせなどをさばくのに使っていると、次第にフィルターは増えていき、けっこう量になりま...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/nakamuuu_ow/items/b2af372f5acb9544358d" target="_blank" rel="noopener">【C#】CancellationTokenって何のためにあるの？調べてみた</a></h3>
+        
+        <div class="source">Qiita - C# · 05/11 03:01</div>
+        <p class="summary">はじめに 非同期処理のコードを書いていると、メソッドの引数にCancellationTokenが出てくることがよくあります。 public async Task FetchDataAsync(CancellationToken cancellationTo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/kohei_ikeda/items/7dcdfa15d694e543b772" target="_blank" rel="noopener">AIに頼り切ってタスク管理アプリを作成する。：設計編</a></h3>
+        
+        <div class="source">Qiita - C# · 05/11 01:13</div>
+        <p class="summary">はじめに AIに頼ったアプリ開発の経験があまりないため、実験してみました。 仕様 開発環境 : C.net(WinForms) アプリ仕様 : winformsで動作 各タスクには子タスクを登録でき、階層は無制限 タスク情報は外部ファイル出力により管理 AIへ質問 ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/microsoft/articles/agent-governance-toolkit-policy-01" target="_blank" rel="noopener">AIエージェントに「門番」を置く — Agent Governance Toolkit 入門（.NET編）</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/11 00:16</div>
+        <p class="summary">はじめに AIエージェントが自律的にツールを呼び出す時代になりました。ファイルを読み書きし、APIを叩き、データベースを参照する——便利な反面、誰が・何を・どんな条件で呼び出してよいかを制御する仕組みがなければ、本番環境には置けません。 2026年4月にMicrosoftがオープンソースとして公開した Agent Governance Toolkit（AGT） は、まさにその「門番」をAIエージェントに組み込むためのツールキットです。 この記事では、以下のサンプルリポジトリをベースに、.NET（C#）での AGT 入門を解説します。 https://github.com/normal...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/KAI_Mutsumi/items/53aa2e407502a8ff930a" target="_blank" rel="noopener">気象庁サイトを利用したビューアの作成 10 地点情報</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/11 11:25</div>
+        <p class="summary">目次・全体的な注意点(第1回の記事) 気象庁ホームページで使用されている、geojson等の地理情報を紹介します 記事作成時に確認した範囲の情報です。仕様変更などの可能性もありますのでご了承ください 地域に関するデータ 「1次細分区域」「市町村等をまとめた地域...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mori-dev@github/items/07aaf05f8e2056647eb3" target="_blank" rel="noopener">ReDoS は「使える文字の確認」だけでは防げない</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/11 11:00</div>
+        <p class="summary">はじめに ユーザー入力を正規表現で検証する場面は多くあります。ホスト名、メールアドレス、URL、識別子などを確認するときに、正規表現は手軽で便利です。 ただし、正規表現の書き方によっては、特定の入力で極端に時間がかかることがあります。攻撃者がその性質を利用して、サーバーの...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/takex5g/articles/blackathon-engineer-gimmicks" target="_blank" rel="noopener">ブラッカソンLPにエンジニアしかわからないギミックを散りばめた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/11 09:09</div>
+        <p class="summary">はじめに 有楽製菓さんがお届けする、ブラックサンダー主催のエンジニア向けハッカソン 「ブラッカソン」 のLPを公開しました。こちらのLP制作をお手伝いさせていただいています。 https://www.yurakuseika.co.jp/blackathon このLPには、エンジニア向けのギミックを6つ仕込みました。 この記事では、その中から3つご紹介します 残りの3つは、この記事では紹介しませんが、エンジニアならきっとすぐに気づけるはず。ぜひ挑戦してみてください！ https://yurakuseika.co.jp/blackathon ギミック1：ダークモードでだけ現れるメッ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mimimi-night/items/07138604a03a9ae388eb" target="_blank" rel="noopener">自分の名前を海外の名前にするサイト作った！</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/11 09:07</div>
+        <p class="summary">自分の名前を世界4カ国の同じ人気順位の名前に変換するサイトを作った はじめに 「自分の名前って、海外だったら何て名前になるんだろう？」 そんな疑問から、名前を世界4カ国の同ランク名に変換するWebサイトを作りました！ 🌍 サイトURL：https://mimimi-ni...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/m_shinada/items/9e89246d5326247b5bb3" target="_blank" rel="noopener">JSを（最低限しか）使わないアニメーション付きアコーディオンの作り方</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/11 06:16</div>
+        <p class="summary">はじめに ヘッダー部をクリックすることで続く詳細部の内容を開閉させることのできるUI、いわゆるアコーディオンは、その見た目や機能から想像するよりは遥かに実装が厄介なUIコンポーネントの一つです。 ただ「開閉する＝折りたたむだけ」ならば大した問題はなく、それこそHTMLには...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/haruki_sugimoto/articles/735d5333b453a7" target="_blank" rel="noopener">バイブコーディング時代、フロントエンドはどう書くべきか</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/11 06:05</div>
+        <p class="summary">はじめに AI でフロントエンドを書くこと自体は、かなり当たり前になってきた。 ただ、その変化は単に「実装が速くなった」で終わらない。いま起きているのは、フロントエンドを書く人が増えたことだと思う。経験が浅くても画面は作れるし、試作も速い。これは良い変化だ。 一方で、問題もかなり分かりやすい。 共通コンポーネントがあるのに使われない 似た UI を別の場所でまた作ってしまう 既存の API ラッパーや state 管理を使わず、画面ごとに似た処理を書く AI が repo の中にある共通部品を見逃す 複数人が並行に AI で作ると、似た構造が何個も生まれる つまり、いま問題になっ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/penguinengineer/articles/435c1cf71805fe" target="_blank" rel="noopener">Reactに必要なJavaScript基礎の最低限</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/11 02:25</div>
+        <p class="summary">みなさん、こんにちは！ ペンギンエンジニアです！ 前回の001（HTML/CSS編）で、「家の間取り図」の読み方は押さえました。 今回はその続きで、家具を動かす説明書にあたる JavaScript の話です。 筆者はSES現場で、未経験エンジニアがReactタスクに入っていく場面を何度も見てきました。 そこで一番多いハマり方は、HTMLの次の壁＝JavaScriptの基礎をすっ飛ばして、Reactのチュートリアルに突っ込むパターンです。 const [count, setCount] = useState(0) の左辺で「なんでカッコが2つ？」と固まる。 onClick={() =&amp;g...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

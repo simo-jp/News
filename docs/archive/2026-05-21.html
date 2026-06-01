@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月21日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月21日 / 全40件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/policy/935735/live-nation-ticketmaster-states-remedies-request-break-up" target="_blank" rel="noopener">States ask judge to break up Live Nation-Ticketmaster</a></h3>
+        
+        <div class="source">The Verge · 05/21 22:27</div>
+        <p class="summary">A federal judge is officially being tasked with deciding whether to break up Live Nation-Ticketmaster. More than 30 states are asking Judge Arun Subramanian to order a sale of the ticketing giant, a "sufficient number" of large amphitheaters, and limit its ability to tie access to its remaining amps...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/22/news063.html" target="_blank" rel="noopener">米政府、IBMなど量子技術企業9社に総額約20億ドルの投資へ　各社の株式取得</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/21 22:01</div>
+        <p class="summary">米商務省はCHIPS法の枠組みに基づき、IBMなど米量子技術関連企業9社に総額約20億ドルを投資することで基本合意した。各社の少数株式を取得する方針で、政府による直接出資としては最大規模となる。これに合わせIBMは、商務省からの補助金10億ドルと自社の出資により、米国初となる量子チップ専業ファウンドリの新会社Anderonを設立する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/21/who-will-benefit-most-from-spacex-ipo-mostly-elon-and-a-few-from-his-inner-circle/" target="_blank" rel="noopener">Who will benefit most from SpaceX IPO? Mostly Elon — and a few from his inner circle</a></h3>
+        
+        <div class="source">TechCrunch · 05/21 21:39</div>
+        <p class="summary">Elon Musk has the largest stake in SpaceX by billions of shares. The other biggest shareholders also have longstanding and deep ties to Musk.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/21/waymo-halts-freeway-rides-after-robotaxis-struggle-in-construction-zones/" target="_blank" rel="noopener">Waymo halts freeway rides after robotaxis struggle in construction zones</a></h3>
+        
+        <div class="source">TechCrunch · 05/21 21:13</div>
+        <p class="summary">The service suspension comes as Waymo has also paused operations in Atlanta and San Antonio after its robotaxis drove into flooded streets.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/21/nycmayor-zohran-mamdani-takes-to-twitch-to-chat-with-new-yorkers/" target="_blank" rel="noopener">NYC Mayor Zohran Mamdani takes to Twitch to chat with New Yorkers</a></h3>
+        
+        <div class="source">TechCrunch · 05/21 21:00</div>
+        <p class="summary">New York City Mayor Zohran Mamdani is launching a Twitch series today at 4 p.m. ET.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit" target="_blank" rel="noopener">All of the updates from Elon Musk and Sam Altman’s battle over OpenAI</a></h3>
+        
+        <div class="source">The Verge · 05/21 20:15</div>
+        <p class="summary">Sam Altman and Elon Musk are facing off in a high-stakes trial that could alter the future of OpenAI and its most well-known product, ChatGPT. In 2024, Musk filed a lawsuit accusing OpenAI of abandoning its founding mission of developing AI to benefit humanity and shifting focus to boosting profits ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/935631/firefox-project-nova-redesign" target="_blank" rel="noopener">Firefox is working on a rounded redesign with easy-to-find controls for privacy and AI</a></h3>
+        
+        <div class="source">The Verge · 05/21 20:05</div>
+        <p class="summary">Firefox is getting a drastic visual overhaul with a redesigned Settings section that will make it easier to find and use privacy settings, including the switch for turning off all present and future AI features. Mozilla calls the redesign "Project Nova" and plans to begin rolling it out later this y...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/935602/graduates-boo-ai-ceos" target="_blank" rel="noopener">In desperate times, graduates find hope in humiliating tech CEOs</a></h3>
+        
+        <div class="source">The Verge · 05/21 20:00</div>
+        <p class="summary">University graduates are booing and heckling corporate executives who praise AI during their commencement ceremonies, and the only people who seem to be genuinely surprised by this are the executives themselves. In a procession of viral videos, 2026 commencement speakers like former Google CEO Eric ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/05/alleged-kimwolf-botmaster-dort-arrested-charged-in-u-s-and-canada/" target="_blank" rel="noopener">Alleged Kimwolf Botmaster ‘Dort’ Arrested, Charged in U.S. and Canada</a></h3>
+        
+        <div class="source">Krebs on Security · 05/21 21:50</div>
+        <p class="summary">Canadian authorities on Wednesday arrested a 23-year-old Ottawa man on suspicion of building and operating Kimwolf, a fast spreading Internet-of-Things botnet that enslaved millions of devices for use in a series of massive distributed denial-of-service (DDoS) attacks over the past six months. Krebs...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/showboat-linux-malware-hits-middle-east.html" target="_blank" rel="noopener">Showboat Linux Malware Hits Middle East Telecom with SOCKS5 Proxy Backdoor</a></h3>
+        
+        <div class="source">The Hacker News · 05/21 14:17</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a new Linux malware dubbed Showboat that has been put to use in a campaign targeting a telecommunications provider in the Middle East since at least mid-2022. "Showboat is a modular post-exploitation framework designed for Linux systems, capable of...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/threatsday-bulletin-linux-rootkits.html" target="_blank" rel="noopener">ThreatsDay Bulletin: Linux Rootkits, Router 0-Day, AI Intrusions, Scam Kits and 25 New Stories</a></h3>
+        
+        <div class="source">The Hacker News · 05/21 11:52</div>
+        <p class="summary">This week starts small. A token leaks. A bad package slips in. A login trick works. An old tool shows up again. At first, it feels like the usual mess. Then you see the pattern: attackers are not always breaking in. They are using the parts we already trust. That is what makes it worrying. The dange...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html" target="_blank" rel="noopener">Microsoft Warns of Two Actively Exploited Defender Vulnerabilities</a></h3>
+        
+        <div class="source">The Hacker News · 05/21 10:55</div>
+        <p class="summary">Microsoft has disclosed that a privilege escalation and a denial-of-service flaw in Defender has come under active exploitation in the wild. The former, tracked as CVE-2026-41091, is rated 7.8 on the CVSS scoring system. Successful exploitation of the flaw could allow an attacker to gain SYSTEM priv...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/when-identity-is-attack-path.html" target="_blank" rel="noopener">When Identity is the Attack Path</a></h3>
+        
+        <div class="source">The Hacker News · 05/21 10:30</div>
+        <p class="summary">Consider a cached access key on a single Windows machine. It got there the way most cached credentials do - a user logged in, and the key stored itself automatically. Standard AWS behavior. No one misconfigured anything or violated a policy. Yet that single key, which was easily accessible to a mino...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html" target="_blank" rel="noopener">9-Year-Old Linux Kernel Flaw Enables Root Command Execution on Major Distros</a></h3>
+        
+        <div class="source">The Hacker News · 05/21 07:35</div>
+        <p class="summary">Cybersecurity researchers have disclosed details of a vulnerability in the Linux kernel that remained undetected for nine years. The vulnerability, tracked as CVE-2026-46333 (CVSS score: 5.5), is a case of improper privilege management that could permit an unprivileged local user to disclose sensiti...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2026/at260014.html" target="_blank" rel="noopener">注意喚起: TrendAI Apex Oneなどのトレンドマイクロ製品における複数の脆弱性に関する注意喚起  (公開)</a></h3>
+        
+        <div class="source">JPCERT · 05/21 06:23</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/github-internal-repositories-breached.html" target="_blank" rel="noopener">GitHub Internal Repositories Breached via Malicious Nx Console VS Code Extension</a></h3>
+        
+        <div class="source">The Hacker News · 05/21 04:27</div>
+        <p class="summary">GitHub on Wednesday officially confirmed that the breach of its internal repositories was the result of a compromise of an employee device involving a poisoned version of the Nx Console Microsoft Visual Studio Code (VS Code) extension.&nbsp; The development comes as the Nx team revealed that the ext...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://zenn.dev/matsutake_prgrm/articles/intersection-observer-vs-scroll-state-driven" target="_blank" rel="noopener">スクロール連動UIの取りこぼし問題: IntersectionObserverから状態駆動への切り替え</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/21 21:29</div>
+        <p class="summary">はじめに LPや採用ページなどでよく見かける、スクロール連動UIの実装で不具合が出ました。 「ビューポート中央に来たカードを active 化、別の要素（写真・画像・テキスト等）と連動切替」というありがちな仕掛けで、最初は IntersectionObserver で実装していました。 しかし高速スクロール時に： 「2を飛ばして4にジャンプ」する 一番上に戻しても「1まで戻りきらず2のまま」になる という症状が出ました。本記事では原因と、scroll 直接観測への切り替えで解決した話を書いていきます。 旧実装（IntersectionObserver） const obser...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/koenjineer/articles/95febb2b260e0e" target="_blank" rel="noopener">React × Tailwind CSS 入門 #03｜useStateで動くUIを作る｜カウンターとトグルで基礎を理解する</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/21 13:26</div>
+        <p class="summary">はじめに 前回は、Reactの基本である「コンポーネント分割」と「Tailwindの頻出クラス」を学びました。 今回は、Reactの最重要機能である useState を使って、クリックしたら動くUIを作っていきます。 静的なHTMLと違い、Reactが本領を発揮するのはここからです。AIにコンポーネントを作らせるときも、この「状態（state）」の概念を理解していないと、意図した動きを正確に指示できません。ここをマスターして、AIへのプロンプト精度をさらに一段階引き上げましょう。 useStateとは？ useState（ユーズステート）は、コンポーネントの「状態（データ）」...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/toriaiapp/items/de8dafa1f8a9a635152d" target="_blank" rel="noopener"># プログラミングのプの字もわからない現場人間が、AI壁打ちだけで鋼材切断SaaSを作ったので、現役エンジニアに設計レビューしてほしい</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/21 13:21</div>
+        <p class="summary">はじめまして。 TORIAIという鋼材切断計算アプリを作っている者です。 最初に正直に書きます。 僕はプログラミングのプの字もわかっていません。 JavaScriptもよくわかっていません。 SQLも読めません。 WASMも、RLSも、CSPも、Service Wor...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/iGeMi/items/2be097d5c6c9111f81c4" target="_blank" rel="noopener">pnpm とは何か — npm の Phantom Dependencies 問題と安全な移行方法</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/21 12:19</div>
+        <p class="summary">この記事の要点 pnpm は npm 互換の高速パッケージマネージャ 最大の違いは「依存管理の厳格さ」 Phantom Dependencies を防止しやすい CI / モノレポと相性が良い npm ユーザーでも移行コストは低い なぜ今 pnpm か 昨今のソフ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ArakiPhp/items/beffc129f50b08e79e3e" target="_blank" rel="noopener">実務1年目駆け出しエンジニアがLaravel&ReactでWebアプリケーション開発に挑戦してみた！（テスト・デバッグ編④）~Featureテスト1[コントローラー①/レビュー/コメント/ブックマーク]~</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/21 11:17</div>
+        <p class="summary">実務1年目駆け出しエンジニアがLaravel&amp;ReactでWebアプリケーション開発に挑戦してみた！（その46） 0. 初めに こんにちは！ 今日もWebアプリケーション開発の解説をしていきます。 ついに 先週はさぼってしまってすみませんでした。 このシリーズで開発し...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/tak_naga/articles/ee441f8fb67f9b" target="_blank" rel="noopener">Next.js の `output: 'export'` で動的ルートのページが生成されなかった話</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/21 09:14</div>
+        <p class="summary">はじめに Next.js + S3 + CloudFront の構成で静的サイトを運用しています。 SEO 対策として動的ルート（/[battle_id]）に generateStaticParams を実装したところ、ビルドは成功するのにページが一向に生成されないという問題に遭遇しました。 原因を特定するまでに相当な時間がかかったため、同じ罠にはまる人を減らすべく記事にします。 ↓これを作成中の話 https://vsvs.live/ 構成 フロントエンド: Next.js 14 (App Router, output: 'export') ホスティング: Amazon...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ohisama@github/items/01ce05f95557258a7e31" target="_blank" rel="noopener">blocklyでfasm(アセンブラ)プログラミング</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/21 08:13</div>
+        <p class="summary">概要 blocklyでfasm(アセンブラ)プログラミング、やってみた。 問題は、AtCoder ABC 081 A - Placing Marbles 文字列を受け取り、1の個数をカウントする問題です。 写真 生成したアセンブラ format PE64 conso...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/mathematical-layouts-sibling-index-sibling-count/" target="_blank" rel="noopener">Advanced Tree Counting: Mathematical Layouts With `sibling-index()` And `sibling-count()`</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/21 08:00</div>
+        <p class="summary">Meet `sibling-index()` and `sibling-count()`. Staggered cascade effect in one line of CSS without `:nth-child()` rules or JS workarounds. Works for 5 items or 5,000.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/21/1137756/roundtables-can-ai-learn-to-understand-the-world/" target="_blank" rel="noopener">Roundtables: Can AI Learn to Understand the World?</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/21 20:41</div>
+        <p class="summary">Listen to the session or watch below AI companies want to build systems that understand the external world and overcome the limitations of LLMs. Recent developments have brought world models to the forefront of the AI discussion. Watch a conversation with editor in chief Mat Honan, senior AI editor ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/21/1137613/scaling-creativity-in-the-age-of-ai/" target="_blank" rel="noopener">Scaling creativity in the age of AI</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/21 19:16</div>
+        <p class="summary">Storytelling is core to humanity&#8217;s DNA, stemming from our impulse to express ideals, warnings, hopes, and experiences. Technology has always been woven through the medium and the distribution: from early humans&#8217; innovation of natural pigments and charcoals for cave paintings to literal r...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/21/1137735/anthropics-code-with-claude-showed-off-codings-future-whether-you-like-it-or-not/" target="_blank" rel="noopener">Anthropic’s Code with Claude showed off coding’s future—whether you like it or not</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/21 14:30</div>
+        <p class="summary">The vibes were strong at Code with Claude, Anthropic’s two-day event for software developers in London that kicked off on May 19, the same day as Google’s I/O in Palo Alto. (A coincidence, not a flex, Anthropic staffers assured me.) “Who here has shipped a pull request in the last week that was comp...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/" target="_blank" rel="noopener">AI is just unauthorised plagiarism at a bigger scale</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/21 13:38</div>
+        <p class="summary">Article URL: https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/ Comments URL: https://news.ycombinator.com/item?id=48222383 Points: 736 # Comments: 630</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.thehandbasket.co/p/hating-ai-is-good-actually" target="_blank" rel="noopener">Shunning AI is the human choice</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/21 13:36</div>
+        <p class="summary">Article URL: https://www.thehandbasket.co/p/hating-ai-is-good-actually Comments URL: https://news.ycombinator.com/item?id=48222366 Points: 345 # Comments: 491</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/adventhealth" target="_blank" rel="noopener">AdventHealth advances whole-person care with OpenAI</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/21 12:00</div>
+        <p class="summary">AdventHealth is using ChatGPT for Healthcare to streamline workflows, reduce administrative burden, and return more time to patient care.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://noslopgrenade.com/" target="_blank" rel="noopener">Throwing AI-generated walls of text into conversations</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/21 09:31</div>
+        <p class="summary">Article URL: https://noslopgrenade.com/ Comments URL: https://news.ycombinator.com/item?id=48219992 Points: 451 # Comments: 270</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/" target="_blank" rel="noopener">Intuit to lay off over 3k employees to refocus on AI</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/21 00:36</div>
+        <p class="summary">Article URL: https://techcrunch.com/2026/05/20/intuit-to-lay-off-over-3000-employees-to-refocus-on-ai/ Comments URL: https://news.ycombinator.com/item?id=48216278 Points: 249 # Comments: 184</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/plan-before-you-build-introducing-the-plan-agent-in-visual-studio/" target="_blank" rel="noopener">Plan Before You Build: Introducing the Plan agent in Visual Studio</a></h3>
+        
+        <div class="source">Visual Studio Blog · 05/21 17:17</div>
+        <p class="summary">You ask Copilot to tackle something big, it gets to work, and a dozen file changes later you realize you had a completely different approach in mind. The code isn&#8217;t wrong&#8230; it just isn&#8217;t what you were going for. Last year, we introduced planning as a feature in Agent mode to help wi...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/announcing-agent-governance-toolkit-mcp-extensions-for-dotnet/" target="_blank" rel="noopener">Announcing Agent Governance Toolkit MCP Extensions for .NET</a></h3>
+        
+        <div class="source">.NET Blog · 05/21 17:05</div>
+        <p class="summary">Announcing a Public Preview .NET package that adds policy enforcement, startup tool scanning, fallback governance, and response sanitization to MCP servers with a single builder extension. The post Announcing Agent Governance Toolkit MCP Extensions for .NET appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/announcing-agent-governance-toolkit-mcp-extensions-for-dotnet/" target="_blank" rel="noopener">Announcing Agent Governance Toolkit MCP Extensions for .NET</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/21 17:05</div>
+        <p class="summary">Announcing a Public Preview .NET package that adds policy enforcement, startup tool scanning, fallback governance, and response sanitization to MCP servers with a single builder extension. The post Announcing Agent Governance Toolkit MCP Extensions for .NET appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/improving-csharp-memory-safety/" target="_blank" rel="noopener">Improving C# Memory Safety</a></h3>
+        
+        <div class="source">.NET Blog · 05/21 16:08</div>
+        <p class="summary">The `unsafe` keyword is being redesigned to mark caller-facing contracts rather than just syntax. Safety obligations between callers and callees become visible and reviewable. The model is motivated by the rise of AI-assisted code generation and arrives as a preview in .NET 11. The post Improving C#...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/improving-csharp-memory-safety/" target="_blank" rel="noopener">Improving C# Memory Safety</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/21 16:08</div>
+        <p class="summary">The `unsafe` keyword is being redesigned to mark caller-facing contracts rather than just syntax. Safety obligations between callers and callees become visible and reviewable. The model is motivated by the rise of AI-assisted code generation and arrives as a preview in .NET 11. The post Improving C#...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/yuuga25/items/a7d1b8732cd1a3a109ab" target="_blank" rel="noopener">Unity WebGLでカードゲーム向けリザルト管理ツールを作ったときの設計と改善の話</a></h3>
+        
+        <div class="source">Qiita - C# · 05/21 16:02</div>
+        <p class="summary">Unity WebGLでカードゲーム向けリザルト管理ツールを作ったときの設計と改善の話 はじめに Unity WebGLで、カードゲーム「XrossStars」向けの非公式リザルト管理ツールを制作しました。 もともとは、よく一緒に大会へ出るチームメンバー向けに作っていた...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/dot_116/items/f87fd331319c066a90bc" target="_blank" rel="noopener">NFCタグシールを使った開発の作業記録その３</a></h3>
+        
+        <div class="source">Qiita - C# · 05/21 07:05</div>
+        <p class="summary">NuGetそういえばUnityにないかも 2026/05/20現在の作業記録です。 【ひとこと】構造が複雑で心折れるわ 前提条件 この記事では、以下の条件においての開発について言及します。（2026/05/20本日更新） ハードウェア なし ソフトウェア ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/dot_116/items/3105fbc4b9623bdadf74" target="_blank" rel="noopener">NFCの作業記録外伝～反省と努力～</a></h3>
+        
+        <div class="source">Qiita - C# · 05/21 05:59</div>
+        <p class="summary">仕様一変と、ツール配布と、血のにじむ努力 2026/05/14の作業記録です。 【ひとこと】もう本当にやらかした 前提条件 この記事では、以下の条件においての開発について言及します。（本記事の更新あり） ハードウェア リーダー 非接触ICカードリーダー／ラ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

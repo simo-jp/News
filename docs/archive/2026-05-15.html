@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月15日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月15日 / 全29件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">6</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">7</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/931884/youtube-likeness-detection-ai-deepfake-expansion-all-adults" target="_blank" rel="noopener">YouTube is expanding its AI deepfake detection tool to all adult users</a></h3>
+        
+        <div class="source">The Verge · 05/15 22:25</div>
+        <p class="summary">YouTube is expanding its AI likeness detection program to all users over the age of 18 - meaning just about anyone can have the platform hunt for potential deepfakes of themselves. The likeness detection feature uses a selfie-style scan of a person's face to monitor YouTube for lookalikes. If there ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/931817/windows-11-movable-taskbar-start-button" target="_blank" rel="noopener">Windows 11 tests an adjustable taskbar and resizable Start menu</a></h3>
+        
+        <div class="source">The Verge · 05/15 21:14</div>
+        <p class="summary">Microsoft's latest Windows 11 test will allow you to reposition the taskbar and change the size of the Start menu. The update, which is rolling out to Windows 11 Insiders in the Experimental channel, lets you place the taskbar on the bottom, top, left, or right side of the screen. Microsoft first te...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/science/931766/arxiv-ai-slop-ban-researchers" target="_blank" rel="noopener">ArXiv will ban researchers who upload papers full of AI slop</a></h3>
+        
+        <div class="source">The Verge · 05/15 20:38</div>
+        <p class="summary">ArXiv, a popular platform for preprint academic research, is taking a new step to attempt to reduce the volume of papers that include AI slop. If a paper has "incontrovertible evidence that the authors did not check the results of LLM generation," such as hallucinated references or "meta-comments" l...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/15/rj-scaringe-has-raised-more-than-12-billion-across-three-startups-and-investors-still-want-more/" target="_blank" rel="noopener">RJ Scaringe has raised more than $12B across three startups and investors still want more</a></h3>
+        
+        <div class="source">TechCrunch · 05/15 20:30</div>
+        <p class="summary">Investors can't seem to get enough of RJ Scaringe or his ideas. Storytelling and communication are one of his superpowers, according to Jiten Behl, who joined Rivian when the company had just a handful of employees.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/15/general-catalyst-posted-vc-rage-bait-and-it-worked-especially-on-a16z/" target="_blank" rel="noopener">General Catalyst posted VC rage bait and it worked, especially on a16z</a></h3>
+        
+        <div class="source">TechCrunch · 05/15 20:25</div>
+        <p class="summary">Compulsive X user Marc Andreessen himself couldn't resist responding, many, many times.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/15/a-hotel-check-in-system-left-a-million-passports-and-drivers-licenses-open-for-anyone-to-see/" target="_blank" rel="noopener">A hotel check-in system left a million passports and driver’s licenses open for anyone to see</a></h3>
+        
+        <div class="source">TechCrunch · 05/15 18:51</div>
+        <p class="summary">The tech company that maintains the hotel check-in system set its cloud storage to public, allowing anyone to access customers' data without a password.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/931615/analogue-3d-nintendo-64-console-memories-save-state" target="_blank" rel="noopener">The Analogue 3D is finally getting save states</a></h3>
+        
+        <div class="source">The Verge · 05/15 18:43</div>
+        <p class="summary">Analogue has released a new firmware update for its Analogue 3D console that adds the Memories save state feature. Memories, which was first introduced with its handheld Analogue Pocket, allows you to save at any moment and resume from that exact spot later on, rather than having to reach a specific...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/931544/openai-keeps-shuffling-its-executives-in-bid-to-win-ai-agent-battle" target="_blank" rel="noopener">OpenAI keeps shuffling its executives in bid to win AI agent battle</a></h3>
+        
+        <div class="source">The Verge · 05/15 18:21</div>
+        <p class="summary">OpenAI announced yet another reorganization Friday, consolidating certain areas and making company president Greg Brockman the official lead of all things product. In a memo viewed by The Verge, Brockman wrote that since OpenAI's product strategy for this year is to go all-in on AI agents, the compa...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html" target="_blank" rel="noopener">Turla Turns Kazuar Backdoor Into Modular P2P Botnet for Persistent Access</a></h3>
+        
+        <div class="source">The Hacker News · 05/15 17:10</div>
+        <p class="summary">The Russian state-sponsored hacking group known as Turla has transformed its custom backdoor Kazuar into a modular peer-to-peer (P2P) botnet that's engineered for stealth and persistent access to compromised hosts. Turla, per the U.S. Cybersecurity and Infrastructure Security Agency (CISA), is asses...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html" target="_blank" rel="noopener">Four OpenClaw Flaws Enable Data Theft, Privilege Escalation, and Persistence</a></h3>
+        
+        <div class="source">The Hacker News · 05/15 13:35</div>
+        <p class="summary">Cybersecurity researchers have disclosed a set of four security flaws in OpenClaw that could be chained to achieve data theft, privilege escalation, and persistence. The vulnerabilities, collectively dubbed Claw Chain by Cyera, can permit an attacker to establish a foothold, expose sensitive data, a...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/what-45-days-of-watching-your-own-tools.html" target="_blank" rel="noopener">What 45 Days of Watching Your Own Tools Will Tell You About Your Real Attack Surface</a></h3>
+        
+        <div class="source">The Hacker News · 05/15 11:00</div>
+        <p class="summary">In Your Biggest Security Risk Isn't Malware — It's What You Already Trust, we made a simple argument: the most dangerous activity inside most organizations no longer looks like an attack. It looks like administration. PowerShell, WMIC, netsh, Certutil, MSBuild — the same trusted utilities your IT te...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html" target="_blank" rel="noopener">TanStack Supply Chain Attack Hits Two OpenAI Employee Devices, Forces macOS Updates</a></h3>
+        
+        <div class="source">The Hacker News · 05/15 10:54</div>
+        <p class="summary">OpenAI has disclosed that two of its employee devices in its corporate environment were impacted via the Mini Shai-Hulud supply chain attack on TanStack, but noted that no user data, production systems, or intellectual property were compromised or modified in an unauthorized manner. "Upon identifica...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html" target="_blank" rel="noopener">On-Prem Microsoft Exchange Server CVE-2026-42897 Exploited via Crafted Email</a></h3>
+        
+        <div class="source">The Hacker News · 05/15 06:19</div>
+        <p class="summary">Microsoft has disclosed a new security vulnerability impacting on-premise versions of Exchange Server that it said has come under active exploitation in the wild. The vulnerability, tracked as CVE-2026-42897 (CVSS score: 8.1), has been described as a spoofing bug stemming from a cross-site scripting...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html" target="_blank" rel="noopener">CISA Adds Cisco SD-WAN CVE-2026-20182 to KEV After Admin Access Exploits</a></h3>
+        
+        <div class="source">The Hacker News · 05/15 05:28</div>
+        <p class="summary">The U.S.Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly disclosed vulnerability impacting Cisco Catalyst SD-WAN Controller to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to remediate the issue by May...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/ZiYuCai1984/items/f712d23e71d9d2e358dd" target="_blank" rel="noopener">12 バイトで .NET メソッドの行き先を変える</a></h3>
+        
+        <div class="source">Qiita - C# · 05/15 15:26</div>
+        <p class="summary">mov rax, imm64; jmp rax による x86-64 メソッドエントリ Hook 実験 通常であれば、DateTime.Now は素直に現在時刻を返します。 しかし、次のプログラムを実行すると、ある瞬間から「現在時刻」は西暦 9999 年 9 月 9 日...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KNTy1018/items/31674a2a694a7e16c3a8" target="_blank" rel="noopener">Span<T>ってなんだ？</a></h3>
+        
+        <div class="source">Qiita - C# · 05/15 13:46</div>
+        <p class="summary">本記事ではC#で使うことができる Span というデータ型についてまとめていきたいと思います ゲーム開発をする中で見つけた機能で、これを使うことで配列のようにデータが連続で並んでいるものを、 "安全" かつ "効率的" に扱えるようになります ゲームを作る上で安全さや...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ZiYuCai1984/items/5d1a0a22a778ca7ca12a" target="_blank" rel="noopener">現代 LMS アーキテクチャ実践（6）：CourseDefinition と CourseOffering で整理する課程・開講・時間割の設計</a></h3>
+        
+        <div class="source">Qiita - C# · 05/15 11:05</div>
+        <p class="summary">本記事は筆者の考えをベースに、ChatGPT 5.5 を用いて構成・推敲したものです。 内容の主張と判断は筆者によるものであり、文章表現の整理に ChatGPT 5.5 を活用しています。 本記事で扱うプロジェクトのリポジトリはこちらです。 Repository: ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/yorjihons/articles/csharp-dotnet-new-projnew" target="_blank" rel="noopener">C#でdotnet new感覚で使えるオリジナルCLI「projnew」を作ってみた</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/15 09:02</div>
+        <p class="summary">「新しいプロジェクトを立ち上げるたびに、環境構築やボイラープレートのコピペ、設定ファイルの書き換えが発生して面倒くさい……」 特に Electron + React + Vite + TypeScript のような技術スタックだと、毎回パッケージの初期設定や tsconfig.json などの調整に一苦労しますよね。 そこで、C# (.NET 8) を使って、まるで dotnet new console や npm create のような手軽さで、GitHub上のテンプレートリポジトリから一発で環境構築ができるCLIツール 「projnew」 を作りました。 1. どんなツールか（...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/SARADA7156/items/9268576476e9e48b5f1e" target="_blank" rel="noopener">ゲームの開発における失敗談</a></h3>
+        
+        <div class="source">Qiita - C# · 05/15 07:19</div>
+        <p class="summary">はじめに 私は学生で、新たな取り組みとしてWebゲームという題材を設定いたしました。最初はTypeScriptで開発をしていたのですが設計の限界を感じ、TypeScriptからC#への移行を機に、単なる言語の置き換えではなく、オブジェクト指向の原則に基づいた抜本的な再設計...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/au/articles/why-choose-dotnet" target="_blank" rel="noopener">デジタル認証API認証をしてみたい</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/15 03:08</div>
+        <p class="summary">はじめに 1年くらい前に行政システムの開発でデジタル認証APIとの連携を実装しました。 デジタル認証APIはデジタル庁が提供する認証基盤で、マイナンバーカードを使ったユーザー認証を実現します。認証プロトコルにはOIDC（OpenID Connect）が採用されています。 この記事では、OIDCをまったく知らない方に向けて基礎から解説しつつ、.NETでデジタル認証APIと連携する実装例や起きた問題等を備忘録として残しておきます。 ! 掲載しているコードは実業務のコードをそのまま記載したものではなく、記事用に書き直したサンプルです。 そのためバグや誤りが含まれている可能性があります。ご了...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://qiita.com/digiplanp/items/daf1b0fde86c0753483b" target="_blank" rel="noopener">Toon Toneという色合わせブラウザゲームを作った話</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/15 14:39</div>
+        <p class="summary">Toon Toneという色合わせブラウザゲームを作った話 最近、Toon Tone という小さなブラウザゲームを作りました。 Toon Tone は、画面に表示されたターゲットカラーに対して、ユーザーが Hue / Saturation / Brightness ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/anning-pro/items/aff91b1ca0b8127c50bc" target="_blank" rel="noopener">ServiceNowの操作手順書・テストエビデンスを自動作成するChrome拡張</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/15 13:42</div>
+        <p class="summary">はじめに ServiceNowで作業していると、操作手順書やテストエビデンスを作成する場面がよくあります。 ただ、毎回スクリーンショットを撮って、説明文を書いて、ExcelやPowerPointに貼り付ける作業はかなり手間がかかります。 そこで、ServiceNow上の操...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/whats-important-11/" target="_blank" rel="noopener">What’s !important #11: 3D Voxel Scenes, Flying Focus, CSS Syntaxes, and More</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/15 13:16</div>
+        <p class="summary">If 3D voxel scenes (that you can style), flying focus animations, or new CSS syntaxes sound like your kinda thing, then this issue of What’s !important is definitely for you. What’s !important #11: 3D Voxel Scenes, Flying Focus, CSS Syntaxes, and More originally handwritten and published with love o...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/merpro-dev/items/e94f1aaddd02cdb271f9" target="_blank" rel="noopener">セカストオンラインの新着を実装２。お宝探しを自動化してみた【discord】</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/15 11:12</div>
+        <p class="summary">1. はじめに：ローカル通知の限界 前回、「セカストオンラインの新着をデスクトップ通知する機能を実装した。（https://qiita.com/merpro-dev/items/2357019bfb78b9c07f8e）」 という記事を書きました。 ローカル通知はお手軽に...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/mori-dev@github/items/47efb60ab86157a165f1" target="_blank" rel="noopener">`Promise.race()` のタイムアウトと裏で動き続ける Promise</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/15 11:12</div>
+        <p class="summary">はじめに Promise.race() は、複数の Promise のうち最初に終わったものの結果を返す API です。非同期処理にタイムアウトを付けたいとき、この API を使う例をよく見かけます。 たとえば、外部 API や DNS 検証に 5 秒のタイムアウトを付け...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/" target="_blank" rel="noopener">Ten Data-Backed Truths Of User Experience ROI</a></h3>
+        
+        <div class="source">Smashing Magazine · 05/15 10:00</div>
+        <p class="summary">Every extra second of friction has a measurable business cost. Carrie Webster shares ten data-backed UX facts that link user experience directly to revenue, retention, and long-term growth.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/aoito/articles/73beb9c8b6c6d8" target="_blank" rel="noopener">フロントエンドのデータ取得設計 ― メインデータと補助データで分けて考える</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/15 02:13</div>
+        <p class="summary">フロントエンドでページを組むとき、APIから取るデータには2種類あります。それがないと画面が成り立たないデータと、あったほうがいいけど無くても画面は見せられるデータです。 この区別をせずに全部同じ取り方をしていると、地味に困ることが出てきます。 関連商品の取得が失敗しただけなのに、ページ丸ごとエラーになる メインのデータがまだ返ってきていないのに一部だけ先に出てガタつく loading と error の分岐が全コンポーネントに散らばって、どこで何を見ているのか分からなくなる データをメインデータと補助データに分けて、それぞれ取り方を変える。この考え方を整理します。 メインデータ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/" target="_blank" rel="noopener">How Chinese short dramas became AI content machines</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/15 09:00</div>
+        <p class="summary">In a dimly lit bedroom, a frightened young woman is thrown onto a bed by a tall, muscular man. He grabs her hand, and flame-like vines crawl across her body, fusing with her flesh. She levitates, then drops. A dragon-shaped tattoo appears across her chest. “Two months,” the man says. “Give me an hei...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/personal-finance-chatgpt" target="_blank" rel="noopener">A new personal finance experience in ChatGPT</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/15 00:00</div>
+        <p class="summary">Preview a new personal finance experience in ChatGPT for Pro users in the U.S. Securely connect your financial accounts and get AI-powered insights and guidance grounded in your financial context, goals, and priorities.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>

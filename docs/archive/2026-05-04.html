@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年05月04日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年05月04日 / 全34件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">6</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">7</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/04/u-s-government-warns-of-severe-copyfail-bug-affecting-major-versions-of-linux/" target="_blank" rel="noopener">US government warns of severe CopyFail bug affecting major versions of Linux</a></h3>
+        
+        <div class="source">TechCrunch · 05/04 22:21</div>
+        <p class="summary">U.S. cybersecurity agency CISA says the CopyFail bug is being actively used in hacking campaigns, and poses a major risk to servers and datacenters that rely on Linux.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/923612/elon-musk-sec-1-5-million-penalty-twitter-x" target="_blank" rel="noopener">Elon Musk will settle the feds’ Twitter lawsuit with pocket change</a></h3>
+        
+        <div class="source">The Verge · 05/04 22:11</div>
+        <p class="summary">Last year, the SEC sued Elon Musk over the way his acquisition of Twitter (now X, and a part of SpaceX) started, and today it announced a settlement that looks like a massive bargain, while Musk's own lawsuit against Sam Altman continues to play out. A week before the Trump administration took over,...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/articles/2605/05/news023.html" target="_blank" rel="noopener">Anthropic、Blackstoneらと新会社設立へ 中小企業へのClaude導入を加速</a></h3>
+        
+        <div class="source">ITmedia NEWS · 05/04 22:00</div>
+        <p class="summary">Anthropicは、Blackstoneなどの資産運用大手と共同でエンタープライズ向けAIサービス企業を設立した。新会社は主に中小企業のClaude導入を支援し、既存のパートナー網を補完する役割を担う。同様にOpenAIも投資会社と組み、AI実装を担う新会社の設立に向けて動いていると報じられた。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/04/openais-cozy-partner-cerebras-is-on-track-for-a-blockbuster-ipo/" target="_blank" rel="noopener">OpenAI’s cozy partner Cerebras is on track for a blockbuster IPO</a></h3>
+        
+        <div class="source">TechCrunch · 05/04 21:53</div>
+        <p class="summary">AI chip maker Cerebras is heading for a blockbuster IPO that could value it at $26.6 billion or more. Its relationship with OpenAI is deep and rich.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/918544/skylight-15-inch-smart-calendar-2-mothers-day-deal-2026-sale" target="_blank" rel="noopener">Skylight’s 15-inch smart calendar is down to its lowest price to date</a></h3>
+        
+        <div class="source">The Verge · 05/04 20:44</div>
+        <p class="summary">When you’re juggling more than just your own calendar, staying organized can be overwhelming. Fortunately, the Skylight Calendar 2 can help simplify things by syncing multiple calendars in a single spot. And right now, it’s on sale for a new low of $249.99 ($50 off) at both Amazon and Walmart, which...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/04/image-ai-models-now-drive-app-growth-beating-chatbot-upgrades/" target="_blank" rel="noopener">Image AI models now drive app growth, beating chatbot upgrades</a></h3>
+        
+        <div class="source">TechCrunch · 05/04 19:12</div>
+        <p class="summary">Appfigures finds visual model launches generate 6.5x more downloads — but most don’t convert that spike into revenue.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://techcrunch.com/2026/05/04/katie-haun-raises-1-billion-for-new-venture-funds/" target="_blank" rel="noopener">Katie Haun raises $1B for new venture funds</a></h3>
+        
+        <div class="source">TechCrunch · 05/04 19:12</div>
+        <p class="summary">Katie Haun announced on Monday that $1 billion has been raised across new funds to continue the firm’s thesis of backing crypto and blockchain startups.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/923162/switchbot-bot-rechargeable-button-presser-mothers-day-sale-deal" target="_blank" rel="noopener">SwitchBot’s rechargeable button pusher is on sale for over 20 percent off</a></h3>
+        
+        <div class="source">The Verge · 05/04 18:47</div>
+        <p class="summary">If you want to give mom something that helps lighten the load, the SwitchBot Bot Rechargeable makes for a great, inexpensive gift. And now through May 10th, you can buy it for around $26.99 ($7 off) from Amazon and SwitchBot (with code FORHER20) as a part of its ongoing Mother’s Day sale, which drop...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale/" target="_blank" rel="noopener">How OpenAI delivers low-latency voice AI at scale</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/04 19:42</div>
+        <p class="summary">Article URL: https://openai.com/index/delivering-low-latency-voice-ai-at-scale/ Comments URL: https://news.ycombinator.com/item?id=48013919 Points: 161 # Comments: 67</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/" target="_blank" rel="noopener">The latest AI news we announced in April 2026</a></h3>
+        
+        <div class="source">Google AI Blog · 05/04 17:00</div>
+        <p class="summary">mp4 featuring an underwater video and a mobile AI video mockup.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.404media.co/literacy-in-future-technologies-artificial-intelligence-act-adam-schiff-mike-rounds/" target="_blank" rel="noopener">OpenAI, Google, and Microsoft Back Bill to Fund 'AI Literacy' in Schools</a></h3>
+        
+        <div class="source">Hacker News (AI) · 05/04 16:21</div>
+        <p class="summary">https://archive.ph/gLnMk Comments URL: https://news.ycombinator.com/item?id=48010774 Points: 103 # Comments: 94</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/05/04/1136826/week-one-of-the-musk-v-altman-trial-what-it-was-like-in-the-room/" target="_blank" rel="noopener">Week one of the Musk v. Altman trial: What it was like in the room</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 05/04 15:51</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Two of the most powerful people in AI—Sam Altman and Elon Musk—began their face-off in court in Oakland, California, last week. Musk is suing OpenAI, allegin...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/technology/developers-tools/event-driven-webhooks/" target="_blank" rel="noopener">Reduce friction and latency for long-running jobs with Webhooks in Gemini API</a></h3>
+        
+        <div class="source">Google AI Blog · 05/04 15:30</div>
+        <p class="summary">Gemini API</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/delivering-low-latency-voice-ai-at-scale" target="_blank" rel="noopener">How OpenAI delivers low-latency voice AI at scale</a></h3>
+        
+        <div class="source">OpenAI Blog · 05/04 00:00</div>
+        <p class="summary">How OpenAI rebuilt its WebRTC stack to power real-time Voice AI with low latency, global scale, and seamless conversational turn-taking.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">7</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/phishing-campaign-hits-80-orgs-using.html" target="_blank" rel="noopener">Phishing Campaign Hits 80+ Orgs Using SimpleHelp and ScreenConnect RMM Tools</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 18:06</div>
+        <p class="summary">An active phishing campaign has been observed targeting multiple vectors since at least April 2025, with legitimate Remote Monitoring and Management (RMM) software as a way to establish persistent remote access to compromised hosts. The activity, codenamed VENOMOUS#HELPER, has impacted over 80 organ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/progress-patches-critical-moveit.html" target="_blank" rel="noopener">Progress Patches Critical MOVEit Automation Bug Enabling Authentication Bypass</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 16:34</div>
+        <p class="summary">Progress Software has released updates to address two security flaws in MOVEit Automation, including a critical bug that could result in an authentication bypass. MOVEit Automation (formerly Central) is a secure, server-based managed file transfer (MFT) solution used to schedule and automate file mo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/weekly-recap-ai-powered-phishing.html" target="_blank" rel="noopener">⚡ Weekly Recap: AI-Powered Phishing, Android Spying Tool, Linux Exploit, GitHub RCE & More</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 14:23</div>
+        <p class="summary">This week, the shadows moved faster than the patches. While most teams were still triaging last month’s alerts, attackers had already turned control panels into kill switches, kernels into open doors, and open-source pipelines into silent delivery systems. The game has shifted from breach to occupat...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank" rel="noopener">2026: The Year of AI-Assisted Attacks</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 11:58</div>
+        <p class="summary">On December 4, 2025, a 17-year-old was arrested in Osaka under Japan’s Unauthorized Access Prohibition Act. The young man had run malicious code to extract the personal data of over 7 million users of Kaikatsu Club, Japan's largest internet cafe chain. When asked, the young man shared his motivation...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/silver-fox-deploys-abcdoor-malware-via.html" target="_blank" rel="noopener">Silver Fox Deploys ABCDoor Malware via Tax-Themed Phishing in India and Russia</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 11:57</div>
+        <p class="summary">The China-based cybercrime group known as Silver Fox has been linked to a new campaign targeting organizations in Russia and India with a new malware called ABCDoor. The activity involved using phishing emails that mimic correspondence from the Income Tax Department of India in December 2025, follow...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/critical-cpanel-vulnerability.html" target="_blank" rel="noopener">Critical cPanel Vulnerability Weaponized to Target Government and MSP Networks</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 09:27</div>
+        <p class="summary">A previously unknown threat actor has been observed targeting government and military entities in Southeast Asia, alongside a smaller cluster of managed service providers (MSPs) and hosting providers in the Philippines, Laos, Canada, South Africa, and the U.S., by exploiting the recently disclosed v...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://thehackernews.com/2026/05/global-crackdown-arrests-276-shuts-9.html" target="_blank" rel="noopener">Global Crackdown Arrests 276, Shuts 9 Crypto Scam Centers, Seizes $701M</a></h3>
+        
+        <div class="source">The Hacker News · 05/04 05:59</div>
+        <p class="summary">A coordinated international operation involving U.S. and Chinese authorities has arrested at least 276 suspects and shut down nine scam centers used for cryptocurrency investment fraud schemes targeting Americans, resulting in millions of dollars in losses. The crackdown was led by the Dubai Police,...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/microsoft-agent-framework-building-blocks-for-ai-part-3/" target="_blank" rel="noopener">Microsoft Agent Framework – Building Blocks for AI Part 3</a></h3>
+        
+        <div class="source">.NET Blog · 05/04 17:06</div>
+        <p class="summary">Build intelligent AI agents in .NET with the Microsoft Agent Framework. Learn how to create agents with tools, multi-turn conversations, memory, and graph-based workflows that bring together the building blocks from Parts 1 and 2. The post Microsoft Agent Framework &#8211; Building Blocks for AI Par...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/microsoft-agent-framework-building-blocks-for-ai-part-3/" target="_blank" rel="noopener">Microsoft Agent Framework – Building Blocks for AI Part 3</a></h3>
+        
+        <div class="source">ASP.NET Blog · 05/04 17:06</div>
+        <p class="summary">Build intelligent AI agents in .NET with the Microsoft Agent Framework. Learn how to create agents with tools, multi-turn conversations, memory, and graph-based workflows that bring together the building blocks from Parts 1 and 2. The post Microsoft Agent Framework &#8211; Building Blocks for AI Par...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KM_20005/items/db235908c8d09c1970f9" target="_blank" rel="noopener">【C#】例外とログを深く考える：第2回 設計思想編（MessageとDataの高度な連携）</a></h3>
+        
+        <div class="source">Qiita - C# · 05/04 05:10</div>
+        <p class="summary">前回は例外とログを扱う際に避けては通れないSystem.Exceptionについて解説を行いました。 今回は例外が発生した際、「何が起きたか」だけでなく「調査に何が必要か」をいかに残すか。 System.Exception クラスのポテンシャルを最大限に引き出し、大規...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/nuskey/articles/csharpier-is-good" target="_blank" rel="noopener">【C#】CSharpierのすすめ</a></h3>
+        
+        <div class="source">Zenn - .NET · 05/04 01:55</div>
+        <p class="summary">C#フォーマッタであるCSharpierがとても良かったので、そのおすすめ記事です。CSharpierはいいぞ。 https://csharpier.com/ dotnet-format 当然ですが、C#にもデフォルトのフォーマッタであるdotnet-formatが用意されています。これはプロジェクトの.editorconfigをベースに動作するフォーマッタになっていて、VSCodeのC#拡張機能などではこれが使われています。 これでもある程度は使えますが、そこまで強力ではありません。例えば以下のコードの場合。 class Program{ static void Main(...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/gdgdkuro/items/c8ed80e9a426a94715fd" target="_blank" rel="noopener">RiderでC#Formアプリケーションにアイコンを設定する</a></h3>
+        
+        <div class="source">Qiita - C# · 05/04 01:07</div>
+        <p class="summary">概要 アイコンの設定を仕方をコロコロ忘れてしまうので備忘録として残しておきます exeのアイコンとFormのアイコンは別途指定しないといけないので注意 exeファイルへのアイコン設定 C#プロジェクトを右クリック -&gt; プロパティを開きます アプリケーション -&gt; リ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/fixed-height-cards-more-fragile-than-they-look/" target="_blank" rel="noopener">Fixed-Height Cards: More Fragile Than They Look</a></h3>
+        
+        <div class="source">CSS-Tricks · 05/04 14:01</div>
+        <p class="summary">Getting a multi-column of cards to line up equally is is a headache we've all faced, and it gets even harder when working with fixed heights. Fixed-Height Cards: More Fragile Than They Look originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/lazy_ai_dev/articles/boardgame-accessibility-coordinate-sync" target="_blank" rel="noopener">盤面UIのアクセシビリティは ARIA 属性より座標同期で守る</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/04 13:58</div>
+        <p class="summary">盤面ゲームのアクセシビリティは、aria-* を足すだけでは安定しません。 とくに反転表示を持つ盤面では、見た目の座標、内部ロジックの座標、スクリーンリーダーが読む座標がズレやすくなります。 今回扱うのは、isFlipped=true のときに「見えているマス」と「読み上げられるマス」の意味がズレる問題です。 note 版では体験面を中心に書きましたが、この記事では実装上の整理として、表示座標・論理座標・アクセシブル名を同じ変換から作る考え方をまとめます。 note 版: https://note.com/lazy_ai_dev/n/ncf0999fadb25 反転盤面で何が壊れるか...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/watanabe_trtr/items/3b61aeacfe4f51f2904d" target="_blank" rel="noopener">例外処理の設計について（脱初級者）</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/04 12:33</div>
+        <p class="summary">エンジニア3年目になりましたが、今までちゃんと例外処理を設計ベースで考えたことがあまりなかったので、初級者から脱するために調べてみました。 1. 正常ルートと異常ルートを切り分ける コードを書く際、常に2つの流れをまずは抑える。 正常系: return が繋いでいく「...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/KAI_Mutsumi/items/c65b637f743c42893317" target="_blank" rel="noopener">気象庁サイトを利用したビューアの作成 9 地図タイル</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/04 11:58</div>
+        <p class="summary">目次・全体的な注意点(第1回の記事) 気象庁ホームページで使用されている地図タイルや、地点情報ファイル、地図の描画に使用可能なフリーの地図タイルについて取り上げます 記事作成時に確認した範囲の情報です。仕様変更などの可能性もありますのでご了承ください タイル形式の...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/ArakiPhp/items/c29c45acbb2084293c52" target="_blank" rel="noopener">実務1年目駆け出しエンジニアがLaravel&ReactでWebアプリケーション開発に挑戦してみた！（フロントエンド実装編㉑）~レスポンシブデザイン対応~</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/04 10:03</div>
+        <p class="summary">実務1年目駆け出しエンジニアがLaravel&amp;ReactでWebアプリケーション開発に挑戦してみた！（その42） 0. 初めに 駆け出しエンジニアの僕が、ゼロからWebアプリケーション開発に挑戦する様子をお届けしているシリーズです。 ついに、長かったフロントエンド編も今...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://qiita.com/gtakairo/items/26f4acdabbf30f1a962d" target="_blank" rel="noopener">JavaScript の SourceMap を基礎から理解する【仕組み・デバッグ・セキュリティ】</a></h3>
+        
+        <div class="source">Qiita - JavaScript · 05/04 09:36</div>
+        <p class="summary">はじめに minify されたコードのエラーを見たとき、こんな行番号が出たことはありませんか？ Uncaught TypeError: Cannot read properties of undefined at a.b (app.min.js:1:4832) ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/shutingstar/articles/ef7a24133b87de" target="_blank" rel="noopener">よく聞くけど説明できなかったDOMを整理する ― HTMLとJavaScriptの間にあるもの</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/04 04:00</div>
+        <p class="summary">はじめに こんにちは、YSです。 今回は DOM について整理します。 DOMという言葉は、フロントエンドを触っているとかなりよく聞きます。 DOMを操作する 仮想DOM DOMツリー document.getElementById ReactはDOMを直接触らない ただ、いざ「DOMって何ですか？」と聞かれると、意外と説明が難しいです。 少なくとも自分は、最初うまく言語化できませんでした。 この記事では、DOMを 「HTMLをブラウザがJavaScriptから扱える形に変換したもの」 として整理してみます。 まずHTMLはただの文字列 Webページは、まずHTMLとして書...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://zenn.dev/slopwelljp/articles/59aea0d7fa13db" target="_blank" rel="noopener">フロントエンドApp？SPAとは？を簡単にまとめてみた</a></h3>
+        
+        <div class="source">Zenn - Frontend · 05/04 00:24</div>
+        <p class="summary">すっごく概要レベルでかいつまんで理解してもらう フロントエンドとは バックエンドとフロントエンドでAppを構成する際に、フロントエンドはユーザが直接視認する部分を指す。 フロントエンドは、ユーザのUI/UXを責務とし、ユーザの入力を受け取ってバックエンドに送信する役割を担う。 Webサイト、モバイルApp、デスクトップAppもフロントエンドの一種である。 ! サーバサイド・クライアントサイドとの違い 「分け方の視点が異なる」と個人的に解釈してます。 フロント・バックエンド→何を責務にしているか（What視点） サーバ・クライアントサイド→どこで実行されるか（Where視点） ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
