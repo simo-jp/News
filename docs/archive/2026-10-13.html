@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月13日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月13日 / 全13件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">2</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33418" target="_blank" rel="noopener">ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/13 02:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/fbi-arrests-suspect-in-fbi-hacking-case.html" target="_blank" rel="noopener">FBI Arrests Suspect in FBI-Hacking Case</a></h3>
+        
+        <div class="source">Schneier on Security · 10/12 15:01</div>
+        <p class="summary">In September, hackers from a group called ShinyHunters announced that they stole a trove of FBI data about its own agents. It was an intelligence disaster. Last week, the FBI arrested (alternate link) someone associated with that crime.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cm9qzwjgnjxlo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Bumble shares soar after report dating firm in $1bn takeover talks</a></h3>
+        
+        <div class="source">BBC Technology · 10/13 01:50</div>
+        <p class="summary">The jump pushed Bumble's stock market valuation to more than $580m but that is still far below their peak of more than $14bn.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/13/2000002201/" target="_blank" rel="noopener">フランスのスーパー数百店舗で冷蔵設備にサイバー攻撃　温度が最高50度に上昇し食品大量廃棄に</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/13 01:20</div>
+        <p class="summary">フランスのスーパーマーケット数百店舗で、冷蔵・冷凍設備の霜取り機能を不正操作するサイバー攻撃が発生した。庫内温度が最高50度まで上昇して食品が大量廃棄され、一部店舗では火災も発生した。制御機器を手掛けるDanfossは旧型製品への対応を進め、検察当局が捜査を開始した。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/13/2000002200/" target="_blank" rel="noopener">Microsoft、第3世代AIチップ「Maia 300」を2027年に投入　GPU比で電力効率4割向上、自社サービスの主力推論基盤に</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/13 00:24</div>
+        <p class="summary">Microsoftは、自社設計AIアクセラレータ「Maia 300」を発表した。TSMCの2nmプロセスを採用し、HBM4を288GB搭載。推論処理に特化し、GPU基盤比で電力効率を向上させて前世代比最大7倍の処理能力を実現した。数ギガワット規模で展開し、自社サービスの中核に据える。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/13/2000002197/" target="_blank" rel="noopener">Meta、同社最大のAIモデル「Muse Wonder」発表　記憶力と粘り強さを強化、AIエージェント「Muse」にも搭載へ</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/12 22:06</div>
+        <p class="summary">Metaは、最大かつ最強と位置付ける新AIモデル「Muse Wonder」と上位モデル「Muse Wonde Full」を発表した。会話をまたいで記憶を保持する機能や粘り強くタスクを遂行する機能を備え、エージェント用途に最適化した。APIやコーディングツールで提供を始めたほか、個人向けAIエージェント「Muse」にも順次搭載していく。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/health/2026/10/39-year-old-unvaccinated-woman-becomes-6th-measles-death-in-pennsylvania/" target="_blank" rel="noopener">39-year-old unvaccinated woman becomes 6th measles death in Pennsylvania</a></h3>
+        
+        <div class="source">Ars Technica · 10/12 21:54</div>
+        <p class="summary">As of Friday, state health officials reported 1,136 cases across 41 counties.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/1009630/social-reckoning-box-office-other-mommy" target="_blank" rel="noopener">The Social Reckoning is flopping at the box office</a></h3>
+        
+        <div class="source">The Verge · 10/12 21:20</div>
+        <p class="summary">As important as some of the messages in The Social Reckoning are, the movie has been drastically underperforming at the box office. Per Variety, Aaron's Sorkin's follow up to The Social Network only grossed a measly $5.5 million this past weekend against a budget that's somewhere within the $30-42 m...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gaming/2026/10/report-epic-games-goes-all-in-on-ai-for-disney-collaboration/" target="_blank" rel="noopener">Epic Games reportedly pivoting to "AI first" game development model</a></h3>
+        
+        <div class="source">Ars Technica · 10/12 20:59</div>
+        <p class="summary">"No more hand-written code" or AI-free art for delayed Marvel/Star Wars shooter.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gaming/2026/10/after-a-10-year-redemption-arc-no-mans-sky-is-coming-to-the-iphone-and-ipad/" target="_blank" rel="noopener">After a 10-year redemption arc, No Man's Sky is coming to the iPhone and iPad</a></h3>
+        
+        <div class="source">Ars Technica · 10/12 20:26</div>
+        <p class="summary">You can get a universe in your pocket if you have an iPhone 11 or later.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/durable-task-in-the-real-world/" target="_blank" rel="noopener">Durable Task in the Real World: What Problems Does It Actually Solve?</a></h3>
+        
+        <div class="source">.NET Blog · 10/12 16:30</div>
+        <p class="summary">Five practical examples of when durable execution makes sense, when it does not, and what it means for AI agents. The post Durable Task in the Real World: What Problems Does It Actually Solve? appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/durable-task-in-the-real-world/" target="_blank" rel="noopener">Durable Task in the Real World: What Problems Does It Actually Solve?</a></h3>
+        
+        <div class="source">ASP.NET Blog · 10/12 16:30</div>
+        <p class="summary">Five practical examples of when durable execution makes sense, when it does not, and what it means for AI agents. The post Durable Task in the Real World: What Problems Does It Actually Solve? appeared first on .NET Blog.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.microsoft.com/en-us/research/blog/simulating-student-learning-for-better-ai-tutoring/" target="_blank" rel="noopener">Simulating student learning for better AI tutoring</a></h3>
+        
+        <div class="source">Microsoft Research Blog · 10/12 16:00</div>
+        <p class="summary">StudentSim is a research system for evaluating and improving AI tutoring tools before they are tested with learners. It models how individuals may engage with tutors, giving feedback to improve tutor performance across subjects like chess, writing, and mathematics. The post Simulating student learni...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
