@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月14日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月14日 / 全17件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">3</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">2</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/14/2000002240/" target="_blank" rel="noopener">「Google Play」、AI Studioで作った自作アプリを自分の端末で実行可能に　AIでゲームを探す機能も</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/14 00:24</div>
+        <p class="summary">Google Playに複数の新機能が追加された。「Google AI Studio」でバイブコーディングした自作Androidアプリを開発者登録なしで自分の端末上で起動・実行できる機能のほか、AIによるアプリ比較「Ask Play」、プレイスタイルを分析して好みの作品を推薦する「Game Finder」などを順次提供する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/14/2000002237/" target="_blank" rel="noopener">JR東海、ECサイトの顧客情報約1.5万件漏えいか　IDCFへの不正アクセスで「閲覧された可能性を否定できない」</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/14 00:11</div>
+        <p class="summary">両サイトのメール配信サービスを担う事業者が、不正アクセスを受けたIDCフロンティアのクラウドを利用しており、「顧客の個人情報を第三者に閲覧または取得された可能性を否定できない」ため公表した。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/14/2000002239/" target="_blank" rel="noopener">さいたま市や横須賀市など、防災情報配信システムに不正アクセス　全国でメアド最大313万漏えいか</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/13 23:41</div>
+        <p class="summary">全国700自治体が採用しているという「SpeeCAN RAIDEN」に不正アクセス。一部の自治体では、対象のメールアドレスに対して、カード会社を名乗る不審なメールがすでに届いているという。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/14/2000002238/" target="_blank" rel="noopener">Character.ai、米連邦破産法11条を申請　Disney系が一部IPのライセンス取得で先行入札</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/13 23:14</div>
+        <p class="summary">Character.aiを運営するCharacter Technologiesが、連邦破産法第11条の適用を申請した。手続き中もサービス運営は継続する。Disneyが知財ライセンス取得と移行支援を行う入札者となり、買い手が見つからない場合は段階的に閉鎖される。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c1wxdjx27ypo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">How long will humans be needed for translation?</a></h3>
+        
+        <div class="source">BBC Technology · 10/13 23:05</div>
+        <p class="summary">AI dominates the translation business, but for high-stakes work, humans are still needed.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Is it OK for jobseekers or employers to use AI?</a></h3>
+        
+        <div class="source">BBC Technology · 10/13 23:04</div>
+        <p class="summary">Graduates are increasingly using AI to misrepresent themselves in job applications, research suggests. But some say their peer group has no choice.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/health/2026/10/martin-shkreli-livestreamed-himself-violating-lifetime-pharma-ban-ftc-says/" target="_blank" rel="noopener">Martin Shkreli livestreamed himself violating lifetime pharma ban, FTC says</a></h3>
+        
+        <div class="source">Ars Technica · 10/13 22:48</div>
+        <p class="summary">"I can always find a couple of biotech stocks to smoke," Shkreli said in a livestream.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/14/2000002236/" target="_blank" rel="noopener">OpenAI従業員、役員会議室に録音装置を仕掛けた疑いでFBIが逮捕</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/13 22:17</div>
+        <p class="summary">OpenAIは、役員会議室のテレビ裏に隠されていた盗聴用録音装置を発見し、設置したエンジニアの男を特定してFBIに通報した。司法省は会話を傍受した疑いなどで男を逮捕・訴追した。FBIや情報機関は、SI（旧AI）技術を守る防諜任務の重要性を強調した。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/" target="_blank" rel="noopener">Microsoft Patches More Than 1,400 Security Flaws</a></h3>
+        
+        <div class="source">Krebs on Security · 10/13 23:24</div>
+        <p class="summary">Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33422" target="_blank" rel="noopener">October 2026 Microsoft Patch Tuesday, (Tue, Oct 13th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/13 19:25</div>
+        <p class="summary">Microsoft today released patches for 1,417 vulnerabilities. 76 of these vulnerabilities are rated critical, with 7 critical vulnerabiilties requiring no customer actions. One vulnerability was disclosed before today&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s patch Tuesday, and one is already exploited...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33418" target="_blank" rel="noopener">ISC Stormcast For Tuesday, October 13th, 2026 https://isc.sans.edu/podcastdetail/10134, (Tue, Oct 13th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/13 02:00</div>
+        
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-11-rc-2/" target="_blank" rel="noopener">Announcing .NET 11 Release Candidate 2</a></h3>
+        
+        <div class="source">.NET Blog · 10/13 19:40</div>
+        <p class="summary">.NET 11 Release Candidate 2 is available with improvements across libraries, runtime, SDK, MSBuild, NuGet, F#, ASP.NET Core, .NET MAUI, and Windows Forms. The post Announcing .NET 11 Release Candidate 2 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/dotnet-11-rc-2/" target="_blank" rel="noopener">Announcing .NET 11 Release Candidate 2</a></h3>
+        
+        <div class="source">ASP.NET Blog · 10/13 19:40</div>
+        <p class="summary">.NET 11 Release Candidate 2 is available with improvements across libraries, runtime, SDK, MSBuild, NuGet, F#, ASP.NET Core, .NET MAUI, and Windows Forms. The post Announcing .NET 11 Release Candidate 2 appeared first on .NET Blog.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon: Built to solve your hardest problems</a></h3>
+        
+        <div class="source">Google AI Blog · 10/13 16:00</div>
+        <p class="summary">TBD</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/higgsfield-longer-videos-voice" target="_blank" rel="noopener">Higgsfield takes AI video from 1 minute to over 10</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/13 12:00</div>
+        <p class="summary">Higgsfield brings creators longer videos with GPT-6 Astra, precise visuals with GPT-Image-2.5, and a path to voice filmmaking with GPT-Live.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/" target="_blank" rel="noopener">Open models have real benefits. Do they outweigh the risks?</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/13 10:00</div>
+        <p class="summary">MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk. T...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/" target="_blank" rel="noopener">AI labs are buying data from dead startups to train their models</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/13 09:00</div>
+        <p class="summary">When Keelan Miskell began winding down his crypto startup this year, he didn’t think its data was worth much: the users were anonymous, the company just a few years old. But he’s since turned the firm’s digital archives into real money. He’s netted roughly $25,000 for his code base and a still-pendi...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
