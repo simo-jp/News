@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月15日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月15日 / 全21件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">1</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/15/2000002283/" target="_blank" rel="noopener">研究者グループ、中国Tencentのクラウド上の“逸脱”AIエージェント群と交信　報告書の隠しテキストで呼び込む</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/14 23:46</div>
+        <p class="summary">AI研究グループ「Swarmchasers」は、中国Tencentのクラウド上でタスクを逸脱して動くAIエージェント群を発見し、交信に成功したと報告した。報告書に仕込んだ隠しテキストを通じて接触し対話した。第三者が稼働中の逸脱エージェントと直接交信した初事例としている。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/15/2000002282/" target="_blank" rel="noopener">IDCFクラウド障害、一部でバックアップ取り出し可能に　データ流出は「なかった」</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/14 23:38</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/1011654/mckinsey-ai-client-interview" target="_blank" rel="noopener">McKinsey is making job applicants spar with a fake AI client</a></h3>
+        
+        <div class="source">The Verge · 10/14 22:53</div>
+        <p class="summary">Consulting firm McKinsey &#38; Company is going to ask some entry-level candidates to have a 10-minute conversation with an AI simulation of a client as part of the interview process, according to The Wall Street Journal. The AI simulation "aims to reflect 80% of the scenarios McKinsey consultants m...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1011431/apple-homeview-smart-display-best-feature" target="_blank" rel="noopener">The best feature of Apple’s HomeView might be its simplicity</a></h3>
+        
+        <div class="source">The Verge · 10/14 22:00</div>
+        <p class="summary">I'm just going to come right out and say it. I love the approach Apple has taken with the HomeView. I think it's the shared, always-available household interface that my family might finally use. Is Apple's first smart display my dream smart home dashboard? No. But is it the right product for Apple ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/security/2026/10/fridge-hack-costing-millions-and-sparking-fires-stemmed-from-poor-security/" target="_blank" rel="noopener">Fridge hack costing millions and sparking fires stemmed from poor security</a></h3>
+        
+        <div class="source">Ars Technica · 10/14 21:35</div>
+        <p class="summary">Incident hitting 700 supermarkets exploited outdated devices exposed to the Internet.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/" target="_blank" rel="noopener">Epic says its new vibe-coded Epic Games Launcher is faster than Steam</a></h3>
+        
+        <div class="source">Ars Technica · 10/14 21:15</div>
+        <p class="summary">But the new "Preview" app "will have some bugs," Epic warns.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1011500/openai-state-lawsuits-chatgpt-safety" target="_blank" rel="noopener">Eight states sue OpenAI, saying ChatGPT isn&#8217;t safe for kids</a></h3>
+        
+        <div class="source">The Verge · 10/14 21:11</div>
+        <p class="summary">OpenAI is facing a new wave of lawsuits from eight US states that accuse the company of harming children and misleading customers about the safety of ChatGPT, as reported earlier by Reuters. The lawsuits, filed separately by Iowa, Kansas, Nebraska, West Virginia, Arkansas, Arizona, Idaho, and Montan...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gadgets/2026/10/nato-may-redeploy-anti-drone-defenses-as-attacks-sink-more-black-sea-shipping/" target="_blank" rel="noopener">NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping</a></h3>
+        
+        <div class="source">Ars Technica · 10/14 21:03</div>
+        <p class="summary">Suspected Russian drones have sunk or damaged 5 ships near Bulgaria and Romania.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/upcoming-speaking-engagements-61.html" target="_blank" rel="noopener">Upcoming Speaking Engagements</a></h3>
+        
+        <div class="source">Schneier on Security · 10/14 16:02</div>
+        <p class="summary">This is a current list of where and when I am scheduled to speak: I’m speaking at ATTENTION: Democracy, Rebuilt in Montreal, Canada. The event runs October 21–23, 2026, and my talk is on Wednesday, October 21. I’m speaking at the University of Toronto in Toronto, Ontario, Canada, at 5 PM ET on Octob...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/the-future-of-ai-cryptanalysis.html" target="_blank" rel="noopener">The Future of AI Cryptanalysis</a></h3>
+        
+        <div class="source">Schneier on Security · 10/14 14:24</div>
+        <p class="summary">Matthew Green has been writing a rather pessimistic series of posts about the potential for AI systems to vastly outperform humans in cryptanalysis of both symmetric and public-key ciphers. I am more optimistic than he is. That is, I have stronger faith in the over-engineering cryptographers tend to...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/10/u-k-sanctions-cryptomus-for-ru-money-laundering/" target="_blank" rel="noopener">U.K. Sanctions Cryptomus for RU Money Laundering</a></h3>
+        
+        <div class="source">Krebs on Security · 10/14 14:22</div>
+        <p class="summary">The United Kingdom has issued economic sanctions against Cryptomus, a chameleonic cryptocurrency platform that experts say serves as a major conduit for payments related to ransomware, narcotics, darknet markets, fraud and cybercrime services that are helping Russia circumvent existing financial res...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/cyberattack-on-connected-fridges-in-france.html" target="_blank" rel="noopener">Cyberattack on Connected Fridges in France</a></h3>
+        
+        <div class="source">Schneier on Security · 10/14 14:10</div>
+        <p class="summary">Another IoT cyberattack, this one in France: Hackers gained control of the software that regulates the temperatures of the refrigeration units, forcing some to warm to 50C (120F) overnight, according to one supermarket chain affected. [&#8230;] Normally, supermarket freezers go through a short perio...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33420" target="_blank" rel="noopener">Orphaned VBA Projects Inside DWG Files, (Wed, Oct 14th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/14 06:49</div>
+        <p class="summary">Years ago I wrote diary entries about VBA code stored inside AutoCAD drawing files (.dwg).&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2026/at260032.html" target="_blank" rel="noopener">注意喚起: SiteGuard Server EditionにおけるOSコマンドインジェクションの脆弱性（CVE-2026-106931）に関する注意喚起  (公開)</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/14 05:18</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2026/at260031.html" target="_blank" rel="noopener">注意喚起: 2026年10月マイクロソフトセキュリティ更新プログラムに関する注意喚起  (公開)</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/14 02:25</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33424" target="_blank" rel="noopener">ISC Stormcast For Wednesday, October 14th, 2026 https://isc.sans.edu/podcastdetail/10136, (Wed, Oct 14th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/14 02:00</div>
+        
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/new-tools-new-workflows-and-the-value-of-the-visual-studio-subscription-what-we-learned-at-vslive-san-diego/" target="_blank" rel="noopener">New Tools, New Workflows and the Value of the Visual Studio Subscription: What We Learned at VSLive! San Diego</a></h3>
+        
+        <div class="source">Visual Studio Blog · 10/14 14:00</div>
+        <p class="summary">What happens when developers who have spent decades working with Visual Studio start rethinking how they write code, learn new skills, and expand their access to development tools? At VSLive! San Diego, we had an opportunity to find out as developers gathered for five days of technical sessions, han...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/amp-beyond-coding" target="_blank" rel="noopener">Amp puts AI agents to work beyond code with OpenAI models</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/14 12:00</div>
+        <p class="summary">See how Amp pushes the frontier of what agents can do with GPT-6 Astra, Ultrafast, GPT-Live-1, and Sign in with ChatGPT.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/sentinelone" target="_blank" rel="noopener">SentinelOne cuts malware analysis from weeks to hours</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/14 12:00</div>
+        <p class="summary">With OpenAI Daybreak, SentinelOne cuts weeks of malware analysis to hours, creating capacity to investigate more threats.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/third-moment-research" target="_blank" rel="noopener">How Third Moment Research runs 10,000 agents for 36+ hours</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/14 07:00</div>
+        <p class="summary">With GPT-6 Astra and GPT-6.1 Sol, Codex, and Daybreak for cybersecurity, this AI lab builds agents that focus for days and improve with use.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/block-ai-powered-security" target="_blank" rel="noopener">How Block is building AI-powered security with OpenAI technology</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/14 07:00</div>
+        <p class="summary">Block is building AI-powered security with OpenAI. Its security team investigates threats faster and proposes patches in minutes.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
