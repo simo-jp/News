@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月16日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月16日 / 全22件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">3</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">3</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cmpqgepejr2ro?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Porn showing choking or incest to be banned from early November, government says</a></h3>
+        
+        <div class="source">BBC Technology · 10/15 23:27</div>
+        <p class="summary">The move follows a review into pornography regulation in 2025 by Conservative peer Baroness Gabby Bertin</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/1012541/valve-steam-achievement-sets" target="_blank" rel="noopener">Steam can now show game achievements in separate ‘sets’</a></h3>
+        
+        <div class="source">The Verge · 10/15 23:18</div>
+        <p class="summary">Valve is introducing a major new feature for Steam achievements called "achievement sets" that lets developers list different groups of achievements for a base game and DLCs. "In games that support sets, you still unlock achievements by playing the game as usual," Valve says. "But when you browse wh...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cr6240q1w136o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Living with a stink? Technology might help</a></h3>
+        
+        <div class="source">BBC Technology · 10/15 23:18</div>
+        <p class="summary">Smells from rubbish dumps and industrial facilities are being more carefully monitored.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/16/2000002312/" target="_blank" rel="noopener">「セキュリティソフトも売ってるのに」ソースネクスト会員情報漏えい、パスワード含む最大2252万件　API不正利用される</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/15 22:45</div>
+        <p class="summary">「1Password」（3年版）やウイルス対策ソフト「ZERO」などを扱っているソースネクストから、会員パスワードを含む大規模漏えい。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs" target="_blank" rel="noopener">ChatGPT can peek at your Chrome tabs now</a></h3>
+        
+        <div class="source">The Verge · 10/15 22:43</div>
+        <p class="summary">OpenAI's ChatGPT Atlas browser is gone, but now ChatGPT's Google Chrome extension is getting some upgrades that allow it to use the browser tabs you already have open. With the extension installed, OpenAI says ChatGPT can now view your browser tabs when you tag Chrome in ChatGPT's web or desktop app...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/1012512/sega-total-war-shogun-2-remaster-pulled" target="_blank" rel="noopener">Sega pulls Total War: Shogun 2 remaster from sale following disastrous launch</a></h3>
+        
+        <div class="source">The Verge · 10/15 22:35</div>
+        <p class="summary">Sega is removing Total War: Shogun 2 - Complete Edition from storefronts following a disastrous launch where users complained about issues like bugs and upscaling that appears to have been done by AI. Complete Edition, a remaster of the 2011 strategy game, launched on Tuesday, and it bundled the mai...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/entertainment/1012438/hollywood-tech-backlash-you-can-see-everything-musk-the-social-reckoning-artificial" target="_blank" rel="noopener">The tech backlash is now in theaters</a></h3>
+        
+        <div class="source">The Verge · 10/15 21:39</div>
+        <p class="summary">Though movies about disruptive tech founders are nothing new, 2026 has been unusually stacked with features that take a much more critical look at how Silicon Valley is reshaping our reality. Aaron Sorkin's The Social Reckoning frames Mark Zuckerberg as a robotic villain whose ambitions are destabil...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gadgets/2026/10/plex-now-helps-sell-movie-theater-tickets/" target="_blank" rel="noopener">Plex now helps sell movie theater tickets</a></h3>
+        
+        <div class="source">Ars Technica · 10/15 21:22</div>
+        <p class="summary">Discovery data from Plex users will help studios, advertisers.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33426" target="_blank" rel="noopener">Panchan's Mining Island &#x5b;Guest Diary&#x5d;, (Wed, Oct 14th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/15 23:03</div>
+        <p class="summary">&#x5b;This is a Guest Diary by Zachary Norwood, an ISC intern as part of the SANS.edu BACS program&#x5d;&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/measuring-human-cryptanalysis-effort.html" target="_blank" rel="noopener">Measuring Human Cryptanalysis Effort</a></h3>
+        
+        <div class="source">Schneier on Security · 10/15 16:24</div>
+        <p class="summary">Matthew Green has a new site that tries to estimate the number of cryptanalyst-hours that have been spent analyzing different public-key algorithms: Abstract: We estimate how much public cryptanalysis each public-key assumption has received, using the literature itself as the instrument. From roughl...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33428" target="_blank" rel="noopener">ISC Stormcast For Thursday, October 15th, 2026 https://isc.sans.edu/podcastdetail/10138, (Thu, Oct 15th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/15 02:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261015.html#1" target="_blank" rel="noopener">Weekly Report: Drupalの複数のモジュールに脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/15 00:29</div>
+        <p class="summary">Drupalの複数のモジュールに脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261015.html#2" target="_blank" rel="noopener">Weekly Report: 複数のSplunk製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/15 00:29</div>
+        <p class="summary">複数のSplunk製品に脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261015.html#3" target="_blank" rel="noopener">Weekly Report: 複数のCisco製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/15 00:29</div>
+        <p class="summary">複数のCisco製品に脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261015.html#4" target="_blank" rel="noopener">Weekly Report: Movable Typeに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/15 00:29</div>
+        <p class="summary">Movable Typeに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261015.html#5" target="_blank" rel="noopener">Weekly Report: 複数のElastic製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/15 00:29</div>
+        <p class="summary">複数のElastic製品に脆弱性</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-the-rosalind-academic-plan" target="_blank" rel="noopener">Bringing GPT-Rosalind to academic research labs</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/15 19:00</div>
+        <p class="summary">Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.microsoft.com/en-us/research/blog/proof-based-general-purpose-computing-with-magnetar/" target="_blank" rel="noopener">Proof-based general-purpose computing with Magnetar</a></h3>
+        
+        <div class="source">Microsoft Research Blog · 10/15 16:00</div>
+        <p class="summary">Zero-knowledge proofs can verify computing results without rerunning workloads or exposing sensitive data. Magnetar helps bring them into the mainstream with support for standard programming languages, major speed gains, and quantum-resistant security. The post Proof-based general-purpose computing ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/teaching-students-to-think-and-learn-through-questions" target="_blank" rel="noopener">Teaching students to think and learn through questions</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/15 13:00</div>
+        <p class="summary">Celebrate Teachers’ Day with AI for Educators in Brazilian Portuguese and see how Study Mode can help teachers support active, step-by-step learning.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/introducing-dotnetup/" target="_blank" rel="noopener">Introducing dotnetup: A toolchain manager for .NET</a></h3>
+        
+        <div class="source">.NET Blog · 10/15 16:50</div>
+        <p class="summary">Learn how the new dotnetup tool helps macOS and Linux developers install, manage, and update user-local .NET SDKs and runtimes. The post Introducing dotnetup: A toolchain manager for .NET appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/introducing-dotnetup/" target="_blank" rel="noopener">Introducing dotnetup: A toolchain manager for .NET</a></h3>
+        
+        <div class="source">ASP.NET Blog · 10/15 16:50</div>
+        <p class="summary">Learn how the new dotnetup tool helps macOS and Linux developers install, manage, and update user-local .NET SDKs and runtimes. The post Introducing dotnetup: A toolchain manager for .NET appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/stop-waiting-on-a-failed-build/" target="_blank" rel="noopener">Stop waiting on a failed build</a></h3>
+        
+        <div class="source">Visual Studio Blog · 10/15 14:00</div>
+        <p class="summary">Stop solution builds after the first project failure so you can return to fixing the error sooner. The post Stop waiting on a failed build appeared first on Visual Studio Blog.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
