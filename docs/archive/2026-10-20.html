@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月20日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月20日 / 全19件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/20/2000002410/" target="_blank" rel="noopener">「My SoftBank」サイト停止中　不正アクセスの試み検知　「My Y!mobile」も</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/20 00:16</div>
+        <p class="summary">「My SoftBank」の一部のシステムに対して、第三者による不正アクセスの試みがあったため、安全措置の一環として「MySoftBank」「My Y!mobile」「My Menu」のWebサイトを停止している。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/20/2000002409/" target="_blank" rel="noopener">メール配信のユミルリンクに不正アクセス　メアドなど約900万件漏えいか</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/19 23:59</div>
+        <p class="summary">専用ASPプランのうち、合計5システムに対して、不正アクセスとデータの出力を確認。メールアドレスを含む情報のべ約900万件が出力されたと試算している。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/20/2000002408/" target="_blank" rel="noopener">マスク氏、米国のすべての子供にSpaceX株を1株ずつ贈与すると宣言　「Trump Account」経由か</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/19 23:55</div>
+        <p class="summary">SpaceXのイーロン・マスクCEOは、米国のすべての子供に自身の保有する同社株を1株ずつ贈ると表明した。総額約105億ドル規模となる見込み。トランプ政権が導入した子供向け投資口座制度「Trump Account」を通じた配布が有力視されているが、具体的な時期や方法は明らかにしていない。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/20/2000002406/" target="_blank" rel="noopener">音源販売「SONICWIRE」不正アクセス、「Mythosで状況把握」　会員情報最大42万件漏えいか</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/19 23:08</div>
+        <p class="summary">運営元は「Claude Mythos」（クロード ミュトス）を活用して状況を把握。「安全な復旧に努めている」という。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/health/2026/10/pennsylvania-issues-alert-on-congenital-measles-something-us-hasnt-seen-for-decades/" target="_blank" rel="noopener">Pennsylvania issues alert on congenital measles—something US hasn't seen for decades</a></h3>
+        
+        <div class="source">Ars Technica · 10/19 22:44</div>
+        <p class="summary">Congenital measles can be fatal, and survivors require monitoring for years.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1014115/elon-musk-spacex-trump-account" target="_blank" rel="noopener">Elon Musk’s proposed SpaceX stock giveaway would go into &#8216;Trump Accounts&#8217;</a></h3>
+        
+        <div class="source">The Verge · 10/19 22:30</div>
+        <p class="summary">President Donald Trump announced this afternoon that Elon Musk's SpaceX shares for children will be given through Trump Accounts. Musk said earlier today that he would give one of his SpaceX shares to "every kid in America" sometime next year. Musk had thanked Trump Account booster Brad Gerstner for...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/20/2000002405/" target="_blank" rel="noopener">米国土安全保障省、中国DeepSeek製品を連邦民間機関から排除する命令</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/19 22:07</div>
+        <p class="summary">米国土安全保障省は、中国DeepSeekの製品および関連サービスを連邦民間機関の調達とITシステムから排除する命令を官報で公示した。自社製だけでなく、同社の実装を用いた第三者製品も排除対象とする。連邦調達サプライチェーン安全法に基づく措置で、勧告と証拠を検討した上で発令された。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/science/1013954/fossil-fuel-power-infrastructure-data-centers-report" target="_blank" rel="noopener">The fossil fuel comeback is here</a></h3>
+        
+        <div class="source">The Verge · 10/19 21:48</div>
+        <p class="summary">The US is building more fossil fuel infrastructure than it has in a decade while renewable energy growth slows down, a new report shows. Electricity demand is also climbing faster than it has in more than a decade with more data centers, factories, and electric vehicles plugging into the grid. Despi...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/" target="_blank" rel="noopener">Making the internet better for AI agents might make it worse for everyone else</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/19 18:22</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first,&#160;sign up here. Until recently, you could divide internet users into just two categories: bots and people. Websites have long allowed bots to perform automated tasks, like c...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/" target="_blank" rel="noopener">“We were looking at it wrong”: The explosive claim that’s upended the AI world</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/19 17:45</div>
+        <p class="summary">“I think I have good news about the nature of neural networks.” With those simple words of optimism, Nick Cammarata, a researcher at the AI startup Goodfire, kicked off a 26,000-word blog post that has knocked the AI world on its head, sparking wild speculation as well as cautious (and not-so-cautio...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/low-resource-programming-languages" target="_blank" rel="noopener">Advancing coding in low‑resource programming languages</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/19 12:00</div>
+        <p class="summary">Learn how OpenAI is improving ChatGPT across low-resource programming languages, with new evaluations for software engineering, SQLite, and COBOL migration.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/19/1147095/ai-stranded-claude-virtual-desert-island-play/" target="_blank" rel="noopener">AI researchers stranded Claude on a virtual desert island. It started to “play.”</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/19 09:08</div>
+        <p class="summary">What do AI agents do if you don’t tell them to do anything? The answer looks a lot like play. Researchers repeatedly stranded them alone on a virtual desert island for 30 hours in an experiment reminiscent of the movies Cast Away or Home Alone. The agents—copies of Claude Opus 4.7 nicknamed Eko—were...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/migrate-dotnet-maui-apps-uikit-scene-lifecycle/" target="_blank" rel="noopener">Get Your .NET MAUI App Ready for Xcode 27</a></h3>
+        
+        <div class="source">.NET Blog · 10/19 16:05</div>
+        <p class="summary">Use an agent skill to prepare your existing .NET MAUI app for Xcode 27, with the scene lifecycle changes and manual migration steps explained. The post Get Your .NET MAUI App Ready for Xcode 27 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/migrate-dotnet-maui-apps-uikit-scene-lifecycle/" target="_blank" rel="noopener">Get Your .NET MAUI App Ready for Xcode 27</a></h3>
+        
+        <div class="source">ASP.NET Blog · 10/19 16:05</div>
+        <p class="summary">Use an agent skill to prepare your existing .NET MAUI app for Xcode 27, with the scene lifecycle changes and manual migration steps explained. The post Get Your .NET MAUI App Ready for Xcode 27 appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/bring-your-own-model-to-the-github-copilot-sdk-with-csharp/" target="_blank" rel="noopener">Bring Your Own Model to the GitHub Copilot SDK with C#</a></h3>
+        
+        <div class="source">.NET Blog · 10/19 16:00</div>
+        <p class="summary">The GitHub Copilot SDK gives your application an agent runtime. BYOK lets you keep that runtime while sending model requests to your own Microsoft Foundry or Azure OpenAI deployment. Here is the complete C# setup. The post Bring Your Own Model to the GitHub Copilot SDK with C# appeared first on .NET...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/bring-your-own-model-to-the-github-copilot-sdk-with-csharp/" target="_blank" rel="noopener">Bring Your Own Model to the GitHub Copilot SDK with C#</a></h3>
+        
+        <div class="source">ASP.NET Blog · 10/19 16:00</div>
+        <p class="summary">The GitHub Copilot SDK gives your application an agent runtime. BYOK lets you keep that runtime while sending model requests to your own Microsoft Foundry or Azure OpenAI deployment. Here is the complete C# setup. The post Bring Your Own Model to the GitHub Copilot SDK with C# appeared first on .NET...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/organize-and-revisit-tabs-with-the-keyboard/" target="_blank" rel="noopener">Organize and revisit tabs with the keyboard</a></h3>
+        
+        <div class="source">Visual Studio Blog · 10/19 14:00</div>
+        <p class="summary">Reorder your document tabs and return to them by visual position with new keyboard shortcuts. The post Organize and revisit tabs with the keyboard appeared first on Visual Studio Blog.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/10/feds-suspect-ransom-negotiator-ran-shinyhunters-extortion-site/" target="_blank" rel="noopener">Feds Suspect Ransom Negotiator Ran ShinyHunters Extortion Site</a></h3>
+        
+        <div class="source">Krebs on Security · 10/19 13:48</div>
+        <p class="summary">U.S. federal investigators pursuing the ShinyHunters hacking group that recently stole highly sensitive data from the FBI have identified executives at two different ransomware negotiation firms who maintained unusually close relations with the extortion group, KrebsOnSecurity has learned. Sources c...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/training-ais-to-solve-captchas.html" target="_blank" rel="noopener">Training AIs to Solve CAPTCHAs</a></h3>
+        
+        <div class="source">Schneier on Security · 10/19 11:07</div>
+        <p class="summary">Interesting research: Abstract: Vision-language models (VLMs) can solve visual CAPTCHAs without task-specific training, but the agents built on them approach every challenge from scratch. For such an agent, the hundredth instance of a familiar puzzle costs as much time and compute as the first. Spec...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
