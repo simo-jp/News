@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月21日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月21日 / 全18件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">2</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">1</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/streaming/1015099/youtube-dislike-button-hide-menu" target="_blank" rel="noopener">YouTube might be testing hiding the dislike button</a></h3>
+        
+        <div class="source">The Verge · 10/21 00:00</div>
+        <p class="summary">YouTube appears to be testing hiding the dislike button on videos, as reported by 9to5Google. At least two users on X have recently shared screenshots of the dislike button now being placed in the three-dots submenu, and a user on Reddit also shared an image of the dislike button being absent for th...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/21/2000002443/" target="_blank" rel="noopener">マネックス証券、委託先に第三者がアクセス試行の形跡　口座の新規開設を一時停止</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/20 23:43</div>
+        <p class="summary">口座開設システムのうち、外部委託先が管理する部分について、第三者がアクセスを試みた形跡を確認したため、「予防的措置」として止めた。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cmlyl09xjke4o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Elon Musk says Tesla-SpaceX merger being considered</a></h3>
+        
+        <div class="source">BBC Technology · 10/20 23:24</div>
+        <p class="summary">Musk says special committees within both companies have been formed to look at a possible mega-merger.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c370pzdkw77jo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">The tech helping crack decades-old cold cases</a></h3>
+        
+        <div class="source">BBC Technology · 10/20 23:13</div>
+        <p class="summary">Investigative genetic genealogy can help hunt down criminals but raises worries over privacy.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1014976/sam-altman-ann-altman-lawsuit-dismissed" target="_blank" rel="noopener">Judge dismisses Sam Altman’s sister’s sexual abuse lawsuit</a></h3>
+        
+        <div class="source">The Verge · 10/20 23:04</div>
+        <p class="summary">On Tuesday, US District Judge Zachary Bluestone dismissed the lawsuit Ann Altman filed last year alleging that her brother, OpenAI CEO Sam Altman, had sexually abused her throughout her childhood. As reported earlier by The Guardian, the judge wrote that over the past year, Ann had failed to appear ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/21/2000002442/" target="_blank" rel="noopener">「お名前.com デスクトップクラウド」不正プログラム設置で全プラン停止　FX用VPS、2万6739サーバに影響か</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/20 22:55</div>
+        <p class="summary">FX自動売買向けのVPS「お名前.com デスクトップクラウド」で第三者による不正アクセスが発生し、一部の利用者のサーバ環境に不正なプログラムが設置されたことを確認。全プランのサーバを停止している。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/21/2000002441/" target="_blank" rel="noopener">マスクCEO、SpaceXとTeslaが合併協議で特別委員会を設置と明かす</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/20 22:39</div>
+        <p class="summary">SpaceXのマスクCEOは決算説明会で、Teslaとの合併に向け両社が特別委員会を設置したと明らかにした。統合利点に超知能（SI）開発や半導体工場、Starlink連携を挙げた一方、合意の保証はなくTesla側で全発行済み株式の過半数賛成が必要などハードルは高いと説明した。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/21/2000002440/" target="_blank" rel="noopener">岩井コスモ証券、顧客口座で「意図しない売買」成立　売買管理システムにサイバー攻撃</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/20 22:33</div>
+        <p class="summary">漏えいした個人情報が利用されたものではないという。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/" target="_blank" rel="noopener">Announcing TypeScript 7.1 Beta</a></h3>
+        
+        <div class="source">TypeScript Blog · 10/20 17:53</div>
+        <p class="summary">Today we&#8217;re excited to announce the beta release of TypeScript 7.1! npm install -D typescript@beta Let&#8217;s take a look at what&#8217;s new in TypeScript 7.1! Support for Import Attributes in Ambient Modules Import attributes are metadata that are attached to import statements. Typically, t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/10/embracing-playful-imperfection-css-random-function/" target="_blank" rel="noopener">Embracing Playful Imperfection With The CSS `random()` Function</a></h3>
+        
+        <div class="source">Smashing Magazine · 10/20 10:00</div>
+        <p class="summary">Design systems thrive on consistency, so where does randomness fit in? Through playful demos of organic typography, bouncing letters, and splayed cards, Brecht De Ruyte shows how the new CSS `random()` function brings a little imperfection to the web without JavaScript libraries or preprocessor loop...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.microsoft.com/en-us/research/podcast/called-to-serve-tech-research-and-positive-impact-with-chris-white/" target="_blank" rel="noopener">Called to serve: Tech, research, and positive impact</a></h3>
+        
+        <div class="source">Microsoft Research Blog · 10/20 16:00</div>
+        <p class="summary">Lab Director Chris White has worked on research challenges with real-world implications—from new approaches to wartime data analysis to tools for combating human trafficking. He talks to program manager Weishung Liu about the influences that led to the work and more. The post Called to serve: Tech, ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/20/1146937/the-new-economics-of-enterprise-ai/" target="_blank" rel="noopener">The new economics of enterprise AI</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/20 15:20</div>
+        <p class="summary">Imagine your company just discovered electricity. At first only a few machines run on it, and nobody worries about efficiency — consumption is low and the value is obvious. But once electricity becomes infrastructure, every process depends on it, and the question changes from &#8220;can we use it?&#...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/20/1145423/ai-adoption-by-industry-shows-what-other-sectors-can-learn/" target="_blank" rel="noopener">AI adoption by industry shows what other sectors can learn</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/20 12:00</div>
+        <p class="summary">The current narrative around artificial intelligence in the workplace is largely driven by Silicon Valley. But treating the tech sector as an island misses the actual trends in technology adoption–tech is just the first industry in line. As generative AI and automation tools mature, the shifts curre...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/ted-taylor-restaurant" target="_blank" rel="noopener">Franchisee reconciles cash in 94% less time with ChatGPT Work</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/20 10:00</div>
+        <p class="summary">An independent Schlotzsky’s and Cinnabon franchisee cut menu repricing time by 95% and built a workflow that could free up $100K in cash flow.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/" target="_blank" rel="noopener">A visit to Samsung’s massive new semiconductor hub</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/20 09:00</div>
+        <p class="summary">Generative AI models run on powerful chips known as GPUs, which depend on stacks of specialized memory chips packaged with the processor. To meet growing demand for memory, Samsung is building a massive new semiconductor manufacturing complex in Pyeongtaek, South Korea. Three fabs already operate ar...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/blog/can-a-local-git-remote-replace-github-in-your-agent-eval/" target="_blank" rel="noopener">Can a local git remote replace GitHub in your agent eval?</a></h3>
+        
+        <div class="source">Microsoft DevBlogs (全体) · 10/20 14:53</div>
+        <p class="summary">We swapped GitHub for a local git remote in our agent evals. Rebasing and pushing on request were unaffected, but the agent pushed on its own 11 points less often. Here's when a local remote is a safe shortcut, and when it isn't. The post Can a local git remote replace GitHub in your agent eval? app...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/possible-new-cellebrite-iphone-radio-zero-day.html" target="_blank" rel="noopener">Possible new Cellebrite iPhone Radio Zero-Day</a></h3>
+        
+        <div class="source">Schneier on Security · 10/20 11:03</div>
+        <p class="summary">Justin.sh is reporting on a confidential Cellebrite document that has been leaked to him: Cellebrite calls it Advanced Unlocks (AU from here on), not to be confused with the &#8220;advanced unlocking services&#8221; they&#8217;ve marketed for years. A press release from earlier this year confirms AU...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33436" target="_blank" rel="noopener">ISC Stormcast For Tuesday, October 20th, 2026 https://isc.sans.edu/podcastdetail/10142, (Tue, Oct 20th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/20 02:00</div>
+        
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
