@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月22日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月22日 / 全21件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">4</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/streaming/1016206/youtube-dislike-button-videos" target="_blank" rel="noopener">YouTube says it isn’t testing hiding the dislike button</a></h3>
+        
+        <div class="source">The Verge · 10/21 23:46</div>
+        <p class="summary">On Tuesday, I published a story about how YouTube appeared to be testing hiding the dislike button on videos, with at least two users on X sharing screenshots of the dislike button moved into the three-dot menu. But a YouTube spokesperson, in a Wednesday statement to The Verge, confirmed that YouTub...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/22/2000002485/" target="_blank" rel="noopener">Adobeそっくり「ArtCraft」の動画編集ツールを試す　AIで挙動を再現した“クローンソフト”はアリなのか</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/21 23:43</div>
+        <p class="summary">Photoshop、Premiere、Excel――定番ソフトをAIで“そっくり”に作り直す動きが出てきた。米ArtCraftの動画編集ソフト「FilmCraft」は、ソースを流用せず、仕様と挙動の解析だけでPremiereを再実装したという。試すと、未完成ながらダッキングや字幕まで備える。ソースを盗まないクローンは、ソフト業界と消費者に何をもたらすのか。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/1016118/tesla-robotaxi-customer-owned-vehicle-fleet-network-q3-2026-earnings" target="_blank" rel="noopener">Tesla says customers can add their own vehicles to the robotaxi fleet next year — will it happen?</a></h3>
+        
+        <div class="source">The Verge · 10/21 23:36</div>
+        <p class="summary">For years, Elon Musk has been making big promises to Tesla owners about unsupervised autonomous driving and the ability to add their own vehicles to the company's robotaxi fleet. During today's third-quarter earnings call, the company finally gave itself a deadline. According to Tesla VP for Autonom...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/22/2000002486/" target="_blank" rel="noopener">PHPの「重大」脆弱性はAIが見つけた　「GPT-5.6 Solで発見」とOpenAI　「今後、AIによる脆弱性発見が急増」</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/21 23:27</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cqj34j7dk771o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Trump's green card curbs test Indian tech workers' American dream</a></h3>
+        
+        <div class="source">BBC Technology · 10/21 23:06</div>
+        <p class="summary">With immigration curbs and tech firms cutting foreign hiring, US residency is becoming a distant dream for many Indians.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cr93z1e87e0do?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Why is Elon Musk plotting a mega-merger of SpaceX and Tesla?</a></h3>
+        
+        <div class="source">BBC Technology · 10/21 23:04</div>
+        <p class="summary">Musk says there's "a lot to be gained" by combining the firms in what would be the biggest merger in history.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/22/2000002484/" target="_blank" rel="noopener">Meta、Cambridge Analytica問題巡る訴訟で250億ドルの支払い命令</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/21 22:39</div>
+        <p class="summary">ニューメキシコ州の裁判所はFacebookを巡るCAスキャンダルの訴訟でMetaに対し250億ドル（約3兆9500億円）の民事制裁金支払いを命じた。陪審が個人情報の取り扱いやヘイトスピーチ対応に関する虚偽説明など約4390万件の故意の違反を認定。企業への金銭的制裁として米国史上最大級となる。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1015958/data-center-pollution-rising-report" target="_blank" rel="noopener">Data centers could erase decades of air quality gains</a></h3>
+        
+        <div class="source">The Verge · 10/21 22:33</div>
+        <p class="summary">A rush of new data centers could bring air pollution roaring back to levels not seen since the 2000s in Texas, which has become ground zero for the physical infrastructure behind generative AI. New and proposed data centers are demanding a tremendous amount of electricity. How developers and utiliti...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33440" target="_blank" rel="noopener">Critical PHP Vulnerability (CVE-2026-109618, CVE-2026-109619) &#x5b;infocon yellow&#x5d;, (Wed, Oct 21st)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/21 21:02</div>
+        <p class="summary">PHP.net announced that it will release a critical update today. We decided to change the infoCon to YELLOW due to the widespread use of PHP, the expected severity of the flaw (CVSS 9.4), and the availability of early PoC exploits before the patch became available. &#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://krebsonsecurity.com/2026/10/widespread-php-flaw-may-cause-many-site-outages-today/" target="_blank" rel="noopener">Widespread PHP Flaw May Cause Many Site Outages Today</a></h3>
+        
+        <div class="source">Krebs on Security · 10/21 15:26</div>
+        <p class="summary">Expect to see quite a few websites serving "404" or "Page Not Found" errors today: Nearly 70 percent of websites need to update their core software to fix a pair of vulnerabilities that allow an attacker to seize full control over affected servers. Experts say there are working exploits for the flaw...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/workshop-on-economics-and-information-security-weis-archive.html" target="_blank" rel="noopener">Workshop on Economics and Information Security (WEIS) Archive</a></h3>
+        
+        <div class="source">Schneier on Security · 10/21 11:02</div>
+        <p class="summary">There&#8217;s a new archive of all the papers from twenty-five years of the Workshop on Economics and Information Security (WEIS). Really nice resource. It&#8217;s fun to reread my 2002 essay on the economics of information security.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33438" target="_blank" rel="noopener">ISC Stormcast For Wednesday, October 21st, 2026 https://isc.sans.edu/podcastdetail/10144, (Wed, Oct 21st)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/21 02:00</div>
+        
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/broad-access-through-consistent-standards" target="_blank" rel="noopener">Broad access through consistent standards</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 21:00</div>
+        <p class="summary">How OpenAI works with distribution partners to uphold consistent safeguards, support responsible access, and clarify expectations in our Usage Policies.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/att-legal" target="_blank" rel="noopener">How AT&T is rethinking in-house legal work with OpenAI</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 17:00</div>
+        <p class="summary">AT&amp;T is working with OpenAI to make legal knowledge easier to access. Learn how its LegalEdge team is rethinking intake and scaling legal judgment.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.microsoft.com/en-us/research/blog/solving-a-31-year-old-grand-challenge-in-mathematics-the-kls-conjecture/" target="_blank" rel="noopener">Solving a 31-year-old grand challenge in mathematics – the KLS conjecture</a></h3>
+        
+        <div class="source">Microsoft Research Blog · 10/21 16:00</div>
+        <p class="summary">For decades, a fundamental question about the difficulty of computing in high-dimensional spaces has resisted proof. New research resolves this question, removing a major theoretical obstacle to understanding the efficiency of randomized algorithms used across science and computing. The Kannan–Lovás...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/chatgpt-ads-expands-26-new-countries" target="_blank" rel="noopener">ChatGPT Ads expands to 26 new countries as over 100,000 advertisers have used the platform</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 13:00</div>
+        <p class="summary">From local businesses to global brands, more advertisers can now reach people as they explore, compare and decide what to buy in ChatGPT.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/openai-models-google-cloud" target="_blank" rel="noopener">OpenAI models are coming to Google Cloud</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 12:00</div>
+        <p class="summary">OpenAI and Google Cloud are bringing frontier models and Codex workflows to Gemini’s Model Garden, available through Google Cloud Marketplace.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities" target="_blank" rel="noopener">Patch the Planet: global response coordination as agents uncover critical vulnerabilities</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 07:00</div>
+        <p class="summary">Patch the Planet connects security researchers, maintainers, and incident responders to help address critical vulnerabilities across open source.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/building-chatgpt-ad-stack" target="_blank" rel="noopener">How we built ChatGPT’s novel ad stack for user trust and relevance</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 07:00</div>
+        <p class="summary">Learn how OpenAI built ChatGPT’s LLM-powered ad stack to understand conversational intent, keep ads separate from answers, and deliver relevant ads at scale.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/scaling-ai-research-for-complex-biological-data" target="_blank" rel="noopener">Using thousands of AI agents to uncover new leads in biological data</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/21 04:50</div>
+        <p class="summary">See how OpenAI, PerturbAI, and Scripps Research used distributed AI agents to uncover promising research leads in data from millions of brain cells.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/compare-todays-code-with-an-earlier-commit/" target="_blank" rel="noopener">Compare today’s code with an earlier commit</a></h3>
+        
+        <div class="source">Visual Studio Blog · 10/21 14:00</div>
+        <p class="summary">Compare a historical commit with your working tree without checking out the commit or leaving your branch. The post Compare today&#8217;s code with an earlier commit appeared first on Visual Studio Blog.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
