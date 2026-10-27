@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月27日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月27日 / 全25件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">6</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">1</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/27/2000002610/" target="_blank" rel="noopener">GMO不正アクセス、犯人側は「27日に顧客のPC攻撃」予告　GMOが端末回収、ホワイトハッカーが解析中</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/27 00:07</div>
+        <p class="summary">GMOの従業員が全国に出向いて顧客の端末を預かり、グループのホワイトハッカーチームが調査・解析を進めているという。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1019143/openai-eth-kaseya-science-math-physics" target="_blank" rel="noopener">OpenAI announces three big science discoveries and a new way to work with academics</a></h3>
+        
+        <div class="source">The Verge · 10/26 23:34</div>
+        <p class="summary">Less than a month after its mass release of hundreds of manuscripts that it said contained solutions to long-standing mathematics questions, OpenAI is back with three more "major" discoveries in math, computer science, and physics. What's different this time is the choice to have external experts th...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/27/2000002608/" target="_blank" rel="noopener">「一番くじ ONLINE」の配送情報漏えいか　バンダイナムコの物流子会社に不正アクセス</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/26 23:07</div>
+        <p class="summary">バンダイロジパルが管理するシステムが不正アクセスを受け、「一番くじ ONLINE」の配送情報が漏えいした可能性。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/27/2000002607/" target="_blank" rel="noopener">Apple、「iPad mini」を大幅刷新　8.5インチOLEDとA20 Pro搭載、防水にも対応　11万9800円から</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/26 22:59</div>
+        <p class="summary">Appleは、「iPad mini」の新モデルを発表した。8.5インチ有機ELディスプレイや最新2nmチップ「A20 Pro」を搭載し、薄型・軽量化とともにシリーズ初のIP67耐水・防塵に対応する。次世代Apple IntelligenceやWi-Fi 7もサポートし、Wi-Fiモデルは11万9800円から。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/27/2000002606/" target="_blank" rel="noopener">「楽天トラベル」に不正アクセス　顧客情報最大約260万件など流出か　予約者約3.6万件のクレカ情報も</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/26 22:44</div>
+        <p class="summary">海外予約サイトの一部ページと、楽天グループが運営する多言語予約サイトが対象。最大約3万6000件の予約者のクレジットカード下4ケタや名義、有効期限などの情報が流出した可能性。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gadgets/2026/10/microsoft-offers-voluntary-buyouts-to-60000-employees/" target="_blank" rel="noopener">Microsoft offers to buy out a quarter of its workforce</a></h3>
+        
+        <div class="source">Ars Technica · 10/26 22:36</div>
+        <p class="summary">Employees in the US, Canada, India, and the UK may receive offers to leave MS today.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/27/2000002605/" target="_blank" rel="noopener">Meta、AI投資拡大に向け最大950億ドル規模の株式発行計画　NVIDIA、AMD、Broadcomも出資に関心</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/26 22:26</div>
+        <p class="summary">Metaは、AIインフラとパーソナル超知能への投資を支えるため、総額約950億ドル（約15兆円）規模の株式発行による資金調達計画を発表した。まず普通株式と預託株式で約350億ドルを公募し、NVIDIAなど半導体3社も出資意向を示す。2027年には最大600億ドルの段階的売却プログラムも計画する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1018962/samsung-p9-256gb-microsd-express-card-switch-2-deal-sale" target="_blank" rel="noopener">Samsung’s Switch 2-ready MicroSD Express card is on sale for less than $50</a></h3>
+        
+        <div class="source">The Verge · 10/26 21:56</div>
+        <p class="summary">Running out of space on your Nintendo Switch 2? Thankfully, Samsung’s P9 MicroSD Express card is discounted at multiple retailers, with the 256GB version going for $47.99 (Amazon, B&#38;H Photo) and the 512GB version $99 (Amazon, B&#38;H Photo). The smaller card typically sells for around $80, and t...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33458" target="_blank" rel="noopener">Apple Patches for October 2026, (Mon, Oct 26th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/26 23:34</div>
+        <p class="summary">Apple today released patches for 304 vulnerabilties. This number is still in line with prior Apple updates, and comes just about a month after the last apple update.&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/10/bias-in-qwen3-coder-model.html" target="_blank" rel="noopener">Bias in Qwen3-Coder Model</a></h3>
+        
+        <div class="source">Schneier on Security · 10/26 11:03</div>
+        <p class="summary">Interesting research: TL;DR: Chinese AI models now sit inside Western products, and some carry geopolitical triggers: tell the model who the code is for, and the security of what it writes changes. For the first time, we showed that this vulnerability lives in the model&#8217;s weights, and that rem...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33442" target="_blank" rel="noopener">Looking for a Language &#x5b;Guest Diary&#x5d;, (Wed, Oct 21st)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/26 09:38</div>
+        <p class="summary">&#x5b;This is a Guest Diary by Jeffray Spence, an ISC intern as part of the SANS.edu BACS program&#x5d;&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2026/at260034.html" target="_blank" rel="noopener">注意喚起: BrotliのC言語実装における境界外書き込みの脆弱性（CVE-2026-111497）に関する注意喚起  (公開)</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/26 07:25</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/at/2026/at260033.html" target="_blank" rel="noopener">注意喚起: PHPにおける複数の脆弱性（CVE-2026-109618、CVE-2026-109619）に関する注意喚起  (更新)</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/26 07:25</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33456" target="_blank" rel="noopener">ISC Stormcast For Monday, October 26th, 2026 https://isc.sans.edu/podcastdetail/10150, (Mon, Oct 26th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 10/26 03:30</div>
+        
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/greptile-code-review-codex-astra" target="_blank" rel="noopener">Greptile takes bug detection beyond code review with GPT-6 Astra</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/26 22:00</div>
+        <p class="summary">How Greptile uses GPT-6 Astra to test user workflows, Daybreak to strengthen security, and Codex to reduce rework.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/26/1147672/will-the-real-anthropic-please-stand-up/" target="_blank" rel="noopener">Will the real Anthropic please stand up</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/26 17:45</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. After weeks of frenzied speculation, Anthropic has filed its IPO prospectus. The 335-page document (100 pages or so are focused on risks) lays out the company’s u...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/education/ai-quests-polar-peaks/" target="_blank" rel="noopener">Our newest AI Quest: Mapping the human brain</a></h3>
+        
+        <div class="source">Google AI Blog · 10/26 16:00</div>
+        <p class="summary">An illustration of a planet rotating to show various cartoon figures waving. At the top is the text "AI Quests"</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities" target="_blank" rel="noopener">Working with academic communities to build scientific understanding</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/26 14:30</div>
+        <p class="summary">OpenAI shares model results on the Kakeya conjecture, Exponential Time Hypothesis, and quantum chromodynamics—and how researchers can verify and build on them.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-6-1-sol-coderabbit-code-security" target="_blank" rel="noopener">GPT-6.1 Sol helps CodeRabbit strengthen security across complex codebases</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/26 13:45</div>
+        <p class="summary">CodeRabbit uses GPT-6.1 Sol to investigate security risks across complex codebases. Its security agent helps developers review findings and proposed fixes.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/chatgpt-expanding-world-of-work" target="_blank" rel="noopener">ChatGPT’s expanding world of work</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/26 10:00</div>
+        <p class="summary">Explore OpenAI Signals data on 165 work activities across nearly 100 countries, revealing how people use ChatGPT for work and how usage changes over time.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/26/1147645/the-focus-on-ai-safety-disasters-ignores-everyday-harms/" target="_blank" rel="noopener">The focus on AI safety disasters ignores everyday harms</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/26 09:01</div>
+        <p class="summary">Consider what passes for success in technology policy. An AI company promises that its chatbot will not encourage suicide. A social media platform makes it more difficult for children to buy fentanyl. These are important protections, and they should have existed all along. But companies can clear th...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/fanatics-streamline-fan-experience" target="_blank" rel="noopener">How Fanatics and OpenAI streamline the fan experience</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/26 07:00</div>
+        <p class="summary">Fanatics uses OpenAI to help fans complete their game-day outfits with Shop the Look. Testing across roughly 30,000 MLB products showed 10% higher engagement.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/css-tricks-has-a-new-owner/" target="_blank" rel="noopener">CSS-Tricks has a new owner!</a></h3>
+        
+        <div class="source">CSS-Tricks · 10/26 15:29</div>
+        <p class="summary">Yes, I've got the keys to the castle, so to speak. And, even after 12 years of working on the site, I'll admit I'm a little overwhelmed and nervous about that. CSS-Tricks has a new owner! originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/blog/postgresql-like-a-pro-vscode/" target="_blank" rel="noopener">PostgreSQL Like A Pro: Build, query, and troubleshoot without leaving VS Code</a></h3>
+        
+        <div class="source">Microsoft DevBlogs (全体) · 10/26 15:05</div>
+        <p class="summary">Build, query, and troubleshoot without leaving VS Code. The post PostgreSQL Like A Pro: Build, query, and troubleshoot without leaving VS Code appeared first on Microsoft for Developers.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/keep-your-investigation-between-sessions/" target="_blank" rel="noopener">Keep your investigation between sessions</a></h3>
+        
+        <div class="source">Visual Studio Blog · 10/26 12:00</div>
+        <p class="summary">Start a standalone Markdown note and use the opt-in Hot Exit preview to resume unsaved work next session. The post Keep your investigation between sessions appeared first on Visual Studio Blog.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
