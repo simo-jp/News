@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年10月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年10月28日 / 全23件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">3</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">1</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">3</span></button></div>
+    </div>
+    
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#1" target="_blank" rel="noopener">Weekly Report: VeloCloud OrchestratorにSQLインジェクションの脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">VeloCloud OrchestratorにSQLインジェクションの脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#2" target="_blank" rel="noopener">Weekly Report: ISC BINDに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">ISC BINDに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#3" target="_blank" rel="noopener">Weekly Report: 複数のCisco製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">複数のCisco製品に脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#4" target="_blank" rel="noopener">Weekly Report: GitLabに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">GitLabに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#5" target="_blank" rel="noopener">Weekly Report: Apache Tomcatに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">Apache Tomcatに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#6" target="_blank" rel="noopener">Weekly Report: Google Chromeに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">Google Chromeに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#7" target="_blank" rel="noopener">Weekly Report: 複数のAtlassian製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">複数のAtlassian製品に脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261028.html#8" target="_blank" rel="noopener">Weekly Report: 複数のMozilla製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 10/28 00:07</div>
+        <p class="summary">複数のMozilla製品に脆弱性</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">'An annoying buzz': The search for stealthier drones</a></h3>
+        
+        <div class="source">BBC Technology · 10/28 00:01</div>
+        <p class="summary">As drone deliveries become more commonplace, their makers are looking for ways to make them quieter.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/28/2000002651/" target="_blank" rel="noopener">NVIDIAとAMD、MetaとのAI分野での提携拡大を発表　「Muse」の強化や次世代インフラ構築で協力</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/27 23:55</div>
+        <p class="summary">NVIDIAとAMDは、MetaとのAI分野における戦略的提携拡大をそれぞれ発表した。AIエージェント「Muse」の開発・運用支援や次世代インフラ構築で協力し、Metaへの出資（NVIDIAが30億ドル、AMDが10億ドル）も表明。Metaは自社チップ開発と外部調達の両輪でインフラを強化する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1020145/iphone-duo-crackgate-broken-screen-hinge" target="_blank" rel="noopener">Here’s why the iPhone Duo’s hinge could be cracking the screen</a></h3>
+        
+        <div class="source">The Verge · 10/27 22:55</div>
+        <p class="summary">Within hours of the iPhone Duo launch last Friday, people reported that the inner screen on some brand new foldable phones was already broken. The issue was similar across many photos shared on social media: some kind of issue or crack would appear in the middle of the screen above the hinge, with l...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/28/2000002650/" target="_blank" rel="noopener">auメールで朝から障害　全国で利用しづらい状況に</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/27 22:51</div>
+        <p class="summary">原因は調査中。音声通話とデータ通信は問題なく利用できる。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/apple/2026/10/apple-refreshes-the-imac-entry-level-macbook-pro-with-the-m6-chip/" target="_blank" rel="noopener">Apple refreshes the iMac, entry-level MacBook Pro with the M6 chip</a></h3>
+        
+        <div class="source">Ars Technica · 10/27 22:37</div>
+        <p class="summary">Additionally, the N1 chip brings Wi-Fi 7 and Bluetooth 6.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2610/28/2000002649/" target="_blank" rel="noopener">Apple、M6搭載の14インチ「MacBook Pro」発表　AI性能向上、33万9800円から</a></h3>
+        
+        <div class="source">ITmedia NEWS · 10/27 22:30</div>
+        <p class="summary">Appleは、新型チップ「M6」を搭載した14インチ「MacBook Pro」を発表した。M6はCPU・GPUともに12コアで、AI処理やグラフィックス性能が向上。Wi-Fi 7対応や最大24時間のバッテリー駆動を実現した。日本での販売価格は33万9800円からで、11月6日発売の予定だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/health/2026/10/domestic-travel-poses-growing-risk-for-measles-and-a-new-challenge-for-states/" target="_blank" rel="noopener">South Carolina's measles outbreak jumped to Washington state 5 times in 2 weeks</a></h3>
+        
+        <div class="source">Ars Technica · 10/27 22:22</div>
+        <p class="summary">International travel used to be the main risk of measles cases in the US—not anymore.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/space/2026/10/chinas-top-secret-spaceplane-cant-hide-in-low-earth-orbit/" target="_blank" rel="noopener">China's top-secret spaceplane can't hide in low-Earth orbit</a></h3>
+        
+        <div class="source">Ars Technica · 10/27 22:04</div>
+        <p class="summary">The DIA's threat assessment suggests China may soon place directed energy weapons in space.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/visual-studio-october-update-compare-commits-to-your-code-resolve-conflicts-in-bulk-keep-coding/" target="_blank" rel="noopener">Visual Studio October Update – Compare Commits to Your Code, Resolve Conflicts in Bulk, Keep Coding</a></h3>
+        
+        <div class="source">Visual Studio Blog · 10/27 16:00</div>
+        <p class="summary">Compare commits with your working tree, resolve merge conflicts in bulk, and keep coding with refreshed Copilot chat, Hot Exit, keyboard tab controls, and Fonts and Colors. The post Visual Studio October Update – Compare Commits to Your Code, Resolve Conflicts in Bulk, Keep Coding appeared first on ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/blazor-welcomes-infragistics/" target="_blank" rel="noopener">Blazor Welcomes Open-Source Contributions from Infragistics</a></h3>
+        
+        <div class="source">.NET Blog · 10/27 15:00</div>
+        <p class="summary">Microsoft and Infragistics are collaborating on Blazor through free, open-source components, new .NET 11 analyzers, and developer tooling. The post Blazor Welcomes Open-Source Contributions from Infragistics appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/blazor-welcomes-infragistics/" target="_blank" rel="noopener">Blazor Welcomes Open-Source Contributions from Infragistics</a></h3>
+        
+        <div class="source">ASP.NET Blog · 10/27 15:00</div>
+        <p class="summary">Microsoft and Infragistics are collaborating on Blazor through free, open-source components, new .NET 11 analyzers, and developer tooling. The post Blazor Welcomes Open-Source Contributions from Infragistics appeared first on .NET Blog.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/whats-important-19/" target="_blank" rel="noopener">What’s !important #19: CSS Refraction Effects, Scroll State Queries, @custom-media, and More</a></h3>
+        
+        <div class="source">CSS-Tricks · 10/27 15:09</div>
+        <p class="summary">We’re back! Don't worry, this isn’t a trick (despite what our name suggests!). However, due to the hiatus, we're also a little behind. That’s why this issue of What’s !important is absolutely stacked. All killer, no filler. Here's what you missed. What’s !important #19: CSS Refraction Effects, Scrol...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/retell-ai" target="_blank" rel="noopener">Retell uses OpenAI models to help power 100M monthly calls</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/27 15:00</div>
+        <p class="summary">GPT-6 Astra tops Retell’s voice agent benchmark, while Codex helps it reach a $1.6M annual revenue run rate per employee.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/" target="_blank" rel="noopener">Industrial Intelligence: The next growth opportunity for manufacturing</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 10/27 11:19</div>
+        <p class="summary">Every manufacturer has its own industrial intelligence. Some is documented, and some resides in the knowledge of experienced workers. Consider an experienced operator preparing to restart a line after a changeover. The machine settings matter, but so does knowing how a particular material behaves, w...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/oracle-apps-in-chatgpt" target="_blank" rel="noopener">OpenAI expands partnership with Oracle to bring its apps to ChatGPT</a></h3>
+        
+        <div class="source">OpenAI Blog · 10/27 07:00</div>
+        <p class="summary">OpenAI and Oracle are expanding their partnership to bring business applications and AI agents into ChatGPT and power new Oracle offerings.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
