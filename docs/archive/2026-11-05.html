@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月05日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月05日 / 全23件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">1</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/05/2000002873/" target="_blank" rel="noopener">涙に叱責に持論……GMO熊谷代表の謝罪会見、どこがまずかった？　危機管理広報のプロが分析</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/05 01:05</div>
+        <p class="summary">GMOインターネットグループの熊谷正寿代表は11月2日、グループ企業で発生した不正アクセス問題を巡り、約3時間半にわたる記者会見を開いた。持論の展開や涙、社員への叱責など、本来の説明とは別の「撮れ高」を生んだ会見から企業は何を学ぶべきか、危機管理広報の視点から検証する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/05/2000002891/" target="_blank" rel="noopener">仏銀行Credit Mutuel Arkeaにサイバー攻撃　委託先経由で侵入、不正送金の被害は約1億ユーロか</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/05 00:56</div>
+        <p class="summary">フランスの銀行グループCredit Mutuel Arkeaは、外部委託先のシステム経由でサイバー攻撃を受け、不正送金されたと発表した。被害額は数千万から1億ユーロ規模とみられ、暗号資産に交換された可能性がある。銀行自身の口座が悪用されたため、顧客資産への直接的な被害はないという。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1027113/x-says-its-updated-web-app-is-way-faster" target="_blank" rel="noopener">X says its updated web app is way faster</a></h3>
+        
+        <div class="source">The Verge · 11/05 00:25</div>
+        <p class="summary">X is introducing a new version of its web app that it says is much faster than before, and it's now rolling out the updated app "one country at a time" for signed-in users. "Open a profile on X.com over a slow connection," principal engineer Yagiz Nizipli said in a blog post about the changes. [&#82...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/05/2000002890/" target="_blank" rel="noopener">仏血液センターの冷蔵設備にサイバー攻撃　温度設定を不正変更、血液製剤への被害は回避</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/05 00:19</div>
+        <p class="summary">仏血液機構（EFS）は、冷蔵設備を管理する委託業者がサイバー攻撃を受け、3施設の冷蔵室の温度制御システムで異常が発生したと発表した。監視システムが迅速に検知して製剤を別設備に移したため被害はなかった。同国では10月にもスーパーの冷蔵設備が攻撃される事件が起きているが、関連は不明だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/05/2000002889/" target="_blank" rel="noopener">SpaceX、Qualcommと複数年契約　「Starlink Mobile」の地上5G網を2027年から全米に展開へ</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/04 23:01</div>
+        <p class="summary">Qualcommは、SpaceXと複数年契約を結び、モバイル通信サービス「Starlink Mobile」向けに5G基地局用の半導体プラットフォームを提供すると発表した。SpaceXは米国内で地上5Gネットワークの展開を開始し、数万カ所の基地局を設置して衛星通信と地上網の統合を目指す。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/gaming/2026/11/the-tech-memory-shortage-comes-for-nintendos-cartridge-supply-chain/" target="_blank" rel="noopener">Nintendo's biggest ROM chip supplier is bowing out of the business</a></h3>
+        
+        <div class="source">Ars Technica · 11/04 22:47</div>
+        <p class="summary">And what that could mean for physical Switch game costs.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1026867/qualcomm-earnings-data-centers" target="_blank" rel="noopener">Qualcomm is betting big on data centers as smartphone sales sink</a></h3>
+        
+        <div class="source">The Verge · 11/04 22:42</div>
+        <p class="summary">With smartphone sales tanking by around 20 percent compared to 2025, Qualcomm is looking to data centers to help boost its bottom line. During its Q4 2026 earnings call, the company laid out its plans to make a splash in the AI data center business, through partnerships with companies like Amazon an...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/security/2026/11/hackers-exploited-ios-and-android-flaws-to-infect-phones/" target="_blank" rel="noopener">Hackers exploited iOS and Android flaws to infect phones</a></h3>
+        
+        <div class="source">Ars Technica · 11/04 22:26</div>
+        <p class="summary">Researchers say group may have been Kremlin-sponsored in search of diplomatic targets.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#1" target="_blank" rel="noopener">Weekly Report: Microsoft Edgeに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">Microsoft Edgeに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#2" target="_blank" rel="noopener">Weekly Report: Sophos UTMに任意のコード実行につながる脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">Sophos UTMに任意のコード実行につながる脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#3" target="_blank" rel="noopener">Weekly Report: Cisco Secure Firewall ASAおよびFTD Softwareにサービス運用妨害（DoS）の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">Cisco Secure Firewall ASAおよびFTD Softwareにサービス運用妨害（DoS）の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#4" target="_blank" rel="noopener">Weekly Report: Jenkinsに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">Jenkinsに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#5" target="_blank" rel="noopener">Weekly Report: WordPressに複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">WordPressに複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#6" target="_blank" rel="noopener">Weekly Report: 複数のAdobe製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">複数のAdobe製品に脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#7" target="_blank" rel="noopener">Weekly Report: ヤマハ製NWR100に複数の脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">ヤマハ製NWR100に複数の脆弱性</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.jpcert.or.jp/wr/2026/wr261105.html#8" target="_blank" rel="noopener">Weekly Report: 複数のWatchGuard製品に脆弱性</a></h3>
+        
+        <div class="source">JPCERT/CC · 11/05 00:52</div>
+        <p class="summary">複数のWatchGuard製品に脆弱性</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/" target="_blank" rel="noopener">Texas was the new epicenter of the AI data center buildout. That might be kaput.</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/04 18:50</div>
+        <p class="summary">Texas is the fastest-growing data center market in the US and ground zero for Big Tech&#8217;s largest AI buildouts. But the blue wave that swept the Lone Star State may jeopardize that position. Democrat James Talarico won the US Senate seat against Ken Paxton. Gina Hinojosa won the race for govern...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/openai-to-acquire-pierre" target="_blank" rel="noopener">OpenAI to acquire Pierre Computer Company, Inc.</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/04 14:30</div>
+        <p class="summary">OpenAI will acquire Pierre Computer Company, expanding Codex’s tools for building, understanding, and reviewing code.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/04/1147596/securing-the-agentic-enterprise-with-data-lineage/" target="_blank" rel="noopener">Securing the agentic enterprise with data lineage</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/04 13:00</div>
+        <p class="summary">A sales representative asks an AI agent for customer pricing, and the agent pulls data from multiple sources: restricted pricing systems, internal communications, and archived quotes. The output looks accurate to the agent, so a second agent uses the data to draft the proposal for the sales rep. No ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/a-thousand-fewer-paths-to-root" target="_blank" rel="noopener">A thousand fewer paths to root</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/04 08:00</div>
+        <p class="summary">OpenAI built an autonomous pipeline that found, validated, and generated patches for 948 local privilege-escalation vulnerabilities in the Linux kernel.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/daybreak-red-aws-govcloud" target="_blank" rel="noopener">Daybreak Red is now available in AWS GovCloud (US-East)</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/04 07:00</div>
+        <p class="summary">Daybreak Red brings GPT-5.6 Cyber to approved customers in AWS GovCloud (US-East) through Amazon Bedrock for authorized cybersecurity work.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/keep-learning-keep-building-make-the-most-of-vslive-with-your-visual-studio-subscription/" target="_blank" rel="noopener">Keep learning, keep building! Make the most of VSLive! with your Visual Studio Subscription</a></h3>
+        
+        <div class="source">Visual Studio Blog · 11/04 15:30</div>
+        <p class="summary">Keeping up with new technology is one thing. Finding worthwhile opportunities to explore what matters most to your work is another. That&#8217;s where VSLive! can help. It brings technical learning, hands-on experience, expert guidance, and a community of developers together in one place, giving you...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/smashing-ai-conference/" target="_blank" rel="noopener">Smashing AI Conference</a></h3>
+        
+        <div class="source">CSS-Tricks · 11/04 15:02</div>
+        <p class="summary">The AI 2027 Conference is a live online day for designers and engineers on where AI stands today, what to expect in 2027, and where teams are getting it right. Smashing AI Conference originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
