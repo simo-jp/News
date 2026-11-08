@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月08日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月08日 / 全8件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cm8xznl0n1q4o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Can the Zelda remake capture the magic of the original?</a></h3>
+        
+        <div class="source">BBC Technology · 11/08 00:37</div>
+        <p class="summary">Nintendo has released its remake of what is considered one of the best games ever made - the BBC's Tom Gerken gives his verdict.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1023230/the90-gem-necklace-hands-on-impressions" target="_blank" rel="noopener">The UV-tracking Gem made me rethink how sunlight affects my health, not just my appearance</a></h3>
+        
+        <div class="source">The Verge · 11/07 17:00</div>
+        <p class="summary">With temperatures rising to the 90s in Los Angeles, avoiding the heat wasn't exactly an option while I was at a relative's outdoor party in August. So I sat beneath a patio umbrella with a powerful fan nearby, figuring I was protected from the sun and heat. Half an hour later, I felt exhausted, dizz...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1028917/legend-of-zelda-ocarina-of-time-remake-switch-2-costco-deal-sale" target="_blank" rel="noopener">Costco members can get $5 off the reimagined Ocarina of Time</a></h3>
+        
+        <div class="source">The Verge · 11/07 16:00</div>
+        <p class="summary">While some retailers were offering preorder discounts on the remastered Legend of Zelda: The Ocarina of Time, it’s not too late to save if you missed out. Costco members can currently get $5 off the digital version online, bringing the price down to $54.99. Considering an annual Costco membership ru...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1029474/discogs-kevin-lewandowski-aeropress-interview" target="_blank" rel="noopener">Discogs’ Kevin Lewandowski can’t live without his AeroPress</a></h3>
+        
+        <div class="source">The Verge · 11/07 16:00</div>
+        <p class="summary">Twenty-five years ago, Kevin Lewandowski founded Discogs, arguably the destination online for obsessive vinyl collectors and music nerds of all stripes. It is a marketplace for buying and selling records, obviously, but it's also become so much more. It's a shockingly comprehensive database that cov...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review" target="_blank" rel="noopener">NYT Cooking’s AI assistant saved my weeknight chicken, but almost ruined my cake</a></h3>
+        
+        <div class="source">The Verge · 11/07 15:50</div>
+        <p class="summary">Around 7PM each weeknight, I find myself standing in front of the fridge, trying to decide on something for dinner that won't make my husband complain, "Chicken again?" Yes, I should meal plan more, but I don't, so this is where I'm at. A nightly battle in which the chicken usually wins. Recently, m...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government" target="_blank" rel="noopener">The US let Nvidia sell chips to an empty office in China</a></h3>
+        
+        <div class="source">The Verge · 11/07 15:43</div>
+        <p class="summary">Concerns are being raised that neither the Commerce Department nor Nvidia are doing their due diligence when it comes to vetting Chinese firms cleared to handle the company's H200 AI chips. According to The New York Times, New Matrix is on the list of approved firms, yet its offices are empty, "a ho...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos" target="_blank" rel="noopener">AI broke the cybersecurity world. What’s next?</a></h3>
+        
+        <div class="source">The Verge · 11/07 15:00</div>
+        <p class="summary">Today, I’m talking with Alex Stamos, chief security officer at Cognition and longtime cybersecurity expert, about what a mess cybersecurity is right now. This episode is part one of a special series looking at AI in real life. I’ve always enjoyed talking to Alex because he’s so direct, and you’re go...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/1029460/elon-musk-cybertruck-death-election-backlash" target="_blank" rel="noopener">Good riddance, Cybertruck!</a></h3>
+        
+        <div class="source">The Verge · 11/07 14:40</div>
+        <p class="summary">I'm calling it: time of death, November 6th, 1:30 AM, by tweet. Elon Musk's declaration Friday that Tesla would be "winding down" production of the Cybertruck next year to make room for the Cybercab was fascinating for a number of reasons. First, it was a humiliating way to kill a vehicle that was o...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
