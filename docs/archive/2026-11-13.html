@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月13日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月13日 / 全20件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">3</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">6</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">2</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33516" target="_blank" rel="noopener">ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/13 02:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/another-way-police-are-locating-people-from-their-smartphones.html" target="_blank" rel="noopener">Another Way Police Are Locating People from Their Smartphones</a></h3>
+        
+        <div class="source">Schneier on Security · 11/12 12:02</div>
+        <p class="summary">Penlink&#8217;s Webloc is an application that locates people using information from the weather, gaming, email, and religious apps on their phone. It&#8217;s sold to the police. The tool collects vast quantities of location data from smartphones via commonly used weather, gaming, email and religious...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33514" target="_blank" rel="noopener">Exploit Attempts for GPUStack Authentication Bypass (CVE-2026-102895), (Thu, Nov 12th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/12 11:56</div>
+        <p class="summary">CVE-2026-102895 is a trivial authentication-bypass vulnerability. GPUStack is also an attractive target. It is open-source software that manages clusters of GPUs, which are typically used to run AI workloads. All versions of GPUStack prior to 2.2.0, which was released at the end of June. This vulner...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c5gm3g9ldz8xo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Microsoft struggling to restore service as global outage affects Outlook and Teams</a></h3>
+        
+        <div class="source">BBC Technology · 11/13 01:53</div>
+        <p class="summary">Microsoft said the outage was caused by servers unexpected becoming unavailable, straining other systems.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1032774/president-donald-trump-tim-cook-nvidia-jensen-huang" target="_blank" rel="noopener">Donald Trump really wants Tim Cook to run Nvidia</a></h3>
+        
+        <div class="source">The Verge · 11/13 00:46</div>
+        <p class="summary">Jensen Huang resigned this morning as Nvidia's CEO following reports of affairs, including one with an alleged Chinese spy. Right now, the company is being led by its CFO on an interim basis. But President Donald Trump is already throwing around one person he thinks should take over the chipmaking g...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003167/" target="_blank" rel="noopener">緊急情報の音声放送システムにランサムウェア攻撃　滋賀県甲賀市、屋外拡声器など使えず</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/13 00:44</div>
+        <p class="summary">屋外拡声器などを使った緊急情報も停止しており、緊急情報は市の公式LINEやテレビ、ラジオなどで伝える。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/13/2000003166/" target="_blank" rel="noopener">Google、Gemini搭載のメガネを米韓で予約開始　395ドルからで12月10日発売へ</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/13 00:30</div>
+        <p class="summary">Googleは、Samsungらと共同開発したGemini対応スマートグラス「intelligent eyewear」の予約受付を米国と韓国で開始した。カメラとマイクを内蔵し、視界の情報を基にGeminiと音声で対話できる。外向きLEDや自動顔ぼかし機能など、周囲のプライバシーにも配慮されている。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">The rise of 'housefishing' - when does using AI go from enhancing to misleading?</a></h3>
+        
+        <div class="source">BBC Technology · 11/13 00:13</div>
+        <p class="summary">Experts warn that using AI to enhance property images can go too far and mislead prospective buyers.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/1032431/xbox-bethesda-wolfenstein-3" target="_blank" rel="noopener">Xbox announces Wolfenstein 3</a></h3>
+        
+        <div class="source">The Verge · 11/13 00:11</div>
+        <p class="summary">It's been nearly a decade since Bethesda's MachineGames released Wolfenstein II: The New Colossus in 2017, and now Xbox is ready to announce a sequel from the studio. Wolfenstein 3 was officially announced today, just days after Bethesda also confirmed that the next Elder Scrolls game will be called...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1032630/whoop-humans-social-network" target="_blank" rel="noopener">Whoop launched a social network where every user has a ‘verified heartbeat’</a></h3>
+        
+        <div class="source">The Verge · 11/12 23:43</div>
+        <p class="summary">Starting Thursday, Whoop members can share their data from its wearables on the app's new Whoop Humans social network. Users can make their metrics, activities, and achievements visible to other Whoop wearers, post Story-like "Moments" with photos and captions, and add comments and reactions on othe...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cmq5vd1wdgz6o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Scandal-hit Nvidia CEO Jensen Huang quits, plunging AI chipmaking giant into turmoil</a></h3>
+        
+        <div class="source">BBC Technology · 11/12 23:34</div>
+        <p class="summary">US lawmakers now want to question him over whether one of his alleged relationships was with a Chinese spy.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">6</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.microsoft.com/en-us/research/podcast/microsoft-research-focus-edition-98/" target="_blank" rel="noopener">Microsoft Research Focus – Edition #98</a></h3>
+        
+        <div class="source">Microsoft Research Blog · 11/12 21:31</div>
+        <p class="summary">What's new in research at Microsoft? Host Anson Ho explores the latest, including AI-powered universal translation, a breakthrough in a 31-year-old mathematics challenge, and advances making AI coding agents faster and more efficient. The post Microsoft Research Focus – Edition #98 appeared first on...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/" target="_blank" rel="noopener">Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/12 20:16</div>
+        <p class="summary">Representatives from Nvidia told Illinois representative Bill Foster that it would be technically possible to implement the anti-smuggling measures called for in the Chip Security Act, Foster told MIT Technology Review in an interview on Thursday, even while an industry group claimed they were “pote...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/customer-stories/amplitude" target="_blank" rel="noopener">How Amplitude ships product improvements in 1–2 days with OpenAI</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/12 20:00</div>
+        <p class="summary">Built primarily on OpenAI models, Amplitude’s proactive product agent, Wave, identifies what to build, helps teams ship changes with coding agents, and measures the impact.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/" target="_blank" rel="noopener">Google Search gets a major upgrade with Gemini 4 Hydrogen</a></h3>
+        
+        <div class="source">Google AI Blog · 11/12 18:00</div>
+        <p class="summary">Rotating carousel of cards with text "Gemini 4 Hydrogen" "Now in Google Search" and examples from the Google Search UI</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/customer-stories/gondola" target="_blank" rel="noopener">Gondola doubles revenue as its team builds more with Codex</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/12 12:00</div>
+        <p class="summary">Gondola helps creatives get credit and get hired, with Codex raising its lead engineer’s output by 50% and ChatGPT simplifying daily work.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/customer-stories/holidays-extras-codex" target="_blank" rel="noopener">Holiday Extras is rethinking what it can build with Codex</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/12 09:30</div>
+        <p class="summary">With Codex, Holiday Extras is turning customer expertise into better apps, higher booking conversion and new possibilities for growth.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/beyond-12-columns/" target="_blank" rel="noopener">Beyond 12 Columns: Designing Layouts With Personality</a></h3>
+        
+        <div class="source">CSS-Tricks · 11/12 16:06</div>
+        <p class="summary">Too many websites look alike. They use familiar layouts, repeat the same patterns, and often leave little impression once you’ve moved on. Andy Clarke explores how understanding a company’s story can lead to more distinctive designs, using modular and compound grids to create layouts with character....</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://smashingmagazine.com/2026/11/should-you-add-ai-audit-product-teams/" target="_blank" rel="noopener">Should You Actually Add AI To That? A Four-Question Audit For Product Teams</a></h3>
+        
+        <div class="source">Smashing Magazine · 11/12 10:00</div>
+        <p class="summary">An AI feature can save users time on a task, only for them to spend it checking the results. This practical audit helps product teams decide where AI earns its place and what users need to verify its output.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/build-better-applications-with-bold-bi-a-visual-studio-subscriber-benefit-from-syncfusion/" target="_blank" rel="noopener">Build better applications with Bold BI, a Visual Studio subscriber benefit from Syncfusion</a></h3>
+        
+        <div class="source">Visual Studio Blog · 11/12 15:00</div>
+        <p class="summary">I was talking with a developer recently about a project his team was working on. They&#8217;d built an application, connected their data sources, and had everything in working order. Then came another request from management: Could they add a dashboard within the app so users could actually see what...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
