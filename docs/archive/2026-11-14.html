@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月14日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月14日 / 全15件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">4</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">2</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/news/1033489/faa-ground-stop" target="_blank" rel="noopener">FAA lifts nationwide ground stop that blocked takeoffs for hours</a></h3>
+        
+        <div class="source">The Verge · 11/14 01:53</div>
+        <p class="summary">Takeoffs from airports throughout the US largely stopped on Friday after the FAA issued a national ground stop at 3:44PM ET "due to extraordinary circumstances and for reasons of safety," while planes in the air will be allowed to land. The FAA tweeted just after 5PM ET that, "There has been a tempo...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/iplayer/episode/m0034hf1?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Tech Now</a></h3>
+        
+        <div class="source">BBC Technology · 11/14 01:00</div>
+        <p class="summary">Yasmin Morgan-Griffiths follows a team testing AI early warning systems for landslides.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/space/2026/11/starship-flight-15-powers-to-orbit-setting-up-a-possible-catch-on-saturday/" target="_blank" rel="noopener">Starship flight 15 powers to orbit—setting up a possible catch on Saturday</a></h3>
+        
+        <div class="source">Ars Technica · 11/14 00:49</div>
+        <p class="summary">One way or another, the company will get some more data on Saturday.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c6jd7k5ryl1mo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Even Grand Theft Auto's original creators haven't been able to play GTA 6</a></h3>
+        
+        <div class="source">BBC Technology · 11/14 00:37</div>
+        <p class="summary">The next title in the series is expected to be the biggest video game release ever.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search" target="_blank" rel="noopener">Amazon has a plan to index the world’s online shopping data</a></h3>
+        
+        <div class="source">The Verge · 11/13 23:49</div>
+        <p class="summary">Amazon has plans to build a vault of data on every product sold anywhere on the internet, even products Amazon doesn't sell, and make the information available through its own site, according to Reuters. The project, called the "World Product Graph," is meant to make it less likely that shoppers lea...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://arstechnica.com/tech-policy/2026/11/faa-orders-third-nationwide-ground-stop-in-its-history/" target="_blank" rel="noopener">FAA orders third nationwide ground stop in its history</a></h3>
+        
+        <div class="source">Ars Technica · 11/13 23:17</div>
+        <p class="summary">Rare nationwide ground stop could go on for awhile as FAA troubleshoots.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/ck1exevgql4qo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">How the Jensen Huang scandal created a headache for business-friendly Singapore</a></h3>
+        
+        <div class="source">BBC Technology · 11/13 23:00</div>
+        <p class="summary">The scandal has cast a spotlight on Singapore's success as a chip hub - and a location for alleged illicit trade.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/14/2000003193/" target="_blank" rel="noopener">相次ぐ情報漏えいでアナログ回帰？　ダイソー「パスワード管理ノート」が品薄に　一方でリスクも──IPAに聞いた</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/13 22:30</div>
+        <p class="summary">大創産業（ダイソー）は11月11日、紙の「パスワード管理ノート」の売れ行きが10月末ごろから伸び、一時的に品薄になっているとITmedia NEWSの取材に答えた。IPAは紙での管理を否定しない一方、紙では防ぎにくいリスクへの対策として、多要素認証やパスキーの設定を勧めている。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-pacific-flying-squid-populations-dropping-in-korean-waters.html" target="_blank" rel="noopener">Friday Squid Blogging: Pacific Flying Squid Populations Dropping in Korean Waters</a></h3>
+        
+        <div class="source">Schneier on Security · 11/13 22:00</div>
+        <p class="summary">Climate change is the issue. As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered. Blog moderation policy.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/ai-doesnt-have-to-go-rogue-to-break-the-world.html" target="_blank" rel="noopener">AI Doesn’t Have to Go Rogue to Break the World</a></h3>
+        
+        <div class="source">Schneier on Security · 11/13 12:03</div>
+        <p class="summary">This essay is adapted from a keynote speech delivered at the DEF CON 34 conference in Las Vegas on August 7, 2026. The essay originally appeared in CyberScoop. I want to talk about AI hacking. There are three aspects: people hacking AI systems, people using AI to hack other systems, and AIs hacking ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33518" target="_blank" rel="noopener">Macfinger ClickFix campaign sends DownTheDRAIN infostealer for macOS, (Fri, Nov 13th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/13 03:41</div>
+        <p class="summary">Introduction&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33516" target="_blank" rel="noopener">ISC Stormcast For Friday, November 13th, 2026 https://isc.sans.edu/podcastdetail/10178, (Fri, Nov 13th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/13 02:00</div>
+        
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-chatgpt-wallet" target="_blank" rel="noopener">Introducing ChatGPT Wallet</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/13 15:00</div>
+        <p class="summary">Introducing ChatGPT Wallet, a secure way for agents in ChatGPT Work, Codex, and dots to complete purchases with user approval and existing card protections.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/customer-stories/shield" target="_blank" rel="noopener">Shield helps technicians hand off legacy portal work with OpenAI</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/13 08:00</div>
+        <p class="summary">Shield uses OpenAI to help IT technicians hand off work in legacy portals. Its Forge agents navigate systems so technicians can focus on issues needing their judgment.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/2027-front-end-black-friday-deals/" target="_blank" rel="noopener">10 Big Ol’ 2027 Black Friday Deals</a></h3>
+        
+        <div class="source">CSS-Tricks · 11/13 14:05</div>
+        <p class="summary">A big ol' roundup of Black Friday deals on front-end courses from the best independent publishers and educators in the business. 10 Big Ol&#8217; 2027 Black Friday Deals originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
