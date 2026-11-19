@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月19日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月19日 / 全21件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">4</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">8</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">1</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cm9q8j2z3gg8o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Elon Musk says record spending on US midterms was 'pretty foolish'</a></h3>
+        
+        <div class="source">BBC Technology · 11/19 02:47</div>
+        <p class="summary">The multi-billionaire also said he was "not Maga", distancing himself from the political movement linked to Trump.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/18/2000003307/" target="_blank" rel="noopener">JR東の新キャラはB案“紫うさぎ”に　「Suica券面に登場」など、IP展開の可能性は</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/19 02:24</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c6742m39xgzxo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Claude-maker Anthropic poised for stock market debut worth up to $1.5tn</a></h3>
+        
+        <div class="source">BBC Technology · 11/19 02:20</div>
+        <p class="summary">Anthropic started just five years ago an is now one of the biggest names in artificial intelligence.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/19/2000003321/" target="_blank" rel="noopener">OpenAIのAIモデル、AMDのGPU回路設計を最大14％改善　独自チップ「ハラペーニョ」でも成果</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/19 02:09</div>
+        <p class="summary">OpenAIは、自社のAIモデルによる半導体設計の最適化で、AMDの次世代フラッグシップGPUの一部回路において最大14％のPPA改善を達成したと発表した。自社開発の推論専用チップ「Jalapeno」でも回路面積を削減しており、今後はSynopsysと協力してEDAツールを操作する新モデルを訓練する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1037448/elon-musk-ukraine-starlink-starshield-nyt-dealbook" target="_blank" rel="noopener">Elon Musk tries to explain what&#8217;s going on with Ukraine and Starlink</a></h3>
+        
+        <div class="source">The Verge · 11/19 01:39</div>
+        <p class="summary">Elon Musk said Ukrainian president Volodymyr Zelenskyy is lying about disruptions to Starshield in Ukraine and that he's trying to misuse SpaceX's consumer service, Starlink, for military purposes. Musk made the comments at The New York Times' DealBook Summit on Wednesday as he tried to explain the ...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/19/2000003319/" target="_blank" rel="noopener">Google、AIエージェント機能「Tasks in Gemini」を日本を含む6カ国で無料提供　旧「Gemini Spark」</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/19 00:59</div>
+        <p class="summary">Googleは、GeminiアプリのAIエージェント機能「Tasks in Gemini」（旧Gemini Spark）を日本を含む6カ国で無料提供すると発表した。無料版は「Gemini 4 Hydrogen」で動作し、隔離された仮想マシン上でバックグラウンド作業を代行する。米国では電話予約や決済などの機能も順次展開する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/19/2000003313/" target="_blank" rel="noopener">28年春導入の「手ぶら改札」　40駅の顔ぶれに透けるJR東の狙い　東京メトロも“陣営”入り</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/19 00:00</div>
+        <p class="summary">JR東日本が2028年春からの導入を発表したUWBウォークスルー改札。その直後、UWBの業界標準団体に東京メトロが加わった。JRとメトロの駅を、スマホを取り出さずに通り抜けられる日は来るのか。「勝手にスマホを読み取られないか」という不安への答えから、導入駅に空港駅が含まれた理由、さらに参入を検討しているという“ビッグネーム”の存在まで、その意味を読み解く。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/19/2000003316/" target="_blank" rel="noopener">六花亭、カード番号全桁＋セキュリティコード約8000件流出か　決済画面のプログラム改ざん</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/18 23:59</div>
+        <p class="summary">六花亭はクレジットカード情報をサーバ内に保存していないが、不正プログラムにより、入力された情報が外部に送信される状態になっていた可能性があるという。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33536" target="_blank" rel="noopener">ISC Stormcast For Thursday, November 19th, 2026 https://isc.sans.edu/podcastdetail/10186, (Thu, Nov 19th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/19 02:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33534" target="_blank" rel="noopener">Treat Your Honeypot Analysis Like Code: Git, Pull Requests and a Human Gate for AI &#x5b;Guest Diary&#x5d;, (Wed, Nov 18th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/19 01:53</div>
+        <p class="summary">&#x5b;This is a Guest Diary by Kevin Truong, an ISC intern as part of the SANS.edu BACS program&#x5d;&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33532" target="_blank" rel="noopener">Java4Shell, NGINX2Shell and more: Why we are not at "Yellow", (Wed, Nov 18th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/18 19:54</div>
+        <p class="summary">About a month ago, we went to Infocon Yellow for the first time in a few years. We decided to address the php2shell vulnerability and alert our readers to its significant impact. Following php2shell, we had a number of vulnerabilities and events that may also have scored high enough to trigger an In...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/france-is-blaming-iran-for-the-fridge-cyberattack.html" target="_blank" rel="noopener">France Is Blaming Iran for the Fridge Cyberattack</a></h3>
+        
+        <div class="source">Schneier on Security · 11/18 12:05</div>
+        <p class="summary">Interesting: U.S. intelligence agencies have recently reached a &#8220;&#8221;ow confidence&#8221; assessment that Iran was responsible for the attacks in France, according to three U.S. officials who spoke on the condition of anonymity to discuss sensitive intelligence. A &#8220;low confidence&#822...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.google/innovation-and-ai/products/gemini-app/gemini-lower-memory-devices/" target="_blank" rel="noopener">The Gemini app is now available on lower-memory Android devices.</a></h3>
+        
+        <div class="source">Google AI Blog · 11/18 17:00</div>
+        <p class="summary">The Google Gemini app now supports lower-memory Android devices. Access Gemini Live and custom image creation on your phone. Download the app today.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/18/1148650/ai-hype-index-ai-is-everywhere/" target="_blank" rel="noopener">The AI Hype Index: AI is everywhere</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/18 14:42</div>
+        <p class="summary">Like a nasty rash, AI seems to spread everywhere. Google crams AI Overviews down your throat even though it costs the company billions of dollars in lost ad revenue. Leave your apartment, and you might pass two people heaving an AI-powered humanoid robot up the stairs to clean someone’s rooms. Go to...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/" target="_blank" rel="noopener">This smell startup says its AI nose is as good as a human’s</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/18 10:20</div>
+        <p class="summary">In a lab near Newark Airport in New Jersey, a team of around 30 experienced human sniffers are slowly working their way through every odor on Earth. Their careful notes—“nutty,” “peachy,” “marine”—are cross-referenced with a chemical analysis to create a rich set of training data for what AI startup...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/the-silent-consensus" target="_blank" rel="noopener">The Silent Consensus</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/18 10:00</div>
+        <p class="summary">Dean Ball, Head of Strategic Futures at OpenAI, examines how more capable AI could reshape society and how people can retain control of their institutions.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/research-acceleration-jagged-frontier" target="_blank" rel="noopener">Research acceleration: The jagged frontier</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/18 08:00</div>
+        <p class="summary">OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/customer-stories/sumitomo-life" target="_blank" rel="noopener">How Sumitomo Life’s leaders helped teams adopt ChatGPT Enterprise</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/18 08:00</div>
+        <p class="summary">Sumitomo Life uses ChatGPT Enterprise to research insurers, prepare proposals, and draft code for investment analysis. Early use by executives helped drive adoption.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/inside-the-codex-sandbox" target="_blank" rel="noopener">Inside the Codex sandbox</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/18 08:00</div>
+        <p class="summary">See how Codex runs commands on your machine while enforcing the filesystem and network limits you control across macOS, Linux, and Windows.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/managing-frontier-ai-risk" target="_blank" rel="noopener">Managing frontier AI risk: From training to deployment</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/18 06:00</div>
+        <p class="summary">OpenAI explains how it manages frontier AI risk from training through deployment with model alignment, sandboxing, blocking safeguards, and monitoring.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">1</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/when-everything-has-changed/" target="_blank" rel="noopener">When Everything Has Changed, What Do We Do Next?</a></h3>
+        
+        <div class="source">CSS-Tricks · 11/18 14:55</div>
+        <p class="summary">It&#8217;s been a&#8230; year, huh? I think the most common emoji I&#8217;ve seen this year is &#8220;Face with Bags Under Eyes&#8221; (&#x1fae9;) and that says a lot. One thing is for sure: the industry we make a living in is &#8230; When Everything Has Changed, What Do We Do Next? originally handw...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
