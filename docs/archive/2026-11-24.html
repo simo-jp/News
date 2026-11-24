@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月24日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月24日 / 全22件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">4</span></button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">5</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">3</span></button><button class="filter-btn" data-filter="Web開発・フロントエンド">Web開発・フロントエンド <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33550" target="_blank" rel="noopener">Scanning from Subnet 109.160.32.0/24, (Mon, Nov 23rd)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/24 02:32</div>
+        <p class="summary">This subnet is assigned to a web hosting and virtual private server (VPS) provider BANATSYNC SRL with AS198364, located in Timisoara, Romania. This graph shows the DShield sensor activity over the past 90 days for this subnet and it is still ongoing as of this writing.&#xd;</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33552" target="_blank" rel="noopener">ISC Stormcast For Tuesday, November 24th, 2026 https://isc.sans.edu/podcastdetail/10192, (Tue, Nov 24th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/24 02:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.ipa.go.jp/security/security-alert/2026/alert20261124.html" target="_blank" rel="noopener">VMware製品の脆弱性対策について(CVE-2026-123890)</a></h3>
+        
+        <div class="source">IPA 重要なセキュリティ情報 · 11/23 15:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/humans-have-rights-machines-do-not.html" target="_blank" rel="noopener">Humans Have Rights. Machines Do Not.</a></h3>
+        
+        <div class="source">Schneier on Security · 11/23 12:00</div>
+        <p class="summary">This essay originally appeared in Tech Policy Press. Last year, Character.AI asked a federal court in Florida to dismiss a wrongful-death suit, brought by the mother of a fourteen-year-old boy who had killed himself after months of conversation with its chatbot. The company made two arguments. One, ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1041000/kagi-mail-email-google-gmail-alternative" target="_blank" rel="noopener">Google alternative Kagi launches an email service</a></h3>
+        
+        <div class="source">The Verge · 11/24 00:02</div>
+        <p class="summary">Kagi, which already offers a paid alternative to Google Search and its own Orion browser as a rival to Chrome, is taking on another Google service: Gmail. Today, Kagi announced a public beta of Kagi Mail, a new email service that has "no surveillance, no ads, open standards, and no lock-in." With Ka...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/24/2000003399/" target="_blank" rel="noopener">SpaceXをオレゴン州とバージニア州が提訴　Grokの性的画像生成で</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/23 23:39</div>
+        <p class="summary">オレゴン州とバージニア州は、AI「Grok」が児童性的虐待コンテンツ（CSAM）や同意のない性的画像を生成・拡散したとしてSpaceXなどを提訴したと発表した。両州は「Spicy」モードなどで安全策を無視し、消費者を欺いたと主張。一方、Xの安全対策アカウントは悪用に対し保護策を強化したと説明している。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/games/1040966/arion-kurtaj-gta-vi-leaks-sentenced-released" target="_blank" rel="noopener">The hacker behind early GTA VI leaks has been sentenced — and released</a></h3>
+        
+        <div class="source">The Verge · 11/23 23:25</div>
+        <p class="summary">Arion Kurtaj, who pleaded guilty last week to hacking Grand Theft Auto VI developer Rockstar Games and other companies, including Uber and Revolut, was sentenced to seven years in prison but released on license, the BBC reports. After hacking Rockstar, Kurtaj leaked 90 videos of GTA VI in 2022, year...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">US to blacklist Asian AI firm Megaspeed after Nvidia scandal</a></h3>
+        
+        <div class="source">BBC Technology · 11/23 23:16</div>
+        <p class="summary">Megaspeed has been accused of funneling AI chips to China after a former executive's affair with Jensen Huang became public.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1026041/holiday-gift-guide-2026" target="_blank" rel="noopener">The Verge’s 2026 holiday gift guide</a></h3>
+        
+        <div class="source">The Verge · 11/23 23:14</div>
+        <p class="summary">Gift-giving isn't just about grabbing something solid under a determined spending limit. It's an expression of love, a way to show someone how well you really know them. That doesn't mean you have to do it all on your own, though. Sometimes you just need a push in the right direction to get things r...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/tech/1040872/ladybird-indie-browser-engine-alpha-testing" target="_blank" rel="noopener">Ladybird, the first new browser engine in years, is now available to test</a></h3>
+        
+        <div class="source">The Verge · 11/23 22:38</div>
+        <p class="summary">Ladybird, an independent web browser with a built-from-scratch engine, is finally available for testing. On Monday, Ladybird developer Andreas Kling announced that the browser is launching in alpha on macOS and Linux following more than four years of development. The release makes Ladybird the first...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/ai-artificial-intelligence/1040652/jensen-huang-nvidia-trump-reinstated" target="_blank" rel="noopener">Trump engineered a risky comeback for Jensen Huang</a></h3>
+        
+        <div class="source">The Verge · 11/23 22:25</div>
+        <p class="summary">After Nvidia's board accepted Jensen Huang's resignation as CEO, following reports that Huang had an affair with an alleged Chinese spy, President Donald Trump, too, appeared to submit to the new reality. Appearing on Stephen A. Smith's radio show shortly after the news came out, Trump said that Hua...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/24/2000003398/" target="_blank" rel="noopener">CrowdStrike、Zscalerを約439億ドルで買収へ　狙いはAIエージェントの安全確保</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/23 22:20</div>
+        <p class="summary">CrowdStrikeは、ネットワークセキュリティ大手のZscalerを全額株式交換で買収すると発表した。Zscalerの企業価値は約7兆円。Zscalerの「Zero Trust Exchange」などを「Falcon」基盤に統合し、AIエージェントの保護を強化する。統合後の年間経常収益は100億ドルを超える見込みだ。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://openai.com/index/introducing-shirudo" target="_blank" rel="noopener">OpenAI and Cisco introduce Shirudo</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/23 21:20</div>
+        <p class="summary">OpenAI and Cisco introduce Shirudo, an open-source runtime for Linux. It helps teams protect running systems while they roll out patches.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/23/1149569/a-legendary-philosopher-isnt-buying-anthropics-consciousness-argument/" target="_blank" rel="noopener">A legendary philosopher isn’t buying Anthropic’s consciousness argument</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/23 17:36</div>
+        <p class="summary">This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. Before going public last week, Anthropic named the possibility that AI could be conscious or sentient as a risk factor for anyone investing. Given “the way we app...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/" target="_blank" rel="noopener">A more tailored Google Search that’s uniquely yours</a></h3>
+        
+        <div class="source">Google AI Blog · 11/23 17:00</div>
+        <p class="summary">Google Search bar with the text "Personal Intelligence" surrounded by the Google Wallet, Google Drive, GMail, Google Photos, Google Calendar, and Google G logo icons</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/learn/connected-intelligence-for-in-house-legal" target="_blank" rel="noopener">Connected intelligence for in-house legal</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/23 08:00</div>
+        <p class="summary">Watch OpenAI’s Stacey Wang and Craig Bruney, Mary O’Carroll of LECG, and Cooley’s Richard Segal explore how AI can help in-house legal teams connect business context, build reusable workflows and get more from outside counsel.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/business/customer-stories/richpanel-ai-customer-support" target="_blank" rel="noopener">Richpanel helps companies automate 50% of support in 30 days</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/23 08:00</div>
+        <p class="summary">Richpanel uses GPT-6 Astra and GPT-6.1 Sol to equip its AI support agents with tools and procedures, and GPT-6 Luna for their conversations.</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">3</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/local-models-dotnet-llama-windows/" target="_blank" rel="noopener">Run local models in your .NET apps with Llama on Windows</a></h3>
+        
+        <div class="source">.NET Blog · 11/23 18:05</div>
+        <p class="summary">Install Llama on Windows from Hugging Face and the llama.cpp team, download an open model, and call it from a .NET 11 C# file-based app. The post Run local models in your .NET apps with Llama on Windows appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/local-models-dotnet-llama-windows/" target="_blank" rel="noopener">Run local models in your .NET apps with Llama on Windows</a></h3>
+        
+        <div class="source">ASP.NET Blog · 11/23 18:05</div>
+        <p class="summary">Install Llama on Windows from Hugging Face and the llama.cpp team, download an open model, and call it from a .NET 11 C# file-based app. The post Run local models in your .NET apps with Llama on Windows appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/blog/do-ai-coding-agents-struggle-with-non-rest-apis/" target="_blank" rel="noopener">Do AI coding agents struggle with non-REST APIs?</a></h3>
+        
+        <div class="source">Microsoft DevBlogs (全体) · 11/23 10:25</div>
+        <p class="summary">Should your next API be REST, or something else? And which one will AI coding agents handle best? We tested REST, POST-only and RPC-style APIs with six models across 1,356 runs, and what decided whether agents succeeded had nothing to do with API style. The post Do AI coding agents struggle with non...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="Web開発・フロントエンド">
+          <h2>Web開発・フロントエンド <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://css-tricks.com/using-frontend-fallbacks/" target="_blank" rel="noopener">Using Fallbacks for a Robust Front-End</a></h3>
+        
+        <div class="source">CSS-Tricks · 11/23 14:21</div>
+        <p class="summary">It’s important to use fallbacks to build a robust front end, either to quietly and discreetly avoid the error or to communicate it to our users. Using Fallbacks for a Robust Front-End originally handwritten and published with love on CSS-Tricks. You should really get the newsletter as well.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://css-tricks.com/dev-material-archive/" target="_blank" rel="noopener">Dev Material Archive</a></h3>
+        
+        <div class="source">CSS-Tricks · 11/23 14:18</div>
+        <p class="summary">A new resource resurrecting lost web-dev articles and posts: This is an archive of written articles about web development, web design, and web accessibility that once existed on the World Wide Web and which would otherwise be lost to &#8230; Dev Material Archive originally handwritten and published ...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
