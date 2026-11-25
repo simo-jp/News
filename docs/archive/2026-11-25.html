@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月25日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月25日 / 全19件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button><button class="filter-btn" data-filter=".NET・C#">.NET・C# <span class="count">5</span></button><button class="filter-btn" data-filter="AI・機械学習">AI・機械学習 <span class="count">4</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/25/2000003439/" target="_blank" rel="noopener">タワレコ、会員情報約1100万件流出　「3年以内の退会者」も対象　通販サイト停止続く</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/25 04:27</div>
+        <p class="summary">退会後3年以内の人の情報も含まれているという。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">US attorney general dodges questions about Nvidia investigation</a></h3>
+        
+        <div class="source">BBC Technology · 11/25 03:44</div>
+        <p class="summary">Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/25/2000003421/" target="_blank" rel="noopener">AIでドーピングしたコンサルの実力は　使わない人材との能力差、BCG約500人で検証　Nature系列誌</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/25 03:00</div>
+        <p class="summary">米ボストン大学、米BCGのヘンダーソン研究所、米OpenAIに所属する研究者らがNature Human Behaviourで発表した論文「Generative AI and the temporary upskilling of knowledge workers」は、生成AIによる一時的なスキルアップの効果と限界を調査した研究報告だ。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Huawei found guilty of stealing trade secrets but acquitted of racketeering</a></h3>
+        
+        <div class="source">BBC Technology · 11/25 02:59</div>
+        <p class="summary">The verdict follows a months-long trial in New York.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/25/2000003437/" target="_blank" rel="noopener">六花亭のカード情報流出、対応が「誠実」と評判　再発行時の「伝え方」まで明記</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/25 02:34</div>
+        <p class="summary">カード再発行に当たっては、「株式会社六花亭から情報流出の通知を受けたため、カードを再発行したい」と伝えるよう案内するなど、「どうすればいいか」を具体的に示していることが「誠実だ」と評価されている。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/25/2000003435/" target="_blank" rel="noopener">楽天証券、金融資産情報など約441万件の漏えい確認　ログインIDなど約1198万口座分も</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/25 02:25</div>
+        <p class="summary">楽天証券は11月24日、17日に発表した不正アクセスを巡り、情報漏えいを確認したと発表した。ログインIDなどは約1198万口座分、氏名や住所などは約441万件漏えい。入金先口座情報などの漏えいも新たに判明した。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/25/2000003436/" target="_blank" rel="noopener">復旧費用1000万円超が6割　被害相次ぐサイバー攻撃、保険広がるも中小企業に死角</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/25 02:22</div>
+        <p class="summary">サイバー攻撃の脅威がが増す中、「サイバー保険」に加入する企業が増えている。特に不正アクセスによる情報漏えいが頻発した10月以降、保険会社への問い合わせが急増している。専門家は「サイバー攻撃は従業員個人の努力だけで防げるものではなくなっている」と警告。組織全体で重層的な対策を施す必要性を強調する。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/25/2000003433/" target="_blank" rel="noopener">音楽サービスのTIDAL、AI生成楽曲を削除・受付停止へ　直近90日の配信楽曲の43％がAI生成</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/25 01:57</div>
+        <p class="summary">音楽ストリーミングサービスのTIDALは、完全AI生成楽曲の受付を停止し、配信済みの楽曲も削除すると発表した。直近90日間に配信された楽曲の43％が完全AI生成と判定されており、現在カタログの6.3％に当たる約2700万曲が該当する。AIを補助的に使った楽曲は引き続き配信可能だ。</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://isc.sans.edu/diary/rss/33554" target="_blank" rel="noopener">ISC Stormcast For Wednesday, November 25th, 2026 https://isc.sans.edu/podcastdetail/10194, (Wed, Nov 25th)</a></h3>
+        
+        <div class="source">SANS Internet Storm Center · 11/25 02:00</div>
+        
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/we-get-the-infrastructure-we-pay-for.html" target="_blank" rel="noopener">We Get the Infrastructure We Pay For</a></h3>
+        
+        <div class="source">Schneier on Security · 11/24 12:06</div>
+        <p class="summary">This essay originally appeared as part of a round table in The Free Press entitled &#8220;Is America’s Infrastructure Under Attack?&#8221; Microsoft, the FAA, banks, United Airlines, the NSA&#8212;it&#8217;s been a really bad week in cyberspace. But, amazing as it might seem, these are not related. ...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category=".NET・C#">
+          <h2>.NET・C# <span class="count">5</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/document-extraction-dotnet-preview/" target="_blank" rel="noopener">Introducing DocumentExtractionClient (preview): Extract documents in .NET</a></h3>
+        
+        <div class="source">.NET Blog · 11/24 18:05</div>
+        <p class="summary">Meet DocumentExtractionClient, a preview .NET API that turns PDFs, images, and other documents into structured content, with a set of starter providers to choose from. The post Introducing DocumentExtractionClient (preview): Extract documents in .NET appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/dotnet/document-extraction-dotnet-preview/" target="_blank" rel="noopener">Introducing DocumentExtractionClient (preview): Extract documents in .NET</a></h3>
+        
+        <div class="source">ASP.NET Blog · 11/24 18:05</div>
+        <p class="summary">Meet DocumentExtractionClient, a preview .NET API that turns PDFs, images, and other documents into structured content, with a set of starter providers to choose from. The post Introducing DocumentExtractionClient (preview): Extract documents in .NET appeared first on .NET Blog.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/visual-studio-november-update-faster-workflows-better-reviews/" target="_blank" rel="noopener">Visual Studio November Update – Faster Workflows, Better Reviews</a></h3>
+        
+        <div class="source">Visual Studio Blog · 11/24 17:00</div>
+        <p class="summary">The November Visual Studio update reduces repeated work in large-solution workflows, adds MSBuild Restore in Open Folder, introduces Copilot Chat's new engine and work controls, helps organize large pull-request reviews, and adds CSS color previews and IntelliSense. The post Visual Studio November U...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/blog/is-sort-by-impact-just-vibes/" target="_blank" rel="noopener">Is “sort by impact” just vibes?</a></h3>
+        
+        <div class="source">Microsoft DevBlogs (全体) · 11/24 15:23</div>
+        <p class="summary">You ask an agent for your top five, sorted by impact, and it hands you a confident list. But you never said what impact means, so what did the agent actually sort by? We ran four models through the same lists 1,500 times to find out, and what we found should change how you ask for a ranking. The pos...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://devblogs.microsoft.com/visualstudio/beyond-the-prompt-discovering-trusted-technical-perspectives-with-your-visual-studio-subscription/" target="_blank" rel="noopener">Beyond the prompt: Discovering trusted technical perspectives with your Visual Studio subscription</a></h3>
+        
+        <div class="source">Visual Studio Blog · 11/24 11:00</div>
+        <p class="summary">AI is changing the speed at which developers can produce code. And with this change, a different challenge emerges: how do we ensure that what we&#8217;re building is secure, reliable, and maintainable? Not just an immediate answer AI-generated code can look convincing, compile successfully, and eve...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="AI・機械学習">
+          <h2>AI・機械学習 <span class="count">4</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://blog.google/products-and-platforms/products/gemini/gemini-golden-state/" target="_blank" rel="noopener">How Gemini is changing the game for Golden State's organization and fans.</a></h3>
+        
+        <div class="source">Google AI Blog · 11/24 16:00</div>
+        <p class="summary">Google Gemini partners with Golden State to power fan experiences and business operations for the Warriors, Valkyries, and Chase Center. See the news.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.technologyreview.com/2026/11/24/1148091/raising-the-stakes-for-enterprise-networks-with-ai-modernization/" target="_blank" rel="noopener">Raising the stakes for enterprise networks with AI modernization</a></h3>
+        
+        <div class="source">MIT Technology Review - AI · 11/24 15:15</div>
+        <p class="summary">Enterprise networks are under severe strain. As companies rush to deploy artificial intelligence, the technology is quickly becoming the biggest source of demand on the network. Now, agentic AI is adding to the load. Tasks conducted by AI agents generate an estimated 450% more network traffic than t...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities" target="_blank" rel="noopener">GPT-6 models demonstrate intrinsic protein-design capabilities</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/24 13:00</div>
+        <p class="summary">GPT-6 models design protein structures and sequences using reasoning and code. Lab tests found evidence of binding across five targets.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://openai.com/index/searching-for-distant-planets-with-astra" target="_blank" rel="noopener">Searching for distant planets with Astra</a></h3>
+        
+        <div class="source">OpenAI Blog · 11/24 11:00</div>
+        <p class="summary">See how two amateur astronomers used Codex and Astra to find potential exoplanets in public data from NASA’s Kepler and TESS space telescopes.</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
