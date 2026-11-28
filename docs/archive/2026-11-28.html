@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech News Daily - 2026年11月28日</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", sans-serif;
+      line-height: 1.7; color: #1a1a1a; background: #f5f7fa;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem;
+    }
+    header h1 { font-size: 1.8rem; margin-bottom: 0.5rem; }
+    header .meta { opacity: 0.9; font-size: 0.95rem; }
+    .category {
+      background: white; border-radius: 12px; padding: 1.5rem 2rem;
+      margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .category h2 {
+      font-size: 1.3rem; color: #2c3e50; padding-bottom: 0.75rem;
+      border-bottom: 2px solid #edf2f7; margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.75rem;
+    }
+    .count {
+      background: #667eea; color: white; font-size: 0.75rem;
+      padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: normal;
+    }
+    .article { padding: 1rem 0; border-bottom: 1px solid #f0f0f0; }
+    .article:last-child { border-bottom: none; }
+    .article h3 { font-size: 1.05rem; margin-bottom: 0.4rem; }
+    .article h3 a { color: #2c5282; text-decoration: none; }
+    .article h3 a:hover { text-decoration: underline; }
+    .article .source { font-size: 0.85rem; color: #718096; margin-bottom: 0.5rem; }
+    .article .summary { font-size: 0.95rem; color: #4a5568; }
+    .ai-badge {
+      display: inline-block; background: #e6fffa; color: #234e52;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .translated-badge {
+      display: inline-block; background: #fef3c7; color: #78350f;
+      font-size: 0.7rem; padding: 0.1rem 0.4rem; border-radius: 4px;
+      margin-right: 0.4rem;
+    }
+    .original-title {
+      font-size: 0.8rem; color: #718096; margin-bottom: 0.3rem;
+      font-style: italic;
+    }
+    footer { text-align: center; padding: 2rem 0; color: #718096; font-size: 0.85rem; }
+    .filter-bar {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(245, 247, 250, 0.95); backdrop-filter: blur(8px);
+      padding: 1rem 0; margin: -1rem 0 1.5rem; border-bottom: 1px solid #e2e8f0;
+    }
+    .filter-search {
+      width: 100%; padding: 0.6rem 1rem; font-size: 0.95rem;
+      border: 1px solid #cbd5e0; border-radius: 8px; margin-bottom: 0.75rem;
+      background: white;
+    }
+    .filter-search:focus { outline: none; border-color: #667eea; }
+    .filter-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .filter-btn {
+      padding: 0.4rem 0.9rem; font-size: 0.85rem; cursor: pointer;
+      background: white; border: 1px solid #cbd5e0; border-radius: 999px;
+      color: #4a5568; display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: all 0.15s;
+    }
+    .filter-btn:hover { border-color: #667eea; color: #667eea; }
+    .filter-btn.active {
+      background: #667eea; border-color: #667eea; color: white;
+    }
+    .filter-btn.active .count { background: rgba(255,255,255,0.3); }
+    .filter-btn .count {
+      background: #edf2f7; color: inherit; font-size: 0.7rem;
+      padding: 0.1rem 0.5rem; border-radius: 999px;
+    }
+    .no-results {
+      text-align: center; padding: 3rem 1rem; color: #718096;
+      background: white; border-radius: 12px;
+    }
+    .category.hidden, .article.hidden { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📰 Tech News Daily</h1>
+      <div class="meta">2026年11月28日 / 全10件</div>
+    </header>
+    <div class="filter-bar">
+      <input type="search" class="filter-search" id="searchInput" placeholder="🔍 タイトル・要約・配信元で検索...">
+      <div class="filter-buttons"><button class="filter-btn active" data-filter="all">すべて</button><button class="filter-btn" data-filter="ガジェット・一般テック">ガジェット・一般テック <span class="count">8</span></button><button class="filter-btn" data-filter="セキュリティ">セキュリティ <span class="count">2</span></button></div>
+    </div>
+    
+        <section class="category" data-category="ガジェット・一般テック">
+          <h2>ガジェット・一般テック <span class="count">8</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1044771/m5-macbook-air-black-friday-2026-deal-sale" target="_blank" rel="noopener">The M5 MacBook Air just got its biggest discount since Apple raised the price</a></h3>
+        
+        <div class="source">The Verge · 11/28 03:30</div>
+        <p class="summary">If you’ve been holding off on buying a new MacBook Air since Apple raised prices by $200 in June, you’re in luck. The 13-inch M5 MacBook Air is on sale at Amazon and Best Buy with 16GB of RAM and 512GB of storage starting at $999 ($300 off) for Black Friday, which is the lowest [&#8230;]</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1039190/best-black-friday-2026-deals-tech-gadgets-gift-ideas" target="_blank" rel="noopener">The absolute best Black Friday deals you can still get</a></h3>
+        
+        <div class="source">The Verge · 11/28 03:28</div>
+        <p class="summary">Black Friday is nearly over, but many of this year’s best deals are still available. You can still find some of the lowest prices we’ve seen in-store and online for video games, wireless earbuds, TVs, robot vacuums, and so much more. We can’t guarantee a deal you’ve had your eye on will last through...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/news/articles/c64gn8pe5eeqo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">How gamers are using AI and leaked files to clone Grand Theft Auto 6</a></h3>
+        
+        <div class="source">BBC Technology · 11/28 01:30</div>
+        <p class="summary">With an official PC version potentially still months away, fans are getting impatient.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1043445/black-friday-best-cheap-tech-deals-under-100-2026" target="_blank" rel="noopener">We found 60-odd Black Friday deals we love for $100 or less</a></h3>
+        
+        <div class="source">The Verge · 11/28 01:30</div>
+        <p class="summary">Between holiday travel, gifts, and the rising cost of just about everything, expenses can quickly add up during this time of year. Thankfully, you don’t have to dip too far into your savings to take advantage of some of the better Black Friday deals we’ve seen. Below, we’ve rounded up a range of gre...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.bbc.co.uk/iplayer/episode/m00353dd?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Tech Now</a></h3>
+        
+        <div class="source">BBC Technology · 11/28 01:00</div>
+        <p class="summary">Ammie Sekhon looks at robotics that could one day help spacecraft act independently.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.itmedia.co.jp/news/article/2611/28/2000003529/" target="_blank" rel="noopener">そばチェーン「ゆで太郎」は、なぜ個人情報を「持たない」と決めた？　8年続いたバースデークラブ終了の理由を社長に聞いた</a></h3>
+        
+        <div class="source">ITmedia NEWS · 11/28 01:00</div>
+        <p class="summary">ゆで太郎システムは、個人情報の漏えいリスクを理由に、約4000人が登録する「バースデークラブ」の終了を決めた。8年続けた制度を廃止する理由や、個人情報を持たずに顧客との関係を築く戦略を社長に聞いた。</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/transportation/1044706/this-purple-electric-chinese-minivan-can-go-up-to-559-miles-on-a-charge" target="_blank" rel="noopener">This purple electric Chinese minivan can go up to 559 miles on a charge</a></h3>
+        
+        <div class="source">The Verge · 11/28 00:02</div>
+        <p class="summary">Electric minivans could be the ultimate in utility, with room for passengers, gear, and huge batteries. While VW's ID Buzz only gave us 200 miles of real-world driving on a charge in 2023, China's BYD has just announced a flagship purple peoplemover that can go an estimated 559 miles (900 km) on ele...</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.theverge.com/gadgets/1043935/best-black-friday-apple-deals-2026" target="_blank" rel="noopener">The best Black Friday deals you can still get on AirPods, Macs, and other Apple gear</a></h3>
+        
+        <div class="source">The Verge · 11/27 23:53</div>
+        <p class="summary">Black Friday is entering the evening, which means one of the best times of the year to save some cash on a new pair of AirPods or the latest Apple Watch is coming to a close. After all, the holiday savings can help offset the unfortunate price hikes from earlier this year, when Apple raised [&#8230;...</p>
+      </article></div>
+        </section>
+
+        <section class="category" data-category="セキュリティ">
+          <h2>セキュリティ <span class="count">2</span></h2>
+          <div class="articles">
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/friday-squid-blogging-giant-squid-in-newfoundland.html" target="_blank" rel="noopener">Friday Squid Blogging: Giant Squid in Newfoundland</a></h3>
+        
+        <div class="source">Schneier on Security · 11/27 22:01</div>
+        <p class="summary">The two have an interesting history. As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered. Blog moderation policy.</p>
+      </article>
+
+      <article class="article">
+        <h3><a href="https://www.schneier.com/blog/archives/2026/11/recent-outages-have-economic-causes.html" target="_blank" rel="noopener">Recent Outages Have Economic Causes</a></h3>
+        
+        <div class="source">Schneier on Security · 11/27 12:02</div>
+        <p class="summary">This essay originally appeared in The Guardian. It&#8217;s an expanded version of the one I posted as &#8220;We Get the Infrastructure We Pay For.&#8221; It&#8217;s been a bad week for our computerized infrastructure. We&#8217;ve seen outages at Microsoft, the FAA, a handful of banks, United Airline...</p>
+      </article></div>
+        </section>
+    <div class="no-results" id="noResults" style="display:none;">該当する記事がありません</div>
+    <footer>Powered by GitHub Actions + Claude API</footer>
+  </div>
+  <script>
+    (function() {
+      const searchInput = document.getElementById('searchInput');
+      const noResults = document.getElementById('noResults');
+      const buttons = document.querySelectorAll('.filter-btn');
+      const categories = document.querySelectorAll('.category');
+      let activeFilter = 'all';
+
+      function applyFilter() {
+        const keyword = searchInput.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        categories.forEach(cat => {
+          const catName = cat.dataset.category;
+          const catMatch = activeFilter === 'all' || activeFilter === catName;
+          let catVisible = 0;
+
+          cat.querySelectorAll('.article').forEach(art => {
+            const text = art.textContent.toLowerCase();
+            const kwMatch = !keyword || text.includes(keyword);
+            const show = catMatch && kwMatch;
+            art.classList.toggle('hidden', !show);
+            if (show) catVisible++;
+          });
+
+          cat.classList.toggle('hidden', catVisible === 0);
+          visibleCount += catVisible;
+        });
+
+        noResults.style.display = visibleCount === 0 ? 'block' : 'none';
+      }
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          activeFilter = btn.dataset.filter;
+          applyFilter();
+        });
+      });
+
+      searchInput.addEventListener('input', applyFilter);
+    })();
+  </script>
+</body>
+</html>
